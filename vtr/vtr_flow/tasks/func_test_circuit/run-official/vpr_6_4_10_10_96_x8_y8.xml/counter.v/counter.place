@@ -1,0 +1,24 @@
+Netlist file: counter.net   Architecture file: vpr_6_4_10_10_96_x8_y8.xml
+Array size: 8 x 8 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+n66_1		8	3	0	#0
+top^FF_NODE~5	8	4	0	#1
+top^FF_NODE~11	8	1	0	#2
+top^FF_NODE~6	8	2	0	#3
+top^d_en	9	1	4	#4
+top^rst		9	1	1	#5
+out:top^d_out~11	9	3	5	#6
+out:top^d_out~10	9	3	0	#7
+out:top^d_out~3	9	4	7	#8
+out:top^d_out~9	9	2	5	#9
+out:top^d_out~8	9	2	3	#10
+out:top^d_out~2	9	4	3	#11
+out:top^d_out~7	9	2	2	#12
+out:top^d_out~6	9	1	0	#13
+out:top^d_out~1	9	2	1	#14
+out:top^d_out~5	9	3	7	#15
+out:top^d_out~4	9	1	5	#16
+out:top^d_out~0	9	4	2	#17
+top^clock	0	1	6	#18

@@ -1,0 +1,10 @@
+CLB top^d_out
+INPUT: open open open open open open open open open open open open open open top^d_in 
+    BLE OPEN
+    BLE OPEN
+    BLE OPEN
+    BLE OPEN
+    BLE OPEN
+    BLE top^d_out
+        INPUT: open clb.I[14]->crossbar  open open 
+        FF: OPEN

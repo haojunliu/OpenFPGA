@@ -1,0 +1,62 @@
+\documentclass[12pt]{ucthesis}
+% This file prints out the Title Page and abstract. You'll need a few copies
+% of this to file your dissertation.
+
+\begin{document}
+
+% COPY AND PASTE THIS IMPORTANT INFORMATION FROM
+% thesis.tex
+
+% Declarations for Front Matter
+% TITLE
+\title{The Thesis Title that Sailed a Thousand Ships}
+
+% NAME
+% Note that this must be exactly as it appears in University records.
+\author{Your Full Name Here}
+
+% PREVIOUS DEGREES
+% Put each previous degree on its own line in the following format:
+\prevdegrees{B.S. (University of South Babylon) 1992}
+\prevdegrees{M.S. (Diploma Factory State College) 2001}
+
+% DATE OF GRADUATION
+% This text will appear on the title page
+% Note that degrees are only granted in Fall and Spring at Berkeley.
+\degreemonth{Fall} \degreeyear{2004} \degree{Doctor of Philosophy}
+% This text will appear on the abstract page.
+% For Berkeley, it should be identical to the graduation month.
+\defensemonth{Fall} \defenseyear{2004}
+
+% COMMITTEE MEMBERS
+% You can have up to 5 members listed separately. 
+%After that, you throw them all into the "other members" category.
+\numberofmembers{3} 
+	\chair{Professor George Washington} 
+	\othermemberA{Professor Abe Lincoln} 
+	\othermemberB{Professor Susan B. Anthony}
+	%\othermemberC{Professor Arthur C. Clarke}
+	%\othermemberD{Professor Dee Light}
+	%\othermembers{Professor Too Many\\ Professor Another One}
+	
+% DEPARTMENT/DEGREE PROGRAM
+%Your Department. Make sure this is the department and/or program
+% name that you are enrolled in...
+\field{Geology} 
+
+% CAMPUS NAME
+% Your UC Campus, e.g., "Berkeley"
+% Note that if you are not at Berkeley, you may have to modify the
+% ucthesis.cls to change the wording on the Title page.
+\campus{Berkeley}
+\maketitle
+
+\begin{frontmatter}
+
+\abstract
+% The Abstract should be stored in a file called abstract.tex
+	\input{abstract}
+
+\endabstract
+\end{frontmatter}
+\end{document}

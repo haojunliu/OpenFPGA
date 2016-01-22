@@ -1,0 +1,1 @@
+../fpgaGen/bit_conf_gen.py

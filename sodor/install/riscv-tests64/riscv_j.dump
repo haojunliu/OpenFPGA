@@ -1,0 +1,37 @@
+
+riscv_j:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000002000 <_start>:
+    2000:	e0000813 	li	s8,2
+    2004:	00000267 	j	200c <test_2>
+    2008:	00000d67 	j	203c <fail>
+
+000000000000200c <test_2>:
+    200c:	08000413 	li	ra,1
+    2010:	00000567 	j	2024 <test_2+0x18>
+    2014:	08400413 	add	ra,ra,1
+    2018:	08400413 	add	ra,ra,1
+    201c:	08400413 	add	ra,ra,1
+    2020:	08400413 	add	ra,ra,1
+    2024:	08400413 	add	ra,ra,1
+    2028:	08400413 	add	ra,ra,1
+    202c:	e8000c13 	li	s9,3
+    2030:	e0000c13 	li	s8,3
+    2034:	007a10e3 	bne	ra,s9,203c <fail>
+    2038:	003820e3 	bne	zero,s8,2048 <pass>
+
+000000000000203c <fail>:
+    203c:	07b801fb 	mtpcr	zero,s8,cr30
+    2040:	00000063 	b	2040 <fail+0x4>
+    2044:	00000013 	nop
+
+0000000000002048 <pass>:
+    2048:	0000012f 	fence
+    204c:	08000413 	li	ra,1
+    2050:	078201fb 	mtpcr	zero,ra,cr30
+    2054:	00000063 	b	2054 <pass+0xc>
+    2058:	00000013 	nop
+    205c:	00000013 	nop

@@ -1,0 +1,15 @@
+
+riscv_example:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000002000 <_start>:
+    2000:	0000012f 	fence
+    2004:	08000413 	li	ra,1
+    2008:	078201fb 	mtpcr	zero,ra,cr30
+    200c:	00000063 	b	200c <_start+0xc>
+    2010:	00000013 	nop
+    2014:	00000013 	nop
+    2018:	00000013 	nop
+    201c:	00000013 	nop

@@ -1,0 +1,305 @@
+# Benchmark "multi_consumer" written by ABC on Mon Jun 23 12:26:44 2014
+.model multi_consumer
+.inputs top^clock top^rst top^d_in~0 top^d_in~1 top^d_in~2 top^d_in~3 \
+ top^d_in~4 top^d_in~5 top^d_in~6 top^d_in~7 top^d_in~8 top^d_in~9 \
+ top^d_in~10 top^d_in~11 top^d_in~12 top^d_in~13 top^d_in~14 top^d_in~15
+.outputs top^d_out_1~0 top^d_out_1~1 top^d_out_1~2 top^d_out_1~3 \
+ top^d_out_1~4 top^d_out_1~5 top^d_out_1~6 top^d_out_1~7 top^d_out_1~8 \
+ top^d_out_1~9 top^d_out_1~10 top^d_out_1~11 top^d_out_1~12 top^d_out_1~13 \
+ top^d_out_1~14 top^d_out_1~15 top^d_out_2~0 top^d_out_2~1 top^d_out_2~2 \
+ top^d_out_2~3 top^d_out_2~4 top^d_out_2~5 top^d_out_2~6 top^d_out_2~7 \
+ top^d_out_2~8 top^d_out_2~9 top^d_out_2~10 top^d_out_2~11 top^d_out_2~12 \
+ top^d_out_2~13 top^d_out_2~14 top^d_out_2~15 top^d_out_4~0 top^d_out_4~1 \
+ top^d_out_4~2 top^d_out_4~3 top^d_out_4~4 top^d_out_4~5 top^d_out_4~6 \
+ top^d_out_4~7 top^d_out_4~8 top^d_out_4~9 top^d_out_4~10 top^d_out_4~11 \
+ top^d_out_4~12 top^d_out_4~13 top^d_out_4~14 top^d_out_4~15 top^d_out_7~0 \
+ top^d_out_7~1 top^d_out_7~2 top^d_out_7~3 top^d_out_7~4 top^d_out_7~5 \
+ top^d_out_7~6 top^d_out_7~7 top^d_out_7~8 top^d_out_7~9 top^d_out_7~10 \
+ top^d_out_7~11 top^d_out_7~12 top^d_out_7~13 top^d_out_7~14 top^d_out_7~15
+.names top^d_in~0 top^d_in~1 top^d_out_1~1
+01 1
+10 1
+.names top^d_in~2 top^d_in~0 top^d_in~1 top^d_out_1~2
+011 1
+10- 1
+1-0 1
+.names top^d_in~2 top^d_in~3 top^d_in~0 top^d_in~1 top^d_out_1~3
+01-- 1
+1011 1
+-10- 1
+-1-0 1
+.names top^d_in~2 top^d_in~3 top^d_in~4 top^d_out_4~4
+0-1 1
+110 1
+-01 1
+.names top^d_in~2 top^d_in~3 top^d_in~4 top^d_in~5 top^d_out_4~5
+0--1 1
+1110 1
+-0-1 1
+--01 1
+.names top^d_in~2 top^d_in~3 top^d_in~4 top^d_in~5 n91
+1111 1
+.names top^d_in~6 n91 n93
+11 1
+.names top^d_in~6 top^d_in~7 top^d_in~8 n91 top^d_out_4~8
+0-1- 1
+1101 1
+-01- 1
+--10 1
+.names top^d_in~6 top^d_in~7 top^d_in~8 n91 n97
+1111 1
+.names top^d_in~9 n97 n99
+11 1
+.names top^d_in~10 top^d_in~9 n97 n101
+111 1
+.names top^d_in~10 top^d_in~9 top^d_in~11 n97 n103
+1111 1
+.names top^d_in~12 top^d_in~11 top^d_in~10 n99 n105
+1111 1
+.names top^d_in~12 top^d_in~13 top^d_in~14 n103 top^d_out_4~14
+0-1- 1
+1101 1
+-01- 1
+--10 1
+.names top^d_in~12 top^d_in~13 top^d_in~14 n103 n109
+1111 1
+.names top^d_in~1 top^d_in~2 top^d_out_2~2
+01 1
+10 1
+.names top^d_in~1 top^d_in~2 top^d_in~3 top^d_out_2~3
+0-1 1
+110 1
+-01 1
+.names top^d_in~1 top^d_in~2 top^d_in~3 top^d_in~4 top^d_out_2~4
+0--1 1
+1110 1
+-0-1 1
+--01 1
+.names top^d_in~1 top^d_in~5 n91 n114 top^d_out_2~5
+1-1- 0
+-0-0 0
+.names top^d_in~1 top^d_in~2 top^d_in~3 top^d_in~4 n114
+1111 1
+.names top^d_in~1 top^d_in~6 n91 top^d_out_2~6
+01- 1
+101 1
+-10 1
+.names top^d_in~1 top^d_in~7 top^d_in~6 n91 top^d_out_2~7
+01-- 1
+1011 1
+-10- 1
+-1-0 1
+.names top^d_in~1 top^d_in~7 top^d_in~8 n93 top^d_out_2~8
+0-1- 1
+1101 1
+-01- 1
+--10 1
+.names top^d_in~9 n119 top^d_out_2~9
+01 1
+10 1
+.names top^d_in~1 top^d_in~7 top^d_in~8 n93 n119
+1111 1
+.names top^d_in~1 top^d_in~10 n121 n99 top^d_out_2~10
+11-1 0
+-00- 0
+.names top^d_in~9 n119 n121
+11 1
+.names top^d_in~1 top^d_in~11 top^d_in~10 n99 top^d_out_2~11
+01-- 1
+1011 1
+-10- 1
+-1-0 1
+.names top^d_in~1 top^d_in~11 top^d_in~12 n101 top^d_out_2~12
+0-1- 1
+1101 1
+-01- 1
+--10 1
+.names top^d_in~1 top^d_in~13 top^d_in~12 n103 top^d_out_2~13
+01-- 1
+1011 1
+-10- 1
+-1-0 1
+.names top^d_in~1 top^d_in~13 top^d_in~14 n105 top^d_out_2~14
+0-1- 1
+1101 1
+-01- 1
+--10 1
+.names top^d_in~2 top^d_in~3 top^d_out_4~3
+01 1
+10 1
+.names top^d_in~6 n91 top^d_out_4~6
+01 1
+10 1
+.names top^d_in~7 top^d_in~6 n91 top^d_out_4~7
+011 1
+10- 1
+1-0 1
+.names top^d_in~9 n97 top^d_out_4~9
+01 1
+10 1
+.names top^d_in~10 top^d_in~9 n97 top^d_out_4~10
+011 1
+10- 1
+1-0 1
+.names top^d_in~11 top^d_in~10 top^d_in~9 n97 top^d_out_4~11
+0111 1
+10-- 1
+1-0- 1
+1--0 1
+.names top^d_in~12 top^d_in~11 top^d_in~10 n99 top^d_out_4~12
+0111 1
+10-- 1
+1-0- 1
+1--0 1
+.names top^d_in~13 top^d_in~12 top^d_in~11 n101 top^d_out_4~13
+0111 1
+10-- 1
+1-0- 1
+1--0 1
+.names top^d_in~0 top^d_in~1 top^d_in~2 top^d_in~3 top^d_out_7~3
+0001 1
+1--0 1
+-1-0 1
+--10 1
+.names top^d_in~4 n139 top^d_out_7~4
+01 1
+10 1
+.names top^d_in~0 top^d_in~1 top^d_in~2 top^d_in~3 n139
+000- 0
+---0 0
+.names top^d_in~4 top^d_in~5 n139 top^d_out_7~5
+01- 1
+101 1
+-10 1
+.names top^d_in~4 top^d_in~5 top^d_in~6 n139 top^d_out_7~6
+0-1- 1
+1101 1
+-01- 1
+--10 1
+.names top^d_in~7 n143 top^d_out_7~7
+01 1
+10 1
+.names top^d_in~4 top^d_in~5 top^d_in~6 n139 n143
+1111 1
+.names top^d_in~7 top^d_in~8 n143 top^d_out_7~8
+01- 1
+101 1
+-10 1
+.names top^d_in~7 top^d_in~8 top^d_in~9 n143 top^d_out_7~9
+0-1- 1
+1101 1
+-01- 1
+--10 1
+.names top^d_in~10 n147 top^d_out_7~10
+01 1
+10 1
+.names top^d_in~7 top^d_in~8 top^d_in~9 n143 n147
+1111 1
+.names top^d_in~11 top^d_in~10 n147 top^d_out_7~11
+011 1
+10- 1
+1-0 1
+.names top^d_in~10 top^d_in~11 top^d_in~12 n147 top^d_out_7~12
+0-1- 1
+1101 1
+-01- 1
+--10 1
+.names top^d_in~13 n151 top^d_out_7~13
+01 1
+10 1
+.names top^d_in~10 top^d_in~11 top^d_in~12 n147 n151
+1111 1
+.names top^d_in~13 top^d_in~14 n151 top^d_out_7~14
+01- 1
+101 1
+-10 1
+.names top^d_in~13 top^d_in~14 top^d_in~15 n151 top^d_out_7~15
+0-1- 1
+1101 1
+-01- 1
+--10 1
+.names top^d_in~0 top^d_out_1~0
+0 1
+.names top^d_in~4 top^d_out_4~4 top^d_in~0 top^d_in~1 top^d_out_1~4
+1-0- 1
+1--0 1
+-111 1
+.names top^d_in~5 top^d_out_4~5 top^d_in~0 top^d_in~1 top^d_out_1~5
+1-0- 1
+1--0 1
+-111 1
+.names top^d_in~6 n91 top^d_in~0 top^d_in~1 top^d_out_1~6
+0111 1
+10-- 1
+1-0- 1
+1--0 1
+.names top^d_in~7 n93 top^d_in~0 top^d_in~1 top^d_out_1~7
+0111 1
+10-- 1
+1-0- 1
+1--0 1
+.names top^d_in~8 top^d_out_4~8 top^d_in~0 top^d_in~1 top^d_out_1~8
+1-0- 1
+1--0 1
+-111 1
+.names top^d_in~9 n97 top^d_in~0 top^d_in~1 top^d_out_1~9
+0111 1
+10-- 1
+1-0- 1
+1--0 1
+.names top^d_in~10 n99 top^d_in~0 top^d_in~1 top^d_out_1~10
+0111 1
+10-- 1
+1-0- 1
+1--0 1
+.names top^d_in~11 n101 top^d_in~0 top^d_in~1 top^d_out_1~11
+0111 1
+10-- 1
+1-0- 1
+1--0 1
+.names top^d_in~12 n103 top^d_in~0 top^d_in~1 top^d_out_1~12
+0111 1
+10-- 1
+1-0- 1
+1--0 1
+.names top^d_in~13 n105 top^d_in~0 top^d_in~1 top^d_out_1~13
+0111 1
+10-- 1
+1-0- 1
+1--0 1
+.names top^d_in~14 top^d_out_4~14 top^d_in~0 top^d_in~1 top^d_out_1~14
+1-0- 1
+1--0 1
+-111 1
+.names top^d_in~15 n109 top^d_in~0 top^d_in~1 top^d_out_1~15
+0111 1
+10-- 1
+1-0- 1
+1--0 1
+.names top^d_in~0 top^d_out_2~0
+1 1
+.names top^d_in~1 top^d_out_2~1
+0 1
+.names top^d_in~1 top^d_in~15 n109 top^d_out_2~15
+01- 1
+101 1
+-10 1
+.names top^d_in~0 top^d_out_4~0
+1 1
+.names top^d_in~1 top^d_out_4~1
+1 1
+.names top^d_in~2 top^d_out_4~2
+0 1
+.names top^d_in~15 n109 top^d_out_4~15
+01 1
+10 1
+.names top^d_in~0 top^d_out_7~0
+0 1
+.names top^d_in~0 top^d_in~1 top^d_out_7~1
+00 1
+11 1
+.names top^d_in~0 top^d_in~1 top^d_in~2 top^d_out_7~2
+000 1
+1-1 1
+-11 1
+.end

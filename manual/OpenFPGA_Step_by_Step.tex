@@ -1,0 +1,231 @@
+\documentclass[10pt]{article}
+\setlength\textwidth{6.875in}
+\setlength\textheight{8.875in}
+% set both margins to 2.5 pc
+\setlength{\oddsidemargin}{-0.1875in}% 1 - (8.5 - 6.875)/2
+\setlength{\evensidemargin}{-0.1875in}
+\setlength{\marginparwidth}{0pc}
+\setlength{\marginparsep}{0pc}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\footskip}{37pt}%
+\setlength{\parindent}{1pc}
+\newcommand{\myMargin}{1.00in}
+\usepackage[top=\myMargin, left=\myMargin, right=\myMargin, bottom=\myMargin, nohead]{geometry}
+\usepackage{epsfig,graphicx}
+\usepackage{palatino}
+\usepackage{fancybox}
+\usepackage{listings}
+\lstset{aboveskip=10pt,belowskip=-5pt}
+\usepackage{color}
+\usepackage{hyperref}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,                    % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=csh,                    % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=none,                    % where to put the line-numbers; possible values are (none, left, right)
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=4,                       % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\newenvironment{commentary}
+{ \vspace{-0.1in}
+  \begin{quotation}
+  \noindent
+  \small \em
+  \rule{\linewidth}{1pt}\\
+}
+{
+  \end{quotation}
+}
+
+\title{OpenFPGA Step by Step Guide}
+\author{Hao Jun Liu\\
+EECS Department, UC Berkeley\\
+{\tt  hjliu@eecs.berkeley.edu}
+}
+\date{\today}
+
+\newenvironment{example}{\VerbatimEnvironment\begin{footnotesize}\begin{Verbatim}}{\end{Verbatim}\end{footnotesize}}
+\newcommand{\kode}[1]{\begin{footnotesize}{\tt #1}\end{footnotesize}}
+
+\def\code#1{{\small\tt #1}}
+
+\def\note#1{\noindent{\bf [Note: #1]}}
+%\def\note#1{}
+
+\lstset{frame=, basicstyle={\footnotesize\ttfamily}}
+
+\lstset{frame=}
+
+\begin{document}
+\maketitle{}
+
+\section{Introduction}
+
+This is a step by step guide on compiling and running the OpenFPGA tool flow. If there is any question, please contact
+the author via email.
+
+\section{Checking Out OpenFPGA}
+\begin{lstlisting}[language=csh]
+    svn checkout file:///users/hjliu/ProjSVN/open-fpga-complete
+\end{lstlisting}
+
+\section{Building VTR}
+\begin{lstlisting}[language=csh]
+    cd open-fpga-complete/vtr
+    make
+\end{lstlisting}
+
+\noindent
+From this point on, we reference all directories relative to the project directory (open-fpga-complete).
+\newline
+
+\section{Create an FPGA Architecture}
+
+In this section, we will create a new FPGA architecture that is different from those that come with the project.
+The FPGA we are going to create is an 8 by 8 tile, 6-input LUT, 4-LUT clustered CLB. It has 96 interconnects 
+in each direction. Let's name the fpga configuration vpr\_6\_4\_10\_10\_96\_8\_8.xml. The naming convention is:
+
+
+\begin{lstlisting}[language=csh]
+    vpr_{LUT SIZE}_{CLB SIZE}_{IPIN W}_{CHANXY W}_{INTERCONNECTS}_x{X SIZE}_y{Y SIZE}.xml 
+\end{lstlisting}  
+
+\noindent    
+The naming convection has to be kept as tools use it to derive variables. IPIN W and CHANXY W are informational only.
+The tools do not need them. In order for the existing flow to work, INTERCONNECTS has to be an integer multiple of 8.
+
+\begin{lstlisting}[language=csh]
+    cd vtr/vtr_flow/arch/timing
+    cp vpr_6_10_16_16_160_x5_y5.xml vpr_6_4_10_10_96_x8_y8.xml
+\end{lstlisting}
+
+\noindent
+There are a few lines to be modified. Here are them:
+
+\begin{lstlisting}[language=xml]
+    L10: <layout width="8" height="8"/>
+    L15: <area grid_logic_tile_area="8000"/>
+    L85: <input name="I" num_pins="15" equivalent="true"/>
+    L86: <output name="O" num_pins="4" equivalent="false"/>
+    L90: <pb_type name="ble" num_pb="4">
+    L134: <complete name="crossbar" input="clb.I ble[3:0].out" output="ble[3:0].in">
+    L135: <delay_constant max="4.000000e-11" in_port="clb.I" out_port="ble[3:0].in" />
+    L136: <delay_constant max="4.000000e-11" in_port="ble[3:0].out" out_port="ble[3:0].in" />
+    L138: <complete name="clks" input="clb.clk" output="ble[3:0].clk">
+    L140: <direct name="clbouts" input="ble[3:0].out" output="clb.O">
+\end{lstlisting}
+
+\section{Create a New Test Circuit}
+
+We create a new circuit in this case, a decremental counter with a width of 16. Let name this dcounter.v.
+We also need to create testbench and fpga testbench wrappers.
+
+\begin{lstlisting}[language=csh]
+    mkdir dcounter
+    cp counter/counter_tb.v dcounter/dcounter_tb.v
+    cp counter/counter.v dcounter/dcounter.v
+    cp counter/fpga_wrapper.v dcounter/fpga_wrapper.v
+    cp counter/run.sh dcounter/run.sh
+    cp counter/counter_fpga_tb.v cp dcounter/dcounter_fpga_tb.v
+    ln -s dcounter/dcounter.v dcounter.v
+\end{lstlisting}
+
+\noindent
+Edit dcounter.v, dcounter\_tb.v and run.sh. Now simulate the dcounter with vsim.
+
+\begin{lstlisting}[language=csh]
+    vlib work
+    vlog dcounter_tb.v dcounter.v
+    ./run.sh > run.log
+\end{lstlisting}
+
+\noindent
+Check run.log to make sure it is functional correct.
+
+\noindent
+Use the counter circuit as an example; edit dcounter\_fpga\_tb.v and fpga\_wrapper.v
+
+\section{Run VTR Flow}
+
+Edit the VTR config file and run test circuit.
+
+\begin{lstlisting}[language=csh]
+    cd vtr/vtr_flow/tasks/func_test_circuit/config
+    vim config.txt
+    cd vtr/vtr_flow/scripts
+    ./open_fpga_run_vtr_task.pl func_test_circuit
+\end{lstlisting}
+
+\noindent
+All circuits in different FPGA architectures should run OK.
+
+\section{Create Test Dirs}
+
+\begin{lstlisting}[language=csh]
+    cd full-fpga-testing
+    mkdir custom_ms
+    cd custom_ms
+    mkdir dcounter counter ff_en multi_consumer simple_comp single_inv single_inv_reg src wide_inv wide_inv_reg
+    cd src
+    ln -s ../../../archipelago/verilog/tools/cm_sp.v cm_sp.v
+\end{lstlisting}
+
+\section{Run OpenFPGA}
+
+Create Directory Strcuture and run the flow.
+
+\begin{lstlisting}[language=csh]
+    cd vtr/vtr_flow/tools
+    mkdir fpgaGen-vpr_6_4_10_10_96_x8_y8
+    ../create_simlink.sh
+    cp ../fpgaGen-vpr_6_10_16_16_160_x5_y5/*sh .
+    rm -f temp.sh
+    mv run_5_5_bs.sh run_8_8_bs.sh
+    mv run_5_5.sh run_8_8.sh
+\end{lstlisting}
+
+\noindent
+Edit shell scripts for the architecture. Teh run\_8\_8.sh is an important one. You need to put the right parameters
+and directories as arguments to the Open FPGA tools.
+The -{}-configs-en argument in the *\_bs.sh can be updated after you run the flow.
+You can get the configuration depth after the flow. After the update, run the vtr flow first and then this flow again.
+
+\begin{lstlisting}[language=csh]
+    ./run_all.sh
+    vim run_8_8_bs.sh
+    ./run_all.sh
+\end{lstlisting}
+
+\section{Test Bitstreams on FPGA}
+
+\begin{lstlisting}[language=csh]
+    full-fpga-testing/custom_ms/dcounter
+    vlib work; compile.sh
+    run.sh
+\end{lstlisting}
+
+\end{document}

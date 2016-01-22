@@ -1,0 +1,8 @@
+add wave {sim:/single_inv_tb/dut/fpag_dut/wire_1220}
+add wave {sim:/single_inv_tb/dut/fpag_dut/wire_1906}
+add wave {sim:/single_inv_tb/dut/fpag_dut/wire_2464}
+add wave {sim:/single_inv_tb/dut/fpag_dut/wire_1955}
+add wave {sim:/single_inv_tb/dut/fpag_dut/wire_1265}
+add wave {sim:/single_inv_tb/dut/fpag_dut/wire_1988}
+add wave {sim:/single_inv_tb/dut/fpag_dut/wire_2459}
+add wave {sim:/single_inv_tb/dut/fpag_dut/wire_1895}

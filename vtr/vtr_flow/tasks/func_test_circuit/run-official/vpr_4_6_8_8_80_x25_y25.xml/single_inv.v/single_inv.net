@@ -1,0 +1,113 @@
+<block name="single_inv.net" instance="FPGA_packed_netlist[0]">
+	<inputs>
+		top^d_in 
+	</inputs>
+
+	<outputs>
+		out:top^d_out 
+	</outputs>
+
+	<clocks>
+		
+	</clocks>
+
+	<block name="out:top^d_out" instance="io[0]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_out" instance="clb[1]" mode="clb">
+		<inputs>
+			<port name="I">open open open open open open open open open open open open open open top^d_in </port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open ble[5].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="open" instance="ble[0]"/>
+		<block name="open" instance="ble[1]"/>
+		<block name="open" instance="ble[2]"/>
+		<block name="open" instance="ble[3]"/>
+		<block name="open" instance="ble[4]"/>
+		<block name="top^d_out" instance="ble[5]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[14]->crossbar  open open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  open open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  open open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  open open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_in" instance="io[2]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+</block>
+

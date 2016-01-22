@@ -1,0 +1,99 @@
+
+riscv-v1_sw:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00002000 <_start>:
+    2000:	0800017b 	mfpcr	ra,cr0
+    2004:	087dff93 	and	ra,ra,-129
+    2008:	000201fb 	mtpcr	zero,ra,cr0
+    200c:	d8000013 	li	s7,0
+
+00002010 <stats>:
+    2010:	02b601fb 	mtpcr	zero,s7,cr10
+    2014:	00000013 	nop
+    2018:	00000013 	nop
+    201c:	00000013 	nop
+    2020:	00000013 	nop
+    2024:	0803c013 	li	ra,240
+    2028:	1003fc13 	li	v0,255
+    202c:	00440123 	sw	v0,0(ra)
+    2030:	18400103 	lw	v1,0(ra)
+    2034:	00c548e3 	bne	v1,v0,20d8 <fail>
+    2038:	101fc013 	li	v0,2032
+    203c:	00441123 	sw	v0,4(ra)
+    2040:	18401103 	lw	v1,4(ra)
+    2044:	00c528e3 	bne	v1,v0,20d8 <fail>
+    2048:	103fc013 	li	v0,-16
+    204c:	00442123 	sw	v0,8(ra)
+    2050:	18402103 	lw	v1,8(ra)
+    2054:	00c508e3 	bne	v1,v0,20d8 <fail>
+    2058:	101c3c13 	li	v0,1807
+    205c:	00443123 	sw	v0,12(ra)
+    2060:	18403103 	lw	v1,12(ra)
+    2064:	00c4e8e3 	bne	v1,v0,20d8 <fail>
+    2068:	08043013 	li	ra,268
+    206c:	1003fc13 	li	v0,255
+    2070:	f845d123 	sw	v0,-12(ra)
+    2074:	187fd103 	lw	v1,-12(ra)
+    2078:	00c4c0e3 	bne	v1,v0,20d8 <fail>
+    207c:	101fc013 	li	v0,2032
+    2080:	f845e123 	sw	v0,-8(ra)
+    2084:	187fe103 	lw	v1,-8(ra)
+    2088:	00c4a0e3 	bne	v1,v0,20d8 <fail>
+    208c:	103fc013 	li	v0,-16
+    2090:	f845f123 	sw	v0,-4(ra)
+    2094:	187ff103 	lw	v1,-4(ra)
+    2098:	00c480e3 	bne	v1,v0,20d8 <fail>
+    209c:	101c3c13 	li	v0,1807
+    20a0:	00440123 	sw	v0,0(ra)
+    20a4:	18400103 	lw	v1,0(ra)
+    20a8:	00c460e3 	bne	v1,v0,20d8 <fail>
+    20ac:	dec00413 	add	s7,s7,1
+    20b0:	d0000813 	li	s6,2
+    20b4:	fef4b8e3 	bne	s7,s6,2010 <stats>
+    20b8:	d0000013 	li	s6,0
+    20bc:	02b401fb 	mtpcr	zero,s6,cr10
+    20c0:	00000013 	nop
+    20c4:	00000013 	nop
+    20c8:	00000013 	nop
+    20cc:	00000013 	nop
+    20d0:	08000413 	li	ra,1
+    20d4:	000220e3 	bne	zero,ra,20e4 <pass>
+
+000020d8 <fail>:
+    20d8:	08000813 	li	ra,2
+    20dc:	078201fb 	mtpcr	zero,ra,cr30
+    20e0:	00000063 	b	20e0 <fail+0x8>
+
+000020e4 <pass>:
+    20e4:	078201fb 	mtpcr	zero,ra,cr30
+    20e8:	00000063 	b	20e8 <pass+0x4>
+    20ec:	00000013 	nop
+
+Disassembly of section .data:
+
+000020f0 <tdat>:
+    20f0:	deadbeef 	jal	ff7ad7ea <_end+0xff7ab6da>
+
+000020f4 <tdat2>:
+    20f4:	deadbeef 	jal	ff7ad7ee <_end+0xff7ab6de>
+
+000020f8 <tdat3>:
+    20f8:	deadbeef 	jal	ff7ad7f2 <_end+0xff7ab6e2>
+
+000020fc <tdat4>:
+    20fc:	deadbeef 	jal	ff7ad7f6 <_end+0xff7ab6e6>
+
+00002100 <tdat5>:
+    2100:	deadbeef 	jal	ff7ad7fa <_end+0xff7ab6ea>
+
+00002104 <tdat6>:
+    2104:	deadbeef 	jal	ff7ad7fe <_end+0xff7ab6ee>
+
+00002108 <tdat7>:
+    2108:	deadbeef 	jal	ff7ad802 <_end+0xff7ab6f2>
+
+0000210c <tdat8>:
+    210c:	deadbeef 	jal	ff7ad806 <_end+0xff7ab6f6>

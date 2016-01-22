@@ -1,0 +1,154 @@
+\section{Look Up Table (LUT)}
+\label{sec:lut}
+
+A Look Up Table (LUT) implements combinational functions. The function
+is programmed with configuration bits. It has two input signals, config\_in and config\_sel.
+It has one output signal lut\_out. The width of the config\_sel has to be equal or more than two. Config\_in's 
+width is two to the power of the width of config\_sel. For example, a 4-input 1-output LUT 
+can implement any combinational circuit with four variables and one output and has 16 Bits
+wide config\_in. Fig. \ref{fig:lut_illu}.(a) illustrates a 4-input 1-output 
+LUT that implements $out=(a \oplus b) \land (\lnot c \lor d)$. \par
+
+A LUT with 4-input, 5-input and 6-input provides the best area-delay product. \cite{1281800}
+A 6-input LUT can be splitted into two 5-input LUTs to implement two different 5-input functions provided the two
+functions' inputs are same. This only adds an overhead of one MUX. This scheme is illustrated in Fig. \ref{fig:lut_illu}(c). \par
+
+\begin{figure}[htp]
+	\begin{center}
+		\renewcommand{\captionfont}{\small}
+		\subfigure[4-input 1-output LUT Function 1]{
+			\epsfxsize=2.5in \epsfbox{4-input-lut-func-1.eps}}
+		\subfigure[4-input 1-output LUT Function 2]{
+			\epsfxsize=2.5in \epsfbox{4-input-lut-func-2.eps}}
+		
+		\vspace{0.5cm}
+			
+		\subfigure[6-input fractured LUT]{
+			\epsfxsize=3.5in \epsfbox{lut_frac.eps}}
+		\caption{LUT Illustrated}
+		\label{fig:lut_illu}
+	\end{center}
+\end{figure}
+
+\section{Basic Logic Element (BLE)}
+\label{sec:ble}
+
+A pure combinational circuit is not as interesting as a computing machine with storage. A Flip Flop (FF) is a
+clock edge triggered storage element. In our design, each BLE has a LUT and a FF. The FF can be bypassed, so
+the output from the LUT is connected directly to the output of the BLE. (Fig.~\ref{fig:ble_illu}) Below is the code that implements
+a BLE with a 6-input LUT and one FF. \par
+
+\clearpage
+
+\begin{scala}
+class lut6 extends Component {                     
+  val io = new Bundle {                            
+    val lut_in = Bits(INPUT, 6)                    
+    val lut_out = Bits(OUTPUT, 1)                  
+    val lut_configs = Bits(INPUT, 64)              
+    val mux_configs = Bits(INPUT, 1)               
+    val ff_en = Bool(INPUT)                        
+  }                                                
+                                                   
+  val lut6_o = io.lut_configs(io.lut_in)           
+                                                   
+  // declare one posedge flip-flops                
+  val ff1 = Reg(resetVal = Bits("b0", 1))          
+                                                   
+  // ff_en is disabled while programming           
+  when (io.ff_en) {                                
+    ff1 := lut6_o                                  
+  }                                                
+                                                   
+  io.lut_out := Cat(ff1, lut6_o)(io.mux_configs(0))
+}                                                  
+\end{scala}
+
+The following code implements a BLE with a fracturable 6-input LUT and two FFs. It is not yet supported
+in the tool flow (Bitstream Generation Phase) but is shown to demonstrate our work is designed to be expandable
+at the hardware level. \par
+
+\begin{scala}
+// This is a 6-input fracturable lut with two outputs and two FFs                              
+class lut6s extends Component {                                                               
+  val io = new Bundle {                                                                       
+    val lut_in  = Bits(INPUT, 6)                                                              
+    val lut_out = Bits(OUTPUT, 2)                                                             
+    val lut_configs = Bits(INPUT, 64)                                                         
+    val mux_configs = Bits(INPUT, 3)                                                          
+    val ff_en = Bool(INPUT)                                                                   
+  }                                                                                           
+                                                                                              
+  // assign lut5 outputs from lut_config and lut input                                        
+  val lut5_o0 = io.lut_configs(Cat(Bits(0), io.lut_in(4, 0)))                                 
+  val lut5_o1 = io.lut_configs(Cat(Bits(1), io.lut_in(4, 0)))                                 
+                                                                                              
+  // assign lut6 outputs                                                                      
+  val lut6_o = Cat(lut5_o1, lut5_o0)(io.lut_in(5))                                            
+                                                                                              
+  // declare two posedge flip-flops                                                           
+  val ff1 = Reg(resetVal = Bits("b0", 1))                                                     
+  val ff2 = Reg(resetVal = Bits("b0", 1))                                                     
+                                                                                              
+  // mux to select between lut5o0 and lut6                                                    
+  val ff1_in = Cat(lut6_o, lut5_o0)(io.mux_configs(0))                                        
+                                                                                              
+  // ff_en is disabled while programming                                                      
+  when (io.ff_en) {                                                                           
+    ff1 := ff1_in                                                                             
+    ff2 := lut5_o1                                                                            
+  }                                                                                           
+                                                                                              
+  io.lut_out := Cat(Cat(ff2, lut5_o1)(io.mux_configs(2)), Cat(ff1, ff1_in)(io.mux_configs(1)))
+}           
+\end{scala}
+
+\begin{figure}[htp]
+	\begin{center}
+		\renewcommand{\captionfont}{\small}
+		\subfigure[6-input fractured LUT]{
+			\epsfxsize=2.8in \epsfbox{lut_one_out.eps}}
+		\subfigure[6-input LUT]{
+			\epsfxsize=2.8in \epsfbox{lut_two_out.eps}}
+		\caption{BLE Illustrated}
+		\label{fig:ble_illu}
+	\end{center}
+\end{figure}
+
+\section{Configurable Logic Block (CLB)}
+\label{sec:clb}
+
+Several BLEs clustered into a block is a CLB. (Fig.~\ref{fig:clb}) Previous studies has shown
+a CLB with three to ten BLEs has the best area-delay product. \cite{1281800} Input to the CLBs
+is the output of a crossbar switch to be described in Section \ref{sec:xbar}. \par
+
+%\begin{wrapfigure}{r}{0.4\textwidth}
+\begin{figure}[tbp]
+	\begin{center}
+		\epsfxsize=0.38\textwidth
+		\epsfbox{clb.eps}
+		    \renewcommand{\captionfont}{\small}
+				\caption{CLB Illustrated
+				\label{fig:clb}}
+	\end{center}
+\end{figure}
+%\end{wrapfigure}
+
+\section{Crossbar Switch (XBAR)}
+\label{sec:xbar}
+The crossbar switch provides routing support inside a CLB. The input to the crossbar switch is output of the connection box
+and output of the CLB. It is a fully connected routing paradigm that is implemented using a MUXs Tree for each output signal. The implementation
+is clean as it is a very regular structure. \par
+
+\section{Inside A LUT Tile}
+\label{sec:pit-lut-tile}
+A LUT Tile contains a CLB, an XBAR, a CB and a SB. It also contains a configuration memory for controlling all the components. Details
+on the configuration architecture are documented in Chapter ~\ref{chap:reconfig}. Fig.\ref{fig:inside_tiles}.(b) illustrates all the components. \par
+
+\section{Inside an IO Tile}
+\label{sec:pit-io-tile}
+
+The IO Tile is simple. In this work, we assume input and output of an IO Tile only originates inside a chip, so no special drivers need to be
+in place. It has no CLB and no XBAR, but only a CB and a SB. Configuration memory are also necessary. Detail
+on the configuration architecture is documented in Chapter ~\ref{chap:reconfig}. Fig.\ref{fig:inside_tiles}.(a) illustrates all the components. \par
+

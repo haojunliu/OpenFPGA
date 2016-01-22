@@ -1,0 +1,408 @@
+.model wide_inv_reg
+.inputs top^clock top^rst top^d_in~0 top^d_in~1 top^d_in~2 top^d_in~3 \
+ top^d_in~4 top^d_in~5 top^d_in~6 top^d_in~7 top^d_in~8 top^d_in~9 top^d_in~10 \
+ top^d_in~11 top^d_in~12 top^d_in~13 top^d_in~14 top^d_in~15 top^d_in~16 \
+ top^d_in~17 top^d_in~18 top^d_in~19 top^d_in~20 top^d_in~21 top^d_in~22 \
+ top^d_in~23 top^d_in~24 top^d_in~25 top^d_in~26 top^d_in~27 top^d_in~28 \
+ top^d_in~29 top^d_in~30 top^d_in~31
+.outputs top^d_out~0 top^d_out~1 top^d_out~2 top^d_out~3 top^d_out~4\
+ top^d_out~5 top^d_out~6 top^d_out~7 top^d_out~8 top^d_out~9 top^d_out~10\
+ top^d_out~11 top^d_out~12 top^d_out~13 top^d_out~14 top^d_out~15 top^d_out~16\
+ top^d_out~17 top^d_out~18 top^d_out~19 top^d_out~20 top^d_out~21 top^d_out~22\
+ top^d_out~23 top^d_out~24 top^d_out~25 top^d_out~26 top^d_out~27 top^d_out~28\
+ top^d_out~29 top^d_out~30 top^d_out~31
+
+.names gnd
+.names unconn
+.names vcc
+1
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~99 top^MULTI_PORT_MUX~0^MUX_2~67
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~67 top^FF_NODE~3 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~100 top^MULTI_PORT_MUX~0^MUX_2~68
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~68 top^FF_NODE~4 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~101 top^MULTI_PORT_MUX~0^MUX_2~79
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~79 top^FF_NODE~15 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~102 top^MULTI_PORT_MUX~0^MUX_2~90
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~90 top^FF_NODE~26 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~103 top^MULTI_PORT_MUX~0^MUX_2~93
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~93 top^FF_NODE~29 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~104 top^MULTI_PORT_MUX~0^MUX_2~94
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~94 top^FF_NODE~30 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~105 top^MULTI_PORT_MUX~0^MUX_2~95
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~95 top^FF_NODE~31 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~106 top^MULTI_PORT_MUX~0^MUX_2~96
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~96 top^FF_NODE~32 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~107 top^MULTI_PORT_MUX~0^MUX_2~97
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~97 top^FF_NODE~33 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~108 top^MULTI_PORT_MUX~0^MUX_2~98
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~98 top^FF_NODE~34 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~109 top^MULTI_PORT_MUX~0^MUX_2~69
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~69 top^FF_NODE~5 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~110 top^MULTI_PORT_MUX~0^MUX_2~70
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~70 top^FF_NODE~6 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~111 top^MULTI_PORT_MUX~0^MUX_2~71
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~71 top^FF_NODE~7 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~112 top^MULTI_PORT_MUX~0^MUX_2~72
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~72 top^FF_NODE~8 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~113 top^MULTI_PORT_MUX~0^MUX_2~73
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~73 top^FF_NODE~9 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~114 top^MULTI_PORT_MUX~0^MUX_2~74
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~74 top^FF_NODE~10 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~115 top^MULTI_PORT_MUX~0^MUX_2~75
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~75 top^FF_NODE~11 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~116 top^MULTI_PORT_MUX~0^MUX_2~76
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~76 top^FF_NODE~12 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~117 top^MULTI_PORT_MUX~0^MUX_2~77
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~77 top^FF_NODE~13 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~118 top^MULTI_PORT_MUX~0^MUX_2~78
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~78 top^FF_NODE~14 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~119 top^MULTI_PORT_MUX~0^MUX_2~80
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~80 top^FF_NODE~16 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~120 top^MULTI_PORT_MUX~0^MUX_2~81
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~81 top^FF_NODE~17 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~121 top^MULTI_PORT_MUX~0^MUX_2~82
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~82 top^FF_NODE~18 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~122 top^MULTI_PORT_MUX~0^MUX_2~83
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~83 top^FF_NODE~19 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~123 top^MULTI_PORT_MUX~0^MUX_2~84
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~84 top^FF_NODE~20 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~124 top^MULTI_PORT_MUX~0^MUX_2~85
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~85 top^FF_NODE~21 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~125 top^MULTI_PORT_MUX~0^MUX_2~86
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~86 top^FF_NODE~22 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~126 top^MULTI_PORT_MUX~0^MUX_2~87
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~87 top^FF_NODE~23 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~127 top^MULTI_PORT_MUX~0^MUX_2~88
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~88 top^FF_NODE~24 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~128 top^MULTI_PORT_MUX~0^MUX_2~89
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~89 top^FF_NODE~25 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~129 top^MULTI_PORT_MUX~0^MUX_2~91
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~91 top^FF_NODE~27 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~130 top^MULTI_PORT_MUX~0^MUX_2~92
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~92 top^FF_NODE~28 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1
+0 1
+
+.names top^d_in~0 top^BITWISE_NOT~2^LOGICAL_NOT~99
+0 1
+
+.names top^d_in~1 top^BITWISE_NOT~2^LOGICAL_NOT~100
+0 1
+
+.names top^d_in~2 top^BITWISE_NOT~2^LOGICAL_NOT~101
+0 1
+
+.names top^d_in~3 top^BITWISE_NOT~2^LOGICAL_NOT~102
+0 1
+
+.names top^d_in~4 top^BITWISE_NOT~2^LOGICAL_NOT~103
+0 1
+
+.names top^d_in~5 top^BITWISE_NOT~2^LOGICAL_NOT~104
+0 1
+
+.names top^d_in~6 top^BITWISE_NOT~2^LOGICAL_NOT~105
+0 1
+
+.names top^d_in~7 top^BITWISE_NOT~2^LOGICAL_NOT~106
+0 1
+
+.names top^d_in~8 top^BITWISE_NOT~2^LOGICAL_NOT~107
+0 1
+
+.names top^d_in~9 top^BITWISE_NOT~2^LOGICAL_NOT~108
+0 1
+
+.names top^d_in~10 top^BITWISE_NOT~2^LOGICAL_NOT~109
+0 1
+
+.names top^d_in~11 top^BITWISE_NOT~2^LOGICAL_NOT~110
+0 1
+
+.names top^d_in~12 top^BITWISE_NOT~2^LOGICAL_NOT~111
+0 1
+
+.names top^d_in~13 top^BITWISE_NOT~2^LOGICAL_NOT~112
+0 1
+
+.names top^d_in~14 top^BITWISE_NOT~2^LOGICAL_NOT~113
+0 1
+
+.names top^d_in~15 top^BITWISE_NOT~2^LOGICAL_NOT~114
+0 1
+
+.names top^d_in~16 top^BITWISE_NOT~2^LOGICAL_NOT~115
+0 1
+
+.names top^d_in~17 top^BITWISE_NOT~2^LOGICAL_NOT~116
+0 1
+
+.names top^d_in~18 top^BITWISE_NOT~2^LOGICAL_NOT~117
+0 1
+
+.names top^d_in~19 top^BITWISE_NOT~2^LOGICAL_NOT~118
+0 1
+
+.names top^d_in~20 top^BITWISE_NOT~2^LOGICAL_NOT~119
+0 1
+
+.names top^d_in~21 top^BITWISE_NOT~2^LOGICAL_NOT~120
+0 1
+
+.names top^d_in~22 top^BITWISE_NOT~2^LOGICAL_NOT~121
+0 1
+
+.names top^d_in~23 top^BITWISE_NOT~2^LOGICAL_NOT~122
+0 1
+
+.names top^d_in~24 top^BITWISE_NOT~2^LOGICAL_NOT~123
+0 1
+
+.names top^d_in~25 top^BITWISE_NOT~2^LOGICAL_NOT~124
+0 1
+
+.names top^d_in~26 top^BITWISE_NOT~2^LOGICAL_NOT~125
+0 1
+
+.names top^d_in~27 top^BITWISE_NOT~2^LOGICAL_NOT~126
+0 1
+
+.names top^d_in~28 top^BITWISE_NOT~2^LOGICAL_NOT~127
+0 1
+
+.names top^d_in~29 top^BITWISE_NOT~2^LOGICAL_NOT~128
+0 1
+
+.names top^d_in~30 top^BITWISE_NOT~2^LOGICAL_NOT~129
+0 1
+
+.names top^d_in~31 top^BITWISE_NOT~2^LOGICAL_NOT~130
+0 1
+
+.names top^FF_NODE~3 top^d_out~0
+1 1
+
+.names top^FF_NODE~4 top^d_out~1
+1 1
+
+.names top^FF_NODE~15 top^d_out~2
+1 1
+
+.names top^FF_NODE~26 top^d_out~3
+1 1
+
+.names top^FF_NODE~29 top^d_out~4
+1 1
+
+.names top^FF_NODE~30 top^d_out~5
+1 1
+
+.names top^FF_NODE~31 top^d_out~6
+1 1
+
+.names top^FF_NODE~32 top^d_out~7
+1 1
+
+.names top^FF_NODE~33 top^d_out~8
+1 1
+
+.names top^FF_NODE~34 top^d_out~9
+1 1
+
+.names top^FF_NODE~5 top^d_out~10
+1 1
+
+.names top^FF_NODE~6 top^d_out~11
+1 1
+
+.names top^FF_NODE~7 top^d_out~12
+1 1
+
+.names top^FF_NODE~8 top^d_out~13
+1 1
+
+.names top^FF_NODE~9 top^d_out~14
+1 1
+
+.names top^FF_NODE~10 top^d_out~15
+1 1
+
+.names top^FF_NODE~11 top^d_out~16
+1 1
+
+.names top^FF_NODE~12 top^d_out~17
+1 1
+
+.names top^FF_NODE~13 top^d_out~18
+1 1
+
+.names top^FF_NODE~14 top^d_out~19
+1 1
+
+.names top^FF_NODE~16 top^d_out~20
+1 1
+
+.names top^FF_NODE~17 top^d_out~21
+1 1
+
+.names top^FF_NODE~18 top^d_out~22
+1 1
+
+.names top^FF_NODE~19 top^d_out~23
+1 1
+
+.names top^FF_NODE~20 top^d_out~24
+1 1
+
+.names top^FF_NODE~21 top^d_out~25
+1 1
+
+.names top^FF_NODE~22 top^d_out~26
+1 1
+
+.names top^FF_NODE~23 top^d_out~27
+1 1
+
+.names top^FF_NODE~24 top^d_out~28
+1 1
+
+.names top^FF_NODE~25 top^d_out~29
+1 1
+
+.names top^FF_NODE~27 top^d_out~30
+1 1
+
+.names top^FF_NODE~28 top^d_out~31
+1 1
+
+.end
+

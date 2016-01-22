@@ -1,0 +1,2835 @@
+4_4_8_8_80
+  Critical Path Length:          0.48
+  Noncombinational Area:  1479.959989
+  Cell Area:              3814.200035
+lut_tile                                  0.966    1.535 1.18e+05    2.619 100.0
+4_4_8_8_120
+  Critical Path Length:          0.49
+  Noncombinational Area:  1781.999987
+  Cell Area:              4514.040041
+lut_tile                                  1.117    1.719 1.21e+05    2.957 100.0
+4_4_8_8_160
+  Critical Path Length:          0.48
+  Noncombinational Area:  2085.119985
+  Cell Area:              5244.840047
+lut_tile                                  1.301    1.913 1.30e+05    3.344 100.0
+4_4_8_12_80
+  Critical Path Length:          0.47
+  Noncombinational Area:  1681.199987
+  Cell Area:              4426.560059
+lut_tile                                  1.086    1.622 1.17e+05    2.825 100.0
+4_4_8_12_120
+  Critical Path Length:          0.48
+  Noncombinational Area:  2082.959984
+  Cell Area:              5433.840076
+lut_tile                                  1.316    1.794 1.22e+05    3.231 100.0
+4_4_8_12_160
+  Critical Path Length:          0.49
+  Noncombinational Area:  2487.599981
+  Cell Area:              6449.760095
+lut_tile                                  1.585    2.031 1.31e+05    3.747 100.0
+4_4_8_16_80
+  Critical Path Length:          0.48
+  Noncombinational Area:  1682.639988
+  Cell Area:              4993.200071
+lut_tile                                  1.240    1.746 1.25e+05    3.111 100.0
+4_4_8_16_120
+  Critical Path Length:          0.48
+  Noncombinational Area:  2084.759984
+  Cell Area:              6236.280096
+lut_tile                                  1.518    1.995 1.32e+05    3.646 100.0
+4_4_8_16_160
+  Critical Path Length:          0.48
+  Noncombinational Area:  2488.679982
+  Cell Area:              7506.000120
+lut_tile                                  1.823    2.218 1.44e+05    4.185 100.0
+4_4_12_8_80
+  Critical Path Length:          0.46
+  Noncombinational Area:  1532.519989
+  Cell Area:              3997.800042
+lut_tile                                  1.008    1.626 1.10e+05    2.745 100.0
+4_4_12_8_120
+  Critical Path Length:          0.47
+  Noncombinational Area:  1837.079986
+  Cell Area:              4746.240048
+lut_tile                                  1.119    1.720 1.25e+05    2.963 100.0
+4_4_12_8_160
+  Critical Path Length:          0.47
+  Noncombinational Area:  2139.839984
+  Cell Area:              5412.960054
+lut_tile                                  1.358    1.965 1.24e+05    3.447 100.0
+4_4_12_12_80
+  Critical Path Length:          0.48
+  Noncombinational Area:  1735.919987
+  Cell Area:              4634.280064
+lut_tile                                  1.149    1.683 1.19e+05    2.950 100.0
+4_4_12_12_120
+  Critical Path Length:          0.47
+  Noncombinational Area:  2140.199984
+  Cell Area:              5627.520085
+lut_tile                                  1.370    1.865 1.23e+05    3.358 100.0
+4_4_12_12_160
+  Critical Path Length:          0.48
+  Noncombinational Area:  2543.039981
+  Cell Area:              6580.440101
+lut_tile                                  1.611    2.072 1.30e+05    3.813 100.0
+4_4_12_16_80
+  Critical Path Length:          0.48
+  Noncombinational Area:  1736.639987
+  Cell Area:              5161.320077
+lut_tile                                  1.247    1.736 1.21e+05    3.103 100.0
+4_4_12_16_120
+  Critical Path Length:          0.48
+  Noncombinational Area:  2140.199984
+  Cell Area:              6463.800101
+lut_tile                                  1.576    2.021 1.37e+05    3.734 100.0
+4_4_12_16_160
+  Critical Path Length:          0.48
+  Noncombinational Area:  2544.479981
+  Cell Area:              7692.480124
+lut_tile                                  1.885    2.282 1.38e+05    4.305 100.0
+4_4_16_8_80
+  Critical Path Length:          0.47
+  Noncombinational Area:  1532.159989
+  Cell Area:              4107.240045
+lut_tile                                  1.031    1.631 1.12e+05    2.774 100.0
+4_4_16_8_120
+  Critical Path Length:          0.47
+  Noncombinational Area:  1838.519986
+  Cell Area:              4806.000049
+lut_tile                                  1.198    1.791 1.11e+05    3.100 100.0
+4_4_16_8_160
+  Critical Path Length:          0.47
+  Noncombinational Area:  2139.479984
+  Cell Area:              5545.800056
+lut_tile                                  1.394    2.042 1.22e+05    3.557 100.0
+4_4_16_12_80
+  Critical Path Length:          0.47
+  Noncombinational Area:  1736.639987
+  Cell Area:              4753.080068
+lut_tile                                  1.212    1.705 1.13e+05    3.029 100.0
+4_4_16_12_120
+  Critical Path Length:          0.47
+  Noncombinational Area:  2139.119984
+  Cell Area:              5756.760086
+lut_tile                                  1.422    1.887 1.19e+05    3.428 100.0
+4_4_16_12_160
+  Critical Path Length:          0.47
+  Noncombinational Area:  2542.319981
+  Cell Area:              6800.400105
+lut_tile                                  1.699    2.137 1.37e+05    3.972 100.0
+4_4_16_16_80
+  Critical Path Length:          0.47
+  Noncombinational Area:  1736.639987
+  Cell Area:              5275.080079
+lut_tile                                  1.317    1.815 1.16e+05    3.249 100.0
+4_4_16_16_120
+  Critical Path Length:          0.47
+  Noncombinational Area:  2140.919984
+  Cell Area:              6595.560105
+lut_tile                                  1.623    2.035 1.36e+05    3.794 100.0
+4_4_16_16_160
+  Critical Path Length:          0.48
+  Noncombinational Area:  2543.399981
+  Cell Area:              7824.240129
+lut_tile                                  1.944    2.303 1.41e+05    4.388 100.0
+4_5_8_8_80
+  Critical Path Length:          0.73
+  Noncombinational Area:  1786.319987
+  Cell Area:              4702.680049
+lut_tile                                  1.346    1.908 1.53e+05    3.407 100.0
+4_5_8_8_120
+  Critical Path Length:          0.72
+  Noncombinational Area:  2087.999985
+  Cell Area:              5468.400056
+lut_tile                                  1.558    2.172 1.71e+05    3.901 100.0
+4_5_8_8_160
+  Critical Path Length:          0.71
+  Noncombinational Area:  2392.559983
+  Cell Area:              6189.120061
+lut_tile                                  1.738    2.365 1.81e+05    4.284 100.0
+4_5_8_12_80
+  Critical Path Length:          0.75
+  Noncombinational Area:  1988.279986
+  Cell Area:              5409.000073
+lut_tile                                  1.576    2.078 1.74e+05    3.828 100.0
+4_5_8_12_120
+  Critical Path Length:          0.74
+  Noncombinational Area:  2389.679982
+  Cell Area:              6387.840091
+lut_tile                                  1.735    2.212 1.69e+05    4.116 100.0
+4_5_8_12_160
+  Critical Path Length:          0.72
+  Noncombinational Area:  2792.159979
+  Cell Area:              7326.000107
+lut_tile                                  1.926    2.391 1.67e+05    4.484 100.0
+4_5_8_16_80
+  Critical Path Length:          0.72
+  Noncombinational Area:  1989.719986
+  Cell Area:              5879.520085
+lut_tile                                  1.584    2.071 1.68e+05    3.823 100.0
+4_5_8_16_120
+  Critical Path Length:          0.71
+  Noncombinational Area:  2391.479983
+  Cell Area:              7133.040110
+lut_tile                                  1.872    2.294 1.72e+05    4.338 100.0
+4_5_8_16_160
+  Critical Path Length:          0.71
+  Noncombinational Area:  2794.679980
+  Cell Area:              8416.800132
+lut_tile                                  2.188    2.617 1.85e+05    4.990 100.0
+4_5_12_8_80
+  Critical Path Length:          0.73
+  Noncombinational Area:  1851.119987
+  Cell Area:              4981.680056
+lut_tile                                  1.440    2.042 1.67e+05    3.648 100.0
+4_5_12_8_120
+  Critical Path Length:          0.74
+  Noncombinational Area:  2152.439984
+  Cell Area:              5689.080063
+lut_tile                                  1.614    2.210 1.70e+05    3.994 100.0
+4_5_12_8_160
+  Critical Path Length:          0.72
+  Noncombinational Area:  2455.919982
+  Cell Area:              6455.520066
+lut_tile                                  1.813    2.473 1.81e+05    4.467 100.0
+4_5_12_12_80
+  Critical Path Length:          0.75
+  Noncombinational Area:  2050.919984
+  Cell Area:              5546.160079
+lut_tile                                  1.540    2.050 1.56e+05    3.747 100.0
+4_5_12_12_120
+  Critical Path Length:          0.73
+  Noncombinational Area:  2455.199982
+  Cell Area:              6561.360098
+lut_tile                                  1.784    2.261 1.65e+05    4.210 100.0
+4_5_12_12_160
+  Critical Path Length:          0.74
+  Noncombinational Area:  2858.039978
+  Cell Area:              7620.480114
+lut_tile                                  2.056    2.482 1.76e+05    4.713 100.0
+4_5_12_16_80
+  Critical Path Length:          0.74
+  Noncombinational Area:  2053.439985
+  Cell Area:              6212.880091
+lut_tile                                  1.722    2.262 1.81e+05    4.166 100.0
+4_5_12_16_120
+  Critical Path Length:          0.73
+  Noncombinational Area:  2455.559982
+  Cell Area:              7364.520115
+lut_tile                                  1.966    2.390 1.76e+05    4.531 100.0
+4_5_12_16_160
+  Critical Path Length:          0.73
+  Noncombinational Area:  2856.959979
+  Cell Area:              8614.800139
+lut_tile                                  2.311    2.649 1.82e+05    5.142 100.0
+4_5_16_8_80
+  Critical Path Length:          0.74
+  Noncombinational Area:  1852.199987
+  Cell Area:              5128.560060
+lut_tile                                  1.506    2.110 1.62e+05    3.777 100.0
+4_5_16_8_120
+  Critical Path Length:          0.72
+  Noncombinational Area:  2152.079984
+  Cell Area:              5814.720064
+lut_tile                                  1.677    2.263 1.70e+05    4.109 100.0
+4_5_16_8_160
+  Critical Path Length:          0.71
+  Noncombinational Area:  2455.919982
+  Cell Area:              6538.320071
+lut_tile                                  1.866    2.460 1.74e+05    4.500 100.0
+4_5_16_12_80
+  Critical Path Length:          0.73
+  Noncombinational Area:  2051.279985
+  Cell Area:              5705.640082
+lut_tile                                  1.652    2.102 1.59e+05    3.913 100.0
+4_5_16_12_120
+  Critical Path Length:          0.72
+  Noncombinational Area:  2455.199981
+  Cell Area:              6703.200099
+lut_tile                                  1.870    2.309 1.67e+05    4.345 100.0
+4_5_16_12_160
+  Critical Path Length:          0.74
+  Noncombinational Area:  2855.879979
+  Cell Area:              7733.520120
+lut_tile                                  2.149    2.538 1.72e+05    4.860 100.0
+4_5_16_16_80
+  Critical Path Length:          0.74
+  Noncombinational Area:  2052.719985
+  Cell Area:              6261.120095
+lut_tile                                  1.727    2.226 1.67e+05    4.121 100.0
+4_5_16_16_120
+  Critical Path Length:          0.74
+  Noncombinational Area:  2454.119983
+  Cell Area:              7542.720121
+lut_tile                                  2.081    2.484 1.73e+05    4.739 100.0
+4_5_16_16_160
+  Critical Path Length:          0.72
+  Noncombinational Area:  2856.239979
+  Cell Area:              8843.760143
+lut_tile                                  2.429    2.747 1.91e+05    5.367 100.0
+4_6_8_8_80
+  Critical Path Length:          0.80
+  Noncombinational Area:  2017.079985
+  Cell Area:              5604.480057
+lut_tile                                  1.762    2.181 1.77e+05    4.120 100.0
+4_6_8_8_120
+  Critical Path Length:          0.77
+  Noncombinational Area:  2320.199982
+  Cell Area:              6366.600062
+lut_tile                                  1.946    2.405 1.89e+05    4.540 100.0
+4_6_8_8_160
+  Critical Path Length:          0.78
+  Noncombinational Area:  2620.439980
+  Cell Area:              7020.360067
+lut_tile                                  2.110    2.595 1.80e+05    4.885 100.0
+4_6_8_12_80
+  Critical Path Length:          0.80
+  Noncombinational Area:  2216.159982
+  Cell Area:              6207.120080
+lut_tile                                  1.917    2.265 1.81e+05    4.364 100.0
+4_6_8_12_120
+  Critical Path Length:          0.79
+  Noncombinational Area:  2619.719980
+  Cell Area:              7174.440097
+lut_tile                                  2.083    2.393 1.76e+05    4.653 100.0
+4_6_8_12_160
+  Critical Path Length:          0.79
+  Noncombinational Area:  3022.559977
+  Cell Area:              8260.200114
+lut_tile                                  2.413    2.684 1.89e+05    5.286 100.0
+4_6_8_16_80
+  Critical Path Length:          0.78
+  Noncombinational Area:  2217.599983
+  Cell Area:              6754.680093
+lut_tile                                  1.965    2.350 1.82e+05    4.497 100.0
+4_6_8_16_120
+  Critical Path Length:          0.78
+  Noncombinational Area:  2621.159980
+  Cell Area:              8058.960117
+lut_tile                                  2.330    2.645 1.96e+05    5.171 100.0
+4_6_8_16_160
+  Critical Path Length:          0.79
+  Noncombinational Area:  3025.439977
+  Cell Area:              9324.720138
+lut_tile                                  2.687    2.875 2.06e+05    5.768 100.0
+4_6_12_8_80
+  Critical Path Length:          0.82
+  Noncombinational Area:  2090.519984
+  Cell Area:              5811.480065
+lut_tile                                  1.813    2.191 1.71e+05    4.176 100.0
+4_6_12_8_120
+  Critical Path Length:          0.82
+  Noncombinational Area:  2392.919982
+  Cell Area:              6513.120070
+lut_tile                                  1.977    2.424 1.81e+05    4.582 100.0
+4_6_12_8_160
+  Critical Path Length:          0.79
+  Noncombinational Area:  2696.399981
+  Cell Area:              7236.360077
+lut_tile                                  2.165    2.558 1.86e+05    4.909 100.0
+4_6_12_12_80
+  Critical Path Length:          0.80
+  Noncombinational Area:  2291.399982
+  Cell Area:              6450.840089
+lut_tile                                  1.948    2.267 1.73e+05    4.388 100.0
+4_6_12_12_120
+  Critical Path Length:          0.80
+  Noncombinational Area:  2696.039979
+  Cell Area:              7455.960103
+lut_tile                                  2.188    2.501 1.83e+05    4.872 100.0
+4_6_12_12_160
+  Critical Path Length:          0.81
+  Noncombinational Area:  3098.159976
+  Cell Area:              8442.000122
+lut_tile                                  2.414    2.703 1.89e+05    5.306 100.0
+4_6_12_16_80
+  Critical Path Length:          0.81
+  Noncombinational Area:  2295.359983
+  Cell Area:              7011.000099
+lut_tile                                  2.106    2.405 1.88e+05    4.699 100.0
+4_6_12_16_120
+  Critical Path Length:          0.80
+  Noncombinational Area:  2696.039980
+  Cell Area:              8247.600122
+lut_tile                                  2.361    2.621 1.95e+05    5.177 100.0
+4_6_12_16_160
+  Critical Path Length:          0.80
+  Noncombinational Area:  3099.599977
+  Cell Area:              9531.360148
+lut_tile                                  2.710    2.902 2.00e+05    5.812 100.0
+4_6_16_8_80
+  Critical Path Length:          0.80
+  Noncombinational Area:  2093.759984
+  Cell Area:              6035.760070
+lut_tile                                  1.898    2.300 1.80e+05    4.378 100.0
+4_6_16_8_120
+  Critical Path Length:          0.78
+  Noncombinational Area:  2397.239983
+  Cell Area:              6864.840075
+lut_tile                                  2.204    2.558 1.97e+05    4.959 100.0
+4_6_16_8_160
+  Critical Path Length:          0.78
+  Noncombinational Area:  2696.399980
+  Cell Area:              7512.120082
+lut_tile                                  2.305    2.727 1.99e+05    5.231 100.0
+4_6_16_12_80
+  Critical Path Length:          0.80
+  Noncombinational Area:  2293.919982
+  Cell Area:              6693.840094
+lut_tile                                  2.073    2.354 1.85e+05    4.612 100.0
+4_6_16_12_120
+  Critical Path Length:          0.81
+  Noncombinational Area:  2695.319979
+  Cell Area:              7700.040110
+lut_tile                                  2.321    2.557 1.82e+05    5.061 100.0
+4_6_16_12_160
+  Critical Path Length:          0.79
+  Noncombinational Area:  3096.359976
+  Cell Area:              8666.280128
+lut_tile                                  2.563    2.788 1.88e+05    5.538 100.0
+4_6_16_16_80
+  Critical Path Length:          0.78
+  Noncombinational Area:  2294.999983
+  Cell Area:              7296.120106
+lut_tile                                  2.263    2.519 1.95e+05    4.977 100.0
+4_6_16_16_120
+  Critical Path Length:          0.79
+  Noncombinational Area:  2697.119980
+  Cell Area:              8533.800130
+lut_tile                                  2.553    2.755 2.02e+05    5.510 100.0
+4_6_16_16_160
+  Critical Path Length:          0.80
+  Noncombinational Area:  3099.959977
+  Cell Area:              9788.760153
+lut_tile                                  2.854    3.020 2.15e+05    6.090 100.0
+4_7_8_8_80
+  Critical Path Length:          0.98
+  Noncombinational Area:  2234.879983
+  Cell Area:              6557.400060
+lut_tile                                  2.122    2.555 2.02e+05    4.878 100.0
+4_7_8_8_120
+  Critical Path Length:          0.98
+  Noncombinational Area:  2536.919981
+  Cell Area:              7328.160064
+lut_tile                                  2.319    2.793 2.07e+05    5.320 100.0
+4_7_8_8_160
+  Critical Path Length:          0.98
+  Noncombinational Area:  2844.359978
+  Cell Area:              8058.240073
+lut_tile                                  2.565    2.996 2.23e+05    5.784 100.0
+4_7_8_12_80
+  Critical Path Length:          0.98
+  Noncombinational Area:  2433.599982
+  Cell Area:              7183.080080
+lut_tile                                  2.266    2.628 2.10e+05    5.105 100.0
+4_7_8_12_120
+  Critical Path Length:          1.01
+  Noncombinational Area:  2842.919978
+  Cell Area:              8191.440097
+lut_tile                                  2.502    2.855 2.11e+05    5.569 100.0
+4_7_8_12_160
+  Critical Path Length:          0.99
+  Noncombinational Area:  3241.079976
+  Cell Area:              9237.240117
+lut_tile                                  2.765    3.088 2.19e+05    6.072 100.0
+4_7_8_16_80
+  Critical Path Length:          0.99
+  Noncombinational Area:  2438.639982
+  Cell Area:              7655.040097
+lut_tile                                  2.356    2.664 2.05e+05    5.225 100.0
+4_7_8_16_120
+  Critical Path Length:          0.98
+  Noncombinational Area:  2845.079979
+  Cell Area:              9077.040116
+lut_tile                                  2.741    3.043 2.28e+05    6.011 100.0
+4_7_8_16_160
+  Critical Path Length:          1.00
+  Noncombinational Area:  3242.879976
+  Cell Area:             10262.880142
+lut_tile                                  3.055    3.237 2.36e+05    6.528 100.0
+4_7_12_8_80
+  Critical Path Length:          1.01
+  Noncombinational Area:  2322.359982
+  Cell Area:              6897.240065
+lut_tile                                  2.275    2.635 2.04e+05    5.114 100.0
+4_7_12_8_120
+  Critical Path Length:          1.00
+  Noncombinational Area:  2620.079980
+  Cell Area:              7474.320072
+lut_tile                                  2.350    2.726 1.96e+05    5.272 100.0
+4_7_12_8_160
+  Critical Path Length:          0.98
+  Noncombinational Area:  2925.719978
+  Cell Area:              8357.400079
+lut_tile                                  2.650    3.039 2.23e+05    5.912 100.0
+4_7_12_12_80
+  Critical Path Length:          1.01
+  Noncombinational Area:  2524.319981
+  Cell Area:              7432.920090
+lut_tile                                  2.343    2.681 2.07e+05    5.231 100.0
+4_7_12_12_120
+  Critical Path Length:          1.01
+  Noncombinational Area:  2929.319977
+  Cell Area:              8363.160111
+lut_tile                                  2.521    2.818 2.00e+05    5.540 100.0
+4_7_12_12_160
+  Critical Path Length:          1.00
+  Noncombinational Area:  3326.759975
+  Cell Area:              9436.320129
+lut_tile                                  2.817    3.075 2.11e+05    6.103 100.0
+4_7_12_16_80
+  Critical Path Length:          0.99
+  Noncombinational Area:  2521.799981
+  Cell Area:              7928.640102
+lut_tile                                  2.401    2.709 2.07e+05    5.316 100.0
+4_7_12_16_120
+  Critical Path Length:          0.99
+  Noncombinational Area:  2926.439978
+  Cell Area:              9298.800129
+lut_tile                                  2.799    3.037 2.22e+05    6.058 100.0
+4_7_12_16_160
+  Critical Path Length:          0.99
+  Noncombinational Area:  3329.639975
+  Cell Area:             10464.120151
+lut_tile                                  3.085    3.288 2.30e+05    6.602 100.0
+4_7_16_8_80
+  Critical Path Length:          0.97
+  Noncombinational Area:  2321.999982
+  Cell Area:              7057.080072
+lut_tile                                  2.309    2.689 2.00e+05    5.198 100.0
+4_7_16_8_120
+  Critical Path Length:          0.97
+  Noncombinational Area:  2621.879980
+  Cell Area:              7817.040076
+lut_tile                                  2.513    2.904 2.15e+05    5.632 100.0
+4_7_16_8_160
+  Critical Path Length:          0.98
+  Noncombinational Area:  2927.159977
+  Cell Area:              8481.240084
+lut_tile                                  2.686    3.098 2.16e+05    6.000 100.0
+4_7_16_12_80
+  Critical Path Length:          0.99
+  Noncombinational Area:  2519.999981
+  Cell Area:              7607.880095
+lut_tile                                  2.403    2.702 2.03e+05    5.308 100.0
+4_7_16_12_120
+  Critical Path Length:          0.98
+  Noncombinational Area:  2926.079978
+  Cell Area:              8616.240112
+lut_tile                                  2.672    2.911 2.05e+05    5.788 100.0
+4_7_16_12_160
+  Critical Path Length:          0.99
+  Noncombinational Area:  3328.919975
+  Cell Area:              9621.000133
+lut_tile                                  2.895    3.141 2.11e+05    6.247 100.0
+4_7_16_16_80
+  Critical Path Length:          0.95
+  Noncombinational Area:  2521.439981
+  Cell Area:              8253.360108
+lut_tile                                  2.585    2.914 2.16e+05    5.715 100.0
+4_7_16_16_120
+  Critical Path Length:          0.96
+  Noncombinational Area:  2923.559978
+  Cell Area:              9532.800130
+lut_tile                                  2.932    3.106 2.25e+05    6.263 100.0
+4_7_16_16_160
+  Critical Path Length:          0.98
+  Noncombinational Area:  3329.999975
+  Cell Area:             10841.400154
+lut_tile                                  3.340    3.482 2.45e+05    7.068 100.0
+4_8_8_8_80
+  Critical Path Length:          1.37
+  Noncombinational Area:  2467.439983
+  Cell Area:              7913.880073
+lut_tile                                  2.876    3.288 2.83e+05    6.447 100.0
+4_8_8_8_120
+  Critical Path Length:          1.36
+  Noncombinational Area:  2770.199981
+  Cell Area:              8678.160076
+lut_tile                                  3.050    3.531 3.12e+05    6.893 100.0
+4_8_8_8_160
+  Critical Path Length:          1.33
+  Noncombinational Area:  3069.359978
+  Cell Area:              9333.000086
+lut_tile                                  3.157    3.647 2.96e+05    7.101 100.0
+4_8_8_12_80
+  Critical Path Length:          1.47
+  Noncombinational Area:  2663.999980
+  Cell Area:              8337.960094
+lut_tile                                  2.784    3.237 2.62e+05    6.282 100.0
+4_8_8_12_120
+  Critical Path Length:          1.37
+  Noncombinational Area:  3070.079978
+  Cell Area:              9527.400108
+lut_tile                                  3.231    3.568 3.08e+05    7.108 100.0
+4_8_8_12_160
+  Critical Path Length:          1.44
+  Noncombinational Area:  3471.479974
+  Cell Area:             10470.240127
+lut_tile                                  3.365    3.703 2.83e+05    7.351 100.0
+4_8_8_16_80
+  Critical Path Length:          1.38
+  Noncombinational Area:  2671.919981
+  Cell Area:              9050.760110
+lut_tile                                  3.098    3.458 2.94e+05    6.850 100.0
+4_8_8_16_120
+  Critical Path Length:          1.37
+  Noncombinational Area:  3072.599978
+  Cell Area:             10382.400131
+lut_tile                                  3.400    3.710 3.07e+05    7.417 100.0
+4_8_8_16_160
+  Critical Path Length:          1.36
+  Noncombinational Area:  3481.919975
+  Cell Area:             11656.080153
+lut_tile                                  3.594    3.832 3.26e+05    7.753 100.0
+4_8_12_8_80
+  Critical Path Length:          1.39
+  Noncombinational Area:  2559.239982
+  Cell Area:              8197.560082
+lut_tile                                  2.948    3.346 2.83e+05    6.577 100.0
+4_8_12_8_120
+  Critical Path Length:          1.43
+  Noncombinational Area:  2867.399981
+  Cell Area:              8839.800089
+lut_tile                                  3.000    3.511 2.76e+05    6.787 100.0
+4_8_12_8_160
+  Critical Path Length:          1.39
+  Noncombinational Area:  3166.919978
+  Cell Area:              9630.720097
+lut_tile                                  3.309    3.671 2.94e+05    7.273 100.0
+4_8_12_12_80
+  Critical Path Length:          1.47
+  Noncombinational Area:  2761.559980
+  Cell Area:              8798.760104
+lut_tile                                  3.068    3.428 2.92e+05    6.788 100.0
+4_8_12_12_120
+  Critical Path Length:          1.43
+  Noncombinational Area:  3164.759976
+  Cell Area:              9778.680120
+lut_tile                                  3.011    3.321 2.80e+05    6.613 100.0
+4_8_12_12_160
+  Critical Path Length:          1.46
+  Noncombinational Area:  3564.359973
+  Cell Area:             10706.760135
+lut_tile                                  3.416    3.742 2.79e+05    7.437 100.0
+4_8_12_16_80
+  Critical Path Length:          1.39
+  Noncombinational Area:  2763.719981
+  Cell Area:              9295.920119
+lut_tile                                  3.069    3.393 2.84e+05    6.747 100.0
+4_8_12_16_120
+  Critical Path Length:          1.38
+  Noncombinational Area:  3167.999978
+  Cell Area:             10663.200143
+lut_tile                                  3.519    3.834 3.18e+05    7.671 100.0
+4_8_12_16_160
+  Critical Path Length:          1.37
+  Noncombinational Area:  3569.399974
+  Cell Area:             11888.280167
+lut_tile                                  3.811    4.002 3.07e+05    8.120 100.0
+4_8_16_8_80
+  Critical Path Length:          1.34
+  Noncombinational Area:  2563.199982
+  Cell Area:              8445.600093
+lut_tile                                  3.066    3.377 2.93e+05    6.736 100.0
+4_8_16_8_120
+  Critical Path Length:          1.35
+  Noncombinational Area:  2864.159979
+  Cell Area:              9133.200094
+lut_tile                                  3.033    3.373 2.87e+05    6.693 100.0
+4_8_16_8_160
+  Critical Path Length:          1.36
+  Noncombinational Area:  3167.999978
+  Cell Area:              9913.680101
+lut_tile                                  3.480    3.814 3.03e+05    7.597 100.0
+4_8_16_12_80
+  Critical Path Length:          1.41
+  Noncombinational Area:  2764.079979
+  Cell Area:              9010.800110
+lut_tile                                  3.117    3.475 2.93e+05    6.885 100.0
+4_8_16_12_120
+  Critical Path Length:          1.42
+  Noncombinational Area:  3166.199976
+  Cell Area:             10024.560127
+lut_tile                                  3.392    3.643 2.89e+05    7.325 100.0
+4_8_16_12_160
+  Critical Path Length:          1.45
+  Noncombinational Area:  3567.959973
+  Cell Area:             10989.000141
+lut_tile                                  3.570    3.801 2.80e+05    7.651 100.0
+4_8_16_16_80
+  Critical Path Length:          1.42
+  Noncombinational Area:  2763.359981
+  Cell Area:              9569.880124
+lut_tile                                  3.313    3.549 2.93e+05    7.155 100.0
+4_8_16_16_120
+  Critical Path Length:          1.37
+  Noncombinational Area:  3171.959977
+  Cell Area:             10804.320147
+lut_tile                                  3.541    3.830 3.01e+05    7.673 100.0
+4_8_16_16_160
+  Critical Path Length:          1.35
+  Noncombinational Area:  3574.079975
+  Cell Area:             12119.760173
+lut_tile                                  3.982    4.162 3.14e+05    8.458 100.0
+4_9_8_8_80
+  Critical Path Length:          1.44
+  Noncombinational Area:  2692.799981
+  Cell Area:              9214.920096
+lut_tile                                  3.179    4.031 3.61e+05    7.571 100.0
+4_9_8_8_120
+  Critical Path Length:          1.49
+  Noncombinational Area:  2994.119977
+  Cell Area:              9910.800103
+lut_tile                                  3.297    4.107 3.54e+05    7.758 100.0
+4_9_8_8_160
+  Critical Path Length:          1.47
+  Noncombinational Area:  3296.879975
+  Cell Area:             10622.160105
+lut_tile                                  3.583    4.294 3.57e+05    8.234 100.0
+4_9_8_12_80
+  Critical Path Length:          1.40
+  Noncombinational Area:  2891.159979
+  Cell Area:              9747.720118
+lut_tile                                  3.316    3.855 3.34e+05    7.505 100.0
+4_9_8_12_120
+  Critical Path Length:          1.43
+  Noncombinational Area:  3298.679976
+  Cell Area:             10869.480137
+lut_tile                                  3.599    4.184 3.66e+05    8.149 100.0
+4_9_8_12_160
+  Critical Path Length:          1.46
+  Noncombinational Area:  3700.439973
+  Cell Area:             11899.800155
+lut_tile                                  3.918    4.604 3.84e+05    8.907 100.0
+4_9_8_16_80
+  Critical Path Length:          1.41
+  Noncombinational Area:  2896.199979
+  Cell Area:             10320.840133
+lut_tile                                  3.407    3.984 3.59e+05    7.750 100.0
+4_9_8_16_120
+  Critical Path Length:          1.45
+  Noncombinational Area:  3303.719976
+  Cell Area:             11672.640155
+lut_tile                                  3.736    4.438 3.73e+05    8.546 100.0
+4_9_8_16_160
+  Critical Path Length:          1.44
+  Noncombinational Area:  3713.039973
+  Cell Area:             12890.520180
+lut_tile                                  4.028    4.633 3.90e+05    9.051 100.0
+4_9_12_8_80
+  Critical Path Length:          1.41
+  Noncombinational Area:  2800.079981
+  Cell Area:              9545.400106
+lut_tile                                  3.290    4.115 3.51e+05    7.755 100.0
+4_9_12_8_120
+  Critical Path Length:          1.44
+  Noncombinational Area:  3103.559978
+  Cell Area:             10291.680109
+lut_tile                                  3.466    4.443 3.73e+05    8.282 100.0
+4_9_12_8_160
+  Critical Path Length:          1.44
+  Noncombinational Area:  3403.079975
+  Cell Area:             10904.760119
+lut_tile                                  3.693    4.341 3.54e+05    8.388 100.0
+4_9_12_12_80
+  Critical Path Length:          1.46
+  Noncombinational Area:  2996.639979
+  Cell Area:             10158.120131
+lut_tile                                  3.393    4.108 3.54e+05    7.855 100.0
+4_9_12_12_120
+  Critical Path Length:          1.41
+  Noncombinational Area:  3399.479974
+  Cell Area:             11181.240147
+lut_tile                                  3.709    4.181 3.58e+05    8.248 100.0
+4_9_12_12_160
+  Critical Path Length:          1.41
+  Noncombinational Area:  3806.999971
+  Cell Area:             12212.640170
+lut_tile                                  4.019    4.453 3.69e+05    8.840 100.0
+4_9_12_16_80
+  Critical Path Length:          1.43
+  Noncombinational Area:  3005.639979
+  Cell Area:             10663.200143
+lut_tile                                  3.571    4.212 3.57e+05    8.140 100.0
+4_9_12_16_120
+  Critical Path Length:          1.44
+  Noncombinational Area:  3407.399975
+  Cell Area:             11970.360164
+lut_tile                                  3.869    4.402 3.71e+05    8.642 100.0
+4_9_12_16_160
+  Critical Path Length:          1.39
+  Noncombinational Area:  3806.999972
+  Cell Area:             13190.040188
+lut_tile                                  4.260    4.603 3.73e+05    9.237 100.0
+4_9_16_8_80
+  Critical Path Length:          1.45
+  Noncombinational Area:  2799.359981
+  Cell Area:              9860.040114
+lut_tile                                  3.426    4.179 3.75e+05    7.980 100.0
+4_9_16_8_120
+  Critical Path Length:          1.40
+  Noncombinational Area:  3093.479978
+  Cell Area:             10594.440121
+lut_tile                                  3.657    4.365 3.73e+05    8.396 100.0
+4_9_16_8_160
+  Critical Path Length:          1.42
+  Noncombinational Area:  3407.759975
+  Cell Area:             11272.680127
+lut_tile                                  3.864    4.510 3.76e+05    8.750 100.0
+4_9_16_12_80
+  Critical Path Length:          1.45
+  Noncombinational Area:  3002.759978
+  Cell Area:             10523.520140
+lut_tile                                  3.697    4.284 3.79e+05    8.359 100.0
+4_9_16_12_120
+  Critical Path Length:          1.46
+  Noncombinational Area:  3398.399975
+  Cell Area:             11475.720153
+lut_tile                                  3.855    4.413 3.68e+05    8.636 100.0
+4_9_16_12_160
+  Critical Path Length:          1.44
+  Noncombinational Area:  3804.839972
+  Cell Area:             12601.800174
+lut_tile                                  4.179    4.747 3.80e+05    9.306 100.0
+4_9_16_16_80
+  Critical Path Length:          1.44
+  Noncombinational Area:  3000.959978
+  Cell Area:             11000.880148
+lut_tile                                  3.639    4.294 3.80e+05    8.314 100.0
+4_9_16_16_120
+  Critical Path Length:          1.42
+  Noncombinational Area:  3407.759974
+  Cell Area:             12288.600173
+lut_tile                                  4.083    4.536 3.84e+05    9.002 100.0
+4_9_16_16_160
+  Critical Path Length:          1.49
+  Noncombinational Area:  3806.639972
+  Cell Area:             13540.320199
+lut_tile                                  4.401    4.805 3.89e+05    9.596 100.0
+4_10_8_8_80
+  Critical Path Length:          1.77
+  Noncombinational Area:  3113.639977
+  Cell Area:             10722.600121
+lut_tile                                  4.088    4.382 3.64e+05    8.833 100.0
+4_10_8_8_120
+  Critical Path Length:          1.77
+  Noncombinational Area:  3418.559975
+  Cell Area:             11575.800126
+lut_tile                                  4.265    4.544 3.92e+05    9.200 100.0
+4_10_8_8_160
+  Critical Path Length:          1.72
+  Noncombinational Area:  3720.959972
+  Cell Area:             12065.040131
+lut_tile                                  4.269    4.521 3.49e+05    9.140 100.0
+4_10_8_12_80
+  Critical Path Length:          1.80
+  Noncombinational Area:  3318.839975
+  Cell Area:             11414.880146
+lut_tile                                  4.134    4.358 3.81e+05    8.873 100.0
+4_10_8_12_120
+  Critical Path Length:          1.80
+  Noncombinational Area:  3722.759972
+  Cell Area:             12270.240166
+lut_tile                                  4.323    4.396 3.62e+05    9.082 100.0
+4_10_8_12_160
+  Critical Path Length:          1.77
+  Noncombinational Area:  4125.239969
+  Cell Area:             13357.440182
+lut_tile                                  4.589    4.727 3.70e+05    9.686 100.0
+4_10_8_16_80
+  Critical Path Length:          1.80
+  Noncombinational Area:  3318.839975
+  Cell Area:             11869.560160
+lut_tile                                  4.260    4.444 3.81e+05    9.085 100.0
+4_10_8_16_120
+  Critical Path Length:          1.78
+  Noncombinational Area:  3723.479971
+  Cell Area:             13133.880181
+lut_tile                                  4.469    4.622 3.73e+05    9.465 100.0
+4_10_8_16_160
+  Critical Path Length:          1.74
+  Noncombinational Area:  4120.919969
+  Cell Area:             14473.080203
+lut_tile                                  4.932    4.853 3.89e+05   10.173 100.0
+4_10_12_8_80
+  Critical Path Length:          1.78
+  Noncombinational Area:  3234.239975
+  Cell Area:             11011.680137
+lut_tile                                  3.997    4.167 3.55e+05    8.519 100.0
+4_10_12_8_120
+  Critical Path Length:          1.76
+  Noncombinational Area:  3538.079973
+  Cell Area:             11643.840142
+lut_tile                                  4.146    4.263 3.48e+05    8.758 100.0
+4_10_12_8_160
+  Critical Path Length:          1.76
+  Noncombinational Area:  3842.279971
+  Cell Area:             12528.720149
+lut_tile                                  4.509    4.725 3.68e+05    9.602 100.0
+4_10_12_12_80
+  Critical Path Length:          1.74
+  Noncombinational Area:  3438.359974
+  Cell Area:             11613.960160
+lut_tile                                  4.039    4.269 3.72e+05    8.681 100.0
+4_10_12_12_120
+  Critical Path Length:          1.76
+  Noncombinational Area:  3836.159971
+  Cell Area:             12653.640181
+lut_tile                                  4.444    4.473 3.70e+05    9.287 100.0
+4_10_12_12_160
+  Critical Path Length:          1.73
+  Noncombinational Area:  4240.799968
+  Cell Area:             13697.640194
+lut_tile                                  4.687    4.708 3.77e+05    9.772 100.0
+4_10_12_16_80
+  Critical Path Length:          1.75
+  Noncombinational Area:  3437.999974
+  Cell Area:             12178.440171
+lut_tile                                  4.263    4.355 3.64e+05    8.982 100.0
+4_10_12_16_120
+  Critical Path Length:          1.73
+  Noncombinational Area:  3837.599970
+  Cell Area:             13434.840194
+lut_tile                                  4.562    4.591 3.84e+05    9.536 100.0
+4_10_12_16_160
+  Critical Path Length:          1.73
+  Noncombinational Area:  4240.079968
+  Cell Area:             14844.240219
+lut_tile                                  5.100    4.935 4.05e+05   10.439 100.0
+4_10_16_8_80
+  Critical Path Length:          1.77
+  Noncombinational Area:  3237.119976
+  Cell Area:             11371.320143
+lut_tile                                  4.170    4.430 3.77e+05    8.976 100.0
+4_10_16_8_120
+  Critical Path Length:          1.79
+  Noncombinational Area:  3532.679973
+  Cell Area:             12098.520154
+lut_tile                                  4.398    4.593 3.79e+05    9.370 100.0
+4_10_16_8_160
+  Critical Path Length:          1.77
+  Noncombinational Area:  3837.959971
+  Cell Area:             12923.640159
+lut_tile                                  4.791    4.839 4.05e+05   10.035 100.0
+4_10_16_12_80
+  Critical Path Length:          1.78
+  Noncombinational Area:  3431.879973
+  Cell Area:             11989.440170
+lut_tile                                  4.497    4.464 3.68e+05    9.329 100.0
+4_10_16_12_120
+  Critical Path Length:          1.82
+  Noncombinational Area:  3833.999970
+  Cell Area:             13171.680187
+lut_tile                                  4.824    4.669 3.98e+05    9.891 100.0
+4_10_16_12_160
+  Critical Path Length:          1.79
+  Noncombinational Area:  4237.199967
+  Cell Area:             14097.240201
+lut_tile                                  5.105    4.855 3.75e+05   10.336 100.0
+4_10_16_16_80
+  Critical Path Length:          1.77
+  Noncombinational Area:  3432.239973
+  Cell Area:             12562.920186
+lut_tile                                  4.527    4.510 3.79e+05    9.416 100.0
+4_10_16_16_120
+  Critical Path Length:          1.75
+  Noncombinational Area:  3836.519970
+  Cell Area:             13925.160202
+lut_tile                                  4.941    4.929 4.05e+05   10.275 100.0
+4_10_16_16_160
+  Critical Path Length:          1.77
+  Noncombinational Area:  4239.719967
+  Cell Area:             15148.800229
+lut_tile                                  5.303    5.170 4.06e+05   10.879 100.0
+5_4_8_8_80
+  Critical Path Length:          0.73
+  Noncombinational Area:  2012.759984
+  Cell Area:              5208.840040
+lut_tile                                  1.571    2.214 1.77e+05    3.962 100.0
+5_4_8_8_120
+  Critical Path Length:          0.72
+  Noncombinational Area:  2315.159982
+  Cell Area:              5899.320042
+lut_tile                                  1.721    2.360 1.87e+05    4.269 100.0
+5_4_8_8_160
+  Critical Path Length:          0.72
+  Noncombinational Area:  2615.759980
+  Cell Area:              6579.360052
+lut_tile                                  1.854    2.517 1.82e+05    4.553 100.0
+5_4_8_12_80
+  Critical Path Length:          0.75
+  Noncombinational Area:  2211.839983
+  Cell Area:              5771.520063
+lut_tile                                  1.656    2.230 1.71e+05    4.057 100.0
+5_4_8_12_120
+  Critical Path Length:          0.75
+  Noncombinational Area:  2615.039980
+  Cell Area:              6822.720080
+lut_tile                                  1.917    2.420 1.85e+05    4.523 100.0
+5_4_8_12_160
+  Critical Path Length:          0.74
+  Noncombinational Area:  3018.599977
+  Cell Area:              7761.240095
+lut_tile                                  2.117    2.609 1.87e+05    4.914 100.0
+5_4_8_16_80
+  Critical Path Length:          0.72
+  Noncombinational Area:  2212.199984
+  Cell Area:              6304.320077
+lut_tile                                  1.753    2.277 1.81e+05    4.211 100.0
+5_4_8_16_120
+  Critical Path Length:          0.73
+  Noncombinational Area:  2615.759980
+  Cell Area:              7619.040097
+lut_tile                                  2.079    2.582 1.96e+05    4.857 100.0
+5_4_8_16_160
+  Critical Path Length:          0.72
+  Noncombinational Area:  3019.319977
+  Cell Area:              8887.320125
+lut_tile                                  2.382    2.843 2.10e+05    5.434 100.0
+5_4_12_8_80
+  Critical Path Length:          0.76
+  Noncombinational Area:  2077.199984
+  Cell Area:              5361.840044
+lut_tile                                  1.584    2.176 1.71e+05    3.930 100.0
+5_4_12_8_120
+  Critical Path Length:          0.72
+  Noncombinational Area:  2379.959981
+  Cell Area:              6047.640050
+lut_tile                                  1.745    2.304 1.76e+05    4.225 100.0
+5_4_12_8_160
+  Critical Path Length:          0.74
+  Noncombinational Area:  2680.559980
+  Cell Area:              6765.840054
+lut_tile                                  1.918    2.492 1.84e+05    4.595 100.0
+5_4_12_12_80
+  Critical Path Length:          0.73
+  Noncombinational Area:  2277.719982
+  Cell Area:              6003.000070
+lut_tile                                  1.806    2.335 1.80e+05    4.320 100.0
+5_4_12_12_120
+  Critical Path Length:          0.73
+  Noncombinational Area:  2680.919980
+  Cell Area:              6964.920086
+lut_tile                                  1.958    2.409 1.80e+05    4.548 100.0
+5_4_12_12_160
+  Critical Path Length:          0.75
+  Noncombinational Area:  3083.759976
+  Cell Area:              8028.720104
+lut_tile                                  2.189    2.626 1.86e+05    5.001 100.0
+5_4_12_16_80
+  Critical Path Length:          0.72
+  Noncombinational Area:  2278.439982
+  Cell Area:              6591.960083
+lut_tile                                  1.917    2.357 1.92e+05    4.465 100.0
+5_4_12_16_120
+  Critical Path Length:          0.73
+  Noncombinational Area:  2681.639979
+  Cell Area:              7799.040102
+lut_tile                                  2.131    2.560 1.92e+05    4.883 100.0
+5_4_12_16_160
+  Critical Path Length:          0.72
+  Noncombinational Area:  3084.119977
+  Cell Area:              9107.640128
+lut_tile                                  2.488    2.843 2.02e+05    5.533 100.0
+5_4_16_8_80
+  Critical Path Length:          0.73
+  Noncombinational Area:  2077.199984
+  Cell Area:              5515.200051
+lut_tile                                  1.668    2.166 1.68e+05    4.002 100.0
+5_4_16_8_120
+  Critical Path Length:          0.74
+  Noncombinational Area:  2379.959981
+  Cell Area:              6219.360058
+lut_tile                                  1.837    2.389 1.75e+05    4.401 100.0
+5_4_16_8_160
+  Critical Path Length:          0.74
+  Noncombinational Area:  2682.359979
+  Cell Area:              7010.640062
+lut_tile                                  2.049    2.674 1.87e+05    4.910 100.0
+5_4_16_12_80
+  Critical Path Length:          0.73
+  Noncombinational Area:  2277.719983
+  Cell Area:              6104.520075
+lut_tile                                  1.742    2.205 1.61e+05    4.108 100.0
+5_4_16_12_120
+  Critical Path Length:          0.75
+  Noncombinational Area:  2680.199980
+  Cell Area:              7140.600094
+lut_tile                                  1.980    2.449 1.72e+05    4.601 100.0
+5_4_16_12_160
+  Critical Path Length:          0.75
+  Noncombinational Area:  3084.119977
+  Cell Area:              8185.680109
+lut_tile                                  2.303    2.686 1.89e+05    5.178 100.0
+5_4_16_16_80
+  Critical Path Length:          0.73
+  Noncombinational Area:  2277.719983
+  Cell Area:              6757.920087
+lut_tile                                  1.936    2.431 1.80e+05    4.547 100.0
+5_4_16_16_120
+  Critical Path Length:          0.72
+  Noncombinational Area:  2681.999979
+  Cell Area:              8028.000112
+lut_tile                                  2.309    2.727 2.02e+05    5.239 100.0
+5_4_16_16_160
+  Critical Path Length:          0.73
+  Noncombinational Area:  3085.199976
+  Cell Area:              9262.800136
+lut_tile                                  2.528    2.893 1.95e+05    5.616 100.0
+5_5_8_8_80
+  Critical Path Length:          0.75
+  Noncombinational Area:  2347.559982
+  Cell Area:              6428.520058
+lut_tile                                  2.163    2.652 2.11e+05    5.025 100.0
+5_5_8_8_120
+  Critical Path Length:          0.73
+  Noncombinational Area:  2650.319980
+  Cell Area:              7233.480063
+lut_tile                                  2.425    2.985 2.47e+05    5.658 100.0
+5_5_8_8_160
+  Critical Path Length:          0.75
+  Noncombinational Area:  2953.439978
+  Cell Area:              7895.520070
+lut_tile                                  2.541    3.078 2.35e+05    5.855 100.0
+5_5_8_12_80
+  Critical Path Length:          0.75
+  Noncombinational Area:  2548.439981
+  Cell Area:              7144.920080
+lut_tile                                  2.358    2.824 2.38e+05    5.420 100.0
+5_5_8_12_120
+  Critical Path Length:          0.75
+  Noncombinational Area:  2951.639977
+  Cell Area:              8142.480100
+lut_tile                                  2.601    3.010 2.34e+05    5.845 100.0
+5_5_8_12_160
+  Critical Path Length:          0.75
+  Noncombinational Area:  3354.839974
+  Cell Area:              9138.960118
+lut_tile                                  2.853    3.243 2.40e+05    6.335 100.0
+5_5_8_16_80
+  Critical Path Length:          0.74
+  Noncombinational Area:  2549.879981
+  Cell Area:              7643.520096
+lut_tile                                  2.448    2.872 2.34e+05    5.554 100.0
+5_5_8_16_120
+  Critical Path Length:          0.75
+  Noncombinational Area:  2953.799978
+  Cell Area:              8892.720115
+lut_tile                                  2.756    3.122 2.40e+05    6.118 100.0
+5_5_8_16_160
+  Critical Path Length:          0.73
+  Noncombinational Area:  3355.919975
+  Cell Area:             10051.200144
+lut_tile                                  3.026    3.292 2.35e+05    6.553 100.0
+5_5_12_8_80
+  Critical Path Length:          0.73
+  Noncombinational Area:  2423.519982
+  Cell Area:              6845.040069
+lut_tile                                  2.332    2.796 2.41e+05    5.368 100.0
+5_5_12_8_120
+  Critical Path Length:          0.75
+  Noncombinational Area:  2725.919980
+  Cell Area:              7469.640073
+lut_tile                                  2.419    2.907 2.32e+05    5.557 100.0
+5_5_12_8_160
+  Critical Path Length:          0.75
+  Noncombinational Area:  3027.959977
+  Cell Area:              8083.080082
+lut_tile                                  2.569    3.107 2.24e+05    5.900 100.0
+5_5_12_12_80
+  Critical Path Length:          0.77
+  Noncombinational Area:  2623.679980
+  Cell Area:              7355.880089
+lut_tile                                  2.415    2.786 2.30e+05    5.431 100.0
+5_5_12_12_120
+  Critical Path Length:          0.75
+  Noncombinational Area:  3027.239977
+  Cell Area:              8357.040108
+lut_tile                                  2.608    2.978 2.30e+05    5.815 100.0
+5_5_12_12_160
+  Critical Path Length:          0.75
+  Noncombinational Area:  3430.079974
+  Cell Area:              9418.680128
+lut_tile                                  2.914    3.288 2.56e+05    6.458 100.0
+5_5_12_16_80
+  Critical Path Length:          0.73
+  Noncombinational Area:  2624.759980
+  Cell Area:              7843.320103
+lut_tile                                  2.545    2.847 2.31e+05    5.623 100.0
+5_5_12_16_120
+  Critical Path Length:          0.74
+  Noncombinational Area:  3029.399978
+  Cell Area:              9253.440127
+lut_tile                                  2.896    3.267 2.65e+05    6.427 100.0
+5_5_12_16_160
+  Critical Path Length:          0.75
+  Noncombinational Area:  3431.159974
+  Cell Area:             10455.840151
+lut_tile                                  3.180    3.422 2.52e+05    6.854 100.0
+5_5_16_8_80
+  Critical Path Length:          0.75
+  Noncombinational Area:  2422.799982
+  Cell Area:              6914.520072
+lut_tile                                  2.421    2.882 2.32e+05    5.535 100.0
+5_5_16_8_120
+  Critical Path Length:          0.76
+  Noncombinational Area:  2724.119979
+  Cell Area:              7577.640074
+lut_tile                                  2.528    3.020 2.27e+05    5.775 100.0
+5_5_16_8_160
+  Critical Path Length:          0.74
+  Noncombinational Area:  3027.239977
+  Cell Area:              8326.080085
+lut_tile                                  2.787    3.232 2.38e+05    6.257 100.0
+5_5_16_12_80
+  Critical Path Length:          0.78
+  Noncombinational Area:  2623.319980
+  Cell Area:              7416.000096
+lut_tile                                  2.447    2.834 2.16e+05    5.496 100.0
+5_5_16_12_120
+  Critical Path Length:          0.75
+  Noncombinational Area:  3025.799977
+  Cell Area:              8484.120111
+lut_tile                                  2.692    3.064 2.29e+05    5.985 100.0
+5_5_16_12_160
+  Critical Path Length:          0.77
+  Noncombinational Area:  3429.359974
+  Cell Area:              9517.320133
+lut_tile                                  2.991    3.315 2.33e+05    6.538 100.0
+5_5_16_16_80
+  Critical Path Length:          0.75
+  Noncombinational Area:  2622.599980
+  Cell Area:              8076.600107
+lut_tile                                  2.649    3.030 2.35e+05    5.914 100.0
+5_5_16_16_120
+  Critical Path Length:          0.74
+  Noncombinational Area:  3027.599977
+  Cell Area:              9363.960132
+lut_tile                                  2.976    3.268 2.47e+05    6.491 100.0
+5_5_16_16_160
+  Critical Path Length:          0.76
+  Noncombinational Area:  3430.799974
+  Cell Area:             10531.080154
+lut_tile                                  3.208    3.509 2.47e+05    6.965 100.0
+5_6_8_8_80
+  Critical Path Length:          0.97
+  Noncombinational Area:  2695.679980
+  Cell Area:              7558.200058
+lut_tile                                  2.571    3.004 2.35e+05    5.810 100.0
+5_6_8_8_120
+  Critical Path Length:          0.96
+  Noncombinational Area:  2997.359977
+  Cell Area:              8365.320063
+lut_tile                                  2.852    3.266 2.54e+05    6.372 100.0
+5_6_8_8_160
+  Critical Path Length:          0.96
+  Noncombinational Area:  3301.199975
+  Cell Area:              9093.600073
+lut_tile                                  2.993    3.451 2.63e+05    6.706 100.0
+5_6_8_12_80
+  Critical Path Length:          0.96
+  Noncombinational Area:  2896.919978
+  Cell Area:              8154.720082
+lut_tile                                  2.671    3.071 2.43e+05    5.985 100.0
+5_6_8_12_120
+  Critical Path Length:          0.97
+  Noncombinational Area:  3301.199975
+  Cell Area:              9159.120097
+lut_tile                                  2.920    3.258 2.47e+05    6.426 100.0
+5_6_8_12_160
+  Critical Path Length:          0.99
+  Noncombinational Area:  3700.439971
+  Cell Area:             10117.080115
+lut_tile                                  3.148    3.494 2.53e+05    6.896 100.0
+5_6_8_16_80
+  Critical Path Length:          0.94
+  Noncombinational Area:  2897.279978
+  Cell Area:              8667.000096
+lut_tile                                  2.779    3.113 2.43e+05    6.135 100.0
+5_6_8_16_120
+  Critical Path Length:          0.95
+  Noncombinational Area:  3300.119976
+  Cell Area:              9901.800118
+lut_tile                                  3.057    3.363 2.42e+05    6.661 100.0
+5_6_8_16_160
+  Critical Path Length:          0.94
+  Noncombinational Area:  3704.039972
+  Cell Area:             11239.920147
+lut_tile                                  3.478    3.659 2.68e+05    7.405 100.0
+5_6_12_8_80
+  Critical Path Length:          0.95
+  Noncombinational Area:  2786.039979
+  Cell Area:              7770.600067
+lut_tile                                  2.556    2.936 2.32e+05    5.723 100.0
+5_6_12_8_120
+  Critical Path Length:          0.97
+  Noncombinational Area:  3088.439976
+  Cell Area:              8597.880076
+lut_tile                                  2.630    3.147 2.60e+05    6.037 100.0
+5_6_12_8_160
+  Critical Path Length:          0.96
+  Noncombinational Area:  3390.839974
+  Cell Area:              9310.320081
+lut_tile                                  3.033    3.433 2.65e+05    6.731 100.0
+5_6_12_12_80
+  Critical Path Length:          1.00
+  Noncombinational Area:  2986.199977
+  Cell Area:              8380.440092
+lut_tile                                  2.543    2.957 2.47e+05    5.747 100.0
+5_6_12_12_120
+  Critical Path Length:          0.97
+  Noncombinational Area:  3388.679974
+  Cell Area:              9345.600108
+lut_tile                                  2.774    3.147 2.39e+05    6.160 100.0
+5_6_12_12_160
+  Critical Path Length:          0.95
+  Noncombinational Area:  3794.039971
+  Cell Area:             10507.320126
+lut_tile                                  3.226    3.541 2.59e+05    7.026 100.0
+5_6_12_16_80
+  Critical Path Length:          0.95
+  Noncombinational Area:  2988.359977
+  Cell Area:              8983.080103
+lut_tile                                  2.821    3.199 2.70e+05    6.290 100.0
+5_6_12_16_120
+  Critical Path Length:          0.97
+  Noncombinational Area:  3388.679974
+  Cell Area:             10245.240131
+lut_tile                                  3.180    3.458 2.58e+05    6.896 100.0
+5_6_12_16_160
+  Critical Path Length:          0.95
+  Noncombinational Area:  3794.039971
+  Cell Area:             11547.000153
+lut_tile                                  3.525    3.695 2.67e+05    7.486 100.0
+5_6_16_8_80
+  Critical Path Length:          0.94
+  Noncombinational Area:  2787.119979
+  Cell Area:              8052.840074
+lut_tile                                  2.675    3.110 2.47e+05    6.032 100.0
+5_6_16_8_120
+  Critical Path Length:          0.97
+  Noncombinational Area:  3090.599977
+  Cell Area:              8804.520077
+lut_tile                                  2.891    3.304 2.56e+05    6.451 100.0
+5_6_16_8_160
+  Critical Path Length:          0.99
+  Noncombinational Area:  3391.199975
+  Cell Area:              9402.120089
+lut_tile                                  3.042    3.484 2.47e+05    6.773 100.0
+5_6_16_12_80
+  Critical Path Length:          0.97
+  Noncombinational Area:  2987.639977
+  Cell Area:              8517.960096
+lut_tile                                  2.765    3.089 2.28e+05    6.082 100.0
+5_6_16_12_120
+  Critical Path Length:          0.97
+  Noncombinational Area:  3391.559974
+  Cell Area:              9565.920116
+lut_tile                                  3.031    3.336 2.46e+05    6.613 100.0
+5_6_16_12_160
+  Critical Path Length:          0.98
+  Noncombinational Area:  3793.319972
+  Cell Area:             10672.920134
+lut_tile                                  3.357    3.669 2.63e+05    7.289 100.0
+5_6_16_16_80
+  Critical Path Length:          0.94
+  Noncombinational Area:  2989.799978
+  Cell Area:              9245.880110
+lut_tile                                  2.972    3.309 2.62e+05    6.543 100.0
+5_6_16_16_120
+  Critical Path Length:          0.94
+  Noncombinational Area:  3391.199975
+  Cell Area:             10477.440132
+lut_tile                                  3.322    3.524 2.56e+05    7.101 100.0
+5_6_16_16_160
+  Critical Path Length:          0.93
+  Noncombinational Area:  3795.479971
+  Cell Area:             11765.160156
+lut_tile                                  3.711    3.835 2.72e+05    7.818 100.0
+5_7_8_8_80
+  Critical Path Length:          1.22
+  Noncombinational Area:  3023.999976
+  Cell Area:              9038.160068
+lut_tile                                  3.245    3.737 2.98e+05    7.280 100.0
+5_7_8_8_120
+  Critical Path Length:          1.19
+  Noncombinational Area:  3325.679974
+  Cell Area:              9675.000071
+lut_tile                                  3.413    3.878 2.99e+05    7.589 100.0
+5_7_8_8_160
+  Critical Path Length:          1.16
+  Noncombinational Area:  3629.519973
+  Cell Area:             10662.840081
+lut_tile                                  3.799    4.272 3.43e+05    8.414 100.0
+5_7_8_12_80
+  Critical Path Length:          1.21
+  Noncombinational Area:  3224.879975
+  Cell Area:              9643.320089
+lut_tile                                  3.455    3.885 3.17e+05    7.657 100.0
+5_7_8_12_120
+  Critical Path Length:          1.23
+  Noncombinational Area:  3626.999973
+  Cell Area:             10632.240107
+lut_tile                                  3.414    3.815 3.04e+05    7.533 100.0
+5_7_8_12_160
+  Critical Path Length:          1.20
+  Noncombinational Area:  4031.999969
+  Cell Area:             11725.920126
+lut_tile                                  3.914    4.316 3.37e+05    8.567 100.0
+5_7_8_16_80
+  Critical Path Length:          1.17
+  Noncombinational Area:  3226.679976
+  Cell Area:             10309.680107
+lut_tile                                  3.649    4.014 3.31e+05    7.994 100.0
+5_7_8_16_120
+  Critical Path Length:          1.21
+  Noncombinational Area:  3630.599972
+  Cell Area:             11560.680128
+lut_tile                                  3.912    4.241 3.42e+05    8.495 100.0
+5_7_8_16_160
+  Critical Path Length:          1.20
+  Noncombinational Area:  4037.759970
+  Cell Area:             12780.360155
+lut_tile                                  4.189    4.503 3.50e+05    9.042 100.0
+5_7_12_8_80
+  Critical Path Length:          1.23
+  Noncombinational Area:  3122.639976
+  Cell Area:              9403.920081
+lut_tile                                  3.342    3.894 3.29e+05    7.566 100.0
+5_7_12_8_120
+  Critical Path Length:          1.19
+  Noncombinational Area:  3424.679973
+  Cell Area:             10086.840091
+lut_tile                                  3.627    4.121 3.14e+05    8.062 100.0
+5_7_12_8_160
+  Critical Path Length:          1.24
+  Noncombinational Area:  3727.799971
+  Cell Area:             10872.360093
+lut_tile                                  3.824    4.252 3.22e+05    8.398 100.0
+5_7_12_12_80
+  Critical Path Length:          1.26
+  Noncombinational Area:  3324.239974
+  Cell Area:              9918.720106
+lut_tile                                  3.455    3.805 2.98e+05    7.558 100.0
+5_7_12_12_120
+  Critical Path Length:          1.26
+  Noncombinational Area:  3725.639971
+  Cell Area:             10899.000123
+lut_tile                                  3.661    3.989 2.97e+05    7.947 100.0
+5_7_12_12_160
+  Critical Path Length:          1.20
+  Noncombinational Area:  4129.919968
+  Cell Area:             11940.480142
+lut_tile                                  3.914    4.244 3.14e+05    8.471 100.0
+5_7_12_16_80
+  Critical Path Length:          1.20
+  Noncombinational Area:  3324.599974
+  Cell Area:             10438.560115
+lut_tile                                  3.545    3.968 3.11e+05    7.823 100.0
+5_7_12_16_120
+  Critical Path Length:          1.22
+  Noncombinational Area:  3728.879971
+  Cell Area:             11842.560142
+lut_tile                                  4.014    4.322 3.36e+05    8.671 100.0
+5_7_12_16_160
+  Critical Path Length:          1.21
+  Noncombinational Area:  4130.279969
+  Cell Area:             13023.360164
+lut_tile                                  4.262    4.528 3.36e+05    9.126 100.0
+5_7_16_8_80
+  Critical Path Length:          1.24
+  Noncombinational Area:  3129.839977
+  Cell Area:              9694.080086
+lut_tile                                  3.602    3.951 3.32e+05    7.885 100.0
+5_7_16_8_120
+  Critical Path Length:          1.20
+  Noncombinational Area:  3426.839973
+  Cell Area:             10335.600090
+lut_tile                                  3.683    4.164 3.24e+05    8.171 100.0
+5_7_16_8_160
+  Critical Path Length:          1.23
+  Noncombinational Area:  3731.039972
+  Cell Area:             11107.440096
+lut_tile                                  3.934    4.415 3.27e+05    8.676 100.0
+5_7_16_12_80
+  Critical Path Length:          1.25
+  Noncombinational Area:  3325.679974
+  Cell Area:             10117.440110
+lut_tile                                  3.529    3.942 3.02e+05    7.773 100.0
+5_7_16_12_120
+  Critical Path Length:          1.25
+  Noncombinational Area:  3729.239971
+  Cell Area:             11129.040124
+lut_tile                                  3.788    4.139 3.05e+05    8.231 100.0
+5_7_16_12_160
+  Critical Path Length:          1.24
+  Noncombinational Area:  4132.079968
+  Cell Area:             12135.240148
+lut_tile                                  4.074    4.387 3.13e+05    8.774 100.0
+5_7_16_16_80
+  Critical Path Length:          1.22
+  Noncombinational Area:  3327.479975
+  Cell Area:             10703.520122
+lut_tile                                  3.681    4.086 3.16e+05    8.082 100.0
+5_7_16_16_120
+  Critical Path Length:          1.24
+  Noncombinational Area:  3730.319972
+  Cell Area:             11952.000145
+lut_tile                                  3.992    4.356 3.15e+05    8.662 100.0
+5_7_16_16_160
+  Critical Path Length:          1.23
+  Noncombinational Area:  4132.799968
+  Cell Area:             13272.120167
+lut_tile                                  4.424    4.665 3.37e+05    9.425 100.0
+5_8_8_8_80
+  Critical Path Length:          1.44
+  Noncombinational Area:  3378.599975
+  Cell Area:             10503.360098
+lut_tile                                  3.789    5.057 4.16e+05    9.261 100.0
+5_8_8_8_120
+  Critical Path Length:          1.42
+  Noncombinational Area:  3677.399973
+  Cell Area:             11217.600103
+lut_tile                                  3.983    5.361 4.25e+05    9.769 100.0
+5_8_8_8_160
+  Critical Path Length:          1.38
+  Noncombinational Area:  3983.039971
+  Cell Area:             12134.520112
+lut_tile                                  4.302    5.419 4.48e+05   10.169 100.0
+5_8_8_12_80
+  Critical Path Length:          1.39
+  Noncombinational Area:  3576.239974
+  Cell Area:             11214.360127
+lut_tile                                  4.022    4.950 4.24e+05    9.395 100.0
+5_8_8_12_120
+  Critical Path Length:          1.40
+  Noncombinational Area:  3978.359970
+  Cell Area:             12182.040138
+lut_tile                                  4.119    5.115 4.47e+05    9.682 100.0
+5_8_8_12_160
+  Critical Path Length:          1.38
+  Noncombinational Area:  4381.919967
+  Cell Area:             13181.400155
+lut_tile                                  4.401    5.468 4.31e+05   10.300 100.0
+5_8_8_16_80
+  Critical Path Length:          1.37
+  Noncombinational Area:  3579.479974
+  Cell Area:             11657.880136
+lut_tile                                  3.952    5.166 4.21e+05    9.538 100.0
+5_8_8_16_120
+  Critical Path Length:          1.39
+  Noncombinational Area:  3985.559970
+  Cell Area:             13133.880155
+lut_tile                                  4.482    5.585 4.63e+05   10.531 100.0
+5_8_8_16_160
+  Critical Path Length:          1.43
+  Noncombinational Area:  4387.319968
+  Cell Area:             14215.680181
+lut_tile                                  4.782    5.690 4.49e+05   10.922 100.0
+5_8_12_8_80
+  Critical Path Length:          1.40
+  Noncombinational Area:  3495.239975
+  Cell Area:             11126.880120
+lut_tile                                  3.997    5.103 4.32e+05    9.532 100.0
+5_8_12_8_120
+  Critical Path Length:          1.36
+  Noncombinational Area:  3794.039972
+  Cell Area:             11730.600129
+lut_tile                                  4.275    5.390 4.39e+05   10.103 100.0
+5_8_12_8_160
+  Critical Path Length:          1.42
+  Noncombinational Area:  4097.159970
+  Cell Area:             12517.200130
+lut_tile                                  4.441    5.483 4.52e+05   10.376 100.0
+5_8_12_12_80
+  Critical Path Length:          1.41
+  Noncombinational Area:  3691.439972
+  Cell Area:             11660.760142
+lut_tile                                  4.227    5.236 4.26e+05    9.890 100.0
+5_8_12_12_120
+  Critical Path Length:          1.41
+  Noncombinational Area:  4095.359970
+  Cell Area:             12673.440158
+lut_tile                                  4.376    5.280 4.39e+05   10.094 100.0
+5_8_12_12_160
+  Critical Path Length:          1.39
+  Noncombinational Area:  4493.879966
+  Cell Area:             13708.440173
+lut_tile                                  4.720    5.576 4.52e+05   10.749 100.0
+5_8_12_16_80
+  Critical Path Length:          1.40
+  Noncombinational Area:  3696.839974
+  Cell Area:             12090.600156
+lut_tile                                  4.195    5.290 4.37e+05    9.921 100.0
+5_8_12_16_120
+  Critical Path Length:          1.40
+  Noncombinational Area:  4096.439969
+  Cell Area:             13495.320177
+lut_tile                                  4.608    5.599 4.47e+05   10.654 100.0
+5_8_12_16_160
+  Critical Path Length:          1.43
+  Noncombinational Area:  4499.279967
+  Cell Area:             14720.400200
+lut_tile                                  4.859    5.713 4.60e+05   11.033 100.0
+5_8_16_8_80
+  Critical Path Length:          1.39
+  Noncombinational Area:  3496.679976
+  Cell Area:             11052.000124
+lut_tile                                  3.941    5.286 4.22e+05    9.649 100.0
+5_8_16_8_120
+  Critical Path Length:          1.40
+  Noncombinational Area:  3797.999972
+  Cell Area:             12025.440129
+lut_tile                                  4.341    5.556 4.44e+05   10.341 100.0
+5_8_16_8_160
+  Critical Path Length:          1.41
+  Noncombinational Area:  4101.479970
+  Cell Area:             12790.800133
+lut_tile                                  4.518    5.655 4.42e+05   10.616 100.0
+5_8_16_12_80
+  Critical Path Length:          1.44
+  Noncombinational Area:  3693.239972
+  Cell Area:             11668.320144
+lut_tile                                  4.176    5.285 4.13e+05    9.874 100.0
+5_8_16_12_120
+  Critical Path Length:          1.43
+  Noncombinational Area:  4095.719970
+  Cell Area:             12847.320165
+lut_tile                                  4.512    5.498 4.29e+05   10.439 100.0
+5_8_16_12_160
+  Critical Path Length:          1.43
+  Noncombinational Area:  4497.119966
+  Cell Area:             13882.320181
+lut_tile                                  4.837    5.953 4.55e+05   11.246 100.0
+5_8_16_16_80
+  Critical Path Length:          1.41
+  Noncombinational Area:  3696.839973
+  Cell Area:             12420.360160
+lut_tile                                  4.337    5.455 4.42e+05   10.234 100.0
+5_8_16_16_120
+  Critical Path Length:          1.44
+  Noncombinational Area:  4100.759970
+  Cell Area:             13698.000177
+lut_tile                                  4.687    5.596 4.59e+05   10.742 100.0
+5_8_16_16_160
+  Critical Path Length:          1.42
+  Noncombinational Area:  4501.439967
+  Cell Area:             15060.240205
+lut_tile                                  5.115    6.069 4.69e+05   11.654 100.0
+5_9_8_8_80
+  Critical Path Length:          1.61
+  Noncombinational Area:  3938.399971
+  Cell Area:             12685.680140
+lut_tile                                  4.918    5.170 4.46e+05   10.534 100.0
+5_9_8_8_120
+  Critical Path Length:          1.59
+  Noncombinational Area:  4237.199968
+  Cell Area:             13263.840145
+lut_tile                                  5.065    5.275 4.26e+05   10.767 100.0
+5_9_8_8_160
+  Critical Path Length:          1.60
+  Noncombinational Area:  4541.399966
+  Cell Area:             14186.160145
+lut_tile                                  5.333    5.620 4.50e+05   11.402 100.0
+5_9_8_12_80
+  Critical Path Length:          1.59
+  Noncombinational Area:  4137.839968
+  Cell Area:             13235.760159
+lut_tile                                  5.044    5.272 4.33e+05   10.748 100.0
+5_9_8_12_120
+  Critical Path Length:          1.60
+  Noncombinational Area:  4538.879965
+  Cell Area:             14220.360179
+lut_tile                                  5.328    5.445 4.24e+05   11.197 100.0
+5_9_8_12_160
+  Critical Path Length:          1.60
+  Noncombinational Area:  4944.599962
+  Cell Area:             15346.440198
+lut_tile                                  5.593    5.638 4.51e+05   11.681 100.0
+5_9_8_16_80
+  Critical Path Length:          1.56
+  Noncombinational Area:  4138.559969
+  Cell Area:             13707.000178
+lut_tile                                  5.045    5.154 4.23e+05   10.622 100.0
+5_9_8_16_120
+  Critical Path Length:          1.58
+  Noncombinational Area:  4541.759965
+  Cell Area:             15167.520199
+lut_tile                                  5.595    5.561 4.58e+05   11.614 100.0
+5_9_8_16_160
+  Critical Path Length:          1.61
+  Noncombinational Area:  4946.039963
+  Cell Area:             16404.480221
+lut_tile                                  5.876    5.878 4.61e+05   12.215 100.0
+5_9_12_8_80
+  Critical Path Length:          1.64
+  Noncombinational Area:  4063.679970
+  Cell Area:             12951.720155
+lut_tile                                  4.816    5.087 4.29e+05   10.333 100.0
+5_9_12_8_120
+  Critical Path Length:          1.61
+  Noncombinational Area:  4365.359967
+  Cell Area:             13730.040162
+lut_tile                                  5.126    5.324 4.25e+05   10.876 100.0
+5_9_12_8_160
+  Critical Path Length:          1.62
+  Noncombinational Area:  4667.759965
+  Cell Area:             14585.760163
+lut_tile                                  5.456    5.626 4.40e+05   11.523 100.0
+5_9_12_12_80
+  Critical Path Length:          1.65
+  Noncombinational Area:  4262.399968
+  Cell Area:             13587.480173
+lut_tile                                  5.059    5.278 4.41e+05   10.778 100.0
+5_9_12_12_120
+  Critical Path Length:          1.64
+  Noncombinational Area:  4665.959964
+  Cell Area:             14581.440199
+lut_tile                                  5.205    5.388 4.26e+05   11.019 100.0
+5_9_12_12_160
+  Critical Path Length:          1.60
+  Noncombinational Area:  5069.159962
+  Cell Area:             15709.320216
+lut_tile                                  5.636    5.690 4.43e+05   11.769 100.0
+5_9_12_16_80
+  Critical Path Length:          1.62
+  Noncombinational Area:  4265.279968
+  Cell Area:             14212.080187
+lut_tile                                  5.280    5.381 4.59e+05   11.121 100.0
+5_9_12_16_120
+  Critical Path Length:          1.62
+  Noncombinational Area:  4666.679965
+  Cell Area:             15563.880206
+lut_tile                                  5.601    5.689 4.59e+05   11.748 100.0
+5_9_12_16_160
+  Critical Path Length:          1.56
+  Noncombinational Area:  5071.319962
+  Cell Area:             16824.960235
+lut_tile                                  6.065    6.023 4.85e+05   12.572 100.0
+5_9_16_8_80
+  Critical Path Length:          1.55
+  Noncombinational Area:  4059.719970
+  Cell Area:             13520.880158
+lut_tile                                  5.323    5.373 4.57e+05   11.153 100.0
+5_9_16_8_120
+  Critical Path Length:          1.59
+  Noncombinational Area:  4363.919967
+  Cell Area:             14177.520171
+lut_tile                                  5.447    5.568 4.48e+05   11.463 100.0
+5_9_16_8_160
+  Critical Path Length:          1.57
+  Noncombinational Area:  4668.479965
+  Cell Area:             14986.440169
+lut_tile                                  5.836    5.839 4.57e+05   12.132 100.0
+5_9_16_12_80
+  Critical Path Length:          1.56
+  Noncombinational Area:  4261.319968
+  Cell Area:             14012.640188
+lut_tile                                  5.378    5.332 4.29e+05   11.139 100.0
+5_9_16_12_120
+  Critical Path Length:          1.57
+  Noncombinational Area:  4666.679965
+  Cell Area:             14957.640208
+lut_tile                                  5.580    5.498 4.26e+05   11.503 100.0
+5_9_16_12_160
+  Critical Path Length:          1.62
+  Noncombinational Area:  5069.519961
+  Cell Area:             16154.640221
+lut_tile                                  6.050    6.020 4.77e+05   12.547 100.0
+5_9_16_16_80
+  Critical Path Length:          1.63
+  Noncombinational Area:  4263.479968
+  Cell Area:             14664.960194
+lut_tile                                  5.545    5.582 4.62e+05   11.589 100.0
+5_9_16_16_120
+  Critical Path Length:          1.56
+  Noncombinational Area:  4668.119965
+  Cell Area:             15898.680224
+lut_tile                                  5.802    5.753 4.55e+05   12.010 100.0
+5_9_16_16_160
+  Critical Path Length:          1.57
+  Noncombinational Area:  5071.679962
+  Cell Area:             17300.520239
+lut_tile                                  6.426    6.278 5.09e+05   13.213 100.0
+5_10_8_8_80
+  Critical Path Length:          1.68
+  Noncombinational Area:  4305.239968
+  Cell Area:             14779.080135
+lut_tile                                  6.073    5.960 4.94e+05   12.526 100.0
+5_10_8_8_120
+  Critical Path Length:          1.64
+  Noncombinational Area:  4609.799966
+  Cell Area:             15668.640148
+lut_tile                                  6.422    6.289 5.00e+05   13.211 100.0
+5_10_8_8_160
+  Critical Path Length:          1.68
+  Noncombinational Area:  4913.279963
+  Cell Area:             16530.840154
+lut_tile                                  6.673    6.565 5.15e+05   13.753 100.0
+5_10_8_12_80
+  Critical Path Length:          1.64
+  Noncombinational Area:  4509.359967
+  Cell Area:             15549.480170
+lut_tile                                  6.250    6.111 4.98e+05   12.859 100.0
+5_10_8_12_120
+  Critical Path Length:          1.64
+  Noncombinational Area:  4913.639963
+  Cell Area:             16647.840189
+lut_tile                                  6.568    6.386 5.09e+05   13.463 100.0
+5_10_8_12_160
+  Critical Path Length:          1.62
+  Noncombinational Area:  5315.039959
+  Cell Area:             17776.800207
+lut_tile                                  7.013    6.612 5.21e+05   14.146 100.0
+5_10_8_16_80
+  Critical Path Length:          1.63
+  Noncombinational Area:  4512.239966
+  Cell Area:             16213.680170
+lut_tile                                  6.623    6.375 5.36e+05   13.534 100.0
+5_10_8_16_120
+  Critical Path Length:          1.68
+  Noncombinational Area:  4911.839963
+  Cell Area:             17379.000201
+lut_tile                                  6.728    6.437 4.97e+05   13.662 100.0
+5_10_8_16_160
+  Critical Path Length:          1.67
+  Noncombinational Area:  5317.919960
+  Cell Area:             18661.320222
+lut_tile                                  7.046    6.707 5.13e+05   14.266 100.0
+5_10_12_8_80
+  Critical Path Length:          1.65
+  Noncombinational Area:  4447.079967
+  Cell Area:             15263.280156
+lut_tile                                  6.238    6.066 4.95e+05   12.800 100.0
+5_10_12_8_120
+  Critical Path Length:          1.67
+  Noncombinational Area:  4748.759965
+  Cell Area:             15881.040163
+lut_tile                                  6.406    6.247 5.10e+05   13.163 100.0
+5_10_12_8_160
+  Critical Path Length:          1.67
+  Noncombinational Area:  5052.599963
+  Cell Area:             16642.800173
+lut_tile                                  6.555    6.351 4.94e+05   13.401 100.0
+5_10_12_12_80
+  Critical Path Length:          1.67
+  Noncombinational Area:  4646.519966
+  Cell Area:             15657.120189
+lut_tile                                  6.092    5.853 4.59e+05   12.405 100.0
+5_10_12_12_120
+  Critical Path Length:          1.67
+  Noncombinational Area:  5051.159961
+  Cell Area:             16603.200197
+lut_tile                                  6.416    6.155 4.86e+05   13.057 100.0
+5_10_12_12_160
+  Critical Path Length:          1.65
+  Noncombinational Area:  5455.439958
+  Cell Area:             17822.880211
+lut_tile                                  6.880    6.543 5.01e+05   13.924 100.0
+5_10_12_16_80
+  Critical Path Length:          1.67
+  Noncombinational Area:  4648.319965
+  Cell Area:             16186.320196
+lut_tile                                  6.182    6.020 4.74e+05   12.676 100.0
+5_10_12_16_120
+  Critical Path Length:          1.68
+  Noncombinational Area:  5048.999962
+  Cell Area:             17835.480214
+lut_tile                                  7.028    6.698 5.40e+05   14.266 100.0
+5_10_12_16_160
+  Critical Path Length:          1.68
+  Noncombinational Area:  5456.519959
+  Cell Area:             19105.920245
+lut_tile                                  7.323    6.955 5.46e+05   14.823 100.0
+5_10_16_8_80
+  Critical Path Length:          1.62
+  Noncombinational Area:  4451.399967
+  Cell Area:             16007.040169
+lut_tile                                  6.815    6.457 5.21e+05   13.793 100.0
+5_10_16_8_120
+  Critical Path Length:          1.62
+  Noncombinational Area:  4753.439965
+  Cell Area:             16453.080174
+lut_tile                                  6.683    6.427 5.05e+05   13.614 100.0
+5_10_16_8_160
+  Critical Path Length:          1.66
+  Noncombinational Area:  5051.519962
+  Cell Area:             17021.880178
+lut_tile                                  6.898    6.572 5.07e+05   13.976 100.0
+5_10_16_12_80
+  Critical Path Length:          1.67
+  Noncombinational Area:  4651.199965
+  Cell Area:             16175.880193
+lut_tile                                  6.422    6.181 4.80e+05   13.083 100.0
+5_10_16_12_120
+  Critical Path Length:          1.65
+  Noncombinational Area:  5051.879962
+  Cell Area:             17228.880210
+lut_tile                                  6.927    6.504 4.99e+05   13.930 100.0
+5_10_16_12_160
+  Critical Path Length:          1.68
+  Noncombinational Area:  5454.359959
+  Cell Area:             18210.240231
+lut_tile                                  7.048    6.724 5.10e+05   14.282 100.0
+5_10_16_16_80
+  Critical Path Length:          1.66
+  Noncombinational Area:  4652.279966
+  Cell Area:             16658.640206
+lut_tile                                  6.635    6.411 4.89e+05   13.535 100.0
+5_10_16_16_120
+  Critical Path Length:          1.65
+  Noncombinational Area:  5052.599962
+  Cell Area:             18262.440226
+lut_tile                                  7.313    6.833 5.34e+05   14.680 100.0
+5_10_16_16_160
+  Critical Path Length:          1.64
+  Noncombinational Area:  5454.359958
+  Cell Area:             19539.720250
+lut_tile                                  7.669    6.973 5.15e+05   15.156 100.0
+6_4_8_8_80
+  Critical Path Length:          0.66
+  Noncombinational Area:  2793.959980
+  Cell Area:              7273.440067
+lut_tile                                  2.452    2.947 2.56e+05    5.655 100.0
+6_4_8_8_120
+  Critical Path Length:          0.65
+  Noncombinational Area:  3094.919977
+  Cell Area:              7979.400067
+lut_tile                                  2.602    3.122 2.79e+05    6.004 100.0
+6_4_8_8_160
+  Critical Path Length:          0.67
+  Noncombinational Area:  3398.399975
+  Cell Area:              8558.280073
+lut_tile                                  2.716    3.249 2.57e+05    6.222 100.0
+6_4_8_12_80
+  Critical Path Length:          0.67
+  Noncombinational Area:  2993.399977
+  Cell Area:              7824.240086
+lut_tile                                  2.507    2.952 2.46e+05    5.705 100.0
+6_4_8_12_120
+  Critical Path Length:          0.67
+  Noncombinational Area:  3394.799974
+  Cell Area:              8834.040102
+lut_tile                                  2.766    3.243 2.68e+05    6.277 100.0
+6_4_8_12_160
+  Critical Path Length:          0.66
+  Noncombinational Area:  3797.279971
+  Cell Area:              9785.880123
+lut_tile                                  2.967    3.371 2.75e+05    6.613 100.0
+6_4_8_16_80
+  Critical Path Length:          0.66
+  Noncombinational Area:  2991.959977
+  Cell Area:              8367.840100
+lut_tile                                  2.619    3.085 2.58e+05    5.962 100.0
+6_4_8_16_120
+  Critical Path Length:          0.65
+  Noncombinational Area:  3398.759975
+  Cell Area:              9618.120125
+lut_tile                                  2.876    3.288 2.72e+05    6.436 100.0
+6_4_8_16_160
+  Critical Path Length:          0.66
+  Noncombinational Area:  3799.439971
+  Cell Area:             10893.240145
+lut_tile                                  3.280    3.603 2.73e+05    7.157 100.0
+6_4_12_8_80
+  Critical Path Length:          0.66
+  Noncombinational Area:  2869.199979
+  Cell Area:              7469.280074
+lut_tile                                  2.430    2.913 2.62e+05    5.606 100.0
+6_4_12_8_120
+  Critical Path Length:          0.66
+  Noncombinational Area:  3170.879976
+  Cell Area:              8187.120074
+lut_tile                                  2.607    3.112 2.67e+05    5.986 100.0
+6_4_12_8_160
+  Critical Path Length:          0.67
+  Noncombinational Area:  3472.559974
+  Cell Area:              8882.640080
+lut_tile                                  2.844    3.349 2.76e+05    6.469 100.0
+6_4_12_12_80
+  Critical Path Length:          0.69
+  Noncombinational Area:  3067.199976
+  Cell Area:              8028.000097
+lut_tile                                  2.572    2.960 2.42e+05    5.774 100.0
+6_4_12_12_120
+  Critical Path Length:          0.69
+  Noncombinational Area:  3470.399973
+  Cell Area:              9066.600110
+lut_tile                                  2.800    3.216 2.71e+05    6.287 100.0
+6_4_12_12_160
+  Critical Path Length:          0.68
+  Noncombinational Area:  3874.679970
+  Cell Area:              9983.160135
+lut_tile                                  2.729    3.143 2.66e+05    6.138 100.0
+6_4_12_16_80
+  Critical Path Length:          0.66
+  Noncombinational Area:  3072.239978
+  Cell Area:              8564.400108
+lut_tile                                  2.656    3.045 2.74e+05    5.975 100.0
+6_4_12_16_120
+  Critical Path Length:          0.68
+  Noncombinational Area:  3473.279974
+  Cell Area:              9911.160129
+lut_tile                                  3.037    3.419 2.91e+05    6.747 100.0
+6_4_12_16_160
+  Critical Path Length:          0.66
+  Noncombinational Area:  3875.399971
+  Cell Area:             11114.280157
+lut_tile                                  3.330    3.594 2.78e+05    7.202 100.0
+6_4_16_8_80
+  Critical Path Length:          0.66
+  Noncombinational Area:  2867.039978
+  Cell Area:              7529.400072
+lut_tile                                  2.527    2.979 2.44e+05    5.750 100.0
+6_4_16_8_120
+  Critical Path Length:          0.64
+  Noncombinational Area:  3170.159976
+  Cell Area:              8467.920078
+lut_tile                                  2.833    3.340 2.86e+05    6.459 100.0
+6_4_16_8_160
+  Critical Path Length:          0.65
+  Noncombinational Area:  3473.639974
+  Cell Area:              9126.720084
+lut_tile                                  3.004    3.470 2.80e+05    6.754 100.0
+6_4_16_12_80
+  Critical Path Length:          0.68
+  Noncombinational Area:  3068.279976
+  Cell Area:              8189.280097
+lut_tile                                  2.702    3.109 2.50e+05    6.062 100.0
+6_4_16_12_120
+  Critical Path Length:          0.66
+  Noncombinational Area:  3471.119973
+  Cell Area:              9245.160113
+lut_tile                                  2.950    3.337 2.64e+05    6.551 100.0
+6_4_16_12_160
+  Critical Path Length:          0.68
+  Noncombinational Area:  3872.879970
+  Cell Area:             10299.600135
+lut_tile                                  3.242    3.639 2.82e+05    7.163 100.0
+6_4_16_16_80
+  Critical Path Length:          0.67
+  Noncombinational Area:  3068.999977
+  Cell Area:              8668.800112
+lut_tile                                  2.717    3.137 2.61e+05    6.115 100.0
+6_4_16_16_120
+  Critical Path Length:          0.65
+  Noncombinational Area:  3475.439975
+  Cell Area:             10057.320132
+lut_tile                                  3.151    3.519 2.82e+05    6.953 100.0
+6_4_16_16_160
+  Critical Path Length:          0.66
+  Noncombinational Area:  3875.399971
+  Cell Area:             11340.360161
+lut_tile                                  3.509    3.749 2.87e+05    7.545 100.0
+6_5_8_8_80
+  Critical Path Length:          0.88
+  Noncombinational Area:  3315.959975
+  Cell Area:              8899.200066
+lut_tile                                  2.934    3.601 3.20e+05    6.855 100.0
+6_5_8_8_120
+  Critical Path Length:          0.85
+  Noncombinational Area:  3622.319972
+  Cell Area:              9701.640068
+lut_tile                                  3.253    3.789 3.32e+05    7.374 100.0
+6_5_8_8_160
+  Critical Path Length:          0.87
+  Noncombinational Area:  3923.639970
+  Cell Area:             10449.360080
+lut_tile                                  3.434    4.049 3.55e+05    7.838 100.0
+6_5_8_12_80
+  Critical Path Length:          0.90
+  Noncombinational Area:  3519.359973
+  Cell Area:              9508.320091
+lut_tile                                  3.057    3.688 3.28e+05    7.073 100.0
+6_5_8_12_120
+  Critical Path Length:          0.89
+  Noncombinational Area:  3927.599970
+  Cell Area:             10615.680104
+lut_tile                                  3.407    3.953 3.53e+05    7.712 100.0
+6_5_8_12_160
+  Critical Path Length:          0.87
+  Noncombinational Area:  4327.559968
+  Cell Area:             11648.520125
+lut_tile                                  3.650    4.131 3.55e+05    8.136 100.0
+6_5_8_16_80
+  Critical Path Length:          0.90
+  Noncombinational Area:  3521.159973
+  Cell Area:             10138.320097
+lut_tile                                  3.276    3.831 3.37e+05    7.444 100.0
+6_5_8_16_120
+  Critical Path Length:          0.86
+  Noncombinational Area:  3923.279970
+  Cell Area:             11401.920121
+lut_tile                                  3.585    4.050 3.53e+05    7.988 100.0
+6_5_8_16_160
+  Critical Path Length:          0.90
+  Noncombinational Area:  4326.839967
+  Cell Area:             12593.520151
+lut_tile                                  3.905    4.316 3.45e+05    8.566 100.0
+6_5_12_8_80
+  Critical Path Length:          0.88
+  Noncombinational Area:  3412.439974
+  Cell Area:              9377.640073
+lut_tile                                  3.149    3.765 3.51e+05    7.266 100.0
+6_5_12_8_120
+  Critical Path Length:          0.86
+  Noncombinational Area:  3716.999972
+  Cell Area:             10005.480079
+lut_tile                                  3.289    3.876 3.51e+05    7.517 100.0
+6_5_12_8_160
+  Critical Path Length:          0.89
+  Noncombinational Area:  4016.879969
+  Cell Area:             10741.680087
+lut_tile                                  3.443    4.108 3.61e+05    7.912 100.0
+6_5_12_12_80
+  Critical Path Length:          0.86
+  Noncombinational Area:  3612.599972
+  Cell Area:              9820.080099
+lut_tile                                  3.174    3.675 3.33e+05    7.182 100.0
+6_5_12_12_120
+  Critical Path Length:          0.87
+  Noncombinational Area:  4016.159969
+  Cell Area:             10931.760118
+lut_tile                                  3.486    3.973 3.53e+05    7.812 100.0
+6_5_12_12_160
+  Critical Path Length:          0.87
+  Noncombinational Area:  4420.439966
+  Cell Area:             11856.240131
+lut_tile                                  3.685    4.111 3.45e+05    8.142 100.0
+6_5_12_16_80
+  Critical Path Length:          0.90
+  Noncombinational Area:  3612.959972
+  Cell Area:             10461.240110
+lut_tile                                  3.336    3.880 3.53e+05    7.568 100.0
+6_5_12_16_120
+  Critical Path Length:          0.88
+  Noncombinational Area:  4018.679969
+  Cell Area:             11722.320129
+lut_tile                                  3.640    4.106 3.63e+05    8.109 100.0
+6_5_12_16_160
+  Critical Path Length:          0.89
+  Noncombinational Area:  4420.439966
+  Cell Area:             13089.960158
+lut_tile                                  4.069    4.495 3.97e+05    8.961 100.0
+6_5_16_8_80
+  Critical Path Length:          0.91
+  Noncombinational Area:  3404.879974
+  Cell Area:              9469.080078
+lut_tile                                  3.214    3.801 3.44e+05    7.359 100.0
+6_5_16_8_120
+  Critical Path Length:          0.88
+  Noncombinational Area:  3709.799972
+  Cell Area:             10378.800085
+lut_tile                                  3.553    4.182 3.67e+05    8.102 100.0
+6_5_16_8_160
+  Critical Path Length:          0.85
+  Noncombinational Area:  4010.759970
+  Cell Area:             11014.560091
+lut_tile                                  3.705    4.200 3.55e+05    8.261 100.0
+6_5_16_12_80
+  Critical Path Length:          0.88
+  Noncombinational Area:  3610.079973
+  Cell Area:             10107.720107
+lut_tile                                  3.357    3.861 3.46e+05    7.564 100.0
+6_5_16_12_120
+  Critical Path Length:          0.91
+  Noncombinational Area:  4009.679970
+  Cell Area:             11104.560120
+lut_tile                                  3.563    4.054 3.50e+05    7.967 100.0
+6_5_16_12_160
+  Critical Path Length:          0.89
+  Noncombinational Area:  4412.159966
+  Cell Area:             12098.160136
+lut_tile                                  3.860    4.259 3.47e+05    8.466 100.0
+6_5_16_16_80
+  Critical Path Length:          0.89
+  Noncombinational Area:  3610.079973
+  Cell Area:             10641.240119
+lut_tile                                  3.528    3.945 3.51e+05    7.824 100.0
+6_5_16_16_120
+  Critical Path Length:          0.88
+  Noncombinational Area:  4011.119970
+  Cell Area:             11913.480138
+lut_tile                                  3.780    4.146 3.52e+05    8.278 100.0
+6_5_16_16_160
+  Critical Path Length:          0.89
+  Noncombinational Area:  4414.679966
+  Cell Area:             13182.120162
+lut_tile                                  4.169    4.441 3.65e+05    8.976 100.0
+6_6_8_8_80
+  Critical Path Length:          1.10
+  Noncombinational Area:  3856.319971
+  Cell Area:             11117.520077
+lut_tile                                  4.058    4.637 4.30e+05    9.125 100.0
+6_6_8_8_120
+  Critical Path Length:          1.10
+  Noncombinational Area:  4157.639969
+  Cell Area:             11959.560084
+lut_tile                                  4.407    4.925 4.55e+05    9.787 100.0
+6_6_8_8_160
+  Critical Path Length:          1.09
+  Noncombinational Area:  4462.199967
+  Cell Area:             12814.560087
+lut_tile                                  4.656    5.171 4.80e+05   10.306 100.0
+6_6_8_12_80
+  Critical Path Length:          1.11
+  Noncombinational Area:  4055.399969
+  Cell Area:             11850.120101
+lut_tile                                  4.226    4.768 4.46e+05    9.440 100.0
+6_6_8_12_120
+  Critical Path Length:          1.11
+  Noncombinational Area:  4458.599966
+  Cell Area:             12629.160115
+lut_tile                                  4.366    4.878 4.26e+05    9.671 100.0
+6_6_8_12_160
+  Critical Path Length:          1.12
+  Noncombinational Area:  4862.879963
+  Cell Area:             13811.400141
+lut_tile                                  4.402    4.835 4.44e+05    9.681 100.0
+6_6_8_16_80
+  Critical Path Length:          1.11
+  Noncombinational Area:  4055.759969
+  Cell Area:             12172.320115
+lut_tile                                  4.003    4.439 4.33e+05    8.874 100.0
+6_6_8_16_120
+  Critical Path Length:          1.15
+  Noncombinational Area:  4459.679966
+  Cell Area:             13559.040138
+lut_tile                                  4.603    5.027 4.51e+05   10.081 100.0
+6_6_8_16_160
+  Critical Path Length:          1.08
+  Noncombinational Area:  4863.959963
+  Cell Area:             14967.720158
+lut_tile                                  5.125    5.473 4.91e+05   11.089 100.0
+6_6_12_8_80
+  Critical Path Length:          1.12
+  Noncombinational Area:  3959.999970
+  Cell Area:             11583.720098
+lut_tile                                  4.217    4.769 4.60e+05    9.447 100.0
+6_6_12_8_120
+  Critical Path Length:          1.13
+  Noncombinational Area:  4265.279967
+  Cell Area:             12193.200099
+lut_tile                                  4.344    4.922 4.57e+05    9.723 100.0
+6_6_12_8_160
+  Critical Path Length:          1.10
+  Noncombinational Area:  4564.799965
+  Cell Area:             13120.200108
+lut_tile                                  4.782    5.216 4.73e+05   10.471 100.0
+6_6_12_12_80
+  Critical Path Length:          1.13
+  Noncombinational Area:  4169.519969
+  Cell Area:             12000.600118
+lut_tile                                  4.220    4.662 4.26e+05    9.308 100.0
+6_6_12_12_120
+  Critical Path Length:          1.12
+  Noncombinational Area:  4569.119966
+  Cell Area:             12987.720132
+lut_tile                                  4.500    4.874 4.24e+05    9.798 100.0
+6_6_12_12_160
+  Critical Path Length:          1.13
+  Noncombinational Area:  4971.959963
+  Cell Area:             14054.400154
+lut_tile                                  4.781    5.181 4.51e+05   10.413 100.0
+6_6_12_16_80
+  Critical Path Length:          1.13
+  Noncombinational Area:  4163.039968
+  Cell Area:             12686.760135
+lut_tile                                  4.467    4.955 4.66e+05    9.888 100.0
+6_6_12_16_120
+  Critical Path Length:          1.10
+  Noncombinational Area:  4567.679966
+  Cell Area:             14173.920155
+lut_tile                                  4.915    5.403 5.17e+05   10.835 100.0
+6_6_12_16_160
+  Critical Path Length:          1.12
+  Noncombinational Area:  4967.999962
+  Cell Area:             15173.640170
+lut_tile                                  5.006    5.397 4.71e+05   10.873 100.0
+6_6_16_8_80
+  Critical Path Length:          1.11
+  Noncombinational Area:  3958.919971
+  Cell Area:             11686.680097
+lut_tile                                  4.335    4.880 4.41e+05    9.656 100.0
+6_6_16_8_120
+  Critical Path Length:          1.13
+  Noncombinational Area:  4263.479968
+  Cell Area:             12555.000104
+lut_tile                                  4.703    5.170 4.64e+05   10.336 100.0
+6_6_16_8_160
+  Critical Path Length:          1.10
+  Noncombinational Area:  4567.319966
+  Cell Area:             13295.520110
+lut_tile                                  4.864    5.339 4.77e+05   10.680 100.0
+6_6_16_12_80
+  Critical Path Length:          1.10
+  Noncombinational Area:  4162.679969
+  Cell Area:             12389.040121
+lut_tile                                  4.451    4.932 4.50e+05    9.832 100.0
+6_6_16_12_120
+  Critical Path Length:          1.14
+  Noncombinational Area:  4565.519966
+  Cell Area:             13281.120143
+lut_tile                                  4.713    5.110 4.41e+05   10.264 100.0
+6_6_16_12_160
+  Critical Path Length:          1.07
+  Noncombinational Area:  4967.999962
+  Cell Area:             14456.520150
+lut_tile                                  5.052    5.482 4.67e+05   11.002 100.0
+6_6_16_16_80
+  Critical Path Length:          1.08
+  Noncombinational Area:  4162.319969
+  Cell Area:             12981.600132
+lut_tile                                  4.321    4.774 4.62e+05    9.557 100.0
+6_6_16_16_120
+  Critical Path Length:          1.11
+  Noncombinational Area:  4569.839966
+  Cell Area:             14262.480158
+lut_tile                                  5.007    5.484 4.93e+05   10.984 100.0
+6_6_16_16_160
+  Critical Path Length:          1.10
+  Noncombinational Area:  4968.359963
+  Cell Area:             15527.520179
+lut_tile                                  5.013    5.364 4.87e+05   10.864 100.0
+6_7_8_8_80
+  Critical Path Length:          1.34
+  Noncombinational Area:  4390.559968
+  Cell Area:             13345.920116
+lut_tile                                  4.973    6.049 5.75e+05   11.597 100.0
+6_7_8_8_120
+  Critical Path Length:          1.33
+  Noncombinational Area:  4693.679965
+  Cell Area:             14142.240117
+lut_tile                                  5.127    6.292 5.97e+05   12.016 100.0
+6_7_8_8_160
+  Critical Path Length:          1.34
+  Noncombinational Area:  4996.799963
+  Cell Area:             14818.680133
+lut_tile                                  5.321    6.438 5.80e+05   12.340 100.0
+6_7_8_12_80
+  Critical Path Length:          1.34
+  Noncombinational Area:  4590.719966
+  Cell Area:             13800.960140
+lut_tile                                  4.961    6.094 5.50e+05   11.605 100.0
+6_7_8_12_120
+  Critical Path Length:          1.33
+  Noncombinational Area:  4994.279963
+  Cell Area:             14955.120154
+lut_tile                                  5.288    6.217 5.73e+05   12.079 100.0
+6_7_8_12_160
+  Critical Path Length:          1.34
+  Noncombinational Area:  5396.399960
+  Cell Area:             15965.280174
+lut_tile                                  5.502    6.394 5.79e+05   12.476 100.0
+6_7_8_16_80
+  Critical Path Length:          1.34
+  Noncombinational Area:  4592.519966
+  Cell Area:             14370.840152
+lut_tile                                  5.098    6.212 5.68e+05   11.878 100.0
+6_7_8_16_120
+  Critical Path Length:          1.34
+  Noncombinational Area:  4995.719963
+  Cell Area:             15907.320171
+lut_tile                                  5.611    6.466 6.03e+05   12.679 100.0
+6_7_8_16_160
+  Critical Path Length:          1.33
+  Noncombinational Area:  5397.479960
+  Cell Area:             16922.880198
+lut_tile                                  5.738    6.514 5.71e+05   12.822 100.0
+6_7_12_8_80
+  Critical Path Length:          1.34
+  Noncombinational Area:  4514.039967
+  Cell Area:             13624.560135
+lut_tile                                  4.979    6.201 5.75e+05   11.755 100.0
+6_7_12_8_120
+  Critical Path Length:          1.37
+  Noncombinational Area:  4815.719964
+  Cell Area:             14395.320139
+lut_tile                                  5.274    6.443 5.81e+05   12.299 100.0
+6_7_12_8_160
+  Critical Path Length:          1.37
+  Noncombinational Area:  5117.039961
+  Cell Area:             15093.000142
+lut_tile                                  5.443    6.475 5.64e+05   12.483 100.0
+6_7_12_12_80
+  Critical Path Length:          1.37
+  Noncombinational Area:  4714.559965
+  Cell Area:             14107.320156
+lut_tile                                  5.039    5.942 5.40e+05   11.521 100.0
+6_7_12_12_120
+  Critical Path Length:          1.36
+  Noncombinational Area:  5117.759962
+  Cell Area:             15162.480170
+lut_tile                                  5.399    6.281 5.58e+05   12.239 100.0
+6_7_12_12_160
+  Critical Path Length:          1.35
+  Noncombinational Area:  5521.319959
+  Cell Area:             16216.200194
+lut_tile                                  5.521    6.415 5.64e+05   12.500 100.0
+6_7_12_16_80
+  Critical Path Length:          1.35
+  Noncombinational Area:  4715.279965
+  Cell Area:             14822.280163
+lut_tile                                  5.306    6.264 5.80e+05   12.150 100.0
+6_7_12_16_120
+  Critical Path Length:          1.38
+  Noncombinational Area:  5119.199962
+  Cell Area:             15987.240190
+lut_tile                                  5.539    6.533 5.75e+05   12.647 100.0
+6_7_12_16_160
+  Critical Path Length:          1.33
+  Noncombinational Area:  5518.799959
+  Cell Area:             17215.560212
+lut_tile                                  5.903    6.586 5.74e+05   13.063 100.0
+6_7_16_8_80
+  Critical Path Length:          1.33
+  Noncombinational Area:  4511.879966
+  Cell Area:             13934.160139
+lut_tile                                  5.210    6.100 5.72e+05   11.882 100.0
+6_7_16_8_120
+  Critical Path Length:          1.34
+  Noncombinational Area:  4813.199964
+  Cell Area:             14720.040139
+lut_tile                                  5.436    6.588 5.88e+05   12.613 100.0
+6_7_16_8_160
+  Critical Path Length:          1.32
+  Noncombinational Area:  5117.399961
+  Cell Area:             15468.840148
+lut_tile                                  5.743    6.610 5.92e+05   12.945 100.0
+6_7_16_12_80
+  Critical Path Length:          1.34
+  Noncombinational Area:  4712.039965
+  Cell Area:             14529.600164
+lut_tile                                  5.402    6.337 5.71e+05   12.311 100.0
+6_7_16_12_120
+  Critical Path Length:          1.33
+  Noncombinational Area:  5113.079961
+  Cell Area:             15394.680178
+lut_tile                                  5.500    6.323 5.45e+05   12.368 100.0
+6_7_16_12_160
+  Critical Path Length:          1.34
+  Noncombinational Area:  5516.279958
+  Cell Area:             16565.760193
+lut_tile                                  5.906    6.613 5.58e+05   13.077 100.0
+6_7_16_16_80
+  Critical Path Length:          1.32
+  Noncombinational Area:  4712.399964
+  Cell Area:             15068.880173
+lut_tile                                  5.552    6.514 5.83e+05   12.649 100.0
+6_7_16_16_120
+  Critical Path Length:          1.32
+  Noncombinational Area:  5116.679962
+  Cell Area:             16344.720192
+lut_tile                                  5.768    6.690 5.94e+05   13.052 100.0
+6_7_16_16_160
+  Critical Path Length:          1.32
+  Noncombinational Area:  5517.719958
+  Cell Area:             17688.960211
+lut_tile                                  6.169    7.068 6.18e+05   13.855 100.0
+6_8_8_8_80
+  Critical Path Length:          1.49
+  Noncombinational Area:  5165.279962
+  Cell Area:             16133.040152
+lut_tile                                  6.588    6.868 5.86e+05   14.042 100.0
+6_8_8_8_120
+  Critical Path Length:          1.47
+  Noncombinational Area:  5468.399958
+  Cell Area:             16873.560151
+lut_tile                                  6.799    7.245 6.15e+05   14.659 100.0
+6_8_8_8_160
+  Critical Path Length:          1.49
+  Noncombinational Area:  5771.159956
+  Cell Area:             17564.760156
+lut_tile                                  6.982    7.401 6.27e+05   15.010 100.0
+6_8_8_12_80
+  Critical Path Length:          1.47
+  Noncombinational Area:  5363.639960
+  Cell Area:             16671.600176
+lut_tile                                  6.790    7.040 6.04e+05   14.435 100.0
+6_8_8_12_120
+  Critical Path Length:          1.46
+  Noncombinational Area:  5770.439956
+  Cell Area:             17725.680184
+lut_tile                                  6.914    7.267 6.16e+05   14.798 100.0
+6_8_8_12_160
+  Critical Path Length:          1.47
+  Noncombinational Area:  6173.639953
+  Cell Area:             19058.760214
+lut_tile                                  7.370    7.547 6.28e+05   15.544 100.0
+6_8_8_16_80
+  Critical Path Length:          1.46
+  Noncombinational Area:  5367.959959
+  Cell Area:             17256.240187
+lut_tile                                  6.920    7.265 6.31e+05   14.817 100.0
+6_8_8_16_120
+  Critical Path Length:          1.46
+  Noncombinational Area:  5771.879957
+  Cell Area:             18632.520216
+lut_tile                                  7.073    7.276 6.24e+05   14.973 100.0
+6_8_8_16_160
+  Critical Path Length:          1.48
+  Noncombinational Area:  6174.359953
+  Cell Area:             19784.160227
+lut_tile                                  7.617    7.684 6.19e+05   15.920 100.0
+6_8_12_8_80
+  Critical Path Length:          1.49
+  Noncombinational Area:  5297.039960
+  Cell Area:             16422.480160
+lut_tile                                  6.574    6.893 6.00e+05   14.067 100.0
+6_8_12_8_120
+  Critical Path Length:          1.47
+  Noncombinational Area:  5599.439958
+  Cell Area:             17280.000169
+lut_tile                                  6.924    7.255 6.13e+05   14.793 100.0
+6_8_12_8_160
+  Critical Path Length:          1.50
+  Noncombinational Area:  5901.479956
+  Cell Area:             17959.680172
+lut_tile                                  7.096    7.427 5.89e+05   15.112 100.0
+6_8_12_12_80
+  Critical Path Length:          1.48
+  Noncombinational Area:  5498.639959
+  Cell Area:             17190.720187
+lut_tile                                  6.831    7.033 6.00e+05   14.464 100.0
+6_8_12_12_120
+  Critical Path Length:          1.47
+  Noncombinational Area:  5901.119956
+  Cell Area:             18393.480207
+lut_tile                                  7.097    7.240 6.06e+05   14.944 100.0
+6_8_12_12_160
+  Critical Path Length:          1.48
+  Noncombinational Area:  6306.839952
+  Cell Area:             19286.280220
+lut_tile                                  7.344    7.418 6.10e+05   15.372 100.0
+6_8_12_16_80
+  Critical Path Length:          1.48
+  Noncombinational Area:  5497.919959
+  Cell Area:             17811.360199
+lut_tile                                  6.964    7.184 6.23e+05   14.770 100.0
+6_8_12_16_120
+  Critical Path Length:          1.47
+  Noncombinational Area:  5905.079955
+  Cell Area:             18812.520220
+lut_tile                                  7.131    7.408 6.06e+05   15.145 100.0
+6_8_12_16_160
+  Critical Path Length:          1.47
+  Noncombinational Area:  6305.039953
+  Cell Area:             20228.760239
+lut_tile                                  7.654    7.698 6.23e+05   15.975 100.0
+6_8_16_8_80
+  Critical Path Length:          1.48
+  Noncombinational Area:  5297.759961
+  Cell Area:             16840.080179
+lut_tile                                  6.991    7.288 5.83e+05   14.862 100.0
+6_8_16_8_120
+  Critical Path Length:          1.48
+  Noncombinational Area:  5600.519958
+  Cell Area:             17732.160179
+lut_tile                                  7.240    7.478 6.16e+05   15.334 100.0
+6_8_16_8_160
+  Critical Path Length:          1.44
+  Noncombinational Area:  5903.639956
+  Cell Area:             18536.040188
+lut_tile                                  7.649    7.887 6.55e+05   16.192 100.0
+6_8_16_12_80
+  Critical Path Length:          1.48
+  Noncombinational Area:  5497.199958
+  Cell Area:             17458.920201
+lut_tile                                  7.060    7.252 6.18e+05   14.930 100.0
+6_8_16_12_120
+  Critical Path Length:          1.45
+  Noncombinational Area:  5903.639956
+  Cell Area:             18515.160219
+lut_tile                                  7.346    7.448 6.16e+05   15.410 100.0
+6_8_16_12_160
+  Critical Path Length:          1.50
+  Noncombinational Area:  6305.759952
+  Cell Area:             19796.760245
+lut_tile                                  7.829    7.811 6.28e+05   16.268 100.0
+6_8_16_16_80
+  Critical Path Length:          1.51
+  Noncombinational Area:  5498.999959
+  Cell Area:             17959.320215
+lut_tile                                  7.099    7.389 6.38e+05   15.125 100.0
+6_8_16_16_120
+  Critical Path Length:          1.47
+  Noncombinational Area:  5902.199956
+  Cell Area:             19413.360236
+lut_tile                                  7.670    7.772 6.38e+05   16.080 100.0
+6_8_16_16_160
+  Critical Path Length:          1.51
+  Noncombinational Area:  6303.959952
+  Cell Area:             20694.960249
+lut_tile                                  8.038    8.041 6.43e+05   16.721 100.0
+6_9_8_8_80
+  Critical Path Length:          1.67
+  Noncombinational Area:  5730.479957
+  Cell Area:             18813.240167
+lut_tile                                  8.262    7.978 7.12e+05   16.952 100.0
+6_9_8_8_120
+  Critical Path Length:          1.64
+  Noncombinational Area:  6029.279954
+  Cell Area:             19361.160172
+lut_tile                                  8.171    8.011 6.79e+05   16.861 100.0
+6_9_8_8_160
+  Critical Path Length:          1.65
+  Noncombinational Area:  6334.559953
+  Cell Area:             20297.160181
+lut_tile                                  8.729    8.585 7.68e+05   18.082 100.0
+6_9_8_12_80
+  Critical Path Length:          1.72
+  Noncombinational Area:  5929.559956
+  Cell Area:             19260.360191
+lut_tile                                  8.306    8.070 6.98e+05   17.074 100.0
+6_9_8_12_120
+  Critical Path Length:          1.72
+  Noncombinational Area:  6333.839952
+  Cell Area:             20048.400206
+lut_tile                                  8.336    8.071 6.78e+05   17.085 100.0
+6_9_8_12_160
+  Critical Path Length:          1.71
+  Noncombinational Area:  6738.839949
+  Cell Area:             21247.200220
+lut_tile                                  8.600    8.446 7.04e+05   17.750 100.0
+6_9_8_16_80
+  Critical Path Length:          1.66
+  Noncombinational Area:  5931.719956
+  Cell Area:             19634.400200
+lut_tile                                  8.236    8.068 7.07e+05   17.012 100.0
+6_9_8_16_120
+  Critical Path Length:          1.65
+  Noncombinational Area:  6336.359952
+  Cell Area:             21302.640224
+lut_tile                                  8.742    8.465 7.42e+05   17.949 100.0
+6_9_8_16_160
+  Critical Path Length:          1.65
+  Noncombinational Area:  6737.399950
+  Cell Area:             22612.320254
+lut_tile                                  9.233    8.944 7.70e+05   18.947 100.0
+6_9_12_8_80
+  Critical Path Length:          1.68
+  Noncombinational Area:  5880.239955
+  Cell Area:             19420.200195
+lut_tile                                  7.624    7.581 7.23e+05   15.928 100.0
+6_9_12_8_120
+  Critical Path Length:          1.71
+  Noncombinational Area:  6186.599953
+  Cell Area:             20046.240189
+lut_tile                                  8.487    8.215 7.26e+05   17.428 100.0
+6_9_12_8_160
+  Critical Path Length:          1.69
+  Noncombinational Area:  6484.319951
+  Cell Area:             20735.280197
+lut_tile                                  8.646    8.435 7.30e+05   17.811 100.0
+6_9_12_12_80
+  Critical Path Length:          1.67
+  Noncombinational Area:  6084.719954
+  Cell Area:             19746.000207
+lut_tile                                  8.280    8.039 7.15e+05   17.034 100.0
+6_9_12_12_120
+  Critical Path Length:          1.65
+  Noncombinational Area:  6487.559950
+  Cell Area:             20566.080230
+lut_tile                                  8.388    8.117 7.02e+05   17.207 100.0
+6_9_12_12_160
+  Critical Path Length:          1.70
+  Noncombinational Area:  6887.879948
+  Cell Area:             21817.440235
+lut_tile                                  8.901    8.522 7.15e+05   18.138 100.0
+6_9_12_16_80
+  Critical Path Length:          1.67
+  Noncombinational Area:  6083.279953
+  Cell Area:             20369.160220
+lut_tile                                  8.439    8.252 7.03e+05   17.394 100.0
+6_9_12_16_120
+  Critical Path Length:          1.66
+  Noncombinational Area:  6484.679952
+  Cell Area:             21962.880247
+lut_tile                                  8.920    8.633 7.53e+05   18.306 100.0
+6_9_12_16_160
+  Critical Path Length:          1.65
+  Noncombinational Area:  6891.479948
+  Cell Area:             22975.920273
+lut_tile                                  9.087    8.707 7.39e+05   18.532 100.0
+6_9_16_8_80
+  Critical Path Length:          1.68
+  Noncombinational Area:  5880.959955
+  Cell Area:             19610.280195
+lut_tile                                  8.536    8.283 7.14e+05   17.533 100.0
+6_9_16_8_120
+  Critical Path Length:          1.66
+  Noncombinational Area:  6185.519954
+  Cell Area:             20198.880194
+lut_tile                                  8.895    8.475 7.12e+05   18.083 100.0
+6_9_16_8_160
+  Critical Path Length:          1.63
+  Noncombinational Area:  6484.679951
+  Cell Area:             21004.200205
+lut_tile                                  9.133    8.787 7.45e+05   18.665 100.0
+6_9_16_12_80
+  Critical Path Length:          1.65
+  Noncombinational Area:  6085.439955
+  Cell Area:             20151.000215
+lut_tile                                  8.706    8.476 7.18e+05   17.901 100.0
+6_9_16_12_120
+  Critical Path Length:          1.68
+  Noncombinational Area:  6482.879951
+  Cell Area:             21230.640226
+lut_tile                                  9.050    8.808 7.21e+05   18.580 100.0
+6_9_16_12_160
+  Critical Path Length:          1.66
+  Noncombinational Area:  6887.519947
+  Cell Area:             22264.200244
+lut_tile                                  9.364    8.886 7.17e+05   18.967 100.0
+6_9_16_16_80
+  Critical Path Length:          1.65
+  Noncombinational Area:  6081.119954
+  Cell Area:             20937.600232
+lut_tile                                  9.130    8.648 7.63e+05   18.541 100.0
+6_9_16_16_120
+  Critical Path Length:          1.63
+  Noncombinational Area:  6486.479951
+  Cell Area:             22241.160250
+lut_tile                                  9.327    9.040 7.80e+05   19.147 100.0
+6_9_16_16_160
+  Critical Path Length:          1.62
+  Noncombinational Area:  6891.839947
+  Cell Area:             23234.040274
+lut_tile                                  9.598    8.981 7.21e+05   19.301 100.0
+6_10_8_8_80
+  Critical Path Length:          2.12
+  Noncombinational Area:  6291.359954
+  Cell Area:             21166.560177
+lut_tile                                  8.989    8.937 8.08e+05   18.733 100.0
+6_10_8_8_120
+  Critical Path Length:          2.01
+  Noncombinational Area:  6586.919952
+  Cell Area:             22088.160189
+lut_tile                                  9.350    9.175 8.52e+05   19.378 100.0
+6_10_8_8_160
+  Critical Path Length:          2.00
+  Noncombinational Area:  6896.159948
+  Cell Area:             22695.120188
+lut_tile                                  9.558    9.200 8.18e+05   19.575 100.0
+6_10_8_12_80
+  Critical Path Length:          2.04
+  Noncombinational Area:  6485.399952
+  Cell Area:             21988.800206
+lut_tile                                  9.335    8.971 8.17e+05   19.123 100.0
+6_10_8_12_120
+  Critical Path Length:          2.07
+  Noncombinational Area:  6899.759948
+  Cell Area:             22977.720219
+lut_tile                                  9.441    9.295 8.17e+05   19.553 100.0
+6_10_8_12_160
+  Critical Path Length:          2.08
+  Noncombinational Area:  7301.159944
+  Cell Area:             24079.680228
+lut_tile                                  9.850    9.762 8.46e+05   20.459 100.0
+6_10_8_16_80
+  Critical Path Length:          2.04
+  Noncombinational Area:  6492.599951
+  Cell Area:             22593.960205
+lut_tile                                  9.558    9.315 8.31e+05   19.704 100.0
+6_10_8_16_120
+  Critical Path Length:          1.98
+  Noncombinational Area:  6894.719948
+  Cell Area:             23931.360240
+lut_tile                                  9.807    9.417 8.53e+05   20.077 100.0
+6_10_8_16_160
+  Critical Path Length:          2.04
+  Noncombinational Area:  7296.479946
+  Cell Area:             25173.360247
+lut_tile                                 10.166    9.942 8.95e+05   21.003 100.0
+6_10_12_8_80
+  Critical Path Length:          2.06
+  Noncombinational Area:  6459.479951
+  Cell Area:             21870.360196
+lut_tile                                  9.163    9.000 8.41e+05   19.004 100.0
+6_10_12_8_120
+  Critical Path Length:          2.01
+  Noncombinational Area:  6762.959949
+  Cell Area:             22583.160202
+lut_tile                                  9.442    9.233 8.32e+05   19.506 100.0
+6_10_12_8_160
+  Critical Path Length:          2.01
+  Noncombinational Area:  7059.959948
+  Cell Area:             23607.000207
+lut_tile                                  9.817    9.586 8.65e+05   20.269 100.0
+6_10_12_12_80
+  Critical Path Length:          2.01
+  Noncombinational Area:  6661.799949
+  Cell Area:             22701.600214
+lut_tile                                  9.405    9.462 8.73e+05   19.740 100.0
+6_10_12_12_120
+  Critical Path Length:          1.99
+  Noncombinational Area:  7061.759947
+  Cell Area:             23541.120241
+lut_tile                                  9.622    9.405 8.66e+05   19.892 100.0
+6_10_12_12_160
+  Critical Path Length:          2.04
+  Noncombinational Area:  7465.679944
+  Cell Area:             24703.560252
+lut_tile                                  9.944    9.596 8.54e+05   20.394 100.0
+6_10_12_16_80
+  Critical Path Length:          2.01
+  Noncombinational Area:  6663.959949
+  Cell Area:             23105.160229
+lut_tile                                  9.528    9.209 8.39e+05   19.576 100.0
+6_10_12_16_120
+  Critical Path Length:          2.06
+  Noncombinational Area:  7058.879946
+  Cell Area:             24448.320253
+lut_tile                                  9.934    9.531 8.62e+05   20.327 100.0
+6_10_12_16_160
+  Critical Path Length:          2.04
+  Noncombinational Area:  7467.119944
+  Cell Area:             25773.480272
+lut_tile                                 10.195    9.929 8.93e+05   21.017 100.0
+6_10_16_8_80
+  Critical Path Length:          2.03
+  Noncombinational Area:  6450.119952
+  Cell Area:             22462.200199
+lut_tile                                  9.609    9.376 8.65e+05   19.851 100.0
+6_10_16_8_120
+  Critical Path Length:          2.09
+  Noncombinational Area:  6756.479950
+  Cell Area:             23137.200213
+lut_tile                                  9.809    9.651 8.70e+05   20.330 100.0
+6_10_16_8_160
+  Critical Path Length:          1.97
+  Noncombinational Area:  7058.519948
+  Cell Area:             23889.600215
+lut_tile                                 10.342    9.860 8.68e+05   21.069 100.0
+6_10_16_12_80
+  Critical Path Length:          1.99
+  Noncombinational Area:  6655.319951
+  Cell Area:             23182.200227
+lut_tile                                  9.983    9.686 8.76e+05   20.545 100.0
+6_10_16_12_120
+  Critical Path Length:          2.00
+  Noncombinational Area:  7053.839948
+  Cell Area:             23974.920247
+lut_tile                                 10.149    9.786 8.69e+05   20.804 100.0
+6_10_16_12_160
+  Critical Path Length:          2.02
+  Noncombinational Area:  7459.199944
+  Cell Area:             24930.360267
+lut_tile                                 10.410    9.856 8.34e+05   21.100 100.0
+6_10_16_16_80
+  Critical Path Length:          1.95
+  Noncombinational Area:  6652.439951
+  Cell Area:             23338.800237
+lut_tile                                  9.967    9.437 8.35e+05   20.240 100.0
+6_10_16_16_120
+  Critical Path Length:          1.99
+  Noncombinational Area:  7057.079947
+  Cell Area:             24771.240248
+lut_tile                                 10.295    9.852 8.53e+05   21.000 100.0
+6_10_16_16_160
+  Critical Path Length:          1.99
+  Noncombinational Area:  7460.999945
+  Cell Area:             26187.480279
+lut_tile                                 10.758   10.207 8.67e+05   21.831 100.0

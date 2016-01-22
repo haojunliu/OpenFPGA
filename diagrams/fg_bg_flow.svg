@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="34cm" height="28cm" viewBox="170 110 662 545" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #ff0000" points="547.08,110.653 716.567,110.653 692.416,177.008 522.929,177.008 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="547.08,110.653 716.567,110.653 692.416,177.008 522.929,177.008 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="619.748" y="139.303">
+      <tspan x="619.748" y="139.303">architecture.xml</tspan>
+      <tspan x="619.748" y="161.88">user_design.v</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="607.675" y1="177.523" x2="607.643" y2="187.097"/>
+    <polygon style="fill: #000000" points="607.636,189.347 606.146,186.342 607.643,187.097 609.146,186.352 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="607.636,189.347 606.146,186.342 607.643,187.097 609.146,186.352 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="571.006" y="190.689" width="73.25" height="42.5778"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x="571.006" y="190.689" width="73.25" height="42.5778"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="578.331" y1="190.689" x2="578.331" y2="233.267"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="636.931" y1="190.689" x2="636.931" y2="233.267"/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="607.631" y="218.751">
+      <tspan x="607.631" y="218.751">VPR*</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #00ff00" points="430.726,275.119 547.23,275.119 531.297,318.897 414.792,318.897 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="430.726,275.119 547.23,275.119 531.297,318.897 414.792,318.897 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="481.011" y="303.769">
+      <tspan x="481.011" y="303.769">ud.place</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #00ff00" points="551.942,275.113 668.946,275.113 653.013,318.891 536.008,318.891 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="551.942,275.113 668.946,275.113 653.013,318.891 536.008,318.891 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="602.477" y="303.763">
+      <tspan x="602.477" y="303.763">ud.route</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #00ff00" points="676.604,275.015 777.308,275.015 761.375,318.793 660.67,318.793 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="676.604,275.015 777.308,275.015 761.375,318.793 660.67,318.793 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="718.989" y="303.665">
+      <tspan x="718.989" y="303.665">ud.net</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="607.631,233.267 607.631,249.351 726.956,249.351 726.956,271.423 "/>
+    <polygon style="fill: #000000" points="726.956,273.673 725.456,270.673 726.956,271.423 728.456,270.673 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="726.956,273.673 725.456,270.673 726.956,271.423 728.456,270.673 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="610.464" y1="249.723" x2="610.447" y2="271.521"/>
+    <polygon style="fill: #000000" points="610.445,273.771 608.948,270.77 610.447,271.521 611.948,270.773 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="610.445,273.771 608.948,270.77 610.447,271.521 611.948,270.773 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="608.36,249.361 608.36,249.355 488.978,249.355 488.978,271.527 "/>
+    <polygon style="fill: #000000" points="488.978,273.777 487.478,270.777 488.978,271.527 490.478,270.777 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="488.978,273.777 487.478,270.777 488.978,271.527 490.478,270.777 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="594.51" y1="318.891" x2="594.538" y2="344.531"/>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="711.022,318.793 711.022,344.979 606.328,344.979 606.328,359.877 "/>
+  <g>
+    <polygon style="fill: #00ff00" points="558.98,609.735 675.484,609.735 659.55,653.512 543.046,653.512 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="558.98,609.735 675.484,609.735 659.55,653.512 543.046,653.512 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="609.265" y="638.385">
+      <tspan x="609.265" y="638.385">fpga.conf</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #00ff00" points="322.129,609.964 438.633,609.964 422.699,653.742 306.195,653.742 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="322.129,609.964 438.633,609.964 422.699,653.742 306.195,653.742 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="372.414" y="638.614">
+      <tspan x="372.414" y="638.614">ud.bs</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="320.157,556.103 320.157,583.664 380.511,583.664 380.511,606.53 "/>
+    <polygon style="fill: #000000" points="380.511,608.78 379.011,605.78 380.511,606.53 382.011,605.78 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="380.511,608.78 379.011,605.78 380.511,606.53 382.011,605.78 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="704.491,143.83 831.174,143.83 831.174,384.649 504.693,384.649 "/>
+    <polygon style="fill: #000000" points="502.443,384.649 505.443,383.149 504.693,384.649 505.443,386.149 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="502.443,384.649 505.443,383.149 504.693,384.649 505.443,386.149 "/>
+  </g>
+  <g>
+    <polygon style="fill: #00ff00" points="283.549,274.969 420.167,274.969 404.233,318.747 267.616,318.747 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="283.549,274.969 420.167,274.969 404.233,318.747 267.616,318.747 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="343.891" y="303.619">
+      <tspan x="343.891" y="303.619">routing.dump</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="571.006,211.978 351.858,211.978 351.858,271.378 "/>
+    <polygon style="fill: #000000" points="351.858,273.628 350.358,270.628 351.858,271.378 353.358,270.628 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="351.858,273.628 350.358,270.628 351.858,271.378 353.358,270.628 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="170.794" y="363.36" width="330.308" height="42.5778"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x="170.794" y="363.36" width="330.308" height="42.5778"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="203.825" y1="363.36" x2="203.825" y2="405.938"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="468.071" y1="363.36" x2="468.071" y2="405.938"/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="335.948" y="391.423">
+      <tspan x="335.948" y="391.423">Constructing Routing Structure</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="335.924" y1="318.747" x2="335.976" y2="360.337"/>
+    <polygon style="fill: #000000" points="335.979,362.587 334.475,359.589 335.976,360.337 337.475,359.586 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="335.979,362.587 334.475,359.589 335.976,360.337 337.475,359.586 "/>
+  </g>
+  <g>
+    <polygon style="fill: #00ff00" points="212.556,438.657 459.624,438.657 443.69,482.435 196.622,482.435 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="212.556,438.657 459.624,438.657 443.69,482.435 196.622,482.435 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="328.123" y="467.307">
+      <tspan x="328.123" y="467.307">routing diagram and switch</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="335.948" y1="405.938" x2="335.95" y2="434.408"/>
+    <polygon style="fill: #000000" points="335.95,436.658 334.45,433.658 335.95,434.408 337.45,433.658 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="335.95,436.658 334.45,433.658 335.95,434.408 337.45,433.658 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="189.027" y="513.525" width="262.258" height="42.5778"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x="189.027" y="513.525" width="262.258" height="42.5778"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="215.253" y1="513.525" x2="215.253" y2="556.103"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="425.06" y1="513.525" x2="425.06" y2="556.103"/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="320.157" y="541.588">
+      <tspan x="320.157" y="541.588">Bitstream Generation</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="320.156" y1="482.435" x2="320.157" y2="509.934"/>
+    <polygon style="fill: #000000" points="320.157,512.184 318.657,509.184 320.157,509.934 321.657,509.184 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="320.157,512.184 318.657,509.184 320.157,509.934 321.657,509.184 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="473.044" y1="318.897" x2="473.067" y2="345.571"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="472.733" y1="344.958" x2="605.893" y2="344.979"/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="605.977,359.663 606.33,359.663 606.33,460.62 454.803,460.62 "/>
+    <polygon style="fill: #000000" points="452.553,460.62 455.553,459.12 454.803,460.62 455.553,462.12 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="452.553,460.62 455.553,459.12 454.803,460.62 455.553,462.12 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="486.202" y="514.289" width="262.258" height="42.5778"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x="486.202" y="514.289" width="262.258" height="42.5778"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="512.428" y1="514.289" x2="512.428" y2="556.867"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="722.235" y1="514.289" x2="722.235" y2="556.867"/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="617.332" y="542.351">
+      <tspan x="617.332" y="542.351">FPGA RTL Config Gen</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="336.121,421.849 336.121,422.152 617.332,422.152 617.332,510.697 "/>
+    <polygon style="fill: #000000" points="617.332,512.947 615.832,509.947 617.332,510.697 618.832,509.947 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="617.332,512.947 615.832,509.947 617.332,510.697 618.832,509.947 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="617.332" y1="556.867" x2="617.343" y2="605.902"/>
+    <polygon style="fill: #000000" points="617.343,608.152 615.843,605.153 617.343,605.902 618.843,605.152 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="617.343,608.152 615.843,605.153 617.343,605.902 618.843,605.152 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="831.506,384.542 831.176,384.542 831.176,535.746 752.813,535.746 "/>
+    <polygon style="fill: #000000" points="750.563,535.746 753.563,534.246 752.813,535.746 753.563,537.246 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="750.563,535.746 753.563,534.246 752.813,535.746 753.563,537.246 "/>
+  </g>
+</svg>

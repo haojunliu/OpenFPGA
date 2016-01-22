@@ -1,0 +1,27 @@
+
+riscv_rdnpc:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000002000 <_start>:
+    2000:	2000026b 	rdnpc	a0
+    2004:	0000016f 	jal	2008 <_start+0x8>
+    2008:	20490033 	sub	a0,ra,a0
+    200c:	e8001013 	li	s9,4
+    2010:	e0000813 	li	s8,2
+    2014:	013a10e3 	bne	a0,s9,201c <fail>
+    2018:	003820e3 	bne	zero,s8,2028 <pass>
+
+000000000000201c <fail>:
+    201c:	07b801fb 	mtpcr	zero,s8,cr30
+    2020:	00000063 	b	2020 <fail+0x4>
+    2024:	00000013 	nop
+
+0000000000002028 <pass>:
+    2028:	0000012f 	fence
+    202c:	08000413 	li	ra,1
+    2030:	078201fb 	mtpcr	zero,ra,cr30
+    2034:	00000063 	b	2034 <pass+0xc>
+    2038:	00000013 	nop
+    203c:	00000013 	nop

@@ -1,0 +1,23 @@
+//
+// File and path settings
+//
+PathExport './'
+PathClear false
+FilePrefix
+FileFormat eps
+
+//
+// Export settings settings
+//
+ExportArea drawing
+ExportDpi 600
+
+//
+// Execute Converter
+//
+Array MySvgFiles 'E:\Google Drive\Research\OpenFPGA\diagrams\clb.svg':'E:\Google Drive\Research\OpenFPGA\diagrams\fpga_configuration.svg':'E:\Google Drive\Research\OpenFPGA\diagrams\fpga_full.svg':'E:\Google Drive\Research\OpenFPGA\diagrams\fpga_lut.svg':'E:\Google Drive\Research\OpenFPGA\diagrams\io_tile.svg':'E:\Google Drive\Research\OpenFPGA\diagrams\lut_one_out.svg':'E:\Google Drive\Research\OpenFPGA\diagrams\lut_tile.svg':'E:\Google Drive\Research\OpenFPGA\diagrams\lut_two_out.svg':'E:\Google Drive\Research\OpenFPGA\diagrams\madd_tile.svg':'E:\Google Drive\Research\OpenFPGA\diagrams\mem_tile.svg'
+Array MyExportFiles 'clb':'fpga_configuration':'fpga_full':'fpga_lut':'io_tile':'lut_one_out':'lut_tile':'lut_two_out':'madd_tile':'mem_tile'
+Loop MySvgFiles 3
+    FileSvg MySvgFiles:Index
+    FileName MyExportFiles:Index
+    Convert

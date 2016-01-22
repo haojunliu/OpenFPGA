@@ -1,0 +1,7 @@
+# Benchmark "single_inv" written by ABC on Mon Jun 23 12:26:04 2014
+.model single_inv
+.inputs top^clock top^rst top^d_in
+.outputs top^d_out
+.names top^d_in top^d_out
+0 1
+.end

@@ -1,0 +1,82 @@
+Node: 508  TN_INPAD_SOURCE Block #70 (top^d_in~1)
+Pin: inpad.inpad[0] pb (top^d_in~1)T_arr: 0  T_req: -1.24881e-09  Tdel: 0
+Internal Net: #1 (top^d_in~1).  Pins on net: 2.
+
+Node: 507  TN_INPAD_OPIN Block #70 (top^d_in~1)
+Pin: inpad.inpad[0] pb (top^d_in~1)
+T_arr: 0  T_req: -1.24881e-09  Tdel: 4.243e-11
+Internal Net: #1 (top^d_in~1).  Pins on net: 2.
+
+Node: 506  TN_CB_OPIN Block #70 (top^d_in~1)
+Pin: io.inpad[0] pb (top^d_in~1)
+T_arr: 4.243e-11  T_req: -1.20638e-09  Tdel: 4.01e-10
+External-to-Block Net: #32 (top^d_in~1).  Pins on net: 2.
+
+Node: 96  TN_CB_IPIN Block #32 (top^d_out~2)
+Pin: clb.I[0] pb (top^d_out~2)
+T_arr: 4.4343e-10  T_req: -8.0538e-10  Tdel: 8.044e-11
+Internal Net: #1 (top^d_in~1).  Pins on net: 2.
+
+Node: 112  TN_INTERMEDIATE_NODE Block #32 (top^d_out~2)
+Pin: ble.in[1] pb (top^d_out~1)
+T_arr: 5.2387e-10  T_req: -7.2494e-10  Tdel: 0
+Internal Net: #1 (top^d_in~1).  Pins on net: 2.
+
+Node: 114  TN_INTERMEDIATE_NODE Block #32 (top^d_out~2)
+Pin: soft_logic.in[1] pb (top^d_out~1)
+T_arr: 5.2387e-10  T_req: -7.2494e-10  Tdel: 0
+Internal Net: #1 (top^d_in~1).  Pins on net: 2.
+
+Node: 116  TN_INTERMEDIATE_NODE Block #32 (top^d_out~2)
+Pin: lut4.in[1] pb (top^d_out~1)
+T_arr: 5.2387e-10  T_req: -7.2494e-10  Tdel: 0
+Internal Net: #1 (top^d_in~1).  Pins on net: 2.
+
+Node: 118  TN_PRIMITIVE_IPIN Block #32 (top^d_out~2)
+Pin: lut.in[0] pb (top^d_out~1)
+T_arr: 5.2387e-10  T_req: -7.2494e-10  Tdel: 1.1e-10
+Internal Net: #1 (top^d_in~1).  Pins on net: 2.
+
+Node: 119  TN_PRIMITIVE_OPIN Block #32 (top^d_out~2)
+Pin: lut.out[0] pb (top^d_out~1)
+T_arr: 6.3387e-10  T_req: -6.1494e-10  Tdel: 0
+Internal Net: #33 (top^d_out~1).  Pins on net: 2.
+
+Node: 117  TN_INTERMEDIATE_NODE Block #32 (top^d_out~2)
+Pin: lut4.out[0] pb (top^d_out~1)
+T_arr: 6.3387e-10  T_req: -6.1494e-10  Tdel: 0
+Internal Net: #33 (top^d_out~1).  Pins on net: 2.
+
+Node: 115  TN_INTERMEDIATE_NODE Block #32 (top^d_out~2)
+Pin: soft_logic.out[0] pb (top^d_out~1)
+T_arr: 6.3387e-10  T_req: -6.1494e-10  Tdel: 0
+Internal Net: #33 (top^d_out~1).  Pins on net: 2.
+
+Node: 113  TN_INTERMEDIATE_NODE Block #32 (top^d_out~2)
+Pin: ble.out[0] pb (top^d_out~1)
+T_arr: 6.3387e-10  T_req: -6.1494e-10  Tdel: 0
+Internal Net: #33 (top^d_out~1).  Pins on net: 2.
+
+Node: 101  TN_CB_OPIN Block #32 (top^d_out~2)
+Pin: clb.O[1] pb (top^d_out~2)
+T_arr: 6.3387e-10  T_req: -6.1494e-10  Tdel: 6.01e-10
+External-to-Block Net: #29 (top^d_out~1).  Pins on net: 2.
+
+Node: 87  TN_CB_IPIN Block #29 (out:top^d_out~1)
+Pin: io.outpad[0] pb (out:top^d_out~1)
+T_arr: 1.23487e-09  T_req: -1.394e-11  Tdel: 1.394e-11
+Internal Net: #33 (top^d_out~1).  Pins on net: 2.
+
+Node: 88  TN_OUTPAD_IPIN Block #29 (out:top^d_out~1)
+Pin: outpad.outpad[0] pb (out:top^d_out~1)
+T_arr: 1.24881e-09  T_req: 0  Tdel: 0
+Internal Net: #33 (top^d_out~1).  Pins on net: 2.
+
+Node: 89  TN_OUTPAD_SINK Block #29 (out:top^d_out~1)
+Pin: outpad.outpad[0] pb (out:top^d_out~1)T_arr: 1.24881e-09  T_req: 0  
+Internal Net: #33 (top^d_out~1).  Pins on net: 2.
+
+
+Tnodes on critical path: 16  Non-global nets on critical path: 2.
+Global nets on critical path: 0.
+Total logic delay: 2.4681e-10 (s)  Total net delay: 1.002e-09 (s)

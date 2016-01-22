@@ -1,0 +1,52 @@
+\section{FPGA's Applications and Research}
+\label{sec:fpga_app_res}
+
+Field Programmable Gate Arrays (FPGAs) are effective in satisfying different computing
+ requirements such as high performance computing~\cite{Saldana:2010:MPM:1862648.1862652}, 
+digital signal processing~\cite{Chang:2005:DAR:1195478} and embedded computing~\cite{xilinx:embedded}. 
+ Academic research efforts cover architecture optimization, design space exploration,
+circuit level design and new CAD algorithms. \par
+
+The Versatile Packing, Placement and Routing tool (VPR) developed at the University of 
+Toronto~\cite{Betz:1997:VNP:647924.738755} has enabled a wide variety of researches
+from novel FPGA architectures to new CAD algorithms. Following the 2011 FPGA Conference Evening
+ Panel on "Should the academic community launch an open-source FPGA device and tools 
+effort?"~\cite{Wawrzynek:2011:ACL:1950413.1950417} and the release of the Verilog to Routing (VTR)
+ Project developed and integrated by the University of Toronto ~\cite{Rose:2012:VPA:2145694.2145708}, 
+we believe it is worth the effort to design and implement an open source FPGA hardware with toolflow support. 
+We name the project "Archipelago". An archipelago is composed of many islands; similarly, 
+an FPGA is composed by many tiles. \par
+
+\section{Goals and Design Decisions}
+\label{sec:goals}
+We designed the Archipelago architecture with two goals. First, it explores the quality of the physical
+ implementation result that is produced by a standard ASIC design flow in a modern
+ASIC process. Second, it enables other people to use and extend the project at will. 
+The goal, however, is not to build the best performing FPGA in the world. With those 
+goals in mind, we made several design decisions. \par
+
+\begin{enumerate}
+	\item To minimize human intervention, the tool flow is streamlined and scripted.
+	\item The design is customizable with parameters. Parameters are centrally located in
+	the architectural description file for VPR. Only a subset of parameters inside the
+	architectural description file for VPR are designed into the Archipelago architecture.
+	\item FPGA RTLs are fully synthesizable with a standard ASIC flow with no hand layout required.
+	Users can perform performance evaluations of the physical implementation rather than deriving performance
+	numbers with technology scaling.
+	\item Users can treat this work as an FPGA generator and use it in their own circuits.
+	\item Not all designed features are fully implemented and supported at this point, namely the Memory Tile
+	and Multiplier Tile. \par
+\end{enumerate}
+
+\section{Report Structure}
+\label{sec:rpt_struc}
+This report is organized as follows. This chapter introduces the motivations, goals and design decisions
+for the Archipelago project. Chapter~\ref{chap:background} provides a review on past work and related
+development. Chapter~\ref{chap:arch} gives a top-down review of the Archipelago open source FPGA architecture. 
+Chapter~\ref{chap:mod} documents a bottom-up description of modules at the RTL level. Chapter~\ref{chap:reconfig}
+ describes the reconfiguration architecture and techniques used. Chapter~\ref{chap:flow} explains the supporting
+ FPGA software with flow diagrams. Chapter~\ref{chap:testing} discusses functional test cases and methodologies.
+Chapter~\ref{chap:performance} presents critical path delay, area and static
+power consumption data and plots for different design parameters. 
+Chapter~\ref{chap:conclusion} concludes the achievements in the work 
+and suggests future directions of the project. \par

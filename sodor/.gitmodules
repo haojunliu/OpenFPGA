@@ -1,0 +1,12 @@
+[submodule "chisel"]
+	path = chisel
+	url = git@github.com:ucb-bar/chisel.git
+[submodule "riscv-fesvr"]
+	path = riscv-fesvr
+	url = git@github.com:ucb-bar/riscv-fesvr.git
+[submodule "riscv-pk"]
+	path = riscv-pk
+	url = git@github.com:ucb-bar/riscv-pk.git
+[submodule "uncore"]
+	path = uncore
+	url = git@github.com:ucb-bar/uncore.git

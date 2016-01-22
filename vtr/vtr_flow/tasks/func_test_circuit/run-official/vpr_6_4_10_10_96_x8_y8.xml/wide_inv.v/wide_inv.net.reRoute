@@ -1,0 +1,112 @@
+CLB top^d_out~2
+INPUT: open open open top^d_in~3 open top^d_in~0 top^d_in~1 open open open open open open top^d_in~2 open 
+    BLE top^d_out~3
+        INPUT: open open open open clb.I[3]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~1
+        INPUT: open open open open clb.I[6]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~0
+        INPUT: open open clb.I[5]->crossbar  open open open 
+        FF: OPEN
+    BLE top^d_out~2
+        INPUT: open open clb.I[13]->crossbar  open open open 
+        FF: OPEN
+CLB top^d_out~6
+INPUT: open open open top^d_in~7 open top^d_in~4 top^d_in~5 open open open open open open top^d_in~6 open 
+    BLE top^d_out~7
+        INPUT: open open open open clb.I[3]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~5
+        INPUT: open open open open clb.I[6]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~4
+        INPUT: open open clb.I[5]->crossbar  open open open 
+        FF: OPEN
+    BLE top^d_out~6
+        INPUT: open open clb.I[13]->crossbar  open open open 
+        FF: OPEN
+CLB top^d_out~10
+INPUT: open open open top^d_in~11 open top^d_in~8 top^d_in~9 open open open open open open top^d_in~10 open 
+    BLE top^d_out~11
+        INPUT: open open open open clb.I[3]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~9
+        INPUT: open open open open clb.I[6]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~8
+        INPUT: open open clb.I[5]->crossbar  open open open 
+        FF: OPEN
+    BLE top^d_out~10
+        INPUT: open open clb.I[13]->crossbar  open open open 
+        FF: OPEN
+CLB top^d_out~26
+INPUT: open open open top^d_in~14 open top^d_in~12 top^d_in~13 open open open open open open top^d_in~26 open 
+    BLE top^d_out~14
+        INPUT: open open open open clb.I[3]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~13
+        INPUT: open open open open clb.I[6]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~12
+        INPUT: open open clb.I[5]->crossbar  open open open 
+        FF: OPEN
+    BLE top^d_out~26
+        INPUT: open open clb.I[13]->crossbar  open open open 
+        FF: OPEN
+CLB top^d_out~31
+INPUT: open open open top^d_in~17 open top^d_in~15 top^d_in~16 open open open open open open top^d_in~31 open 
+    BLE top^d_out~17
+        INPUT: open open open open clb.I[3]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~16
+        INPUT: open open open open clb.I[6]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~15
+        INPUT: open open clb.I[5]->crossbar  open open open 
+        FF: OPEN
+    BLE top^d_out~31
+        INPUT: open open clb.I[13]->crossbar  open open open 
+        FF: OPEN
+CLB top^d_out~27
+INPUT: open open open top^d_in~20 open top^d_in~18 top^d_in~19 open open open open open open top^d_in~27 open 
+    BLE top^d_out~20
+        INPUT: open open open open clb.I[3]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~19
+        INPUT: open open open open clb.I[6]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~18
+        INPUT: open open clb.I[5]->crossbar  open open open 
+        FF: OPEN
+    BLE top^d_out~27
+        INPUT: open open clb.I[13]->crossbar  open open open 
+        FF: OPEN
+CLB top^d_out~25
+INPUT: open open open top^d_in~23 open top^d_in~21 top^d_in~22 open open open open open open top^d_in~25 open 
+    BLE top^d_out~23
+        INPUT: open open open open clb.I[3]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~22
+        INPUT: open open open open clb.I[6]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~21
+        INPUT: open open clb.I[5]->crossbar  open open open 
+        FF: OPEN
+    BLE top^d_out~25
+        INPUT: open open clb.I[13]->crossbar  open open open 
+        FF: OPEN
+CLB top^d_out~29
+INPUT: open open open top^d_in~30 open top^d_in~24 top^d_in~28 open open open open open open top^d_in~29 open 
+    BLE top^d_out~30
+        INPUT: open open open open clb.I[3]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~28
+        INPUT: open open open open clb.I[6]->crossbar  open 
+        FF: OPEN
+    BLE top^d_out~24
+        INPUT: open open clb.I[5]->crossbar  open open open 
+        FF: OPEN
+    BLE top^d_out~29
+        INPUT: open open clb.I[13]->crossbar  open open open 
+        FF: OPEN

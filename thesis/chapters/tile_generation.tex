@@ -1,0 +1,22 @@
+\section{ASIC Flow Overview}
+\label{sec:asic_flow}
+
+Input to a ASIC flow is RTL, in this case, in Verilog HDL. Constraints set Quality of Result (QoR) targets. Output of an ASIC flow is layout. (Fig.~\ref{fig:asic_flow_overview}) \par
+
+\begin{figure}[htp]
+	\begin{center}
+		\epsfxsize=3.5in
+		\epsfbox{asic_flow.eps}
+		    \renewcommand{\captionfont}{\small}
+				\caption{ASIC Flow Overview
+				\label{fig:asic_flow_overview}}
+	\end{center}
+\end{figure}
+
+\section{MIM Flow Using Synopsys IC Compiler}
+\label{sec:mim_flow}
+
+The Multiple Instantiated Module (MIM) is a flow that takes advantage of modules with same RTL and provides faster placement and routing and preserves QoR. Placing a large
+design can take several days. The MIM flow requires a large design that contains many identical modules. In the MIM flow, the tool first performs global planning and places
+all the identical modules. It then performs local placement and routing on only one of the module within the identical module group so the placement and routing step is only
+executed once and available for all. This reduces physical implementation time. \par

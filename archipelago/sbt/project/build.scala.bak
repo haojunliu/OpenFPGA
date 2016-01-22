@@ -1,0 +1,26 @@
+import sbt._
+import Keys._
+
+object BuildSettings {
+   val buildOrganization = "berkeley"
+   val buildVersion = "1.0"
+   val buildScalaVersion = "2.9.2"
+
+   val buildSettings = Defaults.defaultSettings ++ Seq (
+      organization := buildOrganization,
+      version      := buildVersion,
+      scalaVersion := buildScalaVersion
+   )
+}
+
+object ChiselBuild extends Build{
+   import BuildSettings._
+   lazy val chisel = Project("chisel", file("chisel"), settings = buildSettings)
+   lazy val common = Project("common", file("common"), settings = buildSettings) dependsOn(chisel)
+   lazy val rv32_1stage = Project("rv32_1stage", file("rv32_1stage"), settings = buildSettings) dependsOn(common, chisel)
+   lazy val rv32_2stage = Project("rv32_2stage", file("rv32_2stage"), settings = buildSettings) dependsOn(common, chisel)
+   lazy val rv32_5stage = Project("rv32_5stage", file("rv32_5stage"), settings = buildSettings) dependsOn(common, chisel)
+   lazy val rv32_ucode  = Project("rv32_ucode", file("rv32_ucode"), settings = buildSettings) dependsOn(common, chisel)
+   lazy val riscv_boom = Project("riscv-boom", file("riscv-boom"), settings = buildSettings) dependsOn(common, chisel)
+      System.setProperty("CHISEL_VERILOG_ROOT","../vlsi");
+}

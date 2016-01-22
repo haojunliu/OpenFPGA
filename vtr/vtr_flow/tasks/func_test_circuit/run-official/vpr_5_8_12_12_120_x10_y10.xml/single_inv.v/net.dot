@@ -1,0 +1,14 @@
+digraph G {
+	ranksep=.25;
+	"top_clock" [shape=triangle];
+	"top_rst" [shape=triangle];
+	"top_d_in" [shape=triangle];
+	"top_d_in" -> "top_BITWISE_NOT~0"[label="top^d_in"];
+	"top_BITWISE_NOT~0"
+	"top_BITWISE_NOT~0" -> "top_BUF_NODE~1"[label="top^d_out"];
+	"top_BUF_NODE~1" [shape=box];
+	"top_BUF_NODE~1" -> "top_d_out_O";
+	"top_d_out_O" [shape=triangle];
+	"top_ZERO_GND_ZERO"
+	"top_ONE_VCC_CNS"
+}

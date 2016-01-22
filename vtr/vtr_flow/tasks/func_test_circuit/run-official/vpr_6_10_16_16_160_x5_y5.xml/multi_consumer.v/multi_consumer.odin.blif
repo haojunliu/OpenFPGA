@@ -1,0 +1,1009 @@
+.model multi_consumer
+.inputs top^clock top^rst top^d_in~0 top^d_in~1 top^d_in~2 top^d_in~3 \
+ top^d_in~4 top^d_in~5 top^d_in~6 top^d_in~7 top^d_in~8 top^d_in~9 top^d_in~10 \
+ top^d_in~11 top^d_in~12 top^d_in~13 top^d_in~14 top^d_in~15
+.outputs top^d_out_1~0 top^d_out_1~1 top^d_out_1~2 top^d_out_1~3 top^d_out_1~4\
+ top^d_out_1~5 top^d_out_1~6 top^d_out_1~7 top^d_out_1~8 top^d_out_1~9\
+ top^d_out_1~10 top^d_out_1~11 top^d_out_1~12 top^d_out_1~13 top^d_out_1~14\
+ top^d_out_1~15 top^d_out_2~0 top^d_out_2~1 top^d_out_2~2 top^d_out_2~3\
+ top^d_out_2~4 top^d_out_2~5 top^d_out_2~6 top^d_out_2~7 top^d_out_2~8\
+ top^d_out_2~9 top^d_out_2~10 top^d_out_2~11 top^d_out_2~12 top^d_out_2~13\
+ top^d_out_2~14 top^d_out_2~15 top^d_out_4~0 top^d_out_4~1 top^d_out_4~2\
+ top^d_out_4~3 top^d_out_4~4 top^d_out_4~5 top^d_out_4~6 top^d_out_4~7\
+ top^d_out_4~8 top^d_out_4~9 top^d_out_4~10 top^d_out_4~11 top^d_out_4~12\
+ top^d_out_4~13 top^d_out_4~14 top^d_out_4~15 top^d_out_7~0 top^d_out_7~1\
+ top^d_out_7~2 top^d_out_7~3 top^d_out_7~4 top^d_out_7~5 top^d_out_7~6\
+ top^d_out_7~7 top^d_out_7~8 top^d_out_7~9 top^d_out_7~10 top^d_out_7~11\
+ top^d_out_7~12 top^d_out_7~13 top^d_out_7~14 top^d_out_7~15
+
+.names gnd
+.names unconn
+.names vcc
+1
+
+.names top^ADD~0^CARRY_FUNC~69 top^d_in~1 gnd top^ADD~0^ADDER_FUNC~70
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~71 top^d_in~2 gnd top^ADD~0^ADDER_FUNC~72
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~73 top^d_in~3 gnd top^ADD~0^ADDER_FUNC~74
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~75 top^d_in~4 gnd top^ADD~0^ADDER_FUNC~76
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~77 top^d_in~5 gnd top^ADD~0^ADDER_FUNC~78
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~79 top^d_in~6 gnd top^ADD~0^ADDER_FUNC~80
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~81 top^d_in~7 gnd top^ADD~0^ADDER_FUNC~82
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~83 top^d_in~8 gnd top^ADD~0^ADDER_FUNC~84
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~85 top^d_in~9 gnd top^ADD~0^ADDER_FUNC~86
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~87 top^d_in~10 gnd top^ADD~0^ADDER_FUNC~88
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~89 top^d_in~11 gnd top^ADD~0^ADDER_FUNC~90
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~91 top^d_in~12 gnd top^ADD~0^ADDER_FUNC~92
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~93 top^d_in~13 gnd top^ADD~0^ADDER_FUNC~94
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~95 top^d_in~14 gnd top^ADD~0^ADDER_FUNC~96
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~97 top^d_in~15 gnd top^ADD~0^ADDER_FUNC~98
+001 1
+010 1
+100 1
+111 1
+
+.names gnd top^d_in~0 gnd top^ADD~17^ADDER_FUNC~102
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~105 top^d_in~2 gnd top^ADD~17^ADDER_FUNC~106
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~107 top^d_in~3 gnd top^ADD~17^ADDER_FUNC~108
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~109 top^d_in~4 gnd top^ADD~17^ADDER_FUNC~110
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~111 top^d_in~5 gnd top^ADD~17^ADDER_FUNC~112
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~113 top^d_in~6 gnd top^ADD~17^ADDER_FUNC~114
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~115 top^d_in~7 gnd top^ADD~17^ADDER_FUNC~116
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~117 top^d_in~8 gnd top^ADD~17^ADDER_FUNC~118
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~119 top^d_in~9 gnd top^ADD~17^ADDER_FUNC~120
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~121 top^d_in~10 gnd top^ADD~17^ADDER_FUNC~122
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~123 top^d_in~11 gnd top^ADD~17^ADDER_FUNC~124
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~125 top^d_in~12 gnd top^ADD~17^ADDER_FUNC~126
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~127 top^d_in~13 gnd top^ADD~17^ADDER_FUNC~128
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~129 top^d_in~14 gnd top^ADD~17^ADDER_FUNC~130
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~131 top^d_in~15 gnd top^ADD~17^ADDER_FUNC~132
+001 1
+010 1
+100 1
+111 1
+
+.names gnd top^d_in~0 gnd top^ADD~34^ADDER_FUNC~136
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~137 top^d_in~1 gnd top^ADD~34^ADDER_FUNC~138
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~141 top^d_in~3 gnd top^ADD~34^ADDER_FUNC~142
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~143 top^d_in~4 gnd top^ADD~34^ADDER_FUNC~144
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~145 top^d_in~5 gnd top^ADD~34^ADDER_FUNC~146
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~147 top^d_in~6 gnd top^ADD~34^ADDER_FUNC~148
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~149 top^d_in~7 gnd top^ADD~34^ADDER_FUNC~150
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~151 top^d_in~8 gnd top^ADD~34^ADDER_FUNC~152
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~153 top^d_in~9 gnd top^ADD~34^ADDER_FUNC~154
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~155 top^d_in~10 gnd top^ADD~34^ADDER_FUNC~156
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~157 top^d_in~11 gnd top^ADD~34^ADDER_FUNC~158
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~159 top^d_in~12 gnd top^ADD~34^ADDER_FUNC~160
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~161 top^d_in~13 gnd top^ADD~34^ADDER_FUNC~162
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~163 top^d_in~14 gnd top^ADD~34^ADDER_FUNC~164
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~165 top^d_in~15 gnd top^ADD~34^ADDER_FUNC~166
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~175 top^d_in~3 gnd top^ADD~51^ADDER_FUNC~176
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~177 top^d_in~4 gnd top^ADD~51^ADDER_FUNC~178
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~179 top^d_in~5 gnd top^ADD~51^ADDER_FUNC~180
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~181 top^d_in~6 gnd top^ADD~51^ADDER_FUNC~182
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~183 top^d_in~7 gnd top^ADD~51^ADDER_FUNC~184
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~185 top^d_in~8 gnd top^ADD~51^ADDER_FUNC~186
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~187 top^d_in~9 gnd top^ADD~51^ADDER_FUNC~188
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~189 top^d_in~10 gnd top^ADD~51^ADDER_FUNC~190
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~191 top^d_in~11 gnd top^ADD~51^ADDER_FUNC~192
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~193 top^d_in~12 gnd top^ADD~51^ADDER_FUNC~194
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~195 top^d_in~13 gnd top^ADD~51^ADDER_FUNC~196
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~197 top^d_in~14 gnd top^ADD~51^ADDER_FUNC~198
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~199 top^d_in~15 gnd top^ADD~51^ADDER_FUNC~200
+001 1
+010 1
+100 1
+111 1
+
+.names gnd top^d_in~0 vcc top^ADD~0^ADDER_FUNC~68
+001 1
+010 1
+100 1
+111 1
+
+.names gnd top^d_in~0 vcc top^ADD~0^CARRY_FUNC~69
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~69 top^d_in~1 gnd top^ADD~0^CARRY_FUNC~71
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~71 top^d_in~2 gnd top^ADD~0^CARRY_FUNC~73
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~73 top^d_in~3 gnd top^ADD~0^CARRY_FUNC~75
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~75 top^d_in~4 gnd top^ADD~0^CARRY_FUNC~77
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~77 top^d_in~5 gnd top^ADD~0^CARRY_FUNC~79
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~79 top^d_in~6 gnd top^ADD~0^CARRY_FUNC~81
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~81 top^d_in~7 gnd top^ADD~0^CARRY_FUNC~83
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~83 top^d_in~8 gnd top^ADD~0^CARRY_FUNC~85
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~85 top^d_in~9 gnd top^ADD~0^CARRY_FUNC~87
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~87 top^d_in~10 gnd top^ADD~0^CARRY_FUNC~89
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~89 top^d_in~11 gnd top^ADD~0^CARRY_FUNC~91
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~91 top^d_in~12 gnd top^ADD~0^CARRY_FUNC~93
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~93 top^d_in~13 gnd top^ADD~0^CARRY_FUNC~95
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~95 top^d_in~14 gnd top^ADD~0^CARRY_FUNC~97
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~97 top^d_in~15 gnd top^ADD~0^CARRY_FUNC~99
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~0^CARRY_FUNC~99 gnd gnd top^ADD~0^ADDER_FUNC~100
+001 1
+010 1
+100 1
+111 1
+
+.names gnd top^d_in~0 gnd top^ADD~17^CARRY_FUNC~103
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~103 top^d_in~1 vcc top^ADD~17^ADDER_FUNC~104
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~103 top^d_in~1 vcc top^ADD~17^CARRY_FUNC~105
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~105 top^d_in~2 gnd top^ADD~17^CARRY_FUNC~107
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~107 top^d_in~3 gnd top^ADD~17^CARRY_FUNC~109
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~109 top^d_in~4 gnd top^ADD~17^CARRY_FUNC~111
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~111 top^d_in~5 gnd top^ADD~17^CARRY_FUNC~113
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~113 top^d_in~6 gnd top^ADD~17^CARRY_FUNC~115
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~115 top^d_in~7 gnd top^ADD~17^CARRY_FUNC~117
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~117 top^d_in~8 gnd top^ADD~17^CARRY_FUNC~119
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~119 top^d_in~9 gnd top^ADD~17^CARRY_FUNC~121
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~121 top^d_in~10 gnd top^ADD~17^CARRY_FUNC~123
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~123 top^d_in~11 gnd top^ADD~17^CARRY_FUNC~125
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~125 top^d_in~12 gnd top^ADD~17^CARRY_FUNC~127
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~127 top^d_in~13 gnd top^ADD~17^CARRY_FUNC~129
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~129 top^d_in~14 gnd top^ADD~17^CARRY_FUNC~131
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~131 top^d_in~15 gnd top^ADD~17^CARRY_FUNC~133
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~17^CARRY_FUNC~133 gnd gnd top^ADD~17^ADDER_FUNC~134
+001 1
+010 1
+100 1
+111 1
+
+.names gnd top^d_in~0 gnd top^ADD~34^CARRY_FUNC~137
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~137 top^d_in~1 gnd top^ADD~34^CARRY_FUNC~139
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~139 top^d_in~2 vcc top^ADD~34^ADDER_FUNC~140
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~139 top^d_in~2 vcc top^ADD~34^CARRY_FUNC~141
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~141 top^d_in~3 gnd top^ADD~34^CARRY_FUNC~143
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~143 top^d_in~4 gnd top^ADD~34^CARRY_FUNC~145
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~145 top^d_in~5 gnd top^ADD~34^CARRY_FUNC~147
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~147 top^d_in~6 gnd top^ADD~34^CARRY_FUNC~149
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~149 top^d_in~7 gnd top^ADD~34^CARRY_FUNC~151
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~151 top^d_in~8 gnd top^ADD~34^CARRY_FUNC~153
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~153 top^d_in~9 gnd top^ADD~34^CARRY_FUNC~155
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~155 top^d_in~10 gnd top^ADD~34^CARRY_FUNC~157
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~157 top^d_in~11 gnd top^ADD~34^CARRY_FUNC~159
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~159 top^d_in~12 gnd top^ADD~34^CARRY_FUNC~161
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~161 top^d_in~13 gnd top^ADD~34^CARRY_FUNC~163
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~163 top^d_in~14 gnd top^ADD~34^CARRY_FUNC~165
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~165 top^d_in~15 gnd top^ADD~34^CARRY_FUNC~167
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~34^CARRY_FUNC~167 gnd gnd top^ADD~34^ADDER_FUNC~168
+001 1
+010 1
+100 1
+111 1
+
+.names gnd top^d_in~0 vcc top^ADD~51^ADDER_FUNC~170
+001 1
+010 1
+100 1
+111 1
+
+.names gnd top^d_in~0 vcc top^ADD~51^CARRY_FUNC~171
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~171 top^d_in~1 vcc top^ADD~51^ADDER_FUNC~172
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~171 top^d_in~1 vcc top^ADD~51^CARRY_FUNC~173
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~173 top^d_in~2 vcc top^ADD~51^ADDER_FUNC~174
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~173 top^d_in~2 vcc top^ADD~51^CARRY_FUNC~175
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~175 top^d_in~3 gnd top^ADD~51^CARRY_FUNC~177
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~177 top^d_in~4 gnd top^ADD~51^CARRY_FUNC~179
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~179 top^d_in~5 gnd top^ADD~51^CARRY_FUNC~181
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~181 top^d_in~6 gnd top^ADD~51^CARRY_FUNC~183
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~183 top^d_in~7 gnd top^ADD~51^CARRY_FUNC~185
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~185 top^d_in~8 gnd top^ADD~51^CARRY_FUNC~187
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~187 top^d_in~9 gnd top^ADD~51^CARRY_FUNC~189
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~189 top^d_in~10 gnd top^ADD~51^CARRY_FUNC~191
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~191 top^d_in~11 gnd top^ADD~51^CARRY_FUNC~193
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~193 top^d_in~12 gnd top^ADD~51^CARRY_FUNC~195
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~195 top^d_in~13 gnd top^ADD~51^CARRY_FUNC~197
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~197 top^d_in~14 gnd top^ADD~51^CARRY_FUNC~199
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~199 top^d_in~15 gnd top^ADD~51^CARRY_FUNC~201
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~51^CARRY_FUNC~201 gnd gnd top^ADD~51^ADDER_FUNC~202
+001 1
+010 1
+100 1
+111 1
+
+.names top^ADD~0^ADDER_FUNC~68 top^d_out_1~0
+1 1
+
+.names top^ADD~0^ADDER_FUNC~70 top^d_out_1~1
+1 1
+
+.names top^ADD~0^ADDER_FUNC~72 top^d_out_1~2
+1 1
+
+.names top^ADD~0^ADDER_FUNC~74 top^d_out_1~3
+1 1
+
+.names top^ADD~0^ADDER_FUNC~76 top^d_out_1~4
+1 1
+
+.names top^ADD~0^ADDER_FUNC~78 top^d_out_1~5
+1 1
+
+.names top^ADD~0^ADDER_FUNC~80 top^d_out_1~6
+1 1
+
+.names top^ADD~0^ADDER_FUNC~82 top^d_out_1~7
+1 1
+
+.names top^ADD~0^ADDER_FUNC~84 top^d_out_1~8
+1 1
+
+.names top^ADD~0^ADDER_FUNC~86 top^d_out_1~9
+1 1
+
+.names top^ADD~0^ADDER_FUNC~88 top^d_out_1~10
+1 1
+
+.names top^ADD~0^ADDER_FUNC~90 top^d_out_1~11
+1 1
+
+.names top^ADD~0^ADDER_FUNC~92 top^d_out_1~12
+1 1
+
+.names top^ADD~0^ADDER_FUNC~94 top^d_out_1~13
+1 1
+
+.names top^ADD~0^ADDER_FUNC~96 top^d_out_1~14
+1 1
+
+.names top^ADD~0^ADDER_FUNC~98 top^d_out_1~15
+1 1
+
+.names top^ADD~17^ADDER_FUNC~102 top^d_out_2~0
+1 1
+
+.names top^ADD~17^ADDER_FUNC~104 top^d_out_2~1
+1 1
+
+.names top^ADD~17^ADDER_FUNC~106 top^d_out_2~2
+1 1
+
+.names top^ADD~17^ADDER_FUNC~108 top^d_out_2~3
+1 1
+
+.names top^ADD~17^ADDER_FUNC~110 top^d_out_2~4
+1 1
+
+.names top^ADD~17^ADDER_FUNC~112 top^d_out_2~5
+1 1
+
+.names top^ADD~17^ADDER_FUNC~114 top^d_out_2~6
+1 1
+
+.names top^ADD~17^ADDER_FUNC~116 top^d_out_2~7
+1 1
+
+.names top^ADD~17^ADDER_FUNC~118 top^d_out_2~8
+1 1
+
+.names top^ADD~17^ADDER_FUNC~120 top^d_out_2~9
+1 1
+
+.names top^ADD~17^ADDER_FUNC~122 top^d_out_2~10
+1 1
+
+.names top^ADD~17^ADDER_FUNC~124 top^d_out_2~11
+1 1
+
+.names top^ADD~17^ADDER_FUNC~126 top^d_out_2~12
+1 1
+
+.names top^ADD~17^ADDER_FUNC~128 top^d_out_2~13
+1 1
+
+.names top^ADD~17^ADDER_FUNC~130 top^d_out_2~14
+1 1
+
+.names top^ADD~17^ADDER_FUNC~132 top^d_out_2~15
+1 1
+
+.names top^ADD~34^ADDER_FUNC~136 top^d_out_4~0
+1 1
+
+.names top^ADD~34^ADDER_FUNC~138 top^d_out_4~1
+1 1
+
+.names top^ADD~34^ADDER_FUNC~140 top^d_out_4~2
+1 1
+
+.names top^ADD~34^ADDER_FUNC~142 top^d_out_4~3
+1 1
+
+.names top^ADD~34^ADDER_FUNC~144 top^d_out_4~4
+1 1
+
+.names top^ADD~34^ADDER_FUNC~146 top^d_out_4~5
+1 1
+
+.names top^ADD~34^ADDER_FUNC~148 top^d_out_4~6
+1 1
+
+.names top^ADD~34^ADDER_FUNC~150 top^d_out_4~7
+1 1
+
+.names top^ADD~34^ADDER_FUNC~152 top^d_out_4~8
+1 1
+
+.names top^ADD~34^ADDER_FUNC~154 top^d_out_4~9
+1 1
+
+.names top^ADD~34^ADDER_FUNC~156 top^d_out_4~10
+1 1
+
+.names top^ADD~34^ADDER_FUNC~158 top^d_out_4~11
+1 1
+
+.names top^ADD~34^ADDER_FUNC~160 top^d_out_4~12
+1 1
+
+.names top^ADD~34^ADDER_FUNC~162 top^d_out_4~13
+1 1
+
+.names top^ADD~34^ADDER_FUNC~164 top^d_out_4~14
+1 1
+
+.names top^ADD~34^ADDER_FUNC~166 top^d_out_4~15
+1 1
+
+.names top^ADD~51^ADDER_FUNC~170 top^d_out_7~0
+1 1
+
+.names top^ADD~51^ADDER_FUNC~172 top^d_out_7~1
+1 1
+
+.names top^ADD~51^ADDER_FUNC~174 top^d_out_7~2
+1 1
+
+.names top^ADD~51^ADDER_FUNC~176 top^d_out_7~3
+1 1
+
+.names top^ADD~51^ADDER_FUNC~178 top^d_out_7~4
+1 1
+
+.names top^ADD~51^ADDER_FUNC~180 top^d_out_7~5
+1 1
+
+.names top^ADD~51^ADDER_FUNC~182 top^d_out_7~6
+1 1
+
+.names top^ADD~51^ADDER_FUNC~184 top^d_out_7~7
+1 1
+
+.names top^ADD~51^ADDER_FUNC~186 top^d_out_7~8
+1 1
+
+.names top^ADD~51^ADDER_FUNC~188 top^d_out_7~9
+1 1
+
+.names top^ADD~51^ADDER_FUNC~190 top^d_out_7~10
+1 1
+
+.names top^ADD~51^ADDER_FUNC~192 top^d_out_7~11
+1 1
+
+.names top^ADD~51^ADDER_FUNC~194 top^d_out_7~12
+1 1
+
+.names top^ADD~51^ADDER_FUNC~196 top^d_out_7~13
+1 1
+
+.names top^ADD~51^ADDER_FUNC~198 top^d_out_7~14
+1 1
+
+.names top^ADD~51^ADDER_FUNC~200 top^d_out_7~15
+1 1
+
+.end
+

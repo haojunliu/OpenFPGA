@@ -1,0 +1,295 @@
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_926}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1574}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2312}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1666}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2419}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1563}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1195}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2376}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1980}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2451}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1198}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1824}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2399}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_327}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2003}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_805}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2226}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1968}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_394}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1912}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2371}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1757}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2210}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1925}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_924}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1652}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2354}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1765}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2071}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1550}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_308}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1542}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2088}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1718}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2241}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1517}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_306}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1595}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2009}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1530}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1196}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1871}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2179}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1802}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2391}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_396}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1836}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2155}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1703}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2128}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1947}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1129}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2337}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1586}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_307}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2072}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1619}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2025}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1546}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1131}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2390}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1791}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2243}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1572}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_807}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2302}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1927}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_395}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2131}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1792}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2214}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1949}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1218}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1971}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2271}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1732}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2440}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1973}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1197}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2452}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1130}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1660}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2432}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1799}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2185}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1564}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1217}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2361}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1828}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2458}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1989}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_328}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1670}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2124}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1767}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2021}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_329}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2110}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1783}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2005}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_305}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2022}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1768}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2161}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1515}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_330}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1596}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2112}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1841}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1991}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_808}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1861}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2146}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1956}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1132}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1589}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1219}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2462}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1953}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2139}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1870}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2306}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1970}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_925}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2321}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1511}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_393}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2069}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1848}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1874}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2386}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1929}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_806}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1911}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2201}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1880}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2464}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1955}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_923}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2234}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1623}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2075}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1554}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1220}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1891}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1837}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2222}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1962}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_844}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1966}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2295}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1853}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_847}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1919}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_850}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1935}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2043}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1860}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2304}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_835}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1964}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1358}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2436}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1451}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2450}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1454}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2454}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1442}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2425}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1797}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_886}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1535}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_898}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1519}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2254}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1650}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_889}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1543}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_901}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1527}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_277}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1537}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2014}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_280}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1521}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_283}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1534}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2076}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_268}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1529}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1253}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1984}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1268}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1979}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1262}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1977}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1247}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1951}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2363}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_435}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1923}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2067}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_441}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1915}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_426}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1918}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2147}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_429}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1922}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_73}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2032}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_82}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2011}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1590}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_88}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1995}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1606}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_94}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2030}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1092}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1571}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2332}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1664}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1101}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1555}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1098}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1573}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_2342}
+
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1110}
+add wave {sim:/wide_inv_tb/dut/fpag_dut/wire_1577}
+
+

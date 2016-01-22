@@ -1,0 +1,14 @@
+Net top^d_en 1 8 15
+Net top^d_en 1 9 15
+Net n61_1 1 8 3
+Net n58 1 8 8
+Net n58 1 7 11
+Net top^FF_NODE~15 1 8 18
+Net top^FF_NODE~11 1 7 7
+Net top^FF_NODE~11 1 8 11
+Net top^FF_NODE~12 1 7 3
+Net top^FF_NODE~12 1 8 19
+Net top^rst 1 8 6
+Net top^rst 1 7 20
+Net top^rst 1 9 7
+Net n65 1 7 1

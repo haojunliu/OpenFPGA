@@ -1,0 +1,23 @@
+Array size: 5 x 5 logic blocks.
+
+Routing:
+
+Net 0 (top^d_out)
+
+Node:	1802	SOURCE (5,1)  Class: 10  Switch: 2
+Node:	1846	  OPIN (5,1)  Pin: 42  Switch: 0
+Node:	2521	 CHANX (2,0) to (5,0)  Track: 3  Switch: 0
+Node:	4930	 CHANY (2,1) to (2,3)  Track: 10  Switch: 0
+Node:	3206	 CHANX (3,2) to (5,2)  Track: 24  Switch: 0
+Node:	5983	 CHANY (5,1) to (5,2)  Track: 103  Switch: 1
+Node:	2162	  IPIN (6,1)  Pad: 18  Switch: 2
+Node:	2138	  SINK (6,1)  Pad: 18  Switch: -1
+
+
+Net 1 (top^d_in)
+
+Node:	1763	SOURCE (5,0)  Pad: 19  Switch: 2
+Node:	1787	  OPIN (5,0)  Pad: 19  Switch: 0
+Node:	2627	 CHANX (4,0) to (5,0)  Track: 111  Switch: 1
+Node:	1822	  IPIN (5,1)  Pin: 18  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1

@@ -1,0 +1,1 @@
+../fpgaGen/ipin_chanxy_bitgen.py

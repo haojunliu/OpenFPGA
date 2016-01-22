@@ -1,0 +1,69 @@
+
+riscv-v2_jal:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00002000 <_start>:
+    2000:	0800017b 	mfpcr	ra,cr0
+    2004:	087dff93 	and	ra,ra,-129
+    2008:	000201fb 	mtpcr	zero,ra,cr0
+    200c:	d8000013 	li	s7,0
+
+00002010 <stats>:
+    2010:	02b601fb 	mtpcr	zero,s7,cr10
+    2014:	00000013 	nop
+    2018:	00000013 	nop
+    201c:	00000013 	nop
+    2020:	00000013 	nop
+
+00002024 <test_2>:
+    2024:	e0000813 	li	s8,2
+    2028:	08000013 	li	ra,0
+
+0000202c <linkaddr_2>:
+    202c:	0000046f 	jal	203c <target_2>
+    2030:	00000013 	nop
+    2034:	00000013 	nop
+    2038:	00001a67 	j	20a0 <fail>
+
+0000203c <target_2>:
+    203c:	10000137 	lui	v0,0x2
+    2040:	1080b013 	add	v0,v0,44
+    2044:	10801013 	add	v0,v0,4
+    2048:	0082b0e3 	bne	v0,ra,20a0 <fail>
+
+0000204c <test_3>:
+    204c:	10000413 	li	v0,1
+    2050:	0000056f 	jal	2064 <test_3+0x18>
+    2054:	10800413 	add	v0,v0,1
+    2058:	10800413 	add	v0,v0,1
+    205c:	10800413 	add	v0,v0,1
+    2060:	10800413 	add	v0,v0,1
+    2064:	10800413 	add	v0,v0,1
+    2068:	10800413 	add	v0,v0,1
+    206c:	e8000c13 	li	s9,3
+    2070:	e0000c13 	li	s8,3
+    2074:	00ba58e3 	bne	v0,s9,20a0 <fail>
+    2078:	dec00413 	add	s7,s7,1
+    207c:	d0000813 	li	s6,2
+    2080:	fef520e3 	bne	s7,s6,2010 <stats>
+    2084:	d0000013 	li	s6,0
+    2088:	02b401fb 	mtpcr	zero,s6,cr10
+    208c:	00000013 	nop
+    2090:	00000013 	nop
+    2094:	00000013 	nop
+    2098:	00000013 	nop
+    209c:	003820e3 	bne	zero,s8,20ac <pass>
+
+000020a0 <fail>:
+    20a0:	07b801fb 	mtpcr	zero,s8,cr30
+    20a4:	00000063 	b	20a4 <fail+0x4>
+    20a8:	00000013 	nop
+
+000020ac <pass>:
+    20ac:	08000413 	li	ra,1
+    20b0:	078201fb 	mtpcr	zero,ra,cr30
+    20b4:	00000063 	b	20b4 <pass+0x8>
+    20b8:	00000013 	nop
+    20bc:	00000013 	nop

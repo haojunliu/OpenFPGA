@@ -1,0 +1,26 @@
+.model single_inv_reg
+.inputs top^clock top^rst top^d_in
+.outputs top^d_out
+
+.names gnd
+.names unconn
+.names vcc
+1
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1 gnd top^BITWISE_NOT~2^LOGICAL_NOT~6 top^MULTI_PORT_MUX~0^MUX_2~5
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~0^MUX_2~5 top^FF_NODE~3 re top^clock 0
+
+.names top^rst top^MULTI_PORT_MUX~0^LOGICAL_NOT~1
+0 1
+
+.names top^d_in top^BITWISE_NOT~2^LOGICAL_NOT~6
+0 1
+
+.names top^FF_NODE~3 top^d_out
+1 1
+
+.end
+

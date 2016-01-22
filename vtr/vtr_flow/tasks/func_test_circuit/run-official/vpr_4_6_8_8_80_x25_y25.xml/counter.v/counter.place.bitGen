@@ -1,0 +1,63 @@
+Netlist file: counter.net   Architecture file: vpr_4_6_8_8_80_x25_y25.xml
+Array size: 25 x 25 logic blocks
+	
+#block type		block name			x		y	subblk	block number
+#----------		----------			--		--	------	------------
+top_level       top^FF_NODE~8		18		2		0		#0
+sub_level       n67			0		0	
+sub_level       top^FF_NODE~12		0		1	
+sub_level       n70			0		2	
+sub_level       n69			0		3	
+sub_level       n73			0		4	
+sub_level       top^FF_NODE~8		0		5	
+top_level       n57			18		4		0		#1
+sub_level       n58			0		0	
+sub_level       top^FF_NODE~10		0		1	
+sub_level       top^FF_NODE~5		0		2	
+sub_level       top^FF_NODE~6		0		3	
+sub_level       top^FF_NODE~9		0		4	
+sub_level       n57			0		5	
+top_level       top^FF_NODE~14		18		1		0		#2
+sub_level       n62			0		0	
+sub_level       top^FF_NODE~14		0		1	
+sub_level       n71			0		2	
+sub_level       top^FF_NODE~11		0		3	
+sub_level       top^FF_NODE~13		0		4	
+sub_level       n64			0		5	
+top_level       top^FF_NODE~7		18		3		0		#3
+sub_level       n55			0		0	
+sub_level       top^FF_NODE~7		0		1	
+sub_level       (null)		0		2	
+sub_level       (null)		0		3	
+sub_level       top^FF_NODE~16		0		4	
+sub_level       n61_1			0		5	
+top_level       top^d_en		19		0		3		#4
+sub_level       top^d_en		0		0	
+top_level       top^rst			18		0		3		#5
+sub_level       top^rst			0		0	
+top_level       out:top^d_out~11		18		0		0		#6
+sub_level       out:top^d_out~11		0		0	
+top_level       out:top^d_out~10		17		0		7		#7
+sub_level       out:top^d_out~10		0		0	
+top_level       out:top^d_out~3		18		0		7		#8
+sub_level       out:top^d_out~3		0		0	
+top_level       out:top^d_out~9		19		0		7		#9
+sub_level       out:top^d_out~9		0		0	
+top_level       out:top^d_out~8		19		0		5		#10
+sub_level       out:top^d_out~8		0		0	
+top_level       out:top^d_out~2		18		0		4		#11
+sub_level       out:top^d_out~2		0		0	
+top_level       out:top^d_out~7		17		0		1		#12
+sub_level       out:top^d_out~7		0		0	
+top_level       out:top^d_out~6		19		0		4		#13
+sub_level       out:top^d_out~6		0		0	
+top_level       out:top^d_out~1		18		0		2		#14
+sub_level       out:top^d_out~1		0		0	
+top_level       out:top^d_out~5		18		0		1		#15
+sub_level       out:top^d_out~5		0		0	
+top_level       out:top^d_out~4		18		0		6		#16
+sub_level       out:top^d_out~4		0		0	
+top_level       out:top^d_out~0		18		0		5		#17
+sub_level       out:top^d_out~0		0		0	
+top_level       top^clock		9		0		2		#18
+sub_level       top^clock		0		0	

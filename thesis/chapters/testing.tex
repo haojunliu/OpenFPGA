@@ -1,0 +1,67 @@
+\section{Module Testing}
+\label{sec:mod_test}
+
+To take advantage of Chisel's emulation capability, we simulate modules of the LUT Tile
+and itself as whole. The module level testing is intended to eliminate most of the
+bugs. It is relatively easy to provide good coverage as the number of states for the LUT
+ Tile is small and many signals are independent of each other. This is because the only elements
+with states are FFs inside a BLE. To have good routability, outputs have to be independent 
+so each of them can be configured for different signals. Although configuration latches are storage
+elements, the signals are treated as regular input vectors to improve module simulation speed. \par
+
+\section{System Testing}
+\label{sec:sys_perf}
+
+The system level testing includes two components at the same time: the hardware being
+generated, and the tool flow used to generate bitstream. We designed a total of eight
+test cases with different focuses. Table~\ref{table:test_cases} lists the test cases
+and their testing objective. \par
+
+\begin{table}[htpb]
+		\begin{center}
+				{\small
+				{\tabulinesep=1.2mm
+				\begin{tabu}{ | p{1.1in} | p{4.0in} |}    \hline
+				Test Case & Description \\ \hline\hline
+				single\_inv & A single bit inverter tests essential functions of LUTs and routing resources of the FPGA \\ \hline
+				single\_inv\_reg & A single bit inverter with registered output. It adds storage element (FF) testing to single\_inv \\ \hline
+				wide\_inv & A wide inverter (32 Bits) tests fundamental functions of LUTs and routing resources of the FPGA \\ \hline
+				wide\_inv\_reg & A wide inverter (32 Bits) with registered output. It adds storage element (FF) testing to wide\_inv \\ \hline
+				ff\_en & A register (32 Bits) test case for testing if inputs can be correctly stored \\ \hline
+				simple\_comp & Simple computations test both computing and storage as the same time \\ \hline
+				multi\_consumer & A more evolved test case of simple\_comp, tests multiple sinks routing \\ \hline
+				counter & A counter (12 Bits) for testing both intra tile routing and inter tile routing \\ \hline
+				\end{tabu}}}
+				\caption{System Test Cases
+				\label{table:test_cases}}
+		\end{center}
+\end{table}
+
+To leverage generation capability of the work, we varies different user accessible parameters
+of the FPGA and present the parameters in Table~\ref{table:test_params} lists the parameters
+we varied. Note some combination of parameters generates a valid FPGA, but the FPGA may be too
+small to hold a user design. \par
+
+\begin{table}[htpb]
+		\begin{center}
+				{\small
+				{\tabulinesep=1.2mm
+				\begin{tabu}{ | p{0.8in} | p{0.7in} | p{0.7in} | p{0.7in} | p{0.7in} | p{0.9in} | }    \hline
+				FPGA Size & LUT Size & CLB Size & IPIN W & CHAN W & CHAN NUM  \\ \hline\hline
+				5 by 5 & 6 & 10 & 16 & 16 & 160 \\ \hline
+				10 by 10 & 5 & 8 & 12 & 12 & 120 \\ \hline
+				25 by 25 & 4 & 6 & 8 & 8 & 80 \\ \hline
+				\end{tabu}}}
+				\caption{Test Parameters
+				\label{table:test_params}}
+		\end{center}
+\end{table}
+
+It is possible to leverage a seed number feature in VPR for improving testing coverage. 
+The placement and routing stage is deterministic based on a seed number provided to VPR. By varying
+the seed number, different bitstreams are generated. They should be equivalent circuits. More coverage 
+on the hardware can be achieved using the same testing vectors by
+placing equivalent circuit bitstreams on the FPGA. \par
+
+In summary, all test cases have passed if the test case fits in the FPGA. If the test case
+is too large for the FPGA, VPR reports an error. \par

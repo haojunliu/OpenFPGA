@@ -1,0 +1,178 @@
+# Benchmark "wide_inv_reg" written by ABC on Tue Jul  8 18:15:15 2014
+.model wide_inv_reg
+.inputs top^clock top^rst top^d_in~0 top^d_in~1 top^d_in~2 top^d_in~3 \
+ top^d_in~4 top^d_in~5 top^d_in~6 top^d_in~7 top^d_in~8 top^d_in~9 \
+ top^d_in~10 top^d_in~11 top^d_in~12 top^d_in~13 top^d_in~14 top^d_in~15 \
+ top^d_in~16 top^d_in~17 top^d_in~18 top^d_in~19 top^d_in~20 top^d_in~21 \
+ top^d_in~22 top^d_in~23 top^d_in~24 top^d_in~25 top^d_in~26 top^d_in~27 \
+ top^d_in~28 top^d_in~29 top^d_in~30 top^d_in~31
+.outputs top^d_out~0 top^d_out~1 top^d_out~2 top^d_out~3 top^d_out~4 \
+ top^d_out~5 top^d_out~6 top^d_out~7 top^d_out~8 top^d_out~9 top^d_out~10 \
+ top^d_out~11 top^d_out~12 top^d_out~13 top^d_out~14 top^d_out~15 \
+ top^d_out~16 top^d_out~17 top^d_out~18 top^d_out~19 top^d_out~20 \
+ top^d_out~21 top^d_out~22 top^d_out~23 top^d_out~24 top^d_out~25 \
+ top^d_out~26 top^d_out~27 top^d_out~28 top^d_out~29 top^d_out~30 \
+ top^d_out~31
+
+.latch       n133 top^FF_NODE~3 re  top^clock  0
+.latch       n138 top^FF_NODE~4 re  top^clock  0
+.latch       n143 top^FF_NODE~15 re  top^clock  0
+.latch       n148 top^FF_NODE~26 re  top^clock  0
+.latch       n153 top^FF_NODE~29 re  top^clock  0
+.latch       n158 top^FF_NODE~30 re  top^clock  0
+.latch       n163 top^FF_NODE~31 re  top^clock  0
+.latch       n168 top^FF_NODE~32 re  top^clock  0
+.latch       n173 top^FF_NODE~33 re  top^clock  0
+.latch       n178 top^FF_NODE~34 re  top^clock  0
+.latch       n183 top^FF_NODE~5 re  top^clock  0
+.latch       n188 top^FF_NODE~6 re  top^clock  0
+.latch       n193 top^FF_NODE~7 re  top^clock  0
+.latch       n198 top^FF_NODE~8 re  top^clock  0
+.latch       n203 top^FF_NODE~9 re  top^clock  0
+.latch       n208 top^FF_NODE~10 re  top^clock  0
+.latch       n213 top^FF_NODE~11 re  top^clock  0
+.latch       n218 top^FF_NODE~12 re  top^clock  0
+.latch       n223 top^FF_NODE~13 re  top^clock  0
+.latch       n228 top^FF_NODE~14 re  top^clock  0
+.latch       n233 top^FF_NODE~16 re  top^clock  0
+.latch       n238 top^FF_NODE~17 re  top^clock  0
+.latch       n243 top^FF_NODE~18 re  top^clock  0
+.latch       n248 top^FF_NODE~19 re  top^clock  0
+.latch       n253 top^FF_NODE~20 re  top^clock  0
+.latch       n258 top^FF_NODE~21 re  top^clock  0
+.latch       n263 top^FF_NODE~22 re  top^clock  0
+.latch       n268 top^FF_NODE~23 re  top^clock  0
+.latch       n273 top^FF_NODE~24 re  top^clock  0
+.latch       n278 top^FF_NODE~25 re  top^clock  0
+.latch       n283 top^FF_NODE~27 re  top^clock  0
+.latch       n288 top^FF_NODE~28 re  top^clock  0
+
+.names top^rst top^d_in~0 n133
+00 1
+.names top^rst top^d_in~1 n138
+00 1
+.names top^rst top^d_in~2 n143
+00 1
+.names top^rst top^d_in~3 n148
+00 1
+.names top^rst top^d_in~4 n153
+00 1
+.names top^rst top^d_in~5 n158
+00 1
+.names top^rst top^d_in~6 n163
+00 1
+.names top^rst top^d_in~7 n168
+00 1
+.names top^rst top^d_in~8 n173
+00 1
+.names top^rst top^d_in~9 n178
+00 1
+.names top^rst top^d_in~10 n183
+00 1
+.names top^rst top^d_in~11 n188
+00 1
+.names top^rst top^d_in~12 n193
+00 1
+.names top^rst top^d_in~13 n198
+00 1
+.names top^rst top^d_in~14 n203
+00 1
+.names top^rst top^d_in~15 n208
+00 1
+.names top^rst top^d_in~16 n213
+00 1
+.names top^rst top^d_in~17 n218
+00 1
+.names top^rst top^d_in~18 n223
+00 1
+.names top^rst top^d_in~19 n228
+00 1
+.names top^rst top^d_in~20 n233
+00 1
+.names top^rst top^d_in~21 n238
+00 1
+.names top^rst top^d_in~22 n243
+00 1
+.names top^rst top^d_in~23 n248
+00 1
+.names top^rst top^d_in~24 n253
+00 1
+.names top^rst top^d_in~25 n258
+00 1
+.names top^rst top^d_in~26 n263
+00 1
+.names top^rst top^d_in~27 n268
+00 1
+.names top^rst top^d_in~28 n273
+00 1
+.names top^rst top^d_in~29 n278
+00 1
+.names top^rst top^d_in~30 n283
+00 1
+.names top^rst top^d_in~31 n288
+00 1
+.names top^FF_NODE~3 top^d_out~0
+1 1
+.names top^FF_NODE~4 top^d_out~1
+1 1
+.names top^FF_NODE~15 top^d_out~2
+1 1
+.names top^FF_NODE~26 top^d_out~3
+1 1
+.names top^FF_NODE~29 top^d_out~4
+1 1
+.names top^FF_NODE~30 top^d_out~5
+1 1
+.names top^FF_NODE~31 top^d_out~6
+1 1
+.names top^FF_NODE~32 top^d_out~7
+1 1
+.names top^FF_NODE~33 top^d_out~8
+1 1
+.names top^FF_NODE~34 top^d_out~9
+1 1
+.names top^FF_NODE~5 top^d_out~10
+1 1
+.names top^FF_NODE~6 top^d_out~11
+1 1
+.names top^FF_NODE~7 top^d_out~12
+1 1
+.names top^FF_NODE~8 top^d_out~13
+1 1
+.names top^FF_NODE~9 top^d_out~14
+1 1
+.names top^FF_NODE~10 top^d_out~15
+1 1
+.names top^FF_NODE~11 top^d_out~16
+1 1
+.names top^FF_NODE~12 top^d_out~17
+1 1
+.names top^FF_NODE~13 top^d_out~18
+1 1
+.names top^FF_NODE~14 top^d_out~19
+1 1
+.names top^FF_NODE~16 top^d_out~20
+1 1
+.names top^FF_NODE~17 top^d_out~21
+1 1
+.names top^FF_NODE~18 top^d_out~22
+1 1
+.names top^FF_NODE~19 top^d_out~23
+1 1
+.names top^FF_NODE~20 top^d_out~24
+1 1
+.names top^FF_NODE~21 top^d_out~25
+1 1
+.names top^FF_NODE~22 top^d_out~26
+1 1
+.names top^FF_NODE~23 top^d_out~27
+1 1
+.names top^FF_NODE~24 top^d_out~28
+1 1
+.names top^FF_NODE~25 top^d_out~29
+1 1
+.names top^FF_NODE~27 top^d_out~30
+1 1
+.names top^FF_NODE~28 top^d_out~31
+1 1
+.end

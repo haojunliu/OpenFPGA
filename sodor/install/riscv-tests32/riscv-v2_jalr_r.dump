@@ -1,0 +1,125 @@
+
+riscv-v2_jalr_r:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00002000 <_start>:
+    2000:	0800017b 	mfpcr	ra,cr0
+    2004:	087dff93 	and	ra,ra,-129
+    2008:	000201fb 	mtpcr	zero,ra,cr0
+    200c:	d8000013 	li	s7,0
+
+00002010 <stats>:
+    2010:	02b601fb 	mtpcr	zero,s7,cr10
+    2014:	00000013 	nop
+    2018:	00000013 	nop
+    201c:	00000013 	nop
+    2020:	00000013 	nop
+
+00002024 <test_2>:
+    2024:	e0000813 	li	s8,2
+    2028:	f8000013 	li	tp,0
+    202c:	10000137 	lui	v0,0x2
+    2030:	10811013 	add	v0,v0,68
+
+00002034 <linkaddr_2>:
+    2034:	988000eb 	jalr.r	t7,v0
+    2038:	00000013 	nop
+    203c:	00000013 	nop
+    2040:	00004267 	j	2148 <fail>
+
+00002044 <target_2>:
+    2044:	08000137 	lui	ra,0x2
+    2048:	0840d013 	add	ra,ra,52
+    204c:	08401013 	add	ra,ra,4
+    2050:	0067f0e3 	bne	ra,t7,2148 <fail>
+
+00002054 <test_3>:
+    2054:	e0000c13 	li	s8,3
+    2058:	f8000013 	li	tp,0
+    205c:	18000137 	lui	v1,0x2
+    2060:	18c1c013 	add	v1,v1,112
+
+00002064 <linkaddr_3>:
+    2064:	00c000eb 	jr.r	v1
+    2068:	00000013 	nop
+    206c:	00003767 	j	2148 <fail>
+
+00002070 <target_3>:
+    2070:	07c1b0e3 	bnez	tp,2148 <fail>
+
+00002074 <test_4>:
+    2074:	e0001013 	li	s8,4
+    2078:	20000013 	li	a0,0
+    207c:	30000137 	lui	a2,0x2
+    2080:	31823013 	add	a2,a2,140
+    2084:	998000eb 	jalr.r	t7,a2
+    2088:	003980e3 	bne	zero,s8,2148 <fail>
+    208c:	21000413 	add	a0,a0,1
+    2090:	28000813 	li	a1,2
+    2094:	f90bd0e3 	bne	a0,a1,207c <test_4+0x8>
+
+00002098 <test_5>:
+    2098:	e0001413 	li	s8,5
+    209c:	20000013 	li	a0,0
+    20a0:	30000137 	lui	a2,0x2
+    20a4:	3182d013 	add	a2,a2,180
+    20a8:	00000013 	nop
+    20ac:	998000eb 	jalr.r	t7,a2
+    20b0:	003930e3 	bne	zero,s8,2148 <fail>
+    20b4:	21000413 	add	a0,a0,1
+    20b8:	28000813 	li	a1,2
+    20bc:	f90bc8e3 	bne	a0,a1,20a0 <test_5+0x8>
+
+000020c0 <test_6>:
+    20c0:	e0001813 	li	s8,6
+    20c4:	20000013 	li	a0,0
+    20c8:	30000137 	lui	a2,0x2
+    20cc:	31838013 	add	a2,a2,224
+    20d0:	00000013 	nop
+    20d4:	00000013 	nop
+    20d8:	998000eb 	jalr.r	t7,a2
+    20dc:	0038d8e3 	bne	zero,s8,2148 <fail>
+    20e0:	21000413 	add	a0,a0,1
+    20e4:	28000813 	li	a1,2
+    20e8:	f90bc0e3 	bne	a0,a1,20c8 <test_6+0x8>
+
+000020ec <test_7>:
+    20ec:	08000413 	li	ra,1
+    20f0:	10000137 	lui	v0,0x2
+    20f4:	10843013 	add	v0,v0,268
+    20f8:	988000eb 	jalr.r	t7,v0
+    20fc:	08400413 	add	ra,ra,1
+    2100:	08400413 	add	ra,ra,1
+    2104:	08400413 	add	ra,ra,1
+    2108:	08400413 	add	ra,ra,1
+    210c:	08400413 	add	ra,ra,1
+    2110:	08400413 	add	ra,ra,1
+    2114:	e8000c13 	li	s9,3
+    2118:	e0001c13 	li	s8,7
+    211c:	007a58e3 	bne	ra,s9,2148 <fail>
+    2120:	dec00413 	add	s7,s7,1
+    2124:	d0000813 	li	s6,2
+    2128:	f6f5d0e3 	bne	s7,s6,2010 <stats>
+    212c:	d0000013 	li	s6,0
+    2130:	02b401fb 	mtpcr	zero,s6,cr10
+    2134:	00000013 	nop
+    2138:	00000013 	nop
+    213c:	00000013 	nop
+    2140:	00000013 	nop
+    2144:	003820e3 	bne	zero,s8,2154 <pass>
+
+00002148 <fail>:
+    2148:	07b801fb 	mtpcr	zero,s8,cr30
+    214c:	00000063 	b	214c <fail+0x4>
+    2150:	00000013 	nop
+
+00002154 <pass>:
+    2154:	08000413 	li	ra,1
+    2158:	078201fb 	mtpcr	zero,ra,cr30
+    215c:	00000063 	b	215c <pass+0x8>
+    2160:	00000013 	nop
+    2164:	00000013 	nop
+    2168:	00000013 	nop
+    216c:	00000013 	nop

@@ -1,0 +1,17 @@
+.model single_inv
+.inputs top^clock top^rst top^d_in
+.outputs top^d_out
+
+.names gnd
+.names unconn
+.names vcc
+1
+
+.names top^d_in top^BITWISE_NOT~0^LOGICAL_NOT~2
+0 1
+
+.names top^BITWISE_NOT~0^LOGICAL_NOT~2 top^d_out
+1 1
+
+.end
+

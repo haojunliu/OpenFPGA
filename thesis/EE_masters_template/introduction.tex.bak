@@ -1,0 +1,47 @@
+\section{Spectrum allocation vs.~usage}
+\label{sec:usage}
+
+Traditionally, the FCC has allocated spectrum bands to a single use,
+issued exclusive licenses to a single entity within a geographical
+area, and prohibited other devices from transmitting significant
+power within these bands.  Looking at the NTIA's chart of these
+frequency allocations (Figure~\ref{fig:spectrum_alloc}a), it appears
+that we are in danger of running out of
+spectrum~\cite{NTIAspectrum}. However, allocation is only half the
+story. Contrary to popular belief, actual measurements (taken in
+downtown Berkeley, CA) show that most of the allocated spectrum is
+vastly underutilized
+(Figure~\ref{fig:spectrum_alloc}b)~\cite{BWRC2004}.
+
+\begin{figure}[htp]
+\begin{center}
+\subfigure[The NTIA's spectrum allocation chart makes available
+spectrum look scarce.]{
+  \epsfxsize=3in \epsfbox{spectrum2.eps}}
+\subfigure[Measurements from the Berkeley Wireless Research Center
+show the allocated spectrum is vastly underutilized.]{
+  \epsfxsize=2.8in \epsfbox{usage.eps}}
+\caption{\footnotesize{There is a great discrepancy between spectrum
+allocation and spectrum usage. \label{fig:spectrum_alloc}}}
+\end{center}
+\end{figure}
+
+blah blah blah...
+
+Examining solely the 402 MHz allocated to broadcast TV
+(Appendix~\ref{appen:commspec}), if we assume 70\% of the spectrum
+is available, we can fit two of these systems operating
+simultaneously inside the broadcast TV spectrum. The available
+spectrum up to 3 GHz would fit 20 systems, blanketing an area with
+20 DVD-quality video streams from low-powered wireless transmitters.
+
+\section{The policy debate}
+\label{sec:policy}
+
+Clearly, the spectrum is far from fully utilized. As a result, the
+FCC's exclusive-use allocation policy is being increasingly viewed
+as outdated. Opinions on the appropriate solution, however, vary.
+
+Some economists argue that the development of a secondary market in
+spectrum would eliminate or greatly reduce the inefficiencies in
+spectrum usage~\cite{Kwerel2002, Faulhaber2003}.

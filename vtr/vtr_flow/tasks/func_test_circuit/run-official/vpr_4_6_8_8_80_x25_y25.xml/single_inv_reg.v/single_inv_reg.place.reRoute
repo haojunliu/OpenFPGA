@@ -1,0 +1,5 @@
+top^FF_NODE~3		25		4
+top^d_in		26		4
+top^rst			26		4
+out:top^d_out		26		3
+top^clock		25		26

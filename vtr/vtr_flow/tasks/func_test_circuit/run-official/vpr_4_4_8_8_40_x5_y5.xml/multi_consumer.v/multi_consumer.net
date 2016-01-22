@@ -1,0 +1,5017 @@
+<block name="multi_consumer.net" instance="FPGA_packed_netlist[0]">
+	<inputs>
+		top^d_in~0 top^d_in~1 top^d_in~2 top^d_in~3 top^d_in~4 top^d_in~5 top^d_in~6 top^d_in~7 top^d_in~8 top^d_in~9 top^d_in~10 top^d_in~11 top^d_in~12 top^d_in~13 top^d_in~14 top^d_in~15 
+	</inputs>
+
+	<outputs>
+		out:top^d_out_1~0 out:top^d_out_1~1 out:top^d_out_1~2 out:top^d_out_1~3 out:top^d_out_1~4 out:top^d_out_1~5 out:top^d_out_1~6 out:top^d_out_1~7 out:top^d_out_1~8 out:top^d_out_1~9 out:top^d_out_1~10 out:top^d_out_1~11 out:top^d_out_1~12 out:top^d_out_1~13 out:top^d_out_1~14 out:top^d_out_1~15 out:top^d_out_2~0 out:top^d_out_2~1 out:top^d_out_2~2 out:top^d_out_2~3 out:top^d_out_2~4 out:top^d_out_2~5 out:top^d_out_2~6 out:top^d_out_2~7 out:top^d_out_2~8 out:top^d_out_2~9 out:top^d_out_2~10 out:top^d_out_2~11 out:top^d_out_2~12 out:top^d_out_2~13 out:top^d_out_2~14 out:top^d_out_2~15 out:top^d_out_4~0 out:top^d_out_4~1 out:top^d_out_4~2 out:top^d_out_4~3 out:top^d_out_4~4 out:top^d_out_4~5 out:top^d_out_4~6 out:top^d_out_4~7 out:top^d_out_4~8 out:top^d_out_4~9 out:top^d_out_4~10 out:top^d_out_4~11 out:top^d_out_4~12 out:top^d_out_4~13 out:top^d_out_4~14 out:top^d_out_4~15 out:top^d_out_7~0 out:top^d_out_7~1 out:top^d_out_7~2 out:top^d_out_7~3 out:top^d_out_7~4 out:top^d_out_7~5 out:top^d_out_7~6 
+		out:top^d_out_7~7 out:top^d_out_7~8 out:top^d_out_7~9 out:top^d_out_7~10 out:top^d_out_7~11 out:top^d_out_7~12 out:top^d_out_7~13 out:top^d_out_7~14 out:top^d_out_7~15 
+	</outputs>
+
+	<clocks>
+		
+	</clocks>
+
+	<block name="n91" instance="clb[0]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~4 top^d_in~1 top^d_in~3 top^d_in~7 open top^d_in~9 top^d_in~5 open top^d_in~6 top^d_in~2 top^d_in~8 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="n121" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">open open clb.I[5]->crossbar  ble[1].out[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n121" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open open ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n121" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open open soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n121" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">n121 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n119" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[10]->crossbar  ble[2].out[0]->crossbar  clb.I[1]->crossbar  clb.I[3]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n119" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n119" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n119" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">n119 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n93" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[8]->crossbar  open open ble[3].out[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n93" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  open open ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n93" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  open open soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n93" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">n93 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n91" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  clb.I[6]->crossbar  clb.I[2]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n91" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n91" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n91" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">n91 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_in~3" instance="io[1]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~3" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~3 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_in~2" instance="io[2]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~2" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~2 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="n97" instance="clb[3]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~8 open top^d_in~7 top^d_in~10 open top^d_in~11 n91 top^d_in~12 open top^d_in~6 top^d_in~9 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="n105" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">ble[2].out[0]->crossbar  clb.I[3]->crossbar  clb.I[5]->crossbar  clb.I[7]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n105" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n105" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n105" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[0]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">n105 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n103" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[10]->crossbar  clb.I[5]->crossbar  ble[3].out[0]->crossbar  clb.I[3]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n103" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n103" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n103" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[3]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">n103 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n99" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[10]->crossbar  open open ble[3].out[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n99" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  open open ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n99" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  open open soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n99" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">n99 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n97" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  clb.I[6]->crossbar  clb.I[2]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n97" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n97" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n97" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">n97 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_in~5" instance="io[4]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~5" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~5 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_in~4" instance="io[5]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~4" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~4 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="n151" instance="clb[6]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~12 open top^d_in~11 top^d_in~14 open top^d_in~15 n147 open top^d_in~13 top^d_in~10 open </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  open </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_7~15" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[5]->crossbar  clb.I[8]->crossbar  clb.I[3]->crossbar  ble[3].out[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~15" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~15" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~15" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~15 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~14" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[8]->crossbar  open ble[3].out[0]->crossbar  clb.I[3]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~14" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  open ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~14" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  open soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~14" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~14 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~13" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">open open clb.I[8]->crossbar  ble[3].out[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~13" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open open ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~13" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open open soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~13" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~13 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n151" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  clb.I[6]->crossbar  clb.I[2]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n151" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n151" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n151" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">n151 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="n109" instance="clb[7]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~14 open top^d_in~13 open top^d_in~1 top^d_in~0 n103 open top^d_in~15 top^d_in~12 open </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  open </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_1~15" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">ble[3].out[0]->crossbar  clb.I[5]->crossbar  clb.I[8]->crossbar  clb.I[4]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~15" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~15" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~15" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~15 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_2~15" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[8]->crossbar  ble[3].out[0]->crossbar  clb.I[4]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~15" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~15" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~15" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~15 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_4~15" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">open open clb.I[8]->crossbar  ble[3].out[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~15" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open open ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~15" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open open soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~15" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~15 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n109" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  clb.I[6]->crossbar  clb.I[2]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n109" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n109" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n109" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">n109 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="n147" instance="clb[8]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~9 top^d_in~0 top^d_in~8 top^d_in~2 top^d_in~6 top^d_in~1 top^d_in~3 top^d_in~10 top^d_in~4 top^d_in~7 top^d_in~5 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_7~10" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">ble[3].out[0]->crossbar  open open clb.I[7]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~10" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  open open ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~10" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  open open soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~10" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[3]->complete:lut4  lut4.in[0]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~10 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n139" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[5]->crossbar  clb.I[6]->crossbar  clb.I[1]->crossbar  clb.I[3]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n139" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n139" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n139" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">n139 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n143" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[4]->crossbar  ble[1].out[0]->crossbar  clb.I[8]->crossbar  clb.I[10]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n143" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n143" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n143" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">n143 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n147" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  ble[2].out[0]->crossbar  clb.I[2]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n147" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n147" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n147" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">n147 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~13" instance="io[9]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~13 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~13" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~15" instance="io[10]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~15 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~15" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~15" instance="io[11]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~15 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~15" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~15" instance="io[12]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~15 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~15" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~10" instance="io[13]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~10 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~10" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~13" instance="io[14]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~13 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~13" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~14" instance="io[15]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~14 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~14" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~14" instance="io[16]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~14 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~14" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~14" instance="io[17]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~14 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~14" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~15" instance="io[18]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~15 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~15" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_out_2~14" instance="clb[19]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~0 open top^d_in~13 open open top^d_in~14 open top^d_in~1 open open n105 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_1~1" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[0]->crossbar  open open clb.I[7]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~1" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  open open ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~1" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  open open soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~1" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~1 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~1" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[7]->crossbar  open clb.I[0]->crossbar  open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~1" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  open ble.in[2]->direct1  open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~1" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  open soft_logic.in[2]->direct1  open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~1" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~1 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_1~13" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[2]->crossbar  clb.I[0]->crossbar  clb.I[7]->crossbar  clb.I[10]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~13" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~13" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~13" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~13 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_2~14" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[5]->crossbar  clb.I[2]->crossbar  clb.I[7]->crossbar  clb.I[10]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~14" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~14" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~14" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~14 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_out_2~10" instance="clb[20]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~1 n99 top^d_in~10 open top^d_in~0 n121 open open top^d_in~11 top^d_in~12 open </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_4~12" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[1]->crossbar  clb.I[2]->crossbar  clb.I[8]->crossbar  clb.I[9]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~12" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~12" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~12" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[0]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~12 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_2~11" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[8]->crossbar  clb.I[0]->crossbar  clb.I[1]->crossbar  clb.I[2]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~11" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~11" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~11" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~11 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_1~10" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[1]->crossbar  clb.I[4]->crossbar  clb.I[0]->crossbar  clb.I[2]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~10" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~10" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~10" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[3]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~10 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_2~10" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[5]->crossbar  clb.I[0]->crossbar  clb.I[2]->crossbar  clb.I[1]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~10" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~10" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~10" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~10 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_out_1~14" instance="clb[21]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~12 open top^d_in~0 open n103 open top^d_in~1 open open top^d_in~14 top^d_in~13 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_1~12" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[6]->crossbar  clb.I[4]->crossbar  clb.I[2]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~12" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~12" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~12" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~12 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_2~13" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[10]->crossbar  clb.I[0]->crossbar  clb.I[6]->crossbar  clb.I[4]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~13" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~13" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~13" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~13 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_4~14" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[0]->crossbar  clb.I[10]->crossbar  clb.I[4]->crossbar  clb.I[9]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~14" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~14" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~14" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~14 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_1~14" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  clb.I[2]->crossbar  ble[2].out[0]->crossbar  clb.I[6]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~14" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~14" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~14" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~14 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_in~0" instance="io[22]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~0" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~0 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_in~1" instance="io[23]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~1" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~1 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_in~6" instance="io[24]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~6" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~6 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="n101" instance="clb[25]" mode="clb">
+		<inputs>
+			<port name="I">n97 open top^d_in~9 top^d_in~0 open top^d_in~1 top^d_in~12 top^d_in~13 top^d_in~11 top^d_in~10 open </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  open </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_4~13" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[6]->crossbar  clb.I[8]->crossbar  clb.I[7]->crossbar  ble[3].out[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~13" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~13" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~13" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~13 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_2~12" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[5]->crossbar  ble[3].out[0]->crossbar  clb.I[6]->crossbar  clb.I[8]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~12" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~12" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~12" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~12 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_1~11" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[3]->crossbar  clb.I[8]->crossbar  ble[3].out[0]->crossbar  clb.I[5]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~11" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~11" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~11" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~11 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n101" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  open clb.I[2]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n101" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  open ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n101" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  open soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n101" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">n101 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_in~7" instance="io[26]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~7" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~7 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_in~8" instance="io[27]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~8" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~8 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~12" instance="io[28]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~12 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~12" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~11" instance="io[29]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~11 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~11" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~13" instance="io[30]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~13 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~13" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~12" instance="io[31]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~12 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~12" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~10" instance="io[32]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~10 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~10" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~11" instance="io[33]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~11 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~11" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~13" instance="io[34]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~13 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~13" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~9" instance="io[35]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~9 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~9" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~10" instance="io[36]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~10 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~10" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~12" instance="io[37]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~12 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~12" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~11" instance="io[38]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~11 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~11" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~12" instance="io[39]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~12 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~12" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~14" instance="io[40]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~14 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~14" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_out_2~9" instance="clb[41]" mode="clb">
+		<inputs>
+			<port name="I">open open n119 open top^d_in~11 open open n97 open top^d_in~9 top^d_in~10 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_4~11" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[7]->crossbar  clb.I[9]->crossbar  clb.I[4]->crossbar  clb.I[10]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~11" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~11" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~11" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[0]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~11 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_4~10" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[7]->crossbar  clb.I[9]->crossbar  clb.I[10]->crossbar  open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~10" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~10" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~10" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[0]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~10 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_4~9" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[7]->crossbar  open open clb.I[9]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~9" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  open open ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~9" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  open open soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~9" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[3]->complete:lut4  lut4.in[0]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~9 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_2~9" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  open clb.I[2]->crossbar  open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~9" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  open ble.in[2]->direct1  open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~9" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  open soft_logic.in[2]->direct1  open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~9" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~9 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_out_7~12" instance="clb[42]" mode="clb">
+		<inputs>
+			<port name="I">n147 top^d_in~1 top^d_in~11 open top^d_in~3 top^d_in~12 top^d_in~0 open open top^d_in~10 top^d_in~2 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_7~3" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[10]->crossbar  clb.I[6]->crossbar  clb.I[1]->crossbar  clb.I[4]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~3" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~3" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~3" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~3 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_1~3" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[6]->crossbar  clb.I[4]->crossbar  clb.I[1]->crossbar  clb.I[10]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~3" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~3" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~3" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~3 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~11" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[2]->crossbar  clb.I[0]->crossbar  clb.I[9]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~11" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~11" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~11" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~11 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~12" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  clb.I[2]->crossbar  clb.I[5]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~12" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~12" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~12" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~12 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_in~9" instance="io[43]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~9" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~9 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~10" instance="io[44]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~10 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~10" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~9" instance="io[45]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~9 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~9" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~8" instance="io[46]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~8 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~8" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~9" instance="io[47]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~9 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~9" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~7" instance="io[48]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~7 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~7" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~11" instance="io[49]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~11 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~11" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~8" instance="io[50]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~8 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~8" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~9" instance="io[51]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~9 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~9" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~8" instance="io[52]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~8 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~8" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~7" instance="io[53]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~7 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~7" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_out_7~8" instance="clb[54]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~7 top^d_in~9 open open top^d_in~1 top^d_in~8 open open n143 n93 open </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_2~8" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[4]->crossbar  clb.I[9]->crossbar  clb.I[5]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~8" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~8" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~8" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~8 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~9" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[8]->crossbar  clb.I[0]->crossbar  clb.I[1]->crossbar  clb.I[5]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~9" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~9" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~9" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~9 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~7" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[0]->crossbar  clb.I[8]->crossbar  open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~7" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  ble.in[2]->direct1  open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~7" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~7" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~7 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~8" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[5]->crossbar  open clb.I[0]->crossbar  clb.I[8]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~8" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  open ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~8" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  open soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~8" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~8 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_out_1~9" instance="clb[55]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~0 open n97 open top^d_in~2 open open open open top^d_in~9 top^d_in~1 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_1~2" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[10]->crossbar  clb.I[4]->crossbar  open clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~2" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  open ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~2" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  open soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~2" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[0]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~2 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~2" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[4]->crossbar  clb.I[0]->crossbar  open clb.I[10]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~2" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  open ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~2" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  open soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~2" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[0]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~2 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_2~1" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">open open clb.I[10]->crossbar  open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~1" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open open ble.in[2]->direct1  open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~1" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open open soft_logic.in[2]->direct1  open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~1" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  open open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~1 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_1~9" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  clb.I[10]->crossbar  clb.I[2]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~9" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~9" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~9" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~9 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_out_1~7" instance="clb[56]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~0 open n93 open top^d_out_4~8 open top^d_in~1 open open top^d_in~7 top^d_in~8 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_1~8" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[6]->crossbar  clb.I[10]->crossbar  clb.I[4]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~8" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~8" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~8" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[0]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~8 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_1~0" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[0]->crossbar  open open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~0" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  open open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~0" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  open open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~0" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  open open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~0 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~0" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[0]->crossbar  open open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~0" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  open open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~0" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  open open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~0" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  open open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~0 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_1~7" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  clb.I[6]->crossbar  clb.I[2]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~7" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~7" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~7" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~7 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_out_4~8" instance="clb[57]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~6 n91 top^d_in~7 open open top^d_in~8 open open open open top^d_in~1 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_2~7" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[2]->crossbar  clb.I[1]->crossbar  clb.I[10]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~7" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~7" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~7" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~7 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_4~6" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[0]->crossbar  clb.I[1]->crossbar  open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~6" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  ble.in[2]->direct1  open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~6" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~6" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~6 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_4~7" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[2]->crossbar  clb.I[0]->crossbar  clb.I[1]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~7" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~7" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~7" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~7 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_4~8" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[5]->crossbar  clb.I[0]->crossbar  clb.I[2]->crossbar  clb.I[1]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~8" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~8" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~8" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~8 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_in~10" instance="io[58]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~10" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~10 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_in~11" instance="io[59]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~11" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~11 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_in~12" instance="io[60]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~12" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~12 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~5" instance="io[61]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~5 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~5" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_out_2~5" instance="clb[62]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~2 top^d_in~4 top^d_in~5 open open n91 open top^d_in~0 top^d_in~3 top^d_in~1 open </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  open ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_1~5" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[2]->crossbar  ble[1].out[0]->crossbar  clb.I[9]->crossbar  clb.I[7]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~5" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~5" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~5" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~5 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_4~5" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[2]->crossbar  clb.I[0]->crossbar  clb.I[8]->crossbar  clb.I[1]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~5" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~5" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~5" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[0]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~5 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="n114" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[8]->crossbar  clb.I[0]->crossbar  clb.I[1]->crossbar  clb.I[9]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="n114" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="n114" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="n114" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">n114 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_2~5" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  clb.I[5]->crossbar  clb.I[2]->crossbar  ble[2].out[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~5" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~5" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~5" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~5 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~7" instance="io[63]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~7 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~7" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~8" instance="io[64]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~8 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~8" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~6" instance="io[65]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~6 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~6" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~6" instance="io[66]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~6 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~6" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~5" instance="io[67]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~5 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~5" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~4" instance="io[68]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~4 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~4" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~7" instance="io[69]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~7 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~7" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~6" instance="io[70]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~6 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~6" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~6" instance="io[71]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~6 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~6" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~5" instance="io[72]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~5 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~5" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_out_7~6" instance="clb[73]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~4 n139 top^d_in~5 open open n91 open open open top^d_in~1 top^d_in~6 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_2~6" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[10]->crossbar  clb.I[5]->crossbar  clb.I[9]->crossbar  open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~6" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~6" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~6" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[1]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~6 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~4" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[0]->crossbar  clb.I[1]->crossbar  open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~4" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  ble.in[2]->direct1  open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~4" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~4" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~4 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~5" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[0]->crossbar  clb.I[1]->crossbar  clb.I[2]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~5" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~5" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~5" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~5 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_7~6" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[1]->crossbar  clb.I[2]->crossbar  clb.I[0]->crossbar  clb.I[10]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_7~6" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_7~6" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_7~6" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[0]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_7~6 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_out_1~6" instance="clb[74]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~0 top^d_in~3 n91 open top^d_in~4 top^d_in~2 open open open top^d_in~6 top^d_in~1 </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_2~4" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[4]->crossbar  clb.I[1]->crossbar  clb.I[10]->crossbar  clb.I[5]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~4" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~4" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~4" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  lut4.in[0]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~4 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_4~4" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[5]->crossbar  clb.I[1]->crossbar  clb.I[4]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~4" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~4" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~4" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~4 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_1~4" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[10]->crossbar  clb.I[4]->crossbar  clb.I[0]->crossbar  ble[1].out[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~4" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~4" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~4" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~4 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_1~6" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[9]->crossbar  clb.I[10]->crossbar  clb.I[2]->crossbar  clb.I[0]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_1~6" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_1~6" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_1~6" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[0]->complete:lut4  lut4.in[2]->complete:lut4  lut4.in[3]->complete:lut4  lut4.in[1]->complete:lut4  </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_1~6 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="top^d_in~14" instance="io[75]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~14" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~14 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_in~13" instance="io[76]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~13" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~13 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~4" instance="io[77]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~4 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~4" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~5" instance="io[78]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~5 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~5" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~3" instance="io[79]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~3 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~3" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~4" instance="io[80]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~4 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~4" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~3" instance="io[81]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~3 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~3" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_in~15" instance="io[82]" mode="inpad">
+		<inputs>
+			<port name="outpad">open </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]->inpad  </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="top^d_in~15" instance="inpad[0]">
+			<inputs>
+			</inputs>
+			<outputs>
+				<port name="inpad">top^d_in~15 </port>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~4" instance="io[83]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~4 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~4" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~3" instance="io[84]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~3 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~3" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~2" instance="io[85]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~2 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~2" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~2" instance="io[86]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~2 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~2" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="top^d_out_2~3" instance="clb[87]" mode="clb">
+		<inputs>
+			<port name="I">top^d_in~1 open top^d_in~3 open open top^d_in~2 open open open open open </port>
+		</inputs>
+		<outputs>
+			<port name="O">ble[0].out[0]->clbouts  ble[1].out[0]->clbouts  ble[2].out[0]->clbouts  ble[3].out[0]->clbouts  </port>
+		</outputs>
+		<clocks>
+			<port name="clk">open </port>
+		</clocks>
+		<block name="top^d_out_4~2" instance="ble[0]" mode="ble">
+			<inputs>
+				<port name="in">open open clb.I[5]->crossbar  open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~2" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open open ble.in[2]->direct1  open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~2" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open open soft_logic.in[2]->direct1  open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~2" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  open open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~2 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_2~2" instance="ble[1]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[5]->crossbar  clb.I[0]->crossbar  open open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~2" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  ble.in[1]->direct1  open open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~2" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  soft_logic.in[1]->direct1  open open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~2" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[0]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~2 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_4~3" instance="ble[2]" mode="ble">
+			<inputs>
+				<port name="in">open clb.I[5]->crossbar  clb.I[2]->crossbar  open </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_4~3" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">open ble.in[1]->direct1  ble.in[2]->direct1  open </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_4~3" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">open soft_logic.in[1]->direct1  soft_logic.in[2]->direct1  open </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_4~3" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[1]->complete:lut4  lut4.in[2]->complete:lut4  open open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_4~3 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+		<block name="top^d_out_2~3" instance="ble[3]" mode="ble">
+			<inputs>
+				<port name="in">clb.I[5]->crossbar  open clb.I[0]->crossbar  clb.I[2]->crossbar  </port>
+			</inputs>
+			<outputs>
+				<port name="out">soft_logic[0].out[0]->mux1  </port>
+			</outputs>
+			<clocks>
+				<port name="clk">open </port>
+			</clocks>
+			<block name="top^d_out_2~3" instance="soft_logic[0]" mode="n1_lut4">
+				<inputs>
+					<port name="in">ble.in[0]->direct1  open ble.in[2]->direct1  ble.in[3]->direct1  </port>
+				</inputs>
+				<outputs>
+					<port name="out">lut4[0].out[0]->direct2  </port>
+				</outputs>
+				<clocks>
+				</clocks>
+				<block name="top^d_out_2~3" instance="lut4[0]" mode="lut4">
+					<inputs>
+						<port name="in">soft_logic.in[0]->direct1  open soft_logic.in[2]->direct1  soft_logic.in[3]->direct1  </port>
+					</inputs>
+					<outputs>
+						<port name="out">lut[0].out[0]->direct:lut4  </port>
+					</outputs>
+					<clocks>
+					</clocks>
+					<block name="top^d_out_2~3" instance="lut[0]">
+						<inputs>
+							<port name="in">lut4.in[2]->complete:lut4  lut4.in[0]->complete:lut4  lut4.in[3]->complete:lut4  open </port>
+						</inputs>
+						<outputs>
+							<port name="out">top^d_out_2~3 </port>
+						</outputs>
+						<clocks>
+						</clocks>
+					</block>
+				</block>
+			</block>
+			<block name="open" instance="ff[0]"/>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~3" instance="io[88]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~3 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~3" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~2" instance="io[89]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~2 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~2" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~1" instance="io[90]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~1 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~1" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~1" instance="io[91]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~1 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~1" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~2" instance="io[92]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_4~2 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~2" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_1~0" instance="io[93]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_1~0 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_1~0" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_7~0" instance="io[94]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_7~0 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_7~0" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~1" instance="io[95]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_out_2~1 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~1" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~1" instance="io[96]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_in~1 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~1" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_4~0" instance="io[97]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_in~0 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_4~0" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+	<block name="out:top^d_out_2~0" instance="io[98]" mode="outpad">
+		<inputs>
+			<port name="outpad">top^d_in~0 </port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open </port>
+		</outputs>
+		<clocks>
+			<port name="clock">open </port>
+		</clocks>
+		<block name="out:top^d_out_2~0" instance="outpad[0]">
+			<inputs>
+				<port name="outpad">io.outpad[0]->outpad  </port>
+			</inputs>
+			<outputs>
+			</outputs>
+			<clocks>
+			</clocks>
+		</block>
+	</block>
+</block>
+

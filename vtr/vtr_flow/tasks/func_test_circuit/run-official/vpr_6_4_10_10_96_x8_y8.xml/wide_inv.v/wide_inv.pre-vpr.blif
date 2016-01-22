@@ -1,0 +1,80 @@
+# Benchmark "wide_inv" written by ABC on Tue Jul  8 18:14:50 2014
+.model wide_inv
+.inputs top^clock top^rst top^d_in~0 top^d_in~1 top^d_in~2 top^d_in~3 \
+ top^d_in~4 top^d_in~5 top^d_in~6 top^d_in~7 top^d_in~8 top^d_in~9 \
+ top^d_in~10 top^d_in~11 top^d_in~12 top^d_in~13 top^d_in~14 top^d_in~15 \
+ top^d_in~16 top^d_in~17 top^d_in~18 top^d_in~19 top^d_in~20 top^d_in~21 \
+ top^d_in~22 top^d_in~23 top^d_in~24 top^d_in~25 top^d_in~26 top^d_in~27 \
+ top^d_in~28 top^d_in~29 top^d_in~30 top^d_in~31
+.outputs top^d_out~0 top^d_out~1 top^d_out~2 top^d_out~3 top^d_out~4 \
+ top^d_out~5 top^d_out~6 top^d_out~7 top^d_out~8 top^d_out~9 top^d_out~10 \
+ top^d_out~11 top^d_out~12 top^d_out~13 top^d_out~14 top^d_out~15 \
+ top^d_out~16 top^d_out~17 top^d_out~18 top^d_out~19 top^d_out~20 \
+ top^d_out~21 top^d_out~22 top^d_out~23 top^d_out~24 top^d_out~25 \
+ top^d_out~26 top^d_out~27 top^d_out~28 top^d_out~29 top^d_out~30 \
+ top^d_out~31
+.names top^d_in~0 top^d_out~0
+0 1
+.names top^d_in~1 top^d_out~1
+0 1
+.names top^d_in~2 top^d_out~2
+0 1
+.names top^d_in~3 top^d_out~3
+0 1
+.names top^d_in~4 top^d_out~4
+0 1
+.names top^d_in~5 top^d_out~5
+0 1
+.names top^d_in~6 top^d_out~6
+0 1
+.names top^d_in~7 top^d_out~7
+0 1
+.names top^d_in~8 top^d_out~8
+0 1
+.names top^d_in~9 top^d_out~9
+0 1
+.names top^d_in~10 top^d_out~10
+0 1
+.names top^d_in~11 top^d_out~11
+0 1
+.names top^d_in~12 top^d_out~12
+0 1
+.names top^d_in~13 top^d_out~13
+0 1
+.names top^d_in~14 top^d_out~14
+0 1
+.names top^d_in~15 top^d_out~15
+0 1
+.names top^d_in~16 top^d_out~16
+0 1
+.names top^d_in~17 top^d_out~17
+0 1
+.names top^d_in~18 top^d_out~18
+0 1
+.names top^d_in~19 top^d_out~19
+0 1
+.names top^d_in~20 top^d_out~20
+0 1
+.names top^d_in~21 top^d_out~21
+0 1
+.names top^d_in~22 top^d_out~22
+0 1
+.names top^d_in~23 top^d_out~23
+0 1
+.names top^d_in~24 top^d_out~24
+0 1
+.names top^d_in~25 top^d_out~25
+0 1
+.names top^d_in~26 top^d_out~26
+0 1
+.names top^d_in~27 top^d_out~27
+0 1
+.names top^d_in~28 top^d_out~28
+0 1
+.names top^d_in~29 top^d_out~29
+0 1
+.names top^d_in~30 top^d_out~30
+0 1
+.names top^d_in~31 top^d_out~31
+0 1
+.end

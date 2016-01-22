@@ -1,0 +1,475 @@
+________________________________________________________________________
+                       VPR - The Next Generation                        
+                     Version 0.A15.0 (Linux X86/64)                     
+            This is free open source code under MIT license.            
+________________________________________________________________________
+
+VPR FPGA Placement and Routing.
+Version: Version 6.1 Internal Release
+Compiled: Apr 23 2013.
+Original VPR by V. Betz.
+Timing-driven placement enhancements by A. Marquardt.
+Single-drivers enhancements by Andy Ye with additions by.
+Mark Fang, Jason Luu, Ted Campbell
+Heterogeneous stucture support by Jason Luu and Ted Campbell.
+T-VPack clustering integration by Jason Luu.
+Area-driven AAPack added by Jason Luu.
+This is free open source code under MIT license.
+
+Architecture file: vpr_5_8_12_12_120_x10_y10.xml
+Circuit name: ff_en.blif
+
+Building complex block graph.
+WARNING(1): io[0].clock[0] unconnected pin in architecture.
+Loop for doall = 0, init_parse took 0 seconds.
+Loop for doall = 0 took 0 seconds.
+Loop for doall = 1, init_parse took 0 seconds.
+Loop for doall = 1 took 0 seconds.
+Swept away 0 nets with no fanout.
+0 unconnected blocks in input netlist.
+Removed 10 LUT buffers.
+Sweeped away 10 nodes.
+BLIF circuit stats:
+	0 LUTs of size 0
+	0 LUTs of size 1
+	0 LUTs of size 2
+	0 LUTs of size 3
+	10 LUTs of size 4
+	0 LUTs of size 5
+	13 of type input
+	10 of type output
+	10 of type latch
+	10 of type names
+Timing analysis: ON
+Circuit netlist file: ff_en.net
+Circuit placement file: ff_en.place
+Circuit routing file: ff_en.route
+Circuit SDC file: /users/hjliu/Project/open-fpga-complete/vtr/vtr_flow/sdc/ff_en.sdc
+Operation: RUN_FLOW
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+PackerOpts.allow_early_exit: FALSE
+PackerOpts.allow_unrelated_clustering: TRUE
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.aspect: 1.000000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.block_delay: 0.000000
+PackerOpts.cluster_seed_type: TIMING
+PackerOpts.connection_driven: TRUE
+PackerOpts.global_clocks: TRUE
+PackerOpts.hill_climbing_flag: FALSE
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.intra_cluster_net_delay: 0.000000
+PackerOpts.recompute_timing_after: 32767
+PackerOpts.sweep_hanging_nets_and_inputs: TRUE
+PackerOpts.timing_driven: TRUE
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: PATH_TIMING_DRIVEN_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 10.000000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED
+RouterOpts.fixed_channel_width: 120
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.500000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+
+RoutingArch.directionality: UNI_DIRECTIONAL
+RoutingArch.switch_block_type: WILTON
+RoutingArch.Fs: 3
+
+Initialize packing.
+Begin packing 'ff_en.pre-vpr.blif'.
+
+After removing unused inputs...
+	total blocks: 43, total nets: 33, total inputs: 13, total outputs: 10
+Begin prepacking.
+Finish prepacking.
+Using inter-cluster delay: 1.204e-09
+
+SDC file '/users/hjliu/Project/open-fpga-complete/vtr/vtr_flow/sdc/ff_en.sdc' blank or not found.
+
+Defaulting to: constrain all 0 inputs and 0 outputs on the netlist clock.
+Optimize this clock to run as fast as possible.
+Not enough resources expand FPGA size to x = 2 y = 2.
+Complex block 0: cb.top^FF_NODE~14, type: clb
+	...............
+Passed route at end.
+Complex block 1: cb.top^FF_NODE~16, type: clb
+	...
+Passed route at end.
+Complex block 2: cb.top^d_en, type: io
+	
+Passed route at end.
+Complex block 3: cb.top^rst, type: io
+	
+Passed route at end.
+Complex block 4: cb.top^d_in~2, type: io
+	
+Passed route at end.
+Complex block 5: cb.top^d_in~3, type: io
+	
+Passed route at end.
+Complex block 6: cb.top^d_in~9, type: io
+	
+Passed route at end.
+Complex block 7: cb.top^d_in~8, type: io
+	
+Passed route at end.
+Complex block 8: cb.top^d_in~7, type: io
+	
+Passed route at end.
+Complex block 9: cb.top^d_in~1, type: io
+	
+Passed route at end.
+Complex block 10: cb.top^d_in~6, type: io
+	
+Passed route at end.
+Complex block 11: cb.top^d_in~5, type: io
+	
+Passed route at end.
+Complex block 12: cb.top^d_in~4, type: io
+	
+Passed route at end.
+Complex block 13: cb.top^d_in~0, type: io
+	
+Passed route at end.
+Complex block 14: cb.out:top^d_out~1, type: io
+	
+Passed route at end.
+Complex block 15: cb.out:top^d_out~0, type: io
+	
+Passed route at end.
+Complex block 16: cb.out:top^d_out~9, type: io
+	
+Passed route at end.
+Complex block 17: cb.out:top^d_out~8, type: io
+	
+Passed route at end.
+Complex block 18: cb.out:top^d_out~7, type: io
+	
+Passed route at end.
+Complex block 19: cb.out:top^d_out~6, type: io
+	
+Passed route at end.
+Complex block 20: cb.out:top^d_out~5, type: io
+	
+Passed route at end.
+Complex block 21: cb.out:top^d_out~4, type: io
+	
+Passed route at end.
+Complex block 22: cb.out:top^d_out~3, type: io
+	
+Passed route at end.
+Complex block 23: cb.out:top^d_out~2, type: io
+	
+Passed route at end.
+Complex block 24: cb.top^clock, type: io
+	
+Passed route at end.
+	<EMPTY>: # blocks: 0, average # input + clock pins used: 0, average # output pins used: 0
+	io: # blocks: 23, average # input + clock pins used: 0.434783, average # output pins used: 0.565217
+	clb: # blocks: 2, average # input + clock pins used: 8, average # output pins used: 5
+Absorbed logical nets 10 out of 33 nets, 23 nets not absorbed.
+
+Netlist conversion complete.
+
+Packing took 0.03 seconds.
+Packing completed.
+Begin parsing packed FPGA netlist file.
+Finished parsing packed FPGA netlist file.
+Netlist generated from file 'ff_en.net'.
+
+Netlist num_nets: 23
+Netlist num_blocks: 25
+Netlist <EMPTY> blocks: 0.
+Netlist clb blocks: 2.
+Netlist inputs pins: 13
+Netlist output pins: 10
+
+The circuit will be mapped into a 10 x 10 array of clbs.
+
+Resource usage...
+	Netlist      0	blocks of type: <EMPTY>
+	Architecture 4	blocks of type: <EMPTY>
+	Netlist      23	blocks of type: io
+	Architecture 320	blocks of type: io
+	Netlist      2	blocks of type: clb
+	Architecture 100	blocks of type: clb
+
+Computing delta_io_to_io lookup matrix, may take a few seconds, please wait...
+Computing delta_io_to_clb lookup matrix, may take a few seconds, please wait...
+Computing delta_clb_to_io lookup matrix, may take a few seconds, please wait...
+Computing delta_clb_to_clb lookup matrix, may take a few seconds, please wait...
+
+There are 24 point to point connections in this circuit.
+
+Initial placement cost: 0.972012 bb_cost: 2.14 td_cost: 6.20436e-09 delay_cost: 1.0324e-08
+
+--------- --------- ----------- ----------- ----------- ----------- -------- -------- ------- ------- ------- --------- -------
+        T      Cost  Av BB Cost  Av TD Cost  Av Tot Del  P to P Del    d_max  Ac Rate Std Dev R limit     Exp Tot Moves   Alpha
+--------- --------- ----------- ----------- ----------- ----------- -------- -------- ------- ------- ------- --------- -------
+  0.50615    1.0139     2.20477 8.61068e-09 1.04298e-08 4.30167e-10   0.7625   0.9904  0.0646 11.0000  1.0000       730  0.5000
+  0.25307   0.95104     2.13575 7.37102e-09 1.01866e-08 4.21833e-10   0.8625   0.9630  0.0614 11.0000  1.0000      1460  0.5000
+  0.12654    1.0863     2.11525 8.14373e-09  1.0112e-08   4.135e-10   0.7625   0.9384  0.0528 11.0000  1.0000      2190  0.9000
+  0.11388    1.0118     2.09122 8.15934e-09 1.00832e-08 4.17667e-10   0.7625   0.9164  0.0490 11.0000  1.0000      2920  0.9000
+  0.10249   0.98134     2.13766 8.29973e-09 1.02585e-08 4.17667e-10   0.7625   0.9041  0.0851 11.0000  1.0000      3650  0.9000
+  0.09224    1.0359     2.12318 8.07871e-09 1.00991e-08 4.09333e-10   0.7625   0.9082  0.0571 11.0000  1.0000      4380  0.9000
+  0.08302   0.98083     2.09047 8.19677e-09 1.01985e-08   4.135e-10   0.7625   0.9247  0.0504 11.0000  1.0000      5110  0.9000
+  0.07472    1.0026     2.12085 8.17879e-09 1.01474e-08   4.135e-10   0.7625   0.9137  0.0683 11.0000  1.0000      5840  0.9000
+  0.06725   0.97507     2.01716 7.89934e-09 9.89562e-09 4.09333e-10   0.7625   0.9123  0.0484 11.0000  1.0000      6570  0.9000
+  0.06052    1.0246     2.05304 8.05651e-09 9.97196e-09 4.17667e-10   0.7625   0.8740  0.0547 11.0000  1.0000      7300  0.9000
+  0.05447   0.96463     2.03694 8.12851e-09  9.9577e-09 4.21833e-10   0.7625   0.8863  0.0440 11.0000  1.0000      8030  0.9000
+  0.04902    1.0366     2.03596 7.24046e-09 1.00621e-08 4.17667e-10   0.8625   0.8658  0.0595 11.0000  1.0000      8760  0.9000
+  0.04412    1.0302     1.94964   8.462e-09 9.79325e-09    3.76e-10   0.6625   0.8329  0.0514 11.0000  1.0000      9490  0.9000
+  0.03971    1.0837     1.98364 7.45264e-09 9.63458e-09   3.885e-10   0.7625   0.8288  0.0412 11.0000  1.0000     10220  0.9000
+  0.03574   0.98677      1.9544 7.83625e-09 9.81531e-09 4.09333e-10   0.7625   0.8041  0.0408 11.0000  1.0000     10950  0.9000
+  0.03216   0.92904     1.98213 7.96388e-09 9.76711e-09 4.21833e-10   0.7625   0.7849  0.0498 11.0000  1.0000     11680  0.9500
+  0.03056   0.91441      1.8221 6.82948e-09 9.08741e-09 3.71833e-10   0.7625   0.7000  0.0618 11.0000  1.0000     12410  0.9500
+  0.02903   0.94466     1.91242 6.56014e-09 9.37855e-09 3.96833e-10   0.8625   0.7534  0.0411 11.0000  1.0000     13140  0.9500
+  0.02758   0.97601     1.94153 7.60652e-09 9.66462e-09    4.01e-10   0.7625   0.7521  0.0563 11.0000  1.0000     13870  0.9500
+  0.02620    0.9091      1.7242 7.18036e-09 8.98603e-09 4.09333e-10   0.7625   0.6493  0.0684 11.0000  1.0000     14600  0.9500
+  0.02489   0.96749     1.61588 6.59574e-09 9.01663e-09 3.59333e-10   0.7625   0.5945  0.0748 11.0000  1.0000     15330  0.9500
+  0.02364   0.96026      1.8134 7.11249e-09 9.09906e-09 3.96833e-10   0.7625   0.6370  0.0894 11.0000  1.0000     16060  0.9500
+  0.02246    1.0239      1.6861 5.26953e-09 8.65134e-09    3.26e-10   0.8625   0.5863  0.0687 11.0000  1.0000     16790  0.9500
+  0.02134   0.95155     1.78113  6.4219e-09 8.84802e-09 3.55167e-10   0.7625   0.5932  0.0731 11.0000  1.0000     17520  0.9500
+  0.02027   0.94383      1.4637 5.98773e-09 8.07737e-09 3.59333e-10   0.7625   0.4671  0.0719 11.0000  1.0000     18250  0.9500
+  0.01926   0.94385     1.57065 6.23353e-09 8.18292e-09 3.71833e-10   0.7625   0.5068  0.0471 11.0000  1.0000     18980  0.9500
+  0.01829    0.8907     1.51062 5.96031e-09 8.11814e-09 3.55167e-10   0.7625   0.4671  0.0512 11.0000  1.0000     19710  0.9500
+  0.01738   0.94043     1.52517  5.8798e-09 8.13125e-09 3.46833e-10   0.7625   0.4534  0.0955 11.0000  1.0000     20440  0.9500
+  0.01651   0.90986     1.14735 4.97579e-09 6.81788e-09 3.05167e-10   0.7436   0.3356  0.0772 11.0000  1.0000     21170  0.9500
+  0.01569    0.8759     1.18088 2.64312e-09 6.68394e-09 2.92667e-10   0.8625   0.4205  0.0852  9.8518  1.8038     21900  0.9500
+  0.01490   0.92461     1.07587  2.4658e-09 6.51337e-09 2.55167e-10   0.7625   0.3479  0.0662  9.6601  1.9379     22630  0.9500
+  0.01416   0.95011     0.87473 2.22755e-09 6.11454e-09 2.34333e-10   0.6625   0.3041  0.0552  8.7709  2.5604     23360  0.9500
+  0.01345   0.99695    0.931734 1.66666e-09   6.144e-09   2.385e-10   0.7436   0.3082  0.1197  7.5790  3.3947     24090  0.9500
+  0.01278   0.85696    0.862452 1.36002e-09 5.97143e-09    2.51e-10   0.7436   0.3466  0.0624  6.5802  4.0938     24820  0.9500
+  0.01214   0.83581    0.914844 1.26807e-09 6.18219e-09    2.51e-10   0.7436   0.3932  0.0676  5.9655  4.5242     25550  0.9500
+  0.01153   0.98621    0.969814 1.04534e-09 6.52618e-09 2.17667e-10   0.6625   0.4411  0.0673  5.6860  4.7198     26280  0.9500
+  0.01095   0.84168    0.966534  1.3592e-09 6.40733e-09 2.55167e-10   0.7436   0.4110  0.0569  5.6922  4.7154     27010  0.9500
+  0.01041   0.85533    0.907134 1.07228e-09 6.07467e-09 2.42667e-10   0.7436   0.4110  0.0417  5.5269  4.8312     27740  0.9500
+  0.00989    0.8391    0.850503 1.00563e-09 6.03057e-09   2.385e-10   0.7436   0.3548  0.0621  5.3664  4.9435     28470  0.9500
+  0.00939   0.82177    0.836739 1.01605e-09 6.12923e-09 2.42667e-10   0.7436   0.4452  0.0424  4.9092  5.2636     29200  0.9500
+  0.00892   0.83739    0.854655 1.06721e-09  6.1435e-09    2.51e-10   0.7436   0.4356  0.0487  4.9347  5.2457     29930  0.9500
+  0.00848    0.8213    0.844173 9.34983e-10 6.19817e-09 2.46833e-10   0.7436   0.4137  0.0503  4.9131  5.2608     30660  0.9500
+  0.00805   0.82203    0.760983 7.13275e-10 5.57418e-09    2.26e-10   0.7436   0.3767  0.0421  4.7839  5.3513     31390  0.9500
+  0.00765    1.0415    0.750001 1.31688e-09 5.50209e-09 2.05167e-10   0.5625   0.3438  0.0407  4.4811  5.5632     32120  0.9500
+  0.00727   0.99293    0.731881 1.20303e-09 5.42663e-09 2.05167e-10   0.5625   0.3644  0.0310  4.0502  5.8649     32850  0.9500
+  0.00690   0.72765    0.659732 6.98453e-10 5.31208e-09 2.34333e-10   0.7436   0.3562  0.0252  3.7439  6.0793     33580  0.9500
+  0.00656    1.0246    0.683807 3.03105e-09   5.149e-09    2.01e-10   0.4625   0.3671  0.0281  3.4301  6.2990     34310  0.9500
+  0.00623   0.87827     0.69721  4.5626e-10 5.53214e-09 2.17667e-10   0.7436   0.3534  0.0287  3.1801  6.4739     35040  0.9500
+  0.00592   0.76512    0.630388  5.3736e-10 5.12497e-09 2.30167e-10   0.7436   0.4247  0.0661  2.9048  6.6667     35770  0.9500
+  0.00562   0.80309    0.677435 4.31635e-10 5.41963e-09 2.17667e-10   0.7436   0.4699  0.0310  2.8602  6.6979     36500  0.9500
+  0.00534   0.81142    0.692079 4.61254e-10 5.58304e-09 2.17667e-10   0.7436   0.4548  0.0545  2.9456  6.6381     37230  0.9500
+  0.00507   0.80775    0.662423  4.4175e-10 5.41965e-09 2.17667e-10   0.7436   0.4411  0.0343  2.9892  6.6076     37960  0.9500
+  0.00482   0.72428    0.642661 6.57547e-10 5.38629e-09 2.34333e-10   0.7436   0.4068  0.0430  2.9925  6.6053     38690  0.9500
+  0.00458   0.94285    0.628318 1.03792e-09 4.99403e-09 2.05167e-10   0.5625   0.4068  0.0157  2.8933  6.6747     39420  0.9500
+  0.00435    0.9995    0.617979 2.97084e-09 4.91353e-09    2.01e-10   0.4625   0.3795  0.0139  2.7974  6.7419     40150  0.9500
+  0.00413   0.79368     0.60372 4.21258e-10 5.03312e-09 2.17667e-10   0.7436   0.3904  0.0406  2.6280  6.8604     40880  0.9500
+  0.00393   0.79559    0.611806 4.04565e-10 5.12438e-09 2.17667e-10   0.7436   0.3644  0.0253  2.4977  6.9516     41610  0.9500
+  0.00373    1.0142    0.616178 2.94968e-09 4.88577e-09    2.01e-10   0.4625   0.3726  0.0190  2.3088  7.0838     42340  0.9500
+  0.00354   0.80504    0.587894 4.11992e-10 4.98433e-09 2.17667e-10   0.7436   0.3315  0.0557  2.1532  7.1928     43070  0.9500
+  0.00337   0.99677    0.586026 2.93334e-09 4.83767e-09    2.01e-10   0.4625   0.4411  0.0164  1.9196  7.3563     43800  0.9500
+  0.00320    1.0043    0.564843 2.93261e-09   4.824e-09    2.01e-10   0.4625   0.4329  0.0063  1.9217  7.3548     44530  0.9500
+  0.00304    1.0057    0.576439 2.93239e-09 4.82775e-09    2.01e-10   0.4625   0.4384  0.0098  1.9080  7.3644     45260  0.9500
+  0.00289   0.81227    0.584067 3.87079e-10 5.03725e-09 2.17667e-10   0.7436   0.4548  0.0429  1.9049  7.3666     45990  0.9500
+  0.00274   0.71087    0.582948 5.94666e-10 5.10864e-09 2.34333e-10   0.7436   0.4370  0.0370  1.9330  7.3469     46720  0.9500
+  0.00261   0.98474    0.561994 2.93435e-09 4.85057e-09    2.01e-10   0.4625   0.3712  0.0102  1.9272  7.3509     47450  0.9500
+  0.00247   0.97835     0.54532 2.92862e-09   4.824e-09    2.01e-10   0.4625   0.3863  0.0064  1.7947  7.4437     48180  0.9500
+  0.00235   0.99869    0.548186 2.92766e-09 4.85956e-09    2.01e-10   0.4625   0.3699  0.0058  1.6983  7.5112     48910  0.9500
+  0.00223   0.99453    0.543979 2.92215e-09   4.824e-09    2.01e-10   0.4625   0.3685  0.0060  1.5792  7.5946     49640  0.9500
+  0.00212    1.0057     0.54617 2.91891e-09   4.824e-09    2.01e-10   0.4625   0.3575  0.0063  1.4663  7.6736     50370  0.9500
+  0.00202    1.0002    0.540179 2.91591e-09 4.83117e-09    2.01e-10   0.4625   0.3822  0.0017  1.3454  7.7582     51100  0.9500
+  0.00191    1.0057    0.546162 2.91345e-09   4.824e-09    2.01e-10   0.4625   0.3712  0.0045  1.2676  7.8127     51830  0.9500
+  0.00182    1.0038    0.553707 2.91351e-09 4.87298e-09    2.01e-10   0.4625   0.4027  0.0052  1.1804  7.8737     52560  0.9500
+  0.00173   0.99278    0.551913 2.90999e-09   4.824e-09    2.01e-10   0.4625   0.4082  0.0035  1.1364  7.9045     53290  0.9500
+  0.00164   0.99182       0.541 2.90906e-09   4.824e-09    2.01e-10   0.4625   0.3836  0.0027  1.1003  7.9298     54020  0.9500
+  0.00156         1        0.54 2.90749e-09   4.824e-09    2.01e-10   0.4625   0.3808  0.0000  1.0382  7.9732     54750  0.9500
+  0.00148    1.0001    0.540146 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3740  0.0011  1.0000  8.0000     55480  0.9500
+  0.00141         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3767  0.0000  1.0000  8.0000     56210  0.9500
+  0.00134    1.0014     0.54149 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3493  0.0033  1.0000  8.0000     56940  0.9500
+  0.00127         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3466  0.0000  1.0000  8.0000     57670  0.9500
+  0.00121         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3370  0.0000  1.0000  8.0000     58400  0.9500
+  0.00115         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3575  0.0000  1.0000  8.0000     59130  0.9500
+  0.00109         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3589  0.0000  1.0000  8.0000     59860  0.9500
+  0.00103         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3479  0.0000  1.0000  8.0000     60590  0.9500
+  0.00098         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3712  0.0000  1.0000  8.0000     61320  0.9500
+  0.00093         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3781  0.0000  1.0000  8.0000     62050  0.9500
+  0.00089         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3548  0.0000  1.0000  8.0000     62780  0.9500
+  0.00084         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3356  0.0000  1.0000  8.0000     63510  0.9500
+  0.00080         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3534  0.0000  1.0000  8.0000     64240  0.9500
+  0.00076         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3425  0.0000  1.0000  8.0000     64970  0.9500
+  0.00072         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3699  0.0000  1.0000  8.0000     65700  0.9500
+  0.00069         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3712  0.0000  1.0000  8.0000     66430  0.9500
+  0.00065         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3644  0.0000  1.0000  8.0000     67160  0.9500
+  0.00062         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3836  0.0000  1.0000  8.0000     67890  0.9500
+  0.00059         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3740  0.0000  1.0000  8.0000     68620  0.9500
+  0.00056         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3411  0.0000  1.0000  8.0000     69350  0.9500
+  0.00053         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3685  0.0000  1.0000  8.0000     70080  0.9500
+  0.00050         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3342  0.0000  1.0000  8.0000     70810  0.9500
+  0.00048         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3781  0.0000  1.0000  8.0000     71540  0.9500
+  0.00046         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3356  0.0000  1.0000  8.0000     72270  0.9500
+  0.00043         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3658  0.0000  1.0000  8.0000     73000  0.9500
+  0.00041         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3096  0.0000  1.0000  8.0000     73730  0.9500
+  0.00039         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3589  0.0000  1.0000  8.0000     74460  0.9500
+  0.00037         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3397  0.0000  1.0000  8.0000     75190  0.9500
+  0.00035         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3630  0.0000  1.0000  8.0000     75920  0.9500
+  0.00033         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3616  0.0000  1.0000  8.0000     76650  0.9500
+  0.00032         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3151  0.0000  1.0000  8.0000     77380  0.9500
+  0.00030         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3342  0.0000  1.0000  8.0000     78110  0.9500
+  0.00029         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3658  0.0000  1.0000  8.0000     78840  0.9500
+  0.00027         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3918  0.0000  1.0000  8.0000     79570  0.9500
+  0.00026         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3699  0.0000  1.0000  8.0000     80300  0.9500
+  0.00025         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3562  0.0000  1.0000  8.0000     81030  0.9500
+  0.00023         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3548  0.0000  1.0000  8.0000     81760  0.9500
+  0.00022         1        0.54 2.90653e-09   4.824e-09    2.01e-10   0.4625   0.3137  0.0000  1.0000  8.0000     82490  0.9500
+  0.00000         1        0.54 2.90653e-09   4.824e-09    2.01e-10            0.3438  0.0000  1.0000  8.0000     83220
+
+BB estimate of min-dist (placement) wirelength: 54
+bb_cost recomputed from scratch: 0.54
+timing_cost recomputed from scratch: 2.90653e-09
+delay_cost recomputed from scratch: 4.824e-09
+
+Completed placement consistency check successfully.
+
+Swaps called: 83245
+
+Placement estimated critical path delay: 0.46247 ns
+Placement cost: 1, bb_cost: 0.54, td_cost: 2.90653e-09, delay_cost: 4.824e-09
+Placement total # of swap attempts: 83245
+	Swap reject rate: 0
+	Swap accept rate: 0
+	Swap abort rate: 0
+Placement took 0.32 seconds.
+Build rr_graph took 0.21 seconds.
+Confirming Router Algorithm: TIMING_DRIVEN.
+
+Routing iteration: 1
+Wire length after first iteration 124, total available wire length 26400, ratio 0.00469697
+Critical path: 0.64363 ns
+Routing iteration took 0 seconds.
+
+Routing iteration: 2
+Critical path: 0.64363 ns
+Routing iteration took 0 seconds.
+
+Routing iteration: 3
+Critical path: 0.64363 ns
+Routing iteration took 0 seconds.
+
+Routing iteration: 4
+Critical path: 0.64363 ns
+Routing iteration took 0 seconds.
+
+Routing iteration: 5
+Critical path: 0.64363 ns
+Routing iteration took 0 seconds.
+
+Routing iteration: 6
+Critical path: 0.64363 ns
+Routing iteration took 0 seconds.
+
+Routing iteration: 7
+Critical path: 0.64363 ns
+Routing iteration took 0 seconds.
+
+Routing iteration: 8
+Critical path: 0.64363 ns
+Routing iteration took 0.01 seconds.
+
+Routing iteration: 9
+Successfully routed after 9 routing iterations.
+Completed net delay value cross check successfully.
+
+Checking to ensure routing is legal...
+Completed routing consistency check successfully.
+
+Serial number (magic cookie) for the routing is: -862111
+Circuit successfully routed with a channel width factor of 120.
+
+
+Average number of bends per net: 0.818182  Maximum # of bends: 3
+
+Number of routed nets (nonglobal): 22
+Wirelength results (in units of 1 clb segments)...
+	Total wirelength: 133, average net length: 6.04545
+	Maximum net length: 13
+
+Wirelength results in terms of physical segments...
+	Total wiring segments used: 42, average wire segments per net: 1.90909
+	Maximum segments used by a net: 4
+	Total local nets with reserved CLB opins: 0
+
+X - Directed channels: j	max occ	av_occ		capacity
+0	0	0.00000  	120
+1	1	0.100000 	120
+2	1	0.100000 	120
+3	1	0.100000 	120
+4	6	0.800000 	120
+5	5	1.00000  	120
+6	0	0.00000  	120
+7	0	0.00000  	120
+8	0	0.00000  	120
+9	0	0.00000  	120
+10	0	0.00000  	120
+
+Y - Directed channels: i	max occ	av_occ		capacity
+0	18	9.60000  	120
+1	3	1.20000  	120
+2	1	0.400000 	120
+3	0	0.00000  	120
+4	0	0.00000  	120
+5	0	0.00000  	120
+6	0	0.00000  	120
+7	0	0.00000  	120
+8	0	0.00000  	120
+9	0	0.00000  	120
+10	0	0.00000  	120
+
+Total tracks in x-direction: 1320, in y-direction: 1320
+
+Logic area (in minimum width transistor areas, excludes I/Os and empty grid tiles)...
+	Total logic block area (Warning, need to add pitch of routing to blocks with height > 3): 1.26734e+06
+	Total used logic block area: 25346.9
+
+Routing area (in minimum width transistor areas)...
+	Total routing area: 1.23042e+06, per logic tile: 12304.2
+
+Segment usage by type (index):
+Segment type       Fractional utilization
+------------       ----------------------
+       0                  0.0049
+
+Segment usage by length:
+Segment length       Fractional utilization
+--------------       ----------------------
+        4                   0.0049
+
+Nets on critical path: 1 normal, 0 global.
+Total logic delay: 1.002e-10 (s), total net delay: 5.01e-10 (s)
+Final critical path: 0.64363 ns
+f_max: 1553.69 MHz
+
+Least slack in design: -0.64363 ns
+
+Routing took 0.36 seconds.
+The entire flow of VPR took 0.77 seconds.

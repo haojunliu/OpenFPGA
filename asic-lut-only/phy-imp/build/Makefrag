@@ -1,0 +1,12 @@
+#=======================================================================
+# UCB VLSI FLOW: Process Technology Makefile fragment
+#-----------------------------------------------------------------------
+# Yunsup Lee (yunsup@cs.berkeley.edu)
+#
+# This makefile fragment will select which standard cell library you
+# will be using.
+#
+
+clock_period = 1.00
+vcs_clock_period = 0$(shell echo "scale=4; ${clock_period}*0.5" | bc)
+dc_clock_period = 0$(shell echo "scale=4; ${clock_period}*0.45" | bc)

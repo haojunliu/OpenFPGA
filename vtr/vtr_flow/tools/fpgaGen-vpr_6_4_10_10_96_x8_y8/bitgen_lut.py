@@ -1,0 +1,1 @@
+../fpgaGen/bitgen_lut.py

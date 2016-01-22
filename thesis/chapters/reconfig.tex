@@ -1,0 +1,63 @@
+\section{High Level Reconfiguration Architecture}
+\label{sec:reconf_hl}
+
+LUTs, crossbar switches and channel switches are all controlled by
+configuration stored in the configuration memory. On a very high level
+overview, the configuration memory is similar to an SRAM. However,
+there is no row access in reading the memory because all configurations are
+used at the same time. When programming the configuration memory, the writing
+is done on a row by row basis.  \par
+
+To construct the configuration memory in a logical way and to facilitate
+bit generation program, the configuration memory is organized into frames. Each
+frame contains the configuration for an entire tile. For example, an IO TILE requires
+a frame of configuration while a LUT TILE also requires a frame. Therefore, frames can 
+have different sizes, but the width is always 32. This design decision simplifies both 
+the FPGA architecture and the bitstream generator. \par
+
+On the top level, frames within a column share the same Config\_In signal. 
+Frames within a row share same Config\_En signal bus. Some of the signals in Config\_En 
+may not be used in all frames as their size can be different. The unused signals
+are synthesized away through optimizations in ASIC flow. 
+We decide not to have any state in the configuration circuit so users 
+can choose an implementation that fits their need. Fig.~\ref{fig:fpga_reconfig} provides a 
+top level view of the configuration frames. \par
+
+\begin{figure}[htp]
+	\begin{center}
+		\epsfxsize=2.8in
+		\epsfbox{fpga_configuration.eps}
+		    \renewcommand{\captionfont}{\small}
+				\caption{FPGA Configuration
+				\label{fig:fpga_reconfig}}
+	\end{center}
+\end{figure}
+
+\section{Configuration Organization Inside Tiles}
+\label{sec:config_tiles}
+
+The configuration memory is a sequence of latches. We used latch in the design to
+minimize area overhead as a latch is about 35\% smaller than a flip-flop in a 
+65nm process technology we use. In addition, smaller area implies shorter wires
+which is instrumental in obtaining high operating frequency. \par
+
+Inside a LUT Tile, five segments of configurations exist logically. The first
+one is for LUT configuration. The second is for MUXs inside a BLE. The third
+is for XBAR configuration. The fourth is for CB and the fifth is for SB. 
+Fig.~\ref{fig:lut_config_org} illustrate the configuration inside a LUT Tile.
+An IO Tile has configuration memory for CB and SB only. \par
+
+The work is designed to be expandable, so we also defined configuration format
+for MEM Tile and MUL Tile. The first segment controls internal parameters. The rests
+ (XBAR, CB, SB) are all common all tiles. An XBAR is not mandatory in MEM Tile and MUL
+Tile. \par
+
+\begin{figure}[htpb]
+	\begin{center}
+		\epsfysize=1.5in 
+		\epsfbox{lut_config_org.eps}
+		    \renewcommand{\captionfont}{\small}
+				\caption{LUT Tile Configuration Organization
+				\label{fig:lut_config_org}}
+	\end{center}
+\end{figure}

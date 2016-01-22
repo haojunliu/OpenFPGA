@@ -1,0 +1,81 @@
+############################################################################
+## IC Compiler Design Planning Reference Methodology
+## README file for using explore mode with parallel structure
+## Version: D-2010.03-SP2 (July 6, 2010)
+## Copyright (C) 2007-2010 Synopsys All rights reserved.
+############################################################################
+
+Introduction
+============
+The following information describes how to enable and run explore mode with parallel structure
+which will prepare run directories in parallel such that you can submit each run as individual jobs to
+computer farms.
+
+Below is the comparison of the existing explore mode versus explore mode with parallel structure:
+
+Existing explore mode:
+  When you invoke the Makefile, each run starts and continues sequentially with the
+  same design library and original working directory.
+
+Explore mode with parallel structure:
+  When you invoke the Makefile, the following steps will run automatically:
+  - create a temporary design library from the same technology information specified in your icc_setup.tcl
+  - copy a common starting CEL to the library (minimizing the diskspace for each run)
+  - parse through icc_dp_scripts/macro_placement_exploration_dp.tcl to identify the runs
+    the name of the subdirectory and the run script are derived from the "run number" specified in macro_placement_exploration_dp.tcl
+  - create a subdirectory for each run
+  - copy the design library, link scripts and output directories to associated subdirectories
+  - create a run script containing only one run from the original icc_dp_scripts/macro_placement_exploration_dp.tcl file
+  Parallel explore mode will not submit jobs, it only prepares the directories and files.
+  You will need to create a simple script to submit jobs based on your computer farm settings.
+  An example script is shown in Usage section if you're using GRD
+
+
+Instructions to Enable Explore Mode with Parallel Structure
+===========================================================
+1. Copy prepare_parallel_feasibility.tcl to flat_dp.tcl
+   This replaces original flat_dp.tcl with a new script which now has 3 options for ICC_DP_EXPLORE_MODE
+   The options are:	false    (No explore mode)
+			true     (Existing explore mode)
+			parallel (Explore mode with parallel structure)
+
+   UNIX> cp icc_dp_scripts/prepare_parallel_feasibility.tcl icc_dp_scripts/flat_dp.tcl
+
+2. Set ICC_DP_EXPLORE_MODE in the icc_setup.tcl file to parallel
+   This will enable explore mode with parallel structure
+   (To disable explore mode with parallel structure, set ICC_DP_EXPLORE_MODE to true)
+
+
+Instructions to Use Explore Mode with Parallel Structure
+===========================================================
+1. Run Makefile as shown:
+
+   UNIX> make dp (or make flat_dp)
+
+   When the run is completed, you will notice several directories are created.
+   If you do not modify the icc_dp_scripts/macro_placement_exploration_dp.tcl file, there will be 9 run directories.
+   Each of the run* directories will have a corresponding run*.tcl file.
+   If you have modified the macro_placement_exploration_dp.tcl file, the name of the run directory and run script
+   will reflect the names you provided in the macro_placement_exploration_dp.tcl file.
+
+2. Prepare a simple script with your environment settings to submit jobs for each run.
+   An example for GRD follows:
+
+	#!/bin/csh -f
+	set run_dir_list = (run0 run1 run2 run3 run4 run5 run6 run7 run8)
+	set icc_exe = /installation_path/icc_shell
+	foreach run_dir ($run_dir_list)
+	        cd $run_dir
+	        touch $run_dir.csh
+	        echo "#\!/bin/csh -f" >> $run_dir.csh
+	        echo "$icc_exe -f $run_dir.tcl | tee $run_dir.log" >> $run_dir.csh
+	        chmod -R 755 $run_dir.csh
+	        qsub -your_options $run_dir.csh
+	        cd ../
+	end
+
+3. When all runs are completed, the results will be in the same directories that are linked to your original
+   working directory. From the original working directory, we can now generate the HTML file:
+
+   UNIX> icc_dp_scripts/gen_explore_table_for_parallel
+

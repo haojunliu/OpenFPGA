@@ -1,0 +1,16 @@
+Net top^rst 4 5 1
+Net top^rst 5 4 5
+Net top^rst 5 2 7
+Net top^d_in~7 5 2 5
+Net top^d_in~0 5 2 4
+Net top^d_en 4 5 3
+Net top^d_en 5 4 4
+Net top^d_en 5 2 6
+Net top^d_in~8 5 2 9
+Net top^d_in~9 5 2 0
+Net top^d_in~3 5 4 7
+Net top^d_in~4 5 4 6
+Net top^d_in~5 5 4 9
+Net top^d_in~6 5 4 1
+Net top^d_in~2 4 5 8
+Net top^d_in~1 4 5 6

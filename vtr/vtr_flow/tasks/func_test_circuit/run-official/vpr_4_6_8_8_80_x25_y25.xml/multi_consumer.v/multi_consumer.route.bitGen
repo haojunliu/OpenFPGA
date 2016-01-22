@@ -1,0 +1,755 @@
+route_start
+wire 23392
+wire 52549
+wire 35289
+wire 22174
+wire 23392
+wire 52547
+wire 35307
+wire 22134
+wire 23392
+wire 52543
+wire 22109
+wire 52547
+wire 52467
+wire 22075
+wire 23392
+wire 52606
+wire 22225
+wire 52547
+wire 22195
+route_start
+wire 22180
+wire 35858
+wire 52525
+wire 22131
+wire 22180
+wire 35813
+wire 52040
+wire 36422
+wire 22226
+wire 35813
+wire 22196
+route_start
+wire 23245
+wire 52538
+wire 22169
+wire 52538
+wire 22113
+wire 23245
+wire 52475
+wire 33579
+wire 21238
+wire 52538
+wire 34711
+wire 22132
+wire 52475
+wire 22071
+route_start
+wire 23254
+wire 52481
+wire 33593
+wire 22048
+wire 23254
+wire 52542
+wire 35277
+wire 22138
+wire 35277
+wire 52012
+wire 21383
+wire 52542
+wire 35817
+wire 52032
+wire 22231
+wire 35817
+wire 21322
+wire 52481
+wire 32433
+wire 21174
+wire 52481
+wire 34133
+wire 21232
+wire 52481
+wire 52401
+wire 21985
+wire 23254
+wire 52483
+wire 22079
+wire 35817
+wire 22164
+wire 52481
+wire 22011
+wire 34133
+wire 51976
+wire 34732
+wire 52564
+wire 23382
+route_start
+wire 23302
+wire 52558
+wire 22139
+wire 23302
+wire 52503
+wire 34115
+wire 22114
+wire 23302
+wire 52501
+wire 32993
+wire 22018
+wire 52503
+wire 33035
+wire 22042
+wire 33035
+wire 21164
+route_start
+wire 23260
+wire 52534
+wire 35821
+wire 22160
+wire 23260
+wire 52477
+wire 34143
+wire 22110
+wire 23260
+wire 52540
+wire 36375
+wire 21388
+wire 52534
+wire 36361
+wire 22222
+wire 36375
+wire 22190
+wire 52540
+wire 35295
+wire 22142
+route_start
+wire 23293
+wire 52554
+wire 22143
+wire 23293
+wire 52499
+wire 22053
+wire 52499
+wire 33029
+wire 22022
+wire 33029
+wire 51309
+wire 21175
+route_start
+wire 23242
+wire 52530
+wire 22161
+wire 23242
+wire 52471
+wire 22105
+wire 23242
+wire 52489
+wire 33567
+wire 21230
+wire 23242
+wire 52532
+wire 34699
+wire 22140
+wire 52489
+wire 22083
+route_start
+wire 23299
+wire 52497
+wire 22135
+wire 23299
+wire 52491
+wire 22101
+wire 52491
+wire 34731
+wire 51927
+wire 22017
+wire 52491
+wire 33571
+wire 22040
+route_start
+wire 23239
+wire 52544
+wire 22173
+wire 52544
+wire 34723
+wire 51990
+wire 22133
+wire 34723
+wire 22108
+wire 23239
+wire 52479
+wire 34169
+wire 21236
+wire 52479
+wire 33629
+wire 22052
+route_start
+wire 23290
+wire 52509
+wire 34747
+wire 22136
+wire 23290
+wire 52493
+wire 22049
+wire 23290
+wire 52507
+wire 52427
+wire 22015
+wire 52507
+wire 34165
+wire 51422
+wire 21321
+wire 52507
+wire 33005
+wire 21176
+wire 52509
+wire 52429
+wire 21989
+route_start
+wire 22145
+wire 52000
+wire 36903
+wire 21382
+route_start
+wire 22146
+wire 35290
+wire 52570
+wire 23337
+route_start
+wire 22148
+wire 34735
+wire 51992
+wire 22197
+route_start
+wire 22149
+wire 51933
+wire 34176
+wire 22074
+route_start
+wire 22150
+wire 35302
+wire 22166
+wire 22150
+wire 35233
+wire 51937
+wire 21229
+wire 51937
+wire 22043
+route_start
+wire 23431
+wire 52559
+wire 35869
+wire 22172
+wire 23431
+wire 52563
+wire 36415
+wire 51983
+wire 22107
+wire 23431
+wire 52618
+wire 36951
+wire 21374
+wire 23431
+wire 52565
+wire 22191
+wire 52618
+wire 22233
+route_start
+wire 23053
+wire 52460
+wire 22041
+wire 52460
+wire 34135
+wire 51982
+wire 36345
+wire 21376
+wire 51982
+wire 52062
+wire 22227
+wire 51982
+wire 35308
+wire 22170
+wire 51982
+wire 21323
+wire 23053
+wire 52454
+wire 33041
+wire 21168
+wire 52460
+wire 32435
+wire 22012
+wire 34135
+wire 22070
+wire 52454
+wire 34121
+wire 21224
+wire 23053
+wire 52458
+wire 21993
+wire 52458
+wire 33551
+wire 50288
+wire 35246
+wire 52576
+wire 23394
+wire 34121
+wire 51424
+wire 34714
+wire 52550
+wire 23436
+route_start
+wire 23446
+wire 52561
+wire 35833
+wire 22168
+wire 52561
+wire 36373
+wire 51977
+wire 22103
+wire 36373
+wire 51496
+wire 21381
+route_start
+wire 23440
+wire 52567
+wire 22165
+wire 52567
+wire 35845
+wire 51953
+wire 22111
+wire 52567
+wire 34685
+wire 51432
+wire 21385
+wire 35845
+wire 21326
+wire 23440
+wire 52624
+wire 22221
+route_start
+wire 23434
+wire 52553
+wire 36397
+wire 51971
+wire 22163
+wire 52553
+wire 34697
+wire 22104
+wire 36397
+wire 21380
+wire 23434
+wire 52551
+wire 35831
+wire 21314
+wire 23434
+wire 52569
+wire 22203
+wire 23434
+wire 52612
+wire 22229
+route_start
+wire 23056
+wire 52468
+wire 52548
+wire 34749
+wire 22112
+wire 52468
+wire 33589
+wire 51968
+wire 22171
+wire 23056
+wire 52464
+wire 21981
+route_start
+wire 22175
+wire 51963
+wire 35306
+wire 52495
+wire 23307
+route_start
+wire 22176
+wire 35856
+wire 52596
+wire 23385
+route_start
+wire 22177
+wire 52517
+wire 23295
+route_start
+wire 22178
+wire 35275
+wire 51947
+wire 51867
+wire 21987
+route_start
+wire 22179
+wire 52010
+wire 21315
+route_start
+wire 22060
+wire 33573
+wire 51960
+wire 34182
+wire 22106
+route_start
+wire 22115
+wire 51923
+wire 22077
+route_start
+wire 22116
+wire 34734
+wire 52552
+wire 22199
+route_start
+wire 22117
+wire 52473
+wire 33617
+wire 51881
+wire 31942
+wire 52462
+wire 23202
+route_start
+wire 22118
+wire 34155
+wire 51412
+wire 35836
+wire 52515
+wire 23286
+route_start
+wire 22119
+wire 51970
+wire 35292
+wire 52578
+wire 23403
+route_start
+wire 22055
+wire 51883
+wire 32508
+wire 52488
+wire 23208
+route_start
+wire 22057
+wire 52494
+wire 23142
+route_start
+wire 22058
+wire 33052
+wire 52498
+wire 23160
+route_start
+wire 22059
+wire 51871
+wire 33050
+wire 52490
+wire 23145
+route_start
+wire 21389
+wire 51445
+wire 36315
+wire 50384
+wire 38032
+wire 20646
+route_start
+wire 21390
+wire 36895
+wire 51526
+wire 37999
+wire 20655
+route_start
+wire 21391
+wire 52056
+wire 36893
+wire 50400
+wire 38030
+wire 20637
+route_start
+wire 21392
+wire 36408
+wire 52066
+wire 38098
+wire 22344
+route_start
+wire 21393
+wire 51431
+wire 36313
+wire 50936
+wire 38054
+wire 20634
+route_start
+wire 22000
+wire 32500
+wire 52397
+wire 23007
+route_start
+wire 21999
+wire 51849
+wire 30828
+wire 52343
+wire 22914
+route_start
+wire 21995
+wire 51898
+wire 32498
+wire 52409
+wire 23067
+route_start
+wire 21996
+wire 32451
+wire 51833
+wire 30820
+wire 52410
+wire 23046
+route_start
+wire 21997
+wire 52450
+wire 23049
+route_start
+wire 21998
+wire 31875
+wire 51906
+wire 33620
+wire 52433
+wire 23058
+route_start
+wire 22235
+wire 52064
+wire 38090
+wire 52631
+wire 23478
+route_start
+wire 22236
+wire 36972
+wire 52644
+wire 23496
+route_start
+wire 22237
+wire 52616
+wire 23490
+route_start
+wire 22238
+wire 36426
+wire 52539
+wire 23397
+route_start
+wire 22239
+wire 52009
+wire 35868
+wire 52604
+wire 23400
+route_start
+wire 21334
+wire 35842
+wire 52519
+wire 23355
+route_start
+wire 22205
+wire 51985
+wire 35294
+wire 52586
+wire 23343
+route_start
+wire 22210
+wire 36353
+wire 51500
+wire 37522
+wire 52585
+wire 23448
+route_start
+wire 22208
+wire 35795
+wire 51484
+wire 36392
+wire 52541
+wire 23334
+route_start
+wire 22209
+wire 52030
+wire 38092
+wire 52633
+wire 23538
+route_start
+wire 21333
+wire 51468
+wire 36889
+wire 49848
+wire 38028
+wire 20649
+route_start
+wire 22206
+wire 36391
+wire 52052
+wire 36980
+wire 52557
+wire 23442
+route_start
+wire 22207
+wire 52594
+wire 23451
+route_start
+wire 21329
+wire 51458
+wire 35838
+wire 52523
+wire 23349
+route_start
+wire 21330
+wire 35834
+wire 52527
+wire 23346
+route_start
+wire 21331
+wire 52014
+wire 37542
+wire 52579
+wire 23352
+route_start
+wire 21332
+wire 35229
+wire 50825
+wire 33576
+wire 52520
+wire 23340
+route_start
+wire 22085
+wire 51901
+wire 33622
+wire 52441
+wire 23148
+route_start
+wire 22086
+wire 34172
+wire 52463
+wire 23151
+route_start
+wire 22087
+wire 52510
+wire 34713
+wire 51365
+wire 32486
+wire 52478
+wire 23157
+route_start
+wire 22088
+wire 33555
+wire 51404
+wire 35272
+wire 52505
+wire 23256
+route_start
+wire 22090
+wire 34173
+wire 51905
+wire 33614
+wire 52449
+wire 23163
+route_start
+wire 22089
+wire 51966
+wire 35850
+wire 52513
+wire 23250
+route_start
+wire 21244
+wire 34160
+wire 51903
+wire 22081
+wire 21244
+wire 34105
+wire 51335
+wire 31916
+wire 52456
+wire 23196
+route_start
+wire 21239
+wire 51345
+wire 33034
+wire 52492
+wire 23205
+route_start
+wire 21240
+wire 34097
+wire 50771
+wire 33570
+wire 52516
+wire 23193
+route_start
+wire 21241
+wire 51956
+wire 34170
+wire 52455
+wire 23211
+route_start
+wire 21242
+wire 33608
+wire 52522
+wire 23199
+route_start
+wire 21243
+wire 51406
+wire 35830
+wire 52511
+wire 23190
+route_start
+wire 22030
+wire 33013
+wire 51380
+wire 34164
+wire 52469
+wire 23115
+route_start
+wire 22025
+wire 51924
+wire 21165
+wire 22025
+wire 51859
+wire 32494
+wire 52393
+wire 23061
+route_start
+wire 22026
+wire 33031
+wire 51307
+wire 30808
+wire 52428
+wire 23109
+route_start
+wire 22027
+wire 52417
+wire 23100
+route_start
+wire 22028
+wire 32455
+wire 51364
+wire 33594
+wire 52447
+wire 23154
+route_start
+wire 22029
+wire 51853
+wire 32496
+wire 52480
+wire 23094
+route_start
+wire 21184
+wire 32985
+wire 51293
+wire 32480
+wire 52474
+wire 23112
+route_start
+wire 21181
+wire 51857
+wire 30818
+wire 52422
+wire 23106
+route_start
+wire 21182
+wire 32488
+wire 52486
+wire 23097
+route_start
+wire 21183
+wire 51291
+wire 31354
+wire 52446
+wire 23103

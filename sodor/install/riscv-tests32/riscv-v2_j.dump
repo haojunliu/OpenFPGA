@@ -1,0 +1,55 @@
+
+riscv-v2_j:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00002000 <_start>:
+    2000:	0800017b 	mfpcr	ra,cr0
+    2004:	087dff93 	and	ra,ra,-129
+    2008:	000201fb 	mtpcr	zero,ra,cr0
+    200c:	d8000013 	li	s7,0
+
+00002010 <stats>:
+    2010:	02b601fb 	mtpcr	zero,s7,cr10
+    2014:	00000013 	nop
+    2018:	00000013 	nop
+    201c:	00000013 	nop
+    2020:	00000013 	nop
+    2024:	e0000813 	li	s8,2
+    2028:	00000267 	j	2030 <test_2>
+    202c:	00001667 	j	2084 <fail>
+
+00002030 <test_2>:
+    2030:	08000413 	li	ra,1
+    2034:	00000567 	j	2048 <test_2+0x18>
+    2038:	08400413 	add	ra,ra,1
+    203c:	08400413 	add	ra,ra,1
+    2040:	08400413 	add	ra,ra,1
+    2044:	08400413 	add	ra,ra,1
+    2048:	08400413 	add	ra,ra,1
+    204c:	08400413 	add	ra,ra,1
+    2050:	e8000c13 	li	s9,3
+    2054:	e0000c13 	li	s8,3
+    2058:	007a58e3 	bne	ra,s9,2084 <fail>
+    205c:	dec00413 	add	s7,s7,1
+    2060:	d0000813 	li	s6,2
+    2064:	fef558e3 	bne	s7,s6,2010 <stats>
+    2068:	d0000013 	li	s6,0
+    206c:	02b401fb 	mtpcr	zero,s6,cr10
+    2070:	00000013 	nop
+    2074:	00000013 	nop
+    2078:	00000013 	nop
+    207c:	00000013 	nop
+    2080:	003820e3 	bne	zero,s8,2090 <pass>
+
+00002084 <fail>:
+    2084:	07b801fb 	mtpcr	zero,s8,cr30
+    2088:	00000063 	b	2088 <fail+0x4>
+    208c:	00000013 	nop
+
+00002090 <pass>:
+    2090:	08000413 	li	ra,1
+    2094:	078201fb 	mtpcr	zero,ra,cr30
+    2098:	00000063 	b	2098 <pass+0x8>
+    209c:	00000013 	nop

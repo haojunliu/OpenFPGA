@@ -1,0 +1,70 @@
+# Benchmark "ff_en" written by ABC on Mon Jun 23 12:26:30 2014
+.model ff_en
+.inputs top^clock top^rst top^d_en top^d_in~0 top^d_in~1 top^d_in~2 \
+ top^d_in~3 top^d_in~4 top^d_in~5 top^d_in~6 top^d_in~7 top^d_in~8 \
+ top^d_in~9
+.outputs top^d_out~0 top^d_out~1 top^d_out~2 top^d_out~3 top^d_out~4 \
+ top^d_out~5 top^d_out~6 top^d_out~7 top^d_out~8 top^d_out~9
+
+.latch        n47 top^FF_NODE~14 re  top^clock  0
+.latch        n52 top^FF_NODE~15 re  top^clock  0
+.latch        n57 top^FF_NODE~16 re  top^clock  0
+.latch        n62 top^FF_NODE~17 re  top^clock  0
+.latch        n67 top^FF_NODE~18 re  top^clock  0
+.latch        n72 top^FF_NODE~19 re  top^clock  0
+.latch        n77 top^FF_NODE~20 re  top^clock  0
+.latch        n82 top^FF_NODE~21 re  top^clock  0
+.latch        n87 top^FF_NODE~22 re  top^clock  0
+.latch        n92 top^FF_NODE~23 re  top^clock  0
+
+.names top^rst top^d_en top^d_in~0 top^FF_NODE~14 n47
+00-1 1
+011- 1
+.names top^rst top^d_en top^d_in~1 top^FF_NODE~15 n52
+00-1 1
+011- 1
+.names top^rst top^d_en top^d_in~2 top^FF_NODE~16 n57
+00-1 1
+011- 1
+.names top^rst top^d_en top^d_in~3 top^FF_NODE~17 n62
+00-1 1
+011- 1
+.names top^rst top^d_en top^d_in~4 top^FF_NODE~18 n67
+00-1 1
+011- 1
+.names top^rst top^d_en top^d_in~5 top^FF_NODE~19 n72
+00-1 1
+011- 1
+.names top^rst top^d_en top^d_in~6 top^FF_NODE~20 n77
+00-1 1
+011- 1
+.names top^rst top^d_en top^d_in~7 top^FF_NODE~21 n82
+00-1 1
+011- 1
+.names top^rst top^d_en top^d_in~8 top^FF_NODE~22 n87
+00-1 1
+011- 1
+.names top^rst top^d_en top^d_in~9 top^FF_NODE~23 n92
+00-1 1
+011- 1
+.names top^FF_NODE~14 top^d_out~0
+1 1
+.names top^FF_NODE~15 top^d_out~1
+1 1
+.names top^FF_NODE~16 top^d_out~2
+1 1
+.names top^FF_NODE~17 top^d_out~3
+1 1
+.names top^FF_NODE~18 top^d_out~4
+1 1
+.names top^FF_NODE~19 top^d_out~5
+1 1
+.names top^FF_NODE~20 top^d_out~6
+1 1
+.names top^FF_NODE~21 top^d_out~7
+1 1
+.names top^FF_NODE~22 top^d_out~8
+1 1
+.names top^FF_NODE~23 top^d_out~9
+1 1
+.end

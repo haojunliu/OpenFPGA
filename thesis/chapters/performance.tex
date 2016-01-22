@@ -1,0 +1,180 @@
+\section{Tile ASIC Performance}
+\label{sec:tile_asic_perf}
+
+We sweep a combination of design parameters listed in Table~\ref{table:tile_perf_params}.
+In this part of the work, we only push through a tile but not the entire FPGA to 
+reduce ASIC flow speed. It is implemented in a 65nm process technology and 
+standard cell flow. We report and analyze critical path delay, configuration memory area,
+total tile area and static power. The maximum absolute operating speed is the highest
+operating speed of the FPGA. The real operating speed depends on circuits implemented
+on FPGA. \par
+
+\begin{table}[htpb]
+		\begin{center}
+				{\tabulinesep=1.2mm
+				\begin{tabu}{ | p{1.2in} | p{3.3in} |}    \hline
+				Parameters & Valid Value and Description \\ \hline\hline
+				LUT Size & 4, 5, 6 \\ \hline
+				CLB Size & 4, 5, 6, 7, 8, 9, 10 \\ \hline
+				IPIN Width & 8, 12, 16 \\ \hline
+				CHANXY Width & 8, 12, 16 \\ \hline
+				CHANXY Num & 80, 120, 160 \\ \hline
+				\end{tabu}}
+				\caption{Tile Performance Parameters
+				\label{table:tile_perf_params}}
+		\end{center}
+\end{table}
+
+We present all of the data in tables in Appendix~\ref{appen:tile_perf} for user
+reference, so they can select configurations based on their use cases. Following
+subsections only present result on varying one variable and analysis on the 
+data trend. \par
+
+\clearpage
+
+\subsection{Effect of LUT Size}
+\label{subsec:asic_eff_lut}
+
+As LUT Size increases, configuration area, total area and static power all increases.
+The delay in Fig.~\ref{fig:perf-lut}.(a) varies but still displays a general trend of 
+higher delay as LUT Size increases. We believe the variation is because variation
+in ASIC Tool performance. Sometimes the tool gives better QoRs. \par
+
+\begin{figure}[htp]
+	\begin{center}
+		\renewcommand{\captionfont}{\small}
+		\subfigure[Delay]{
+			\epsfxsize=2.9in \epsfbox{c_lut_d.eps}}
+		\subfigure[Configuration Area]{
+			\epsfxsize=2.9in \epsfbox{c_lut_ca.eps}}
+		\subfigure[Total Area]{
+			\epsfxsize=2.9in \epsfbox{c_lut_ta.eps}}
+		\subfigure[Static Power]{
+			\epsfxsize=2.9in \epsfbox{c_lut_sp.eps}}
+		\caption{LUT SIZE Effect on Performance}
+		\label{fig:perf-lut}
+	\end{center}
+\end{figure}
+
+\clearpage
+
+\subsection{Effect of CLB Size}
+\label{subsec:asic_eff_clb}
+
+As CLB Size increases, CLB delay, configuration area, total area and static power all increases.
+That is within our expectation. \par
+
+\begin{figure}[htp]
+	\begin{center}
+		\renewcommand{\captionfont}{\small}
+		\subfigure[Delay]{
+			\epsfxsize=2.9in \epsfbox{c_clb_d.eps}}
+		\subfigure[Configuration Area]{
+			\epsfxsize=2.9in \epsfbox{c_clb_ca.eps}}
+		\subfigure[Total Area]{
+			\epsfxsize=2.9in \epsfbox{c_clb_ta.eps}}
+		\subfigure[Static Power]{
+			\epsfxsize=2.9in \epsfbox{c_clb_sp.eps}}
+		\caption{CLB SIZE Effect on Performance}
+		\label{fig:perf-clb}
+	\end{center}
+\end{figure}
+
+\clearpage
+
+\subsection{Effect of IPIN Width}
+\label{subsec:asic_eff_ipin_w}
+
+General performance trend matches our expectation: increased size leads to increased delay, area and power.
+We believe the slight variation is due to ASIC tool variation. \par
+
+\begin{figure}[htp]
+	\begin{center}
+		\renewcommand{\captionfont}{\small}
+		\subfigure[Delay]{
+			\epsfxsize=2.9in \epsfbox{c_ipin_d.eps}}
+		\subfigure[Configuration Area]{
+			\epsfxsize=2.9in \epsfbox{c_ipin_ca.eps}}
+		\subfigure[Total Area]{
+			\epsfxsize=2.9in \epsfbox{c_ipin_ta.eps}}
+		\subfigure[Static Power]{
+			\epsfxsize=2.9in \epsfbox{c_ipin_sp.eps}}
+		\caption{IPIN Width Effect on Performance}
+		\label{fig:perf-ipinw}
+	\end{center}
+\end{figure}
+
+\clearpage
+
+\subsection{Effect of CHANXY Width}
+\label{subsec:asic_eff_chanxy_w}
+
+General performance trend matches our expectation: increased size leads to increased delay, area and power.
+We believe the slight variation is due to ASIC tool variation. \par
+
+\begin{figure}[htp]
+	\begin{center}
+		\renewcommand{\captionfont}{\small}
+		\subfigure[Delay]{
+			\epsfxsize=2.9in \epsfbox{c_chanw_d.eps}}
+		\subfigure[Configuration Area]{
+			\epsfxsize=2.9in \epsfbox{c_chanw_ca.eps}}
+		\subfigure[Total Area]{
+			\epsfxsize=2.9in \epsfbox{c_chanw_ta.eps}}
+		\subfigure[Static Power]{
+			\epsfxsize=2.9in \epsfbox{c_chanw_sp.eps}}
+		\caption{CHAN Width Effect on Performance}
+		\label{fig:perf-chanw}
+	\end{center}
+\end{figure}
+
+\clearpage
+
+\subsection{Effect of Track Width}
+\label{subsec:asic_eff_track_w}
+
+As track number increases, delay, area and power all increases. Variation in delay is caused by ASIC tool variation.
+
+\begin{figure}[htp]
+	\begin{center}
+		\renewcommand{\captionfont}{\small}
+		\subfigure[Delay]{
+			\epsfxsize=2.9in \epsfbox{c_chann_d.eps}}
+		\subfigure[Configuration Area]{
+			\epsfxsize=2.9in \epsfbox{c_chann_ca.eps}}
+		\subfigure[Total Area]{
+			\epsfxsize=2.9in \epsfbox{c_chann_ta.eps}}
+		\subfigure[Static Power]{
+			\epsfxsize=2.9in \epsfbox{c_chann_sp.eps}}
+		\caption{CHAN NUM Effect on Performance}
+		\label{fig:perf-chann}
+	\end{center}
+\end{figure}
+
+\section{User Circuit Performance on FPGA}
+\label{sec:vpr_perf}
+
+\begin{table}[htpb]
+		\begin{center}
+				{\footnotesize
+				{\tabulinesep=1.2mm
+				\begin{tabu}{ | p{0.7in} | p{0.55in} | p{0.55in} | p{0.5in} | p{0.6in} | p{0.8in} | p{0.95in} | } \hline
+				FPGA Size & LUT Size & CLB Size & IPIN W & CHAN W & CHAN NUM  & Max Freq \\ \hline\hline
+				5 by 5 & 6 & 10 & 16 & 16 & 160 & 416.138 MHz \\ \hline
+				10 by 10 & 5 & 8 & 12 & 12 & 120 & 377.845 MHz \\ \hline
+				25 by 25 & 4 & 6 & 8 & 8 & 80 & 339.451 MHz \\ \hline
+				\end{tabu}}}
+				\caption{64 Bit Counter Performance
+				\label{table:user_cir_perf}}
+		\end{center}
+\end{table}
+
+We feed VPR with three sets of parameters and a 64 Bit counter to test
+the performance of the FPGA. Table~\ref{table:user_cir_perf} lists the maximum operating
+speed on three FPGAs we tested. As the goal of the project is not to aim the best performance, 
+we report the performance number only for demonstrating the operating speed is good enough 
+for real applications and presenting user some references so they can make their own decisions
+in selecting architectural parameters. \par
+
+
+

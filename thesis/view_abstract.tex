@@ -1,0 +1,58 @@
+\documentclass[12pt, final]{ucthesis}
+% This file prints out the Title Page and abstract. You'll need a few copies
+% of this to file your dissertation.
+
+\begin{document}
+
+% COPY AND PASTE THIS IMPORTANT INFORMATION FROM
+% thesis.tex
+
+% Declarations for Front Matter
+% TITLE
+\title{Archipelago - An Open Source FPGA with Toolflow Support}
+
+% NAME
+% Note that this must be exactly as it appears in University records.
+\author{Hao Jun Liu}
+
+% PREVIOUS DEGREES
+% Put each previous degree on its own line in the following format:
+\prevdegrees{BASc. (University of Toronto) 2011}
+
+% DATE OF GRADUATION
+% This text will appear on the title page
+% Note that degrees are only granted in Fall and Spring at Berkeley.
+\degreemonth{Spring} \degreeyear{2013} \degree{Master of Science}
+% This text will appear on the abstract page.
+% For Berkeley, it should be identical to the graduation month.
+\defensemonth{Summer} \defenseyear{2013}
+
+% COMMITTEE MEMBERS
+% You can have up to 5 members listed separately. 
+%After that, you throw them all into the "other members" category.
+\numberofmembers{2}
+    \chair{Prof. John Wawrzynek}
+    \othermemberA{Prof. ???}
+	
+% DEPARTMENT/DEGREE PROGRAM
+%Your Department. Make sure this is the department and/or program
+% name that you are enrolled in...
+\field{Engineering - Electrical Engineering and Computer Sciences}
+
+% CAMPUS NAME
+% Your UC Campus, e.g., "Berkeley"
+% Note that if you are not at Berkeley, you may have to modify the
+% ucthesis.cls to change the wording on the Title page.
+\campus{Berkeley}
+
+\begin{frontmatter}
+
+\maketitle
+
+\abstract
+    \input{chapters/abstract}
+    \abstractsignature  % This prints a signature line for the chair to sign.
+\endabstract
+
+\end{frontmatter}
+\end{document}

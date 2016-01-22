@@ -1,0 +1,67 @@
+\documentclass[11pt, final]{ucthesis}
+
+\bibliographystyle{IEEEtran}
+
+% As the thesis gets bigger and bigger, you'll only want to look at a
+% single chapter at a time. This is a template that prints just a single chapter
+%
+% Here, the COMMENT format might be particularly useful as the
+% wide margins allow you or your committee to write long notes to
+% yourself about how to improve things.
+%
+%%% \documentclass[11pt/12pt/10pt, final/draft/comment]{ucthesis}
+%%% The first argument is the text size. The second argument changes
+%%% The margins and the spacing.
+%%% FINAL mode prints double spaced with figures and thesis margins.
+%%% DRAFT mode prints single-spaced with 1" margins, with slightly
+%%%   narrower margins for the figure captions so that they stand out.
+%%% COMMENT mode prints an extra wide right margin and tiny margins
+%%% everywhere else. This allows your committee plenty of room to add
+%%% comments.
+%%% Margins can be changed in the last lines of the ucthesis.cls
+%%% with the geometry command.
+
+\setlength{\parindent}{0.25in} \setlength{\parskip}{6pt}
+
+\graphicspath{{introduction_figs/},{circles_figs/},{scaling_figs/},{bonus_capacity_figs/}}
+
+
+% Degree Symbol
+%\newcommand\degrees[1]{\ensuremath{^\cir#1}}
+\newcommand\degrees{\ensuremath{^\circ}}
+\newcommand{\tab}{\hspace{5mm}}
+
+
+\begin{document}
+
+\begin{dissertationText}
+\renewcommand{\baselinestretch}{1.66}
+
+% The title as you want it to appear at the top of the page and
+% in the table of contents.
+\chapter{Chapter Title}
+
+% PITHY QUOTE
+% In the draft version, I like to put a fun quote at the beginning of each
+% chapter to keep myself entertained. I considered putting these in
+% the final version as well, but I'll let you decide that for yourself.
+% Note that the quote does affect spacing, if you're trying to look at
+% how the final version of the chapter will appear in LaTeX...
+\begin{quote}
+Everyone has their little faults. Mine is in California.
+\end{quote}
+\begin{flushright}
+-- Lex Luther
+\end{flushright}
+
+%%% The chapter is stored in a file called chapter2.tex
+%%% The file should have no preamble -- the chapter body.
+    \input{introduction}
+
+\clearpage
+
+\bibliography{IEEEabrv,cog_radio}
+
+
+\end{dissertationText}
+\end{document}

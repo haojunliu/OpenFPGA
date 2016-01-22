@@ -1,0 +1,343 @@
+\section{Column Based FPGA Architecture}
+\label{sec:column_fpga_arch}
+
+Column based FPGA architecture has been adapted in commercial FPGA devices. \cite{xilinx:v4_arch}
+It is characterized by each column of the FPGA has identical functional tiles by ignoring IO Tiles. (Fig.~\ref{fig:fpga_full_arch})
+We choose the column based architecture as it offers simplicity in standard ASIC flow, is well supported in VTR and is 
+relatively simple in generating bitstreams. Fig.~\ref{fig:fpga_full_arch}
+gives a high level view of the architecture. It illustrates an FPGA that is 8 by 8 in tiles with IOs on the perimeter
+and logic, storage and computing resources in the middle. \par
+
+\begin{figure}[htp]
+	\begin{center}
+		\epsfxsize=4in 
+		\epsfbox{fpga_full.eps}
+		    \renewcommand{\captionfont}{\small}
+				\caption{Full FPGA Arch
+				\label{fig:fpga_full_arch}}
+	\end{center}
+\end{figure}
+
+There are four different tiles in the architecture. They are IO Tiles, LUT Tiles, MEM Tiles, MUL Tiles.
+ Section~\ref{sec:tile_funcs} provides detail descriptions on their functions. Commercial FPGAs
+ have more advanced tiles to provide additional functionality such as A/D converters, differential IOs 
+and memory controllers. Those circuits are mixed signal circuits and require special support in design 
+and tools, so they are beyond the scope of this work. \par
+
+\section{Tile Functions}
+\label{sec:tile_funcs}
+The four tiles have different functions with one common feature: they all have connections on their sides 
+to make neighbor tiles connected. Non-neighbor tiles are indirectly connected via tiles among them. How they are
+connected is part of the routing architecture which is described in Section~\ref{sec:routing_architecture}. We depict the difference of
+their functions as follows. \par
+
+\begin{description}
+  \item[IO Tile] \hfill \\
+  The IO Tile (Fig.~\ref{fig:inside_tiles}.(a)) terminates input routing tracks and initiate output routing tracks. It provides a gateway for the FPGA, so input and output
+	to the FPGA are routed into the FPGA routing fabric. \par
+	\item[LUT Tile] \hfill \\
+  LUT Tile (Fig.~\ref{fig:inside_tiles}.(b)) stands for Look Up Table Tile. It is the foundation of FPGA as it contains Look Up Tables for implementing combinational
+	functions and hard flip-flops for storage. \par
+  \item[MEM Tile] \hfill \\
+  MEM Tile (Fig.~\ref{fig:inside_tiles}.(c)) contains a dual ports configurable width memory accessible by the user. 
+	It is a designed feature in the project but is not fully implemented and not yet supported.
+	However, we have an evaluation work to test the performance of the tile. It demonstrates operating speed up to 600MHz for a 32KBits configurable widths memory.
+	It is implemented with a 65nm process technology and all the implementation is in Verilog HDL. \par
+	\item[MUL Tile] \hfill \\
+	Implementing a generic multiplier is costly and has low performance using Look Up Tables (LUT). It also consumes precious routing resources as many LUTs are needed and
+	interconnections have to be made. Hardware Multipliers are cost effective in implementing multiple functions. The MUL Tile (Fig.~\ref{fig:inside_tiles}.(d)) contains configurable and fracturable
+	width hard multipliers. For example, a MUL Tile with a 36 by 36 multiplier can be configured into two 18 by 18 multipliers
+	or four 9 by 9 multipliers. Implementing a similar function uses more than 100 LUT Tiles. It is a designed feature in the project but is not fully implemented and not yet supported.
+	Our quick evaluation work just to test the performance of the tile reveals operating speed up to 700MHz. 
+	It is implemented with a 65nm process technology and all the implementation is in Verilog HDL. \par
+\end{description}
+
+\begin{figure}[htp]
+	\begin{center}
+		\renewcommand{\captionfont}{\small}
+		\subfigure[IO Tile]{
+			\epsfxsize=2.0in \epsfbox{io_tile.eps}}
+		\subfigure[LUT Tile]{
+			\epsfxsize=2.8in \epsfbox{lut_tile.eps}}
+		\subfigure[MEM Tile]{
+			\epsfxsize=2.8in \epsfbox{mem_tile.eps}}
+		\subfigure[MUL Tile]{
+			\epsfxsize=2.8in \epsfbox{madd_tile.eps}}
+		\caption{Structure of tiles}
+		\label{fig:inside_tiles}
+	\end{center}
+\end{figure}
+
+\section{Routing Architecture}
+\label{sec:routing_architecture}
+
+\subsection{High Level Overview}
+\label{subsec:hlv_routing_arch}
+On a high level view, there are horizontal and vertical wires in an FPGA. They are named \emph{X Track} and \emph{Y Track} respectively. A \emph{switch box (SW)} 
+connects several tracks together. The architecture can be abstracted as a graph with no islands. 
+That implies routability for any signal with one source and one destination. If the 
+signal flows in only one way on a track, the track is called \emph{uni-directional}. If the signal can flow both ways on a track, the track is \emph{bi-directional}.
+A track driven by a single signal is a \emph{single-driver} wire. The single signal is the output of a \emph{multiplexer (MUX)}. A track driven by several
+signals is a \emph{multi-driver} wire. The sources are output of several MUXs and there are pass transistors to select one of the MUXs to be the source. \par
+
+A routing track that spans more than one tile is called \emph{segmented track}. A segment~1 track connects two neighbor tiles. A segment~4 track connects five 
+tiles either horizontally (a Segment~4 X Track) or vertically (a Segment~4 Y Track). Segmentation is especially useful for high performance global routing
+as the number of MUXs a signal passes through is reduced. Fig.~\ref{fig:segementation} illustrate a segment of 4 wire in both X and Y direction. \par
+
+\begin{figure}[htp]
+	\begin{center}
+		\epsfxsize=3in
+		\epsfbox{routing_tracks.eps}
+		    \renewcommand{\captionfont}{\small}
+				\caption{Routing Tracks
+				\label{fig:routing_track}}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htp]
+	\begin{center}
+		\renewcommand{\captionfont}{\small}
+		
+		\hspace*{\fill}
+		\subfigure[Bidirectional]{
+			\epsfxsize=1.5in \epsfbox{bidir.eps}} \hfill
+		\subfigure[Unidirectional]{
+			\epsfxsize=1.5in \epsfbox{unidir.eps}}
+		\hspace*{\fill}	
+			
+		\subfigure[Single Driver]{
+			\epsfxsize=2.5in \epsfbox{single_dri.eps}}
+		\subfigure[Multi Driver]{
+			\epsfxsize=2.75in \epsfbox{multi_dri.eps}}
+		\caption{Routing Illustrated}
+		\label{fig:r_illu}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htp]
+	\begin{center}
+		\epsfxsize=3.5in
+		\epsfbox{segmentation.eps}
+		    \renewcommand{\captionfont}{\small}
+				\caption{Segmentation Illustrated.
+				\label{fig:segementation}}
+	\end{center}
+\end{figure}
+
+\subsection{Routing Track}
+In this work we choose a single driver unidirectional routing architecture because of the following constraints and benefits:
+
+\begin{enumerate}
+  \item It is area efficient, energy efficient and enables higher clock speed. \cite{5377675}, \cite{1393249}
+  \item VPR supports only single-driver routing. \cite{Luu:2011:VFC:2068716.2068718}
+  \item Both bi-directional and multi-driver routing require the use of pass transistors which are not available in a standard cell ASIC flow. This is
+	in contradiction with the objective to use only standard cell ASIC flow in the work. Also, pass transistors require special handling in 
+	static timing analysis. 
+\end{enumerate}
+
+\subsection{Switch Box (SB)}
+A switch box has switches that can connect two routing tracks. It is part of the inter-tile routing architecture. It has two variants: 
+one is a simple design and is called \emph{planar topology}; the other is more
+sophisticated but enables better connectivity and it called \emph{Wilton topology}. (Fig. \ref{fig:sb_illu})
+Assuming routing tracks between two neighbor tiles are numbered
+from 0 and up with track 0 being the left most track and bottom most track,
+ the planar topology only connects tracks that have the same number; 
+the Wilton topology connects tracks with the same or different track numbers so the topology is more flexible.
+ In this work, we only use Wilton switch box topology. All the switch boxes are incorporated into tiles
+ so the architecture diagram does not reflect their existence. \par
+
+\begin{figure}[htp]
+	\begin{center}
+		\renewcommand{\captionfont}{\small}
+		
+		\hspace*{\fill}		
+		\subfigure[Planar Topology]{
+			\epsfxsize=1.75in \epsfbox{planar.eps}} \hfill
+		\subfigure[Wilton Topology]{
+			\epsfxsize=1.75in \epsfbox{wilton.eps}}	
+		\hspace*{\fill}
+		
+		\caption{Switch Box Illustrated}
+		\label{fig:sb_illu}
+	\end{center}
+\end{figure}
+
+\subsection{Connection Box (CB)}
+A connection box has switches that can connect a routing track to an \emph{input pin (IPIN)}. It is part the intra-tile routing architecture.
+On the circuit level, it has a group of MUXs with routing tracks as input and IPINs as output. (Fig. \ref{fig:cb_illu})
+
+\begin{figure}[htp]
+	\begin{center}
+		\renewcommand{\captionfont}{\small}
+		
+		\hspace*{\fill}		
+		\subfigure[Connection Box]{
+			\epsfxsize=2.0in \epsfbox{cb.eps}} \hfill
+		\subfigure[Connection Circuit]{
+			\epsfxsize=2.25in \epsfbox{cb_cir.eps}}
+		\hspace*{\fill}		
+		
+		\caption{Connection Box Illustrated}
+		\label{fig:cb_illu}
+	\end{center}
+\end{figure}
+
+\section{Clocking Structure}
+\label{sec:clocking}
+
+All the edge-triggered elements in the FPGA are on the same clock domain. This is because 1) 
+the open source FPGA tools do not support multi-clock domain circuit placement and timing analysis, 2) 
+it adds complexity in physical implementation of the FPGA circuit 3) 
+it significantly adds routing complexity and 4) the routing architecture needs
+ to be modified for feeding clock signals into routing fabric. However, it is feasible to implement it as a future work. \par
+
+In the physical implementation phase, the clock tree is synthesized, placed
+ and routed with ASIC flow tools. \par
+
+\section{Regularities in Tiling}
+\label{sec:regular_tile}
+Excluding IO Tiles, all tiles not on the boundary share the same configuration switch box and connection box. Therefore, we have
+one tile generator for such type of tiles. Using a single generator enables us to take advantage of a faster ASIC flow as the 
+placement and routing result inside many tiles is shared. Below is the actual code that implements a switch box and a
+ connection box inside a non-boundary LUT Tile.\par
+
+\begin{scala}
+class sbcb extends Component {                                                                        
+  val io = new Bundle {                                                                               
+    val ipin_in = Bits(INPUT, VAR_NUM_IPIN_PER_TILE*VAR_IPIN_INPUT_WIDTH)                             
+    val ipin_config = Bits(INPUT, VAR_NUM_IPIN_PER_TILE*VAR_IPIN_CONFIG_WIDTH)                        
+                                                                                                      
+    val chanxy_in = Bits(INPUT, TOTAL_CHANXY_IN)                                                      
+    val chanxy_config = Bits(INPUT, VAR_TOTAL_CHANXY_CONFIGS)                                         
+                                                                                                      
+    val ipin_out = Bits(OUTPUT, VAR_NUM_IPIN_PER_TILE)                                                
+    val chanxy_out = Bits(OUTPUT, VAR_NUM_CHANXY_PER_TILE)                                            
+  }                                                                                                   
+                                                                                                      
+  val ipin_in_break = new Array [Bits] (VAR_NUM_IPIN_PER_TILE)                                        
+  val ipin_config_break = new Array [Bits] (VAR_NUM_IPIN_PER_TILE)                                    
+  val to_ipin_out = new Array [Bits] (VAR_NUM_IPIN_PER_TILE)                                          
+  val chanxy_in_break = new Array [Bits] (VAR_NUM_CHANXY_PER_TILE)                                    
+  val chanxy_config_break = new Array [Bits] (VAR_NUM_CHANXY_PER_TILE)                                
+  val to_chanxy_out = new Array [Bits] (VAR_NUM_CHANXY_PER_TILE)                                      
+                                                                                                      
+  var i = 0;                                                                                          
+                                                                                                      
+  for ( i <- 0 until VAR_NUM_IPIN_PER_TILE) {                                                         
+    ipin_in_break(i) = Bits (width = VAR_IPIN_INPUT_WIDTH)                                            
+    ipin_in_break(i) := io.ipin_in((i+1)*VAR_IPIN_INPUT_WIDTH - 1, i*VAR_IPIN_INPUT_WIDTH)            
+                                                                                                      
+    ipin_config_break(i) = Bits (width = VAR_IPIN_CONFIG_WIDTH)                                       
+    ipin_config_break(i) := io.ipin_config((i+1)*VAR_IPIN_CONFIG_WIDTH - 1, i*VAR_IPIN_CONFIG_WIDTH)  
+                                                                                                      
+    to_ipin_out(i) = Bits (width = 1)                                                                 
+    to_ipin_out(i) := ipin_in_break(i)(ipin_config_break(i))                                          
+  }                                                                                                   
+                                                                                                      
+  for ( i <- 0 until VAR_NUM_CHANXY_PER_TILE )                                                        
+  {                                                                                                   
+    var chanxy_in_start_bit = VAR_CHANXY_INPUT_START_ARR(i)                                         
+    var chanxy_in_end_bit = VAR_CHANXY_INPUT_START_ARR(i) + VAR_CHANXY_INPUT_WIDTH_ARR(i) - 1       
+                                                                                                      
+    var chanxy_config_start_bit = VAR_CHANXY_CONFIG_START_ARR(i)                                    
+    var chanxy_config_end_bit = VAR_CHANXY_CONFIG_START_ARR(i) + VAR_CHANXY_CONFIG_WIDTH_ARR(i) - 1 
+                                                                                                      
+    chanxy_in_break(i) = Bits (width =  VAR_CHANXY_INPUT_WIDTH_ARR(i))                              
+    chanxy_in_break(i) := io.chanxy_in(chanxy_in_end_bit, chanxy_in_start_bit)                      
+                                                                                                      
+    chanxy_config_break(i) = Bits (width = VAR_CHANXY_CONFIG_WIDTH_ARR(i))                          
+    chanxy_config_break(i) := io.chanxy_config(chanxy_config_end_bit, chanxy_config_start_bit)      
+                                                                                                      
+    to_chanxy_out(i) = Bits (width = 1)                                                             
+    to_chanxy_out(i) := (chanxy_in_break(i))(chanxy_config_break(i))                                
+  }                                                                                                   
+                                                                                                      
+  io.ipin_out := convert_Array_to_Bits (to_ipin_out, VAR_NUM_IPIN_PER_TILE)                           
+  io.chanxy_out := convert_Array_to_Bits (to_chanxy_out, VAR_NUM_CHANXY_PER_TILE)                     
+}                                                                                                     
+\end{scala}
+
+Some boundary tiles are unique so there is a more evolved generator for such tiles. Below is the actual code that implements a switch box and a
+ connection box inside a boundary LUT Tile. \par
+
+\begin{scala}
+class sbcb_sp (param: lut_Param) extends Component {                                                             
+  val io = new Bundle {                                                                                          
+    val ipin_in = Bits(INPUT, VAR_NUM_IPIN_PER_TILE*VAR_IPIN_INPUT_WIDTH)                                        
+    val ipin_config = Bits(INPUT, VAR_NUM_IPIN_PER_TILE*VAR_IPIN_CONFIG_WIDTH)                                   
+                                                                                                                 
+    val chanxy_in = Bits(INPUT, param.num_chanxy_in)                                                             
+    val chanxy_config = Bits(INPUT, param.num_chanxy_configs)                                                    
+                                                                                                                 
+    val ipin_out = Bits(OUTPUT, VAR_NUM_IPIN_PER_TILE)                                                           
+    val chanxy_out = Bits(OUTPUT, param.num_chanxy_out)                                                          
+  }                                                                                                              
+                                                                                                                 
+  val ipin_in_break = new Array [Bits] (VAR_NUM_IPIN_PER_TILE)                                                   
+  val ipin_config_break = new Array [Bits] (VAR_NUM_IPIN_PER_TILE)                                               
+  val to_ipin_out = new Array [Bits] (VAR_NUM_IPIN_PER_TILE)                                                     
+  val chanxy_in_break = new Array [Bits] (param.num_chanxy_out)                                                  
+  val chanxy_config_break = new Array [Bits] (param.num_chanxy_configs)                                          
+  val to_chanxy_out = new Array[Bits] (param.num_chanxy_out)                                                     
+                                                                                                                 
+  var i = 0;                                                                                                     
+                                                                                                                 
+  for ( i <- 0 until VAR_NUM_IPIN_PER_TILE) {                                                                    
+    ipin_in_break(i) = Bits (width = VAR_IPIN_INPUT_WIDTH)                                                       
+    ipin_in_break(i) := io.ipin_in((i+1)*VAR_IPIN_INPUT_WIDTH - 1, i*VAR_IPIN_INPUT_WIDTH)                       
+                                                                                                                 
+    ipin_config_break(i) = Bits (width = VAR_IPIN_CONFIG_WIDTH)                                                  
+    ipin_config_break(i) := io.ipin_config((i+1)*VAR_IPIN_CONFIG_WIDTH - 1, i*VAR_IPIN_CONFIG_WIDTH)             
+                                                                                                                 
+    to_ipin_out(i) = Bits (width = 1)                                                                            
+    to_ipin_out(i) := ipin_in_break(i)(ipin_config_break(i))                                                     
+  }                                                                                                              
+                                                                                                                 
+  for ( i <- 0 until param.num_chanxy_out )                                                                      
+  {                                                                                                              
+      if ( param.chanxy_config_width_list(i) == 0 )                                                              
+      {                                                                                                          
+          to_chanxy_out(i) = Bits (width = 1)                                                                    
+          to_chanxy_out(i) := io.chanxy_in ( param.chanxy_out_index_start_list(i) )                              
+      }                                                                                                          
+      else                                                                                                       
+      {                                                                                                          
+          var chanxy_in_start_bit = param.chanxy_out_index_start_list(i)                                         
+          var chanxy_in_end_bit = param.chanxy_out_index_start_list(i) + param.chanxy_out_input_width_list(i) - 1
+                                                                                                                 
+          var chanxy_config_start_bit = param.chanxy_config_start_list(i)                                        
+          var chanxy_config_end_bit = param.chanxy_config_start_list(i) + param.chanxy_config_width_list(i) - 1  
+                                                                                                                 
+          chanxy_in_break(i) = Bits (width = param.chanxy_out_input_width_list(i))                               
+          chanxy_in_break(i) := io.chanxy_in(chanxy_in_end_bit, chanxy_in_start_bit)                             
+                                                                                                                 
+          chanxy_config_break(i) = Bits (width = param.chanxy_config_width_list(i))                              
+          chanxy_config_break(i) := io.chanxy_config(chanxy_config_end_bit, chanxy_config_start_bit)             
+                                                                                                                 
+          to_chanxy_out(i) = Bits (width = 1)                                                                    
+          to_chanxy_out(i) := (chanxy_in_break(i))(chanxy_config_break(i))                                       
+      }                                                                                                          
+  }                                                                                                              
+                                                                                                                 
+  io.ipin_out := convert_Array_to_Bits (to_ipin_out, VAR_NUM_IPIN_PER_TILE)                                      
+  io.chanxy_out := convert_Array_to_Bits (to_chanxy_out, param.num_chanxy_out)                                   
+}                                                                                                                
+\end{scala}
+
+\section{Architecture of Current Work}
+\label{sec:lut_fpga_arch}
+The MEM Tile and MUL Tile are implemented in hardware using Verilog HDL. However, because of the effort takes
+in setting up an additional tool flow, we choose to leave it as part of the future work. Therefore, the fully implemented
+architecture is like the one illustrated in Fig.~\ref{fig:fpga_lut_arch}. The are many parameters user can change and the
+tool will handle all the rest of the work. Appendix~\ref{appen:op_param} lists all user accessible parameters and their
+legal values. \par
+
+\begin{figure}[htp]
+	\begin{center}
+		\epsfxsize=4in 
+		\epsfbox{fpga_lut.eps}
+		    \renewcommand{\captionfont}{\small}
+				\caption{LUT FPGA Architecture
+				\label{fig:fpga_lut_arch}}
+	\end{center}
+\end{figure}

@@ -1,0 +1,13 @@
+^
+|
+|
+|
+|
+|
+y
+ x----------->
+
+1. fix x = 0, inc y
+2. fix x = edge, inc y
+3. fix y = 0, inc x
+4  fix y = edge, inc y

@@ -1,0 +1,110 @@
+# Benchmark "counter" written by ABC on Mon Jun 23 12:26:47 2014
+.model counter
+.inputs top^clock top^rst top^d_en
+.outputs top^d_out~0 top^d_out~1 top^d_out~2 top^d_out~3 top^d_out~4 \
+ top^d_out~5 top^d_out~6 top^d_out~7 top^d_out~8 top^d_out~9 top^d_out~10 \
+ top^d_out~11
+
+.latch        n31 top^FF_NODE~5 re  top^clock  0
+.latch        n36 top^FF_NODE~6 re  top^clock  0
+.latch        n41 top^FF_NODE~9 re  top^clock  0
+.latch        n46 top^FF_NODE~10 re  top^clock  0
+.latch        n51 top^FF_NODE~11 re  top^clock  0
+.latch        n56 top^FF_NODE~12 re  top^clock  0
+.latch        n61 top^FF_NODE~13 re  top^clock  0
+.latch        n66 top^FF_NODE~14 re  top^clock  0
+.latch        n71 top^FF_NODE~15 re  top^clock  0
+.latch        n76 top^FF_NODE~16 re  top^clock  0
+.latch        n81 top^FF_NODE~7 re  top^clock  0
+.latch        n86 top^FF_NODE~8 re  top^clock  0
+
+.names top^rst top^d_en top^FF_NODE~5 n31
+001 1
+010 1
+.names top^rst top^FF_NODE~6 top^d_en top^FF_NODE~5 n36
+0011 1
+010- 1
+01-0 1
+.names top^rst top^FF_NODE~6 top^FF_NODE~9 n55 n41
+001- 1
+0101 1
+0-10 1
+.names top^d_en top^FF_NODE~5 n55
+11 1
+.names top^rst top^d_en n57 n58 n46
+00-0 1
+0-00 1
+.names top^FF_NODE~5 top^FF_NODE~6 top^FF_NODE~9 top^FF_NODE~10 n57
+1111 1
+.names top^FF_NODE~6 top^FF_NODE~9 top^FF_NODE~10 n55 n58
+11-1 0
+--1- 0
+.names top^rst top^d_en top^FF_NODE~11 n57 n51
+001- 1
+0101 1
+0-10 1
+.names top^rst top^FF_NODE~12 n61_1 n62 n56
+01-0 1
+0-10 1
+.names top^d_en top^FF_NODE~11 n57 n61_1
+111 1
+.names top^d_en n57 top^FF_NODE~11 top^FF_NODE~12 n62
+1111 1
+.names top^rst top^FF_NODE~13 top^d_en n64 n61
+0011 1
+010- 1
+01-0 1
+.names n57 top^FF_NODE~11 top^FF_NODE~12 n64
+111 1
+.names top^rst top^FF_NODE~13 top^FF_NODE~14 n62 n66
+001- 1
+0101 1
+0-10 1
+.names top^rst top^FF_NODE~15 n64 n67 n71
+0011 1
+010- 1
+01-0 1
+.names top^d_en top^FF_NODE~13 top^FF_NODE~14 n67
+111 1
+.names top^rst top^FF_NODE~16 n69 n76
+001 1
+010 1
+.names top^FF_NODE~15 n57 n70 n67 n69
+1111 1
+.names top^FF_NODE~11 top^FF_NODE~12 n70
+11 1
+.names top^rst top^FF_NODE~7 top^FF_NODE~16 n69 n81
+0011 1
+010- 1
+01-0 1
+.names top^rst top^FF_NODE~7 top^FF_NODE~8 n73 n86
+001- 1
+0101 1
+0-10 1
+.names top^FF_NODE~16 n69 n73
+11 1
+.names top^FF_NODE~5 top^d_out~0
+1 1
+.names top^FF_NODE~6 top^d_out~1
+1 1
+.names top^FF_NODE~9 top^d_out~2
+1 1
+.names top^FF_NODE~10 top^d_out~3
+1 1
+.names top^FF_NODE~11 top^d_out~4
+1 1
+.names top^FF_NODE~12 top^d_out~5
+1 1
+.names top^FF_NODE~13 top^d_out~6
+1 1
+.names top^FF_NODE~14 top^d_out~7
+1 1
+.names top^FF_NODE~15 top^d_out~8
+1 1
+.names top^FF_NODE~16 top^d_out~9
+1 1
+.names top^FF_NODE~7 top^d_out~10
+1 1
+.names top^FF_NODE~8 top^d_out~11
+1 1
+.end

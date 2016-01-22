@@ -1,0 +1,39 @@
+Timing criticalities have been normalized to be non-negative by relaxing the required times to the maximum arrival time.
+
+Largest timing criticality in design: 1.99803
+Smallest timing criticality in design: 0
+Total timing criticality in design: 41.632
+
+Range		0.0e+00 to 4.0e-01	4.0e-01 to 8.0e-01	8.0e-01 to 1.2e+00	1.2e+00 to 1.6e+00	1.6e+00 to 2.0e+00	
+Timing criticalities in range		2			0			0			2			22			
+
+
+
+Net #	Driver_tnode	 to_node	Timing criticality
+
+    0	  298		    0		1.624081
+    1	  313		    1		1.934207
+    2	  286		    2		1.779144
+			  172		1.624081
+    3	  289		    3		1.779144
+			  173		1.624081
+    4	  310		    4		1.624081
+    5	  304		    5		1.624081
+    6	  319		    6		1.934207
+    7	  301		    7		1.624081
+    8	    8		  340		1.998031
+    9	    9		  337		1.842968
+   10	   10		  334		1.687905
+   11	   11		  331		1.532842
+   12	   12		  328		1.998031
+   13	   13		  325		1.842968
+   14	  352		   14		0.000000
+			  181		0.000000
+   15	  295		  171		1.779144
+   16	  307		  174		1.779144
+   17	  292		  175		1.624081
+   18	  316		  176		1.624081
+   19	  177		  322		1.687905
+   20	  178		  349		1.532842
+   21	  179		  346		1.687905
+   22	  180		  343		1.842968

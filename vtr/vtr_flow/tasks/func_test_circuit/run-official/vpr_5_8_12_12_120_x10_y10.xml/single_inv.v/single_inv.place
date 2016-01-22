@@ -1,0 +1,8 @@
+Netlist file: single_inv.net   Architecture file: vpr_5_8_12_12_120_x10_y10.xml
+Array size: 10 x 10 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+out:top^d_out	0	4	1	#0
+top^d_out	1	4	0	#1
+top^d_in	0	4	4	#2

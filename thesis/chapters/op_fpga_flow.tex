@@ -1,0 +1,56 @@
+\section{Design Flow Overview}
+\label{sec:flow_over}
+
+What is more significant is the tool flow that generates hardware and software. 
+In this section, we describe all the tools we have used. Fig.~\ref{fig:flow_over} gives an overview of the tool flow.
+ All the tools are open source with the exception of ASIC tool flow from Open Source FPGA RTL
+ to ASIC. We describe the ASIC Flow in Appendix ~\ref{appen:tileGen}. \par
+
+There are three inputs in the flow diagram, \textbf{fpga.scala}, \textbf{architecture.xml} and \textbf{user\_design.v}.
+\textbf{fpga.scala} is a set of files that comprise as a generator for the FPGA. It is implemented in Chisel.
+\textbf{architecture.xml} is the description of the FPGA. It is also input to the VTR flow. \cite{Rose:2012:VPA:2145694.2145708}
+\textbf{user\_design.v} is the user's circuit to implement. \par
+
+\begin{figure}[htp]
+	\begin{center}
+    \epsfysize=5in
+		\epsfbox{flow_overview.eps}
+		    \renewcommand{\captionfont}{\small}
+				\caption{Design Flow Overview
+				\label{fig:flow_over}}
+	\end{center}
+\end{figure}
+
+\section{The Open Source FPGA Flow}
+\label{sec:vtr_flow}
+
+The core of the open source FPGA flow is the VTR Project. \cite{Rose:2012:VPA:2145694.2145708}
+We extend the work to add FPGA RTL configuration generation capability and bit stream generation capability.
+Fig.~\ref{fig:vtr_flow} illustrates the flow. All process inside the dashed box is from VTR Project.
+In the next section, we describe the process flow inside the "FPGA Gen and Bit Gen" box. \par
+
+\begin{figure}[htp]
+	\begin{center}
+    \epsfysize=6in
+		\epsfbox{vtr_flow.eps}
+		    \renewcommand{\captionfont}{\small}
+				\caption{FPGA Flow
+				\label{fig:vtr_flow}}
+	\end{center}
+\end{figure}
+
+\section{FPGA Generation and Bitstream Generation Flow}
+\label{sec:fg_bg_flow}
+
+This part is a major work in the software flow. It is implemented in python. Fig.~\ref{fig:fp_bg_flow} illustrates
+major steps inside the flow.
+
+\begin{figure}[htp]
+	\begin{center}
+		\epsfxsize=5.0in
+		\epsfbox{fg_bg_flow.eps}
+		    \renewcommand{\captionfont}{\small}
+				\caption{FPGA Generation and Bitstream Generation Flow
+				\label{fig:fp_bg_flow}}
+	\end{center}
+\end{figure}

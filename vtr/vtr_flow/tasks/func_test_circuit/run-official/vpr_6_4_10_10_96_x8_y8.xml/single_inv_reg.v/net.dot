@@ -1,0 +1,24 @@
+digraph G {
+	ranksep=.25;
+	"top_clock" [shape=triangle];
+	"top_clock" -> "top_FF_NODE~3";
+	"top_FF_NODE~3" [shape=box];
+	"top_FF_NODE~3" -> "top_BUF_NODE~4"[label="top^d_out"];
+	"top_BUF_NODE~4" [shape=box];
+	"top_BUF_NODE~4" -> "top_d_out_O";
+	"top_d_out_O" [shape=triangle];
+	"top_rst" [shape=triangle];
+	"top_rst" -> "top_MULTI_PORT_MUX~0"[label="top^rst"];
+	"top_MULTI_PORT_MUX~0"
+	"top_MULTI_PORT_MUX~0" -> "top_FF_NODE~3"[label="top^d_d"];
+	"top_rst" -> "top_MULTI_PORT_MUX~0_LOGICAL_NOT~1"[label="top^rst"];
+	"top_MULTI_PORT_MUX~0_LOGICAL_NOT~1"
+	"top_MULTI_PORT_MUX~0_LOGICAL_NOT~1" -> "top_MULTI_PORT_MUX~0";
+	"top_d_in" [shape=triangle];
+	"top_d_in" -> "top_BITWISE_NOT~2"[label="top^d_in"];
+	"top_BITWISE_NOT~2"
+	"top_BITWISE_NOT~2" -> "top_MULTI_PORT_MUX~0"[label="top^d_d"];
+	"top_ZERO_GND_ZERO"
+	"top_ZERO_GND_ZERO" -> "top_MULTI_PORT_MUX~0"[label="top^d_d"];
+	"top_ONE_VCC_CNS"
+}

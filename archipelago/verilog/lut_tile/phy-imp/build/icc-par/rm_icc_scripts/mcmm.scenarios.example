@@ -1,0 +1,230 @@
+##########################################################################################
+# Version: D-2010.03-SP2 (July 6, 2010)
+# Copyright (C) 2007-2010 Synopsys, Inc. All rights reserved.
+##########################################################################################
+
+set SCENARIO_1                "SCN1"
+set ICC_IN_SDC_1_FILE         "input_data/a.sdc"
+set OPCOND_1                  "A_slow"
+set OPCOND_1_LIB              "A_slow"
+set TLUPLUS_EMULATION_1_FILE  "tlu_emu_a_max"          ;#  Max EMULATION TLUplus file
+set TLUPLUS_1_FILE            "tlu_a_max"              ;#  Max TLUplus file
+set STARRC_NXTGRD_1_FILE      "nxtgrd_a_max"	       ;#  Max NXTGRD file			
+
+set SCENARIO_2                "SCN2"
+set ICC_IN_SDC_2_FILE         "input_data/a.sdc"
+set OPCOND_2                  "A_fast"
+set OPCOND_2_LIB              "A_fast"
+set TLUPLUS_EMULATION_2_FILE  "tlu_emu_a_min"          ;#  Min EMULATION TLUplus file
+set TLUPLUS_2_FILE            "tlu_a_min"              ;#  Min TLUplus file
+set STARRC_NXTGRD_2_FILE      "nxtgrd_a_min"	       ;#  Min NXTGRD file
+
+set SCENARIO_3                "SCN3"
+set ICC_IN_SDC_3_FILE         "input_data/b.sdc"
+set OPCOND_3                  "B_slow"
+set OPCOND_3_LIB              "B_slow"
+set TLUPLUS_EMULATION_3_FILE  "tlu_emu_b_max"          ;#  Max EMULATION TLUplus file
+set TLUPLUS_3_FILE            "tlu_b_max"              ;#  Max TLUplus file
+set STARRC_NXTGRD_3_FILE      "nxtgrd_b_max"	       ;#  Max NXTGRD file			
+
+set SCENARIO_4                "SCN4"
+set ICC_IN_SDC_4_FILE         "input_data/b.sdc"
+set OPCOND_4                  "B_fast"
+set OPCOND_4_LIB              "B_fast"
+set TLUPLUS_EMULATION_4_FILE  "tlu_emu_b_min"          ;#  Min EMULATION TLUplus file
+set TLUPLUS_4_FILE            "tlu_b_min"              ;#  Min TLUplus file
+set STARRC_NXTGRD_4_FILE      "nxtgrd_b_min"	       ;#  Min NXTGRD file
+
+##########################################################################################
+################     USAGE OF ABOVE VARIABLES FOR 4 SCENARIOS     ########################
+################  IF YOU HAVE MORE SCENARIOS, ADD THEM HERE BELOW  #######################
+##########################################################################################
+
+if {$SCENARIO_1 != "" && $ICC_IN_SDC_1_FILE != ""} {
+    echo "SCRIPT-Info : Setting up scenario $SCENARIO_1"
+    create_scenario $SCENARIO_1
+
+    set_operating_conditions \
+          -analysis_type on_chip_variation -max_library $OPCOND_1_LIB -max $OPCOND_1
+
+    if {$TLUPLUS_EMULATION_1_FILE == ""} {
+       set_tlu_plus_files -max_tluplus $TLUPLUS_1_FILE -tech2itf_map $MAP_FILE
+    } else {
+       set_tlu_plus_files -max_tluplus $TLUPLUS_1_FILE -tech2itf_map $MAP_FILE \
+             -max_emulation_tluplus $TLUPLUS_EMULATION_1_FILE
+    }
+
+    set_primetime_options -sdc_file $ICC_IN_SDC_1_FILE
+    set_starrcxt_options -max_nxtgrd_file $STARRC_NXTGRD_1_FILE
+
+    set auto_link_disable true
+    source $ICC_IN_SDC_1_FILE
+    set auto_link_disable false
+
+    ## Hold only
+    #  set_scenario_options -setup false -hold true -leakage_power false -dynamic_power false
+
+    ## Leakage power optimization only
+    #  set_max_leakage_power 0
+    #  set_scenario_options -setup false -hold false -leakage_power true -dynamic_power false
+
+    ## Setup only
+    #  set_scenario_options -setup true -hold false -leakage_power false -dynamic_power false
+
+    ## Dynamic power and setup optimization only
+    #  set_scenario_options -setup true -hold false -leakage_power false -dynamic_power true
+
+    ## To be optimized by CTS
+    #  set_scenario_options -cts_mode true
+    ## To be optimized by CTS ONLY, please set the following:
+    #  set_scenario_options -cts_mode true -setup false -hold false
+
+    ## MCCTO
+    #  If you want this scenario to be optimized by MC-CTO,
+    #  please specify the corners to be optimized.
+    #  set_scenario_options -cts_corner min/max/min_max/none
+
+    report_scenario_options
+}
+
+if {$SCENARIO_2 != "" && $ICC_IN_SDC_2_FILE != ""} {
+    echo "SCRIPT-Info : Setting up scenario $SCENARIO_2"
+    create_scenario $SCENARIO_2
+
+    set_operating_conditions \
+          -analysis_type on_chip_variation -max_library $OPCOND_2_LIB -max $OPCOND_2
+
+    if {$TLUPLUS_EMULATION_2_FILE == ""} {
+       set_tlu_plus_files -max_tluplus $TLUPLUS_2_FILE -tech2itf_map $MAP_FILE
+    } else {
+       set_tlu_plus_files -max_tluplus $TLUPLUS_2_FILE -tech2itf_map $MAP_FILE \
+             -max_emulation_tluplus $TLUPLUS_EMULATION_2_FILE
+    }
+
+    set_primetime_options -sdc_file $ICC_IN_SDC_2_FILE
+    set_starrcxt_options -max_nxtgrd_file $STARRC_NXTGRD_2_FILE
+
+    set auto_link_disable true
+    source $ICC_IN_SDC_2_FILE
+    set auto_link_disable false
+
+    ## Hold only
+    #  set_scenario_options -setup false -hold true -leakage_power false -dynamic_power false
+
+    ## Leakage power optimization only
+    #  set_max_leakage_power 0
+    #  set_scenario_options -setup false -hold false -leakage_power true -dynamic_power false
+
+    ## Setup only
+    #  set_scenario_options -setup true -hold false -leakage_power false -dynamic_power false
+
+    ## Dynamic power and setup optimization only
+    #  set_scenario_options -setup true -hold false -leakage_power false -dynamic_power true
+
+    ## To be optimized by CTS
+    #  set_scenario_options -cts_mode true
+    ## To be optimized by CTS ONLY, please set the following:
+    #  set_scenario_options -cts_mode true -setup false -hold false
+
+    ## MCCTO
+    #  If you want this scenario to be optimized by MC-CTO,
+    #  please specify the corners to be optimized.
+    #  set_scenario_options -cts_corner min/max/min_max/none
+
+    report_scenario_options
+}
+
+if {$SCENARIO_3 != "" && $ICC_IN_SDC_3_FILE != ""} {
+    echo "SCRIPT-Info : Setting up scenario $SCENARIO_3"
+    create_scenario $SCENARIO_3
+
+    set_operating_conditions \
+          -analysis_type on_chip_variation -max_library $OPCOND_3_LIB -max $OPCOND_3
+
+    if {$TLUPLUS_EMULATION_3_FILE == ""} {
+       set_tlu_plus_files -max_tluplus $TLUPLUS_3_FILE -tech2itf_map $MAP_FILE
+    } else {
+       set_tlu_plus_files -max_tluplus $TLUPLUS_3_FILE -tech2itf_map $MAP_FILE \
+             -max_emulation_tluplus $TLUPLUS_EMULATION_3_FILE
+    }
+
+    set_primetime_options -sdc_file $ICC_IN_SDC_3_FILE
+    set_starrcxt_options -max_nxtgrd_file $STARRC_NXTGRD_3_FILE
+
+    set auto_link_disable true
+    source $ICC_IN_SDC_3_FILE
+    set auto_link_disable false
+
+    ## Hold only
+    #  set_scenario_options -setup false -hold true -leakage_power false -dynamic_power false
+
+    ## Leakage power optimization only
+    #  set_max_leakage_power 0
+    #  set_scenario_options -setup false -hold false -leakage_power true -dynamic_power false
+
+    ## Setup only
+    #  set_scenario_options -setup true -hold false -leakage_power false -dynamic_power false
+
+    ## Dynamic power and setup optimization only
+    #  set_scenario_options -setup true -hold false -leakage_power false -dynamic_power true
+
+    ## To be optimized by CTS
+    #  set_scenario_options -cts_mode true
+    ## To be optimized by CTS ONLY, please set the following:
+    #  set_scenario_options -cts_mode true -setup false -hold false
+
+    ## MCCTO
+    #  If you want this scenario to be optimized by MC-CTO,
+    #  please specify the corners to be optimized.
+    #  set_scenario_options -cts_corner min/max/min_max/none
+
+    report_scenario_options
+}
+
+if {$SCENARIO_4 != "" && $ICC_IN_SDC_4_FILE != ""} {
+    echo "SCRIPT-Info : Setting up scenario $SCENARIO_4"
+    create_scenario $SCENARIO_4
+
+    set_operating_conditions \
+          -analysis_type on_chip_variation -max_library $OPCOND_4_LIB -max $OPCOND_4
+
+    if {$TLUPLUS_EMULATION_4_FILE == ""} {
+       set_tlu_plus_files -max_tluplus $TLUPLUS_4_FILE -tech2itf_map $MAP_FILE
+    } else {
+       set_tlu_plus_files -max_tluplus $TLUPLUS_4_FILE -tech2itf_map $MAP_FILE \
+             -max_emulation_tluplus $TLUPLUS_EMULATION_4_FILE
+    }
+
+    set_primetime_options -sdc_file $ICC_IN_SDC_4_FILE
+    set_starrcxt_options -max_nxtgrd_file $STARRC_NXTGRD_4_FILE
+
+    set auto_link_disable true
+    source $ICC_IN_SDC_4_FILE
+    set auto_link_disable false
+
+    ## Hold only
+    #  set_scenario_options -setup false -hold true -leakage_power false -dynamic_power false
+
+    ## Leakage power optimization only
+    #  set_max_leakage_power 0
+    #  set_scenario_options -setup false -hold false -leakage_power true -dynamic_power false
+
+    ## Setup only
+    #  set_scenario_options -setup true -hold false -leakage_power false -dynamic_power false
+
+    ## Dynamic power and setup optimization only
+    #  set_scenario_options -setup true -hold false -leakage_power false -dynamic_power true
+
+    ## To be optimized by CTS
+    #  set_scenario_options -cts_mode true
+    ## To be optimized by CTS ONLY, please set the following:
+    #  set_scenario_options -cts_mode true -setup false -hold false
+
+    ## MCCTO
+    #  If you want this scenario to be optimized by MC-CTO,
+    #  please specify the corners to be optimized.
+    #  set_scenario_options -cts_corner min/max/min_max/none
+
+    report_scenario_options
+}
+

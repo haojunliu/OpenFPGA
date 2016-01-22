@@ -1,0 +1,76 @@
+CLB top^FF_NODE~8
+INPUT: top^FF_NODE~16 top^d_en open open n62 top^FF_NODE~14 n57 top^FF_NODE~13 n61_1 top^FF_NODE~11 open open top^FF_NODE~15 top^rst top^FF_NODE~7 
+    BLE n67
+        INPUT: clb.I[5]->crossbar  clb.I[1]->crossbar  open clb.I[7]->crossbar  
+        FF: OPEN
+    BLE top^FF_NODE~12
+        INPUT: clb.I[8]->crossbar  clb.I[4]->crossbar  ble[1].out[0]->crossbar  clb.I[13]->crossbar  
+        FF: top^FF_NODE~12
+    BLE n70
+        INPUT: open clb.I[9]->crossbar  ble[1].out[0]->crossbar  open 
+        FF: OPEN
+    BLE n69
+        INPUT: ble[2].out[0]->crossbar  ble[0].out[0]->crossbar  clb.I[6]->crossbar  clb.I[12]->crossbar  
+        FF: OPEN
+    BLE n73
+        INPUT: open clb.I[0]->crossbar  open ble[3].out[0]->crossbar  
+        FF: OPEN
+    BLE top^FF_NODE~8
+        INPUT: clb.I[13]->crossbar  ble[5].out[0]->crossbar  clb.I[14]->crossbar  ble[4].out[0]->crossbar  
+        FF: top^FF_NODE~8
+CLB n57
+INPUT: n55 open open top^rst open open open open open open open top^d_en open open open 
+    BLE n58
+        INPUT: ble[1].out[0]->crossbar  ble[4].out[0]->crossbar  ble[3].out[0]->crossbar  clb.I[0]->crossbar  
+        FF: OPEN
+    BLE top^FF_NODE~10
+        INPUT: clb.I[11]->crossbar  ble[5].out[0]->crossbar  ble[0].out[0]->crossbar  clb.I[3]->crossbar  
+        FF: top^FF_NODE~10
+    BLE top^FF_NODE~5
+        INPUT: clb.I[3]->crossbar  open clb.I[11]->crossbar  ble[2].out[0]->crossbar  
+        FF: top^FF_NODE~5
+    BLE top^FF_NODE~6
+        INPUT: ble[3].out[0]->crossbar  clb.I[11]->crossbar  ble[2].out[0]->crossbar  clb.I[3]->crossbar  
+        FF: top^FF_NODE~6
+    BLE top^FF_NODE~9
+        INPUT: ble[4].out[0]->crossbar  ble[3].out[0]->crossbar  clb.I[0]->crossbar  clb.I[3]->crossbar  
+        FF: top^FF_NODE~9
+    BLE n57
+        INPUT: ble[4].out[0]->crossbar  ble[3].out[0]->crossbar  ble[1].out[0]->crossbar  ble[2].out[0]->crossbar  
+        FF: OPEN
+CLB top^FF_NODE~14
+INPUT: top^d_en open open open open top^rst open top^FF_NODE~12 n67 open open open open open n57 
+    BLE n62
+        INPUT: ble[3].out[0]->crossbar  clb.I[0]->crossbar  clb.I[14]->crossbar  clb.I[7]->crossbar  
+        FF: OPEN
+    BLE top^FF_NODE~14
+        INPUT: ble[0].out[0]->crossbar  clb.I[5]->crossbar  ble[4].out[0]->crossbar  ble[1].out[0]->crossbar  
+        FF: top^FF_NODE~14
+    BLE n71
+        INPUT: ble[2].out[0]->crossbar  ble[5].out[0]->crossbar  clb.I[5]->crossbar  clb.I[8]->crossbar  
+        FF: top^FF_NODE~15
+    BLE top^FF_NODE~11
+        INPUT: clb.I[14]->crossbar  ble[3].out[0]->crossbar  clb.I[0]->crossbar  clb.I[5]->crossbar  
+        FF: top^FF_NODE~11
+    BLE top^FF_NODE~13
+        INPUT: clb.I[0]->crossbar  ble[5].out[0]->crossbar  ble[4].out[0]->crossbar  clb.I[5]->crossbar  
+        FF: top^FF_NODE~13
+    BLE n64
+        INPUT: clb.I[7]->crossbar  ble[3].out[0]->crossbar  clb.I[14]->crossbar  open 
+        FF: OPEN
+CLB top^FF_NODE~7
+INPUT: n69 top^FF_NODE~5 open top^rst open open open open open top^d_en n57 open open open top^FF_NODE~11 
+    BLE n55
+        INPUT: clb.I[9]->crossbar  open clb.I[1]->crossbar  open 
+        FF: OPEN
+    BLE top^FF_NODE~7
+        INPUT: ble[4].out[0]->crossbar  clb.I[0]->crossbar  clb.I[3]->crossbar  ble[1].out[0]->crossbar  
+        FF: top^FF_NODE~7
+    BLE OPEN
+    BLE OPEN
+    BLE top^FF_NODE~16
+        INPUT: clb.I[3]->crossbar  clb.I[0]->crossbar  ble[4].out[0]->crossbar  open 
+        FF: top^FF_NODE~16
+    BLE n61_1
+        INPUT: open clb.I[14]->crossbar  clb.I[9]->crossbar  clb.I[10]->crossbar  
+        FF: OPEN

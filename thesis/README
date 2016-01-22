@@ -1,0 +1,82 @@
+The main changes I have made are the following:
+
+1) The template is now set up to print the bibliography in IEEEtrans format.  This allowed me to use my existing .bib files.
+
+2) The template is now set up for two, rather than three committee members.  To change, look around line 399 in the ucthesis.cls file
+
+3) Graphics print all the time, even in draft mode.  To change, look around line 1687 in the ucthesis.cls file.
+
+4) I commented out a bunch of pdflatex details in the thesis.tex file.  The compilation order that now works for me is:
+  Latex -> dvi2ps -> ps2pdf
+
+IMPORTANT NOTE: If your margins look way too small, it's because the default paper size for latex or dvi2ps or something is A4 paper.  Converting from A4 paper to letter paper then screws up all the margins.  I believe the "-t letter" flag will fix this.  I use WinEdt, so I just check a box and don't have to worry about it.
+
+The template I modified came from:
+http://eps.berkeley.edu/www/graduate/thesis/latex_template.html
+
+The author's instructions (most of which still apply to the current template) are below.
+
+
+-Niels Hoven, 5/24/2005
+
+-----------------------------------------------------------------------
+
+This is a thesis template for use with LaTeX 2e. 
+I used PDFLaTeX and the MacOS X application TeXShop. Your mileage may
+vary. Be sure to check to make sure that the format of the thesis requirements
+have not changed. This was correct as of Fall 2004.
+
+Compiled by: 	Matthew A. d'Alessio, UC Berkeley
+		Ph.D., Geology
+
+
+
+ESSENTIAL FILES
+(should not need to be modified, though the end of ucthesis.cls is the best
+ place to look for things you might consider changing (like included packages,
+margins)
+ucthesis.cls		The Class file for UC Format Thesis
+	uc10.clo	Sub-files of the class for setting font size -- 10pt
+	uc11.clo	11 pt
+	uc12.clo	12 pt
+	
+agu.bst			The AGU format bibliography style file
+			You can choose your own bst file if you want your
+			bibliography entries to look differently...
+
+EXAMPLE 
+(You'll need to fill in everything with your own information)
+thesis.tex		The example thesis file
+
+EXAMPLE PIECES
+(You'll probably just want to replace these with your own)
+Abstract.tex		An example of an abstract.
+introduction.tex	An example of a chapter
+chapter2.tex		An example of a chapter
+vitae.tex		An example of a C.V. (optional)
+dedication.tex		An example of the optional dedication page.
+acknowledgements.tex	An example of acknowledgements
+bibliography.bib	An example file using LaTeX's BibTeX bibliography 
+			records. You can output from EndNote to BibTeX.
+			Note that the modified version of agu.bst that I 
+			include does not change the case of manuscript titles 
+			in the bibliography entries. Either use your own
+			bst file or make sure that titles are capitalized
+			correctly by the time they get to BibTeX.
+
+VIEWING HELPERS
+(You can use these to view certain pieces of your thesis)
+view_abstract.tex	Title page and abstract (with no signature line)
+			This is something you'll need to file several copies of.
+view_acknowledgements	It's nice to read through just this section :-)
+view_chapter2.tex	View a single chapter of the text.
+
+
+also included in this directory:
+HTML FILES CONTAINING HELPFUL INFORMATION ON FILING A DISSERTATION
+index.html		Start here...
+
+
+The ucthesis.cls file I started with came from:
+
+http://chemengr.ucsb.edu/~ceweb/computing/LaTeX/ucthesis/ucthesis_style.htm

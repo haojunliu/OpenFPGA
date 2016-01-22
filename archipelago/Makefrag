@@ -1,0 +1,3 @@
+FPGA_MODEL := fpga
+
+SBT := java -Xmx2048M -Xss8M -XX:MaxPermSize=2G -jar sbt-launch.jar

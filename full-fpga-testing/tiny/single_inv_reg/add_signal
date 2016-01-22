@@ -1,0 +1,12 @@
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_1104} 
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_1575}  
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_1107}  
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_1557}  
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_2318}  
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_1664}  
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_1132}  
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_1559}  
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_2330}  
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_1699}  
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_2151}  
+add wave {sim:/single_inv_reg_tb/dut/fpag_dut/wire_1560}  

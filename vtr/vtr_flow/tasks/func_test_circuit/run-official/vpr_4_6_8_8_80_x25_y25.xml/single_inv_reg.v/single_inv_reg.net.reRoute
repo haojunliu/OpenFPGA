@@ -1,0 +1,10 @@
+CLB top^FF_NODE~3
+INPUT: open open open open open open open open top^d_in open open open open open top^rst 
+    BLE OPEN
+    BLE OPEN
+    BLE OPEN
+    BLE OPEN
+    BLE OPEN
+    BLE top^FF_NODE~3
+        INPUT: open clb.I[14]->crossbar  clb.I[8]->crossbar  open 
+        FF: top^FF_NODE~3

@@ -1,0 +1,29 @@
+Netlist file: ff_en.net   Architecture file: vpr_6_10_16_16_160_x5_y5.xml
+Array size: 5 x 5 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+top^FF_NODE~14	5	5	0	#0
+top^d_en	5	6	4	#1
+top^rst		6	5	0	#2
+top^d_in~2	4	6	2	#3
+top^d_in~3	5	6	5	#4
+top^d_in~9	5	6	6	#5
+top^d_in~8	5	6	0	#6
+top^d_in~7	6	5	6	#7
+top^d_in~1	5	6	7	#8
+top^d_in~6	5	6	2	#9
+top^d_in~5	6	5	4	#10
+top^d_in~4	5	6	1	#11
+top^d_in~0	5	6	3	#12
+out:top^d_out~1	6	4	4	#13
+out:top^d_out~0	4	6	0	#14
+out:top^d_out~9	6	5	3	#15
+out:top^d_out~8	4	6	7	#16
+out:top^d_out~7	6	5	7	#17
+out:top^d_out~6	6	5	1	#18
+out:top^d_out~5	6	5	2	#19
+out:top^d_out~4	6	5	5	#20
+out:top^d_out~3	6	4	5	#21
+out:top^d_out~2	6	4	3	#22
+top^clock	0	3	7	#23

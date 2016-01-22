@@ -1,0 +1,12 @@
+# Benchmark "single_inv_reg" written by ABC on Tue Jul  8 18:14:30 2014
+.model single_inv_reg
+.inputs top^clock top^rst top^d_in
+.outputs top^d_out
+
+.latch         n9 top^FF_NODE~3 re  top^clock  0
+
+.names top^rst top^d_in n9
+00 1
+.names top^FF_NODE~3 top^d_out
+1 1
+.end

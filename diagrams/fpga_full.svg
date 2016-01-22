@@ -1,0 +1,2201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="990"
+   height="765"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="fpga_full.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7437">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7439" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop7441" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient7401"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop7403" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient7363">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop7365" />
+      <stop
+         style="stop-color:#ff0000;stop-opacity:0;"
+         offset="1"
+         id="stop7367" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7347">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7349" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop7351" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7331">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7333" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop7335" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7315">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7317" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop7319" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7299">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7301" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop7303" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7283">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7285" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop7287" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7267">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7269" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop7271" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7251">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7253" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop7255" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7235">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7237" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop7239" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 382.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="990 : 382.5 : 1"
+       inkscape:persp3d-origin="495 : 255 : 1"
+       id="perspective3841" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7235"
+       id="radialGradient7241"
+       cx="498.31689"
+       cy="574.69757"
+       fx="498.31689"
+       fy="574.69757"
+       r="4.9438477"
+       gradientTransform="matrix(1,0,0,0.56577778,0,249.54646)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7251"
+       id="radialGradient7257"
+       cx="468.31689"
+       cy="574.69757"
+       fx="468.31689"
+       fy="574.69757"
+       r="4.9438477"
+       gradientTransform="matrix(1,0,0,0.56577778,0,249.54646)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7267"
+       id="radialGradient7273"
+       cx="438.33252"
+       cy="574.69757"
+       fx="438.33252"
+       fy="574.69757"
+       r="4.9438477"
+       gradientTransform="matrix(1,0,0,0.56577778,0,249.54646)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7283"
+       id="radialGradient7289"
+       cx="288.28564"
+       cy="574.69757"
+       fx="288.28564"
+       fy="574.69757"
+       r="4.9438477"
+       gradientTransform="matrix(1,0,0,0.56577778,0,249.54646)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7299"
+       id="radialGradient7305"
+       cx="318.28564"
+       cy="574.69757"
+       fx="318.28564"
+       fy="574.69757"
+       r="4.9438477"
+       gradientTransform="matrix(1,0,0,0.56577778,0,249.54646)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7315"
+       id="radialGradient7321"
+       cx="408.28564"
+       cy="574.69757"
+       fx="408.28564"
+       fy="574.69757"
+       r="4.9438477"
+       gradientTransform="matrix(1,0,0,0.56577778,0,249.54646)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7331"
+       id="radialGradient7337"
+       cx="378.28564"
+       cy="574.69757"
+       fx="378.28564"
+       fy="574.69757"
+       r="4.9438477"
+       gradientTransform="matrix(1,0,0,0.56577778,0,249.54646)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7347"
+       id="radialGradient7353"
+       cx="348.30127"
+       cy="574.69757"
+       fx="348.30127"
+       fy="574.69757"
+       r="4.9438477"
+       gradientTransform="matrix(1,0,0,0.56577778,0,249.54646)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7437"
+       id="linearGradient7443"
+       x1="493.12305"
+       y1="574.69757"
+       x2="503.51074"
+       y2="574.69757"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7437"
+       id="linearGradient7447"
+       x1="463.12305"
+       y1="574.69757"
+       x2="473.51074"
+       y2="574.69757"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7437"
+       id="linearGradient7451"
+       x1="433.13867"
+       y1="574.69757"
+       x2="443.52637"
+       y2="574.69757"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7437"
+       id="linearGradient7455"
+       x1="283.0918"
+       y1="574.69757"
+       x2="293.47949"
+       y2="574.69757"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7437"
+       id="linearGradient7459"
+       x1="313.0918"
+       y1="574.69757"
+       x2="323.47949"
+       y2="574.69757"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7437"
+       id="linearGradient7463"
+       x1="403.0918"
+       y1="574.69757"
+       x2="413.47949"
+       y2="574.69757"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7437"
+       id="linearGradient7467"
+       x1="373.0918"
+       y1="574.69757"
+       x2="383.47949"
+       y2="574.69757"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7437"
+       id="linearGradient7471"
+       x1="343.10742"
+       y1="574.69757"
+       x2="353.49512"
+       y2="574.69757"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="446.70638"
+     inkscape:cy="331.75961"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="cm"
+     objecttolerance="20"
+     inkscape:showpageshadow="true"
+     showborder="true"
+     showguides="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1138"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-287.36283)">
+    <rect
+       style="fill:#ffff00;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5"
+       width="25.007578"
+       height="25.12966"
+       x="424.99896"
+       y="592.35968" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="437.98438"
+       y="607.25348"
+       id="text3861-1"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7"
+         x="437.98438"
+         y="607.25348"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MUL</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-0"
+       width="25.007578"
+       height="25.12966"
+       x="275.07486"
+       y="592.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="288"
+       y="607.36285"
+       id="text3861-1-2-68"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-1"
+         x="288"
+         y="607.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-9"
+       width="25.007578"
+       height="25.12966"
+       x="275.07486"
+       y="622.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="288"
+       y="637.36285"
+       id="text3861-1-2-0-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-97"
+         x="288"
+         y="637.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-8-22"
+       width="25.007578"
+       height="25.12966"
+       x="275.07486"
+       y="652.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="288"
+       y="667.36285"
+       id="text3861-1-2-01-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-2"
+         x="288"
+         y="667.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-5-89"
+       width="25.007578"
+       height="25.12966"
+       x="275.07486"
+       y="682.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="288"
+       y="697.36285"
+       id="text3861-1-2-0-0-07"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-81"
+         x="288"
+         y="697.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-4-5"
+       width="25.007578"
+       height="25.12966"
+       x="275.07486"
+       y="712.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="288"
+       y="727.36285"
+       id="text3861-1-2-7-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-8-6"
+         x="288"
+         y="727.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-3-1"
+       width="25.007578"
+       height="25.12966"
+       x="275.07486"
+       y="742.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="288"
+       y="757.36285"
+       id="text3861-1-2-0-5-2"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-1-4"
+         x="288"
+         y="757.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-8-2-2"
+       width="25.007578"
+       height="25.12966"
+       x="275.07486"
+       y="772.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="288"
+       y="787.36285"
+       id="text3861-1-2-01-0-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-1-86"
+         x="288"
+         y="787.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-5-6-2"
+       width="25.007578"
+       height="25.12966"
+       x="275.07486"
+       y="802.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="288"
+       y="817.36285"
+       id="text3861-1-2-0-0-4-6"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-0-5"
+         x="288"
+         y="817.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-2"
+       width="25.007578"
+       height="25.12966"
+       x="455.10611"
+       y="592.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="468.03125"
+       y="607.36285"
+       id="text3861-1-2-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-25"
+         x="468.03125"
+         y="607.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-86"
+       width="25.007578"
+       height="25.12966"
+       x="455.10611"
+       y="622.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="468.03125"
+       y="637.36285"
+       id="text3861-1-2-0-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-7"
+         x="468.03125"
+         y="637.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-8-229"
+       width="25.007578"
+       height="25.12966"
+       x="455.10611"
+       y="652.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="468.03125"
+       y="667.36285"
+       id="text3861-1-2-01-4"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-19"
+         x="468.03125"
+         y="667.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-5-69"
+       width="25.007578"
+       height="25.12966"
+       x="455.10611"
+       y="682.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="468.03125"
+       y="697.36285"
+       id="text3861-1-2-0-0-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-2"
+         x="468.03125"
+         y="697.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-4-55"
+       width="25.007578"
+       height="25.12966"
+       x="455.10611"
+       y="712.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="468.03125"
+       y="727.36285"
+       id="text3861-1-2-7-4"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-8-9"
+         x="468.03125"
+         y="727.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-3-12"
+       width="25.007578"
+       height="25.12966"
+       x="455.10611"
+       y="742.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="468.03125"
+       y="757.36285"
+       id="text3861-1-2-0-5-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-1-0"
+         x="468.03125"
+         y="757.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-8-2-8"
+       width="25.007578"
+       height="25.12966"
+       x="455.10611"
+       y="772.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="468.03125"
+       y="787.36285"
+       id="text3861-1-2-01-0-39"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-1-3"
+         x="468.03125"
+         y="787.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-5-6-9"
+       width="25.007578"
+       height="25.12966"
+       x="455.10611"
+       y="802.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="468.03125"
+       y="817.36285"
+       id="text3861-1-2-0-0-4-67"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-0-9"
+         x="468.03125"
+         y="817.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-61-9"
+       width="25.007578"
+       height="25.12966"
+       x="485.10611"
+       y="592.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="498.03125"
+       y="607.36285"
+       id="text3861-1-2-8-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-9-6"
+         x="498.03125"
+         y="607.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-8-9"
+       width="25.007578"
+       height="25.12966"
+       x="485.10611"
+       y="622.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="498.03125"
+       y="637.36285"
+       id="text3861-1-2-0-4-3"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-14-5"
+         x="498.03125"
+         y="637.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-8-3-7"
+       width="25.007578"
+       height="25.12966"
+       x="485.10611"
+       y="652.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="498.03125"
+       y="667.36285"
+       id="text3861-1-2-01-9-6"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-8-6"
+         x="498.03125"
+         y="667.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-5-8-5"
+       width="25.007578"
+       height="25.12966"
+       x="485.10611"
+       y="682.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="498.03125"
+       y="697.36285"
+       id="text3861-1-2-0-0-0-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-8-2"
+         x="498.03125"
+         y="697.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-4-7-5"
+       width="25.007578"
+       height="25.12966"
+       x="485.10611"
+       y="712.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="498.03125"
+       y="727.36285"
+       id="text3861-1-2-7-7-4"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-8-8-4"
+         x="498.03125"
+         y="727.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-3-3-1"
+       width="25.007578"
+       height="25.12966"
+       x="485.10611"
+       y="742.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="498.03125"
+       y="757.36285"
+       id="text3861-1-2-0-5-8-6"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-1-3-1"
+         x="498.03125"
+         y="757.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-8-2-7-6"
+       width="25.007578"
+       height="25.12966"
+       x="485.10611"
+       y="772.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="498.03125"
+       y="787.36285"
+       id="text3861-1-2-01-0-1-3"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-1-0-3"
+         x="498.03125"
+         y="787.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-5-6-7-5"
+       width="25.007578"
+       height="25.12966"
+       x="485.10611"
+       y="802.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-linecap:round"
+       x="498.03125"
+       y="817.36285"
+       id="text3861-1-2-0-0-4-3-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-0-4-3"
+         x="498.03125"
+         y="817.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill:#ffff00;stroke:none;stroke-linecap:round">LUT</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-9"
+       width="25.007578"
+       height="25.12966"
+       x="335.09048"
+       y="562.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="348.01563"
+       y="577.36285"
+       id="text3861-1-3"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-0"
+         x="348.01563"
+         y="577.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill-opacity:1;fill:#0000ff;stroke:none;stroke-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-7"
+       width="25.007578"
+       height="25.12966"
+       x="365.07486"
+       y="562.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="378"
+       y="577.36285"
+       id="text3861-1-2-78"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-7"
+         x="378"
+         y="577.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill-opacity:1;fill:#0000ff;stroke:none;stroke-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-61-3"
+       width="25.007578"
+       height="25.12966"
+       x="395.07486"
+       y="562.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="408"
+       y="577.36285"
+       id="text3861-1-2-8-0"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-9-3"
+         x="408"
+         y="577.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill-opacity:1;fill:#0000ff;stroke:none;stroke-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-9-8"
+       width="25.007578"
+       height="25.12966"
+       x="305.07486"
+       y="562.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="318"
+       y="577.36285"
+       id="text3861-1-2-6-2"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-5-5"
+         x="318"
+         y="577.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill-opacity:1;fill:#0000ff;stroke:none;stroke-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-0-2"
+       width="25.007578"
+       height="25.12966"
+       x="275.07486"
+       y="562.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="288"
+       y="577.36285"
+       id="text3861-1-2-68-0"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-1-3"
+         x="288"
+         y="577.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;font-weight:bold;stroke-linejoin:round;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill-opacity:1;fill:#0000ff;stroke:none;stroke-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-3-7"
+       width="25.007578"
+       height="25.12966"
+       x="425.12173"
+       y="562.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="438.04688"
+       y="577.36285"
+       id="text3861-1-92-2"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-46-9"
+         x="438.04688"
+         y="577.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill-opacity:1;fill:#0000ff;stroke:none;stroke-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-2-7"
+       width="25.007578"
+       height="25.12966"
+       x="455.10611"
+       y="562.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="468.03125"
+       y="577.36285"
+       id="text3861-1-2-5-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-25-3"
+         x="468.03125"
+         y="577.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill-opacity:1;fill:#0000ff;stroke:none;stroke-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-61-9-43"
+       width="25.007578"
+       height="25.12966"
+       x="485.10611"
+       y="562.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="498.03125"
+       y="577.36285"
+       id="text3861-1-2-8-7-2"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-9-6-1"
+         x="498.03125"
+         y="577.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;fill-opacity:1;fill:#0000ff;stroke:none;stroke-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-0-1"
+       width="25.007578"
+       height="25.12966"
+       x="245.07486"
+       y="592.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="258"
+       y="607.36285"
+       id="text3861-1-2-68-3"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-1-2"
+         x="258"
+         y="607.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;stroke:none;stroke-opacity:1;fill:#0000ff;fill-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-6-9-5"
+       width="25.007578"
+       height="25.12966"
+       x="245.07486"
+       y="622.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="258"
+       y="637.36285"
+       id="text3861-1-2-0-8-3"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-97-5"
+         x="258"
+         y="637.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;stroke:none;stroke-opacity:1;fill:#0000ff;fill-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-8-22-1"
+       width="25.007578"
+       height="25.12966"
+       x="245.07486"
+       y="652.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="258"
+       y="667.36285"
+       id="text3861-1-2-01-8-2"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-2-2"
+         x="258"
+         y="667.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;stroke:none;stroke-opacity:1;fill:#0000ff;fill-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-6-5-89-2"
+       width="25.007578"
+       height="25.12966"
+       x="245.07486"
+       y="682.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="258"
+       y="697.36285"
+       id="text3861-1-2-0-0-07-6"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-81-4"
+         x="258"
+         y="697.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;stroke:none;stroke-opacity:1;fill:#0000ff;fill-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-4-5-0"
+       width="25.007578"
+       height="25.12966"
+       x="245.07486"
+       y="712.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="258"
+       y="727.36285"
+       id="text3861-1-2-7-8-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-8-6-0"
+         x="258"
+         y="727.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;stroke:none;stroke-opacity:1;fill:#0000ff;fill-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-6-3-1-3"
+       width="25.007578"
+       height="25.12966"
+       x="245.07486"
+       y="742.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="258"
+       y="757.36285"
+       id="text3861-1-2-0-5-2-4"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-1-4-0"
+         x="258"
+         y="757.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;stroke:none;stroke-opacity:1;fill:#0000ff;fill-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-8-2-2-0"
+       width="25.007578"
+       height="25.12966"
+       x="245.07486"
+       y="772.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="258"
+       y="787.36285"
+       id="text3861-1-2-01-0-5-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-1-86-3"
+         x="258"
+         y="787.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;stroke:none;stroke-opacity:1;fill:#0000ff;fill-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1;stroke-linecap:round"
+       id="rect3091-5-8-6-5-6-2-1"
+       width="25.007578"
+       height="25.12966"
+       x="245.07486"
+       y="802.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:bold;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;-inkscape-font-specification:Courier New Bold;font-stretch:normal;font-variant:normal;text-anchor:middle;text-align:center;writing-mode:lr;stroke-opacity:1;stroke-linecap:round"
+       x="258"
+       y="817.36285"
+       id="text3861-1-2-0-0-4-6-0"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-0-5-6"
+         x="258"
+         y="817.36285"
+         style="font-size:12px;text-align:center;text-anchor:middle;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none;stroke-linejoin:round;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:100%;stroke:none;stroke-opacity:1;fill:#0000ff;fill-opacity:1;stroke-linecap:round">IO</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5307"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:round;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Sans"><flowRegion
+         id="flowRegion5309"><rect
+           id="rect5311"
+           width="385.3732"
+           height="403.75797"
+           x="197.9899"
+           y="226.18463"
+           style="font-weight:normal;-inkscape-font-specification:Sans;stroke-linejoin:round" /></flowRegion><flowPara
+         id="flowPara5313"></flowPara></flowRoot>    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-9-7"
+       width="25.007578"
+       height="25.12966"
+       x="335.09048"
+       y="832.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="348.01563"
+       y="847.36285"
+       id="text3861-1-3-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-0-0"
+         x="348.01563"
+         y="847.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-7-0"
+       width="25.007578"
+       height="25.12966"
+       x="365.07486"
+       y="832.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="378"
+       y="847.36285"
+       id="text3861-1-2-78-4"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-7-5"
+         x="378"
+         y="847.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-61-3-4"
+       width="25.007578"
+       height="25.12966"
+       x="395.07486"
+       y="832.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="408"
+       y="847.36285"
+       id="text3861-1-2-8-0-9"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-9-3-5"
+         x="408"
+         y="847.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-9-8-6"
+       width="25.007578"
+       height="25.12966"
+       x="305.07486"
+       y="832.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="318"
+       y="847.36285"
+       id="text3861-1-2-6-2-4"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-5-5-8"
+         x="318"
+         y="847.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-0-2-2"
+       width="25.007578"
+       height="25.12966"
+       x="275.07486"
+       y="832.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="288"
+       y="847.36285"
+       id="text3861-1-2-68-0-1"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-1-3-6"
+         x="288"
+         y="847.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-3-7-8"
+       width="25.007578"
+       height="25.12966"
+       x="425.12173"
+       y="832.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="438.04688"
+       y="847.36285"
+       id="text3861-1-92-2-3"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-46-9-1"
+         x="438.04688"
+         y="847.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-2-7-4"
+       width="25.007578"
+       height="25.12966"
+       x="455.10611"
+       y="832.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="468.03125"
+       y="847.36285"
+       id="text3861-1-2-5-5-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-25-3-4"
+         x="468.03125"
+         y="847.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-61-9-43-9"
+       width="25.007578"
+       height="25.12966"
+       x="485.10611"
+       y="832.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="498.03125"
+       y="847.36285"
+       id="text3861-1-2-8-7-2-2"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-9-6-1-0"
+         x="498.03125"
+         y="847.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-0-1-7"
+       width="25.007578"
+       height="25.12966"
+       x="515.07489"
+       y="592.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="528"
+       y="607.36285"
+       id="text3861-1-2-68-3-0"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-1-2-6"
+         x="528"
+         y="607.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-9-5-0"
+       width="25.007578"
+       height="25.12966"
+       x="515.07489"
+       y="622.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="528"
+       y="637.36285"
+       id="text3861-1-2-0-8-3-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-97-5-0"
+         x="528"
+         y="637.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-8-22-1-5"
+       width="25.007578"
+       height="25.12966"
+       x="515.07489"
+       y="652.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="528"
+       y="667.36285"
+       id="text3861-1-2-01-8-2-6"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-2-2-7"
+         x="528"
+         y="667.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-5-89-2-3"
+       width="25.007578"
+       height="25.12966"
+       x="515.07489"
+       y="682.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="528"
+       y="697.36285"
+       id="text3861-1-2-0-0-07-6-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-81-4-4"
+         x="528"
+         y="697.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-4-5-0-9"
+       width="25.007578"
+       height="25.12966"
+       x="515.07489"
+       y="712.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="528"
+       y="727.36285"
+       id="text3861-1-2-7-8-7-2"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-8-6-0-6"
+         x="528"
+         y="727.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-3-1-3-5"
+       width="25.007578"
+       height="25.12966"
+       x="515.07489"
+       y="742.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="528"
+       y="757.36285"
+       id="text3861-1-2-0-5-2-4-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-1-4-0-7"
+         x="528"
+         y="757.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-8-2-2-0-4"
+       width="25.007578"
+       height="25.12966"
+       x="515.07489"
+       y="772.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="528"
+       y="787.36285"
+       id="text3861-1-2-01-0-5-5-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-1-86-3-7"
+         x="528"
+         y="787.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;stroke-linecap:round"
+       id="rect3091-5-8-6-5-6-2-1-9"
+       width="25.007578"
+       height="25.12966"
+       x="515.07489"
+       y="802.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round"
+       x="528"
+       y="817.36285"
+       id="text3861-1-2-0-0-4-6-0-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-0-5-6-3"
+         x="528"
+         y="817.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.43750000000000000;stroke-linejoin:round;stroke-miterlimit:3.90000010000000020;stroke-opacity:1;stroke-dasharray:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round">IO</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-0-3"
+       width="25.007578"
+       height="25.12966"
+       x="305.07486"
+       y="592.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="318"
+       y="607.36285"
+       id="text3861-1-2-68-01"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-1-29"
+         x="318"
+         y="607.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-9-0"
+       width="25.007578"
+       height="25.12966"
+       x="305.07486"
+       y="622.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="318"
+       y="637.36285"
+       id="text3861-1-2-0-8-38"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-97-8"
+         x="318"
+         y="637.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-8-22-5"
+       width="25.007578"
+       height="25.12966"
+       x="305.07486"
+       y="652.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="318"
+       y="667.36285"
+       id="text3861-1-2-01-8-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-2-7"
+         x="318"
+         y="667.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-5-89-0"
+       width="25.007578"
+       height="25.12966"
+       x="305.07486"
+       y="682.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="318"
+       y="697.36285"
+       id="text3861-1-2-0-0-07-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-81-9"
+         x="318"
+         y="697.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-4-5-3"
+       width="25.007578"
+       height="25.12966"
+       x="305.07486"
+       y="712.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="318"
+       y="727.36285"
+       id="text3861-1-2-7-8-0"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-8-6-7"
+         x="318"
+         y="727.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-3-1-4"
+       width="25.007578"
+       height="25.12966"
+       x="305.07486"
+       y="742.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="318"
+       y="757.36285"
+       id="text3861-1-2-0-5-2-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-1-4-8"
+         x="318"
+         y="757.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-8-2-2-3"
+       width="25.007578"
+       height="25.12966"
+       x="305.07486"
+       y="772.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="318"
+       y="787.36285"
+       id="text3861-1-2-01-0-5-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-1-86-1"
+         x="318"
+         y="787.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-5-6-2-0"
+       width="25.007578"
+       height="25.12966"
+       x="305.07486"
+       y="802.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="318"
+       y="817.36285"
+       id="text3861-1-2-0-0-4-6-08"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-0-5-3"
+         x="318"
+         y="817.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#00ffff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-4"
+       width="25.007578"
+       height="25.12966"
+       x="335.01459"
+       y="592.46906" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="348"
+       y="607.36285"
+       id="text3861-1-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-01"
+         x="348"
+         y="607.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MEM</tspan></text>
+    <rect
+       style="fill:#00ffff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-0-4"
+       width="25.007578"
+       height="25.12966"
+       x="335.01459"
+       y="622.46906" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="348"
+       y="637.36285"
+       id="text3861-1-22-56"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-3-2"
+         x="348"
+         y="637.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MEM</tspan></text>
+    <rect
+       style="fill:#00ffff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-6-0"
+       width="25.007578"
+       height="25.12966"
+       x="335.01459"
+       y="652.35858" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="348"
+       y="667.25238"
+       id="text3861-1-7-35"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-1-6"
+         x="348"
+         y="667.25238"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MEM</tspan></text>
+    <rect
+       style="fill:#00ffff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-0-5-6"
+       width="25.007578"
+       height="25.12966"
+       x="335.01459"
+       y="682.35858" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="348"
+       y="697.25238"
+       id="text3861-1-22-5-6"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-3-4-7"
+         x="348"
+         y="697.25238"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MEM</tspan></text>
+    <rect
+       style="fill:#00ffff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-02-6"
+       width="25.007578"
+       height="25.12966"
+       x="334.98334"
+       y="712.40656" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="347.96875"
+       y="727.30035"
+       id="text3861-1-6-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-06-7"
+         x="347.96875"
+         y="727.30035"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MEM</tspan></text>
+    <rect
+       style="fill:#00ffff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-0-1-1"
+       width="25.007578"
+       height="25.12966"
+       x="334.98334"
+       y="742.40656" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="347.96875"
+       y="757.30035"
+       id="text3861-1-22-1-9"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-3-1-1"
+         x="347.96875"
+         y="757.30035"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MEM</tspan></text>
+    <rect
+       style="fill:#00ffff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-6-7-6"
+       width="25.007578"
+       height="25.12966"
+       x="334.98334"
+       y="772.29608" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="347.96875"
+       y="787.18988"
+       id="text3861-1-7-3-2"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-1-0-7"
+         x="347.96875"
+         y="787.18988"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MEM</tspan></text>
+    <rect
+       style="fill:#00ffff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-0-5-0-2"
+       width="25.007578"
+       height="25.12966"
+       x="334.98334"
+       y="802.29608" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="347.96875"
+       y="817.18994"
+       id="text3861-1-22-5-4-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-3-4-8-6"
+         x="347.96875"
+         y="817.18994"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MEM</tspan></text>
+    <rect
+       style="fill:#ffff00;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-99"
+       width="25.007578"
+       height="25.12966"
+       x="424.99896"
+       y="622.35968" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="437.98438"
+       y="637.25348"
+       id="text3861-1-59"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-2"
+         x="437.98438"
+         y="637.25348"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MUL</tspan></text>
+    <rect
+       style="fill:#ffff00;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-6"
+       width="25.007578"
+       height="25.12966"
+       x="424.99896"
+       y="652.35968" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="437.98438"
+       y="667.25348"
+       id="text3861-1-53"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-24"
+         x="437.98438"
+         y="667.25348"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MUL</tspan></text>
+    <rect
+       style="fill:#ffff00;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-99-4"
+       width="25.007578"
+       height="25.12966"
+       x="424.99896"
+       y="682.35968" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="437.98438"
+       y="697.25348"
+       id="text3861-1-59-4"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-2-2"
+         x="437.98438"
+         y="697.25348"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MUL</tspan></text>
+    <rect
+       style="fill:#ffff00;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-7"
+       width="25.007578"
+       height="25.12966"
+       x="424.9881"
+       y="712.39282" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="437.97351"
+       y="727.28662"
+       id="text3861-1-9"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-23"
+         x="437.97351"
+         y="727.28662"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MUL</tspan></text>
+    <rect
+       style="fill:#ffff00;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-99-7"
+       width="25.007578"
+       height="25.12966"
+       x="424.9881"
+       y="742.39282" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="437.97351"
+       y="757.28662"
+       id="text3861-1-59-3"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-2-1"
+         x="437.97351"
+         y="757.28662"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MUL</tspan></text>
+    <rect
+       style="fill:#ffff00;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-6-5"
+       width="25.007578"
+       height="25.12966"
+       x="424.9881"
+       y="772.39282" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="437.97351"
+       y="787.28662"
+       id="text3861-1-53-7"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-24-8"
+         x="437.97351"
+         y="787.28662"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MUL</tspan></text>
+    <rect
+       style="fill:#ffff00;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-99-4-5"
+       width="25.007578"
+       height="25.12966"
+       x="424.9881"
+       y="802.39282" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="437.97351"
+       y="817.28662"
+       id="text3861-1-59-4-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-2-2-3"
+         x="437.97351"
+         y="817.28662"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">MUL</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-0-24"
+       width="25.007578"
+       height="25.12966"
+       x="365.07486"
+       y="592.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="378"
+       y="607.36285"
+       id="text3861-1-2-68-1"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-1-1"
+         x="378"
+         y="607.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-9-59"
+       width="25.007578"
+       height="25.12966"
+       x="365.07486"
+       y="622.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="378"
+       y="637.36285"
+       id="text3861-1-2-0-8-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-97-1"
+         x="378"
+         y="637.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-8-22-0"
+       width="25.007578"
+       height="25.12966"
+       x="365.07486"
+       y="652.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="378"
+       y="667.36285"
+       id="text3861-1-2-01-8-6"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-2-4"
+         x="378"
+         y="667.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-5-89-5"
+       width="25.007578"
+       height="25.12966"
+       x="365.07486"
+       y="682.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="378"
+       y="697.36285"
+       id="text3861-1-2-0-0-07-3"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-81-0"
+         x="378"
+         y="697.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-4-5-8"
+       width="25.007578"
+       height="25.12966"
+       x="365.07486"
+       y="712.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="378"
+       y="727.36285"
+       id="text3861-1-2-7-8-9"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-8-6-1"
+         x="378"
+         y="727.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-3-1-34"
+       width="25.007578"
+       height="25.12966"
+       x="365.07486"
+       y="742.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="378"
+       y="757.36285"
+       id="text3861-1-2-0-5-2-74"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-1-4-6"
+         x="378"
+         y="757.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-8-2-2-36"
+       width="25.007578"
+       height="25.12966"
+       x="365.07486"
+       y="772.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="378"
+       y="787.36285"
+       id="text3861-1-2-01-0-5-52"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-1-86-8"
+         x="378"
+         y="787.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-5-6-2-10"
+       width="25.007578"
+       height="25.12966"
+       x="365.07486"
+       y="802.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="378"
+       y="817.36285"
+       id="text3861-1-2-0-0-4-6-3"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-0-5-1"
+         x="378"
+         y="817.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-0-3-5"
+       width="25.007578"
+       height="25.12966"
+       x="395.07486"
+       y="592.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="408"
+       y="607.36285"
+       id="text3861-1-2-68-01-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-1-29-2"
+         x="408"
+         y="607.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-9-0-2"
+       width="25.007578"
+       height="25.12966"
+       x="395.07486"
+       y="622.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="408"
+       y="637.36285"
+       id="text3861-1-2-0-8-38-1"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-97-8-7"
+         x="408"
+         y="637.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-8-22-5-4"
+       width="25.007578"
+       height="25.12966"
+       x="395.07486"
+       y="652.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="408"
+       y="667.36285"
+       id="text3861-1-2-01-8-7-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-2-7-2"
+         x="408"
+         y="667.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-5-89-0-3"
+       width="25.007578"
+       height="25.12966"
+       x="395.07486"
+       y="682.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="408"
+       y="697.36285"
+       id="text3861-1-2-0-0-07-8-6"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-81-9-3"
+         x="408"
+         y="697.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-4-5-3-0"
+       width="25.007578"
+       height="25.12966"
+       x="395.07486"
+       y="712.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="408"
+       y="727.36285"
+       id="text3861-1-2-7-8-0-3"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-8-6-7-5"
+         x="408"
+         y="727.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-3-1-4-2"
+       width="25.007578"
+       height="25.12966"
+       x="395.07486"
+       y="742.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="408"
+       y="757.36285"
+       id="text3861-1-2-0-5-2-7-8"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-1-4-8-0"
+         x="408"
+         y="757.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-8-2-2-3-7"
+       width="25.007578"
+       height="25.12966"
+       x="395.07486"
+       y="772.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="408"
+       y="787.36285"
+       id="text3861-1-2-01-0-5-7-2"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-2-1-86-1-2"
+         x="408"
+         y="787.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+    <rect
+       style="fill:#0000ff;stroke:none;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       id="rect3091-5-8-6-5-6-2-0-5"
+       width="25.007578"
+       height="25.12966"
+       x="395.07486"
+       y="802.36499" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none"
+       x="408"
+       y="817.36285"
+       id="text3861-1-2-0-0-4-6-08-9"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3863-7-6-3-9-0-5-3-1"
+         x="408"
+         y="817.36285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;stroke:none;font-family:Courier New;-inkscape-font-specification:Courier New Bold;stroke-linecap:round;stroke-width:0.43750000000000000;stroke-miterlimit:3.90000010000000020;stroke-dasharray:none">LUT</tspan></text>
+  </g>
+</svg>

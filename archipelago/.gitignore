@@ -1,0 +1,9 @@
+emulator/*/*.out
+emulator/*/*.out.gz
+emulator/*/emulator
+emulator/*/*.o
+*.pyc
+*.swp
+*.vcd
+*.vpd
+.DS_Store

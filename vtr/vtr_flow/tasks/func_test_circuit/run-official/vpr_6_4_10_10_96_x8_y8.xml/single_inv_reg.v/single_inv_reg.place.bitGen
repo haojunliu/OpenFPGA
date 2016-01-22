@@ -1,0 +1,18 @@
+Netlist file: single_inv_reg.net   Architecture file: vpr_6_4_10_10_96_x8_y8.xml
+Array size: 8 x 8 logic blocks
+	
+#block type		block name			x		y	subblk	block number
+#----------		----------			--		--	------	------------
+top_level       top^FF_NODE~3		1		5		0		#0
+sub_level       (null)		0		0	
+sub_level       (null)		0		1	
+sub_level       (null)		0		2	
+sub_level       top^FF_NODE~3		0		3	
+top_level       top^d_in		0		5		0		#1
+sub_level       top^d_in		0		0	
+top_level       top^rst			0		5		3		#2
+sub_level       top^rst			0		0	
+top_level       out:top^d_out		0		5		5		#3
+sub_level       out:top^d_out		0		0	
+top_level       top^clock		9		1		2		#4
+sub_level       top^clock		0		0	

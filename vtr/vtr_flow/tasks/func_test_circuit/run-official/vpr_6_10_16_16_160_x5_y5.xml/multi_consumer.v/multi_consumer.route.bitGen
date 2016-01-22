@@ -1,0 +1,621 @@
+route_start
+wire 2349
+wire 6111
+wire 1925
+wire 6111
+wire 2029
+wire 2349
+wire 6071
+wire 1981
+wire 6111
+wire 3545
+wire 1602
+route_start
+wire 2193
+wire 6062
+wire 1933
+wire 6062
+wire 2053
+wire 2193
+wire 6054
+wire 1973
+wire 6062
+wire 3885
+wire 1596
+wire 2193
+wire 5959
+wire 2541
+wire 1430
+route_start
+wire 2211
+wire 6076
+wire 1929
+wire 6076
+wire 2045
+wire 2211
+wire 6072
+wire 1993
+wire 2211
+wire 6064
+wire 3531
+wire 1606
+wire 2211
+wire 5999
+wire 2939
+wire 1448
+wire 2211
+wire 6023
+wire 1833
+route_start
+wire 2202
+wire 6068
+wire 1941
+wire 2202
+wire 6070
+wire 2041
+wire 6068
+wire 2001
+wire 6068
+wire 3897
+wire 1612
+wire 2202
+wire 5951
+wire 2915
+wire 1432
+wire 5951
+wire 1813
+route_start
+wire 1733
+wire 4230
+wire 6109
+wire 1945
+wire 4230
+wire 2032
+wire 4230
+wire 5819
+wire 1625
+wire 5819
+wire 1999
+route_start
+wire 1730
+wire 4214
+wire 5751
+wire 1927
+wire 5751
+wire 1975
+wire 4214
+wire 2060
+wire 4214
+wire 1680
+route_start
+wire 2208
+wire 6060
+wire 3523
+wire 1932
+wire 3523
+wire 1986
+route_start
+wire 2151
+wire 5970
+wire 1989
+wire 5970
+wire 3565
+wire 1948
+wire 5970
+wire 3845
+wire 2030
+wire 3845
+wire 1628
+wire 3845
+wire 1682
+wire 5970
+wire 2845
+wire 1428
+wire 5970
+wire 1825
+wire 3565
+wire 5373
+wire 2612
+wire 1786
+route_start
+wire 2346
+wire 6105
+wire 1917
+wire 6105
+wire 2057
+wire 2346
+wire 6147
+wire 3853
+wire 1992
+wire 3853
+wire 1670
+wire 6147
+wire 3573
+wire 1610
+route_start
+wire 2118
+wire 4197
+wire 5757
+wire 1935
+wire 4197
+wire 2036
+wire 5757
+wire 1979
+wire 5757
+wire 1605
+wire 2118
+wire 4199
+wire 1684
+route_start
+wire 2157
+wire 5994
+wire 1937
+wire 2157
+wire 6006
+wire 1805
+wire 5994
+wire 1997
+route_start
+wire 1778
+wire 2615
+wire 5688
+wire 1939
+wire 1778
+wire 2655
+wire 5680
+wire 1983
+wire 2615
+wire 1810
+route_start
+wire 2166
+wire 5882
+wire 1977
+wire 5882
+wire 3601
+wire 1924
+wire 5882
+wire 3881
+wire 2038
+wire 2166
+wire 5888
+wire 3527
+wire 1614
+wire 5882
+wire 2881
+wire 1440
+wire 2166
+wire 5890
+wire 3847
+wire 1662
+wire 5888
+wire 1821
+wire 2881
+wire 5257
+wire 2616
+wire 1780
+wire 2166
+wire 5933
+wire 2587
+wire 1401
+route_start
+wire 2100
+wire 4173
+wire 5749
+wire 1947
+wire 5749
+wire 1995
+wire 4173
+wire 2044
+wire 4173
+wire 1676
+route_start
+wire 2247
+wire 5937
+wire 3271
+wire 1926
+wire 2247
+wire 6086
+wire 2037
+wire 6086
+wire 3817
+wire 1984
+wire 6086
+wire 4209
+wire 1672
+wire 3817
+wire 1604
+route_start
+wire 2244
+wire 6017
+wire 1921
+wire 2244
+wire 6118
+wire 2049
+wire 2244
+wire 6110
+wire 1985
+wire 6118
+wire 4201
+wire 1652
+wire 6118
+wire 3919
+wire 1624
+route_start
+wire 1949
+wire 6094
+wire 3553
+wire 5317
+wire 3256
+wire 5991
+wire 2198
+route_start
+wire 1950
+wire 3171
+wire 5379
+wire 2942
+wire 6048
+wire 2255
+route_start
+wire 1951
+wire 5655
+wire 3310
+wire 6084
+wire 2240
+route_start
+wire 1952
+wire 3483
+wire 5486
+wire 4228
+wire 6107
+wire 2249
+route_start
+wire 1953
+wire 5993
+wire 2261
+route_start
+wire 1954
+wire 3215
+wire 5442
+wire 3568
+wire 6025
+wire 2252
+route_start
+wire 1955
+wire 5784
+wire 3636
+wire 6001
+wire 2195
+route_start
+wire 1956
+wire 3567
+wire 5365
+wire 2604
+wire 6018
+wire 2258
+route_start
+wire 1958
+wire 3179
+wire 5637
+wire 1831
+route_start
+wire 2061
+wire 6041
+wire 3283
+wire 5760
+wire 4244
+wire 6125
+wire 2357
+route_start
+wire 2062
+wire 3811
+wire 5232
+wire 4172
+wire 6053
+wire 2351
+route_start
+wire 2063
+wire 5815
+wire 3926
+wire 6184
+wire 2336
+route_start
+wire 2064
+wire 4123
+wire 5129
+wire 3864
+wire 6180
+wire 2339
+route_start
+wire 2065
+wire 6127
+wire 2342
+route_start
+wire 2066
+wire 3815
+wire 4892
+wire 4130
+wire 2102
+route_start
+wire 2067
+wire 5878
+wire 1673
+route_start
+wire 2068
+wire 4127
+wire 5215
+wire 3856
+wire 6188
+wire 2354
+route_start
+wire 2069
+wire 6049
+wire 3941
+wire 5858
+wire 4272
+wire 2111
+route_start
+wire 2070
+wire 3819
+wire 1674
+route_start
+wire 2005
+wire 6126
+wire 2291
+route_start
+wire 2006
+wire 3604
+wire 6142
+wire 2297
+route_start
+wire 2007
+wire 5633
+wire 3294
+wire 6100
+wire 2294
+route_start
+wire 2008
+wire 3883
+wire 1616
+route_start
+wire 2009
+wire 5971
+wire 2300
+route_start
+wire 2010
+wire 3535
+wire 5583
+wire 3296
+wire 6108
+wire 2309
+route_start
+wire 2011
+wire 5713
+wire 2994
+wire 6058
+wire 2306
+route_start
+wire 2012
+wire 3887
+wire 5367
+wire 3574
+wire 6140
+wire 2288
+route_start
+wire 2013
+wire 6035
+wire 2303
+route_start
+wire 1846
+wire 2561
+wire 5576
+wire 3952
+wire 5915
+wire 2162
+route_start
+wire 1837
+wire 5909
+wire 2593
+wire 1783
+route_start
+wire 1838
+wire 2635
+wire 1771
+route_start
+wire 1839
+wire 5610
+wire 5732
+wire 3318
+wire 6031
+wire 2147
+route_start
+wire 1840
+wire 2883
+wire 5410
+wire 3270
+wire 5895
+wire 2153
+route_start
+wire 1841
+wire 5957
+wire 2581
+wire 1774
+route_start
+wire 1842
+wire 2597
+wire 5064
+wire 3200
+wire 5887
+wire 2144
+route_start
+wire 1843
+wire 5715
+wire 2674
+wire 1789
+route_start
+wire 1844
+wire 2990
+wire 5893
+wire 2159
+route_start
+wire 1845
+wire 5901
+wire 2595
+wire 1768
+route_start
+wire 1694
+wire 3904
+wire 6182
+wire 4143
+wire 1356
+route_start
+wire 1693
+wire 5872
+wire 4248
+wire 2114
+route_start
+wire 1685
+wire 5801
+wire 3657
+wire 5532
+wire 4017
+wire 1347
+route_start
+wire 1686
+wire 3665
+wire 5538
+wire 4113
+wire 1365
+route_start
+wire 1687
+wire 5495
+wire 3429
+wire 5160
+wire 4162
+wire 1359
+route_start
+wire 1688
+wire 4011
+wire 1353
+route_start
+wire 1689
+wire 5727
+wire 3713
+wire 5534
+wire 4222
+wire 2108
+route_start
+wire 1690
+wire 3894
+wire 5846
+wire 4059
+wire 1362
+route_start
+wire 1691
+wire 5457
+wire 3570
+wire 6124
+wire 4245
+wire 2096
+route_start
+wire 1692
+wire 4083
+wire 1344
+route_start
+wire 1638
+wire 3447
+wire 5494
+wire 4041
+wire 1350
+route_start
+wire 1637
+wire 5577
+wire 3292
+wire 5935
+wire 2204
+route_start
+wire 1629
+wire 5561
+wire 3280
+wire 5903
+wire 2213
+route_start
+wire 1630
+wire 3327
+wire 5164
+wire 4178
+wire 1741
+route_start
+wire 1631
+wire 5490
+wire 4204
+wire 1738
+route_start
+wire 1632
+wire 3681
+wire 4910
+wire 4122
+wire 1735
+route_start
+wire 1633
+wire 5830
+wire 3987
+wire 1726
+route_start
+wire 1634
+wire 3383
+wire 4846
+wire 4144
+wire 1720
+route_start
+wire 1635
+wire 5506
+wire 3882
+wire 5850
+wire 3963
+wire 1723
+route_start
+wire 1636
+wire 3721
+wire 5327
+wire 3421
+wire 4540
+wire 174
+route_start
+wire 1470
+wire 2614
+wire 1392
+route_start
+wire 1464
+wire 2691
+wire 4959
+wire 2598
+wire 1410
+route_start
+wire 1465
+wire 5582
+wire 2747
+wire 4645
+wire 2524
+wire 1413
+route_start
+wire 1466
+wire 2505
+wire 1404
+route_start
+wire 1467
+wire 5393
+wire 2632
+wire 1407
+route_start
+wire 1468
+wire 2755
+wire 4991
+wire 2590
+wire 1395
+route_start
+wire 1469
+wire 5604
+wire 2811
+wire 4677
+wire 2556
+wire 1398

@@ -1,0 +1,37 @@
+Array size: 10 x 10 logic blocks.
+
+Routing:
+
+Net 0 (top^d_in)
+
+Node:	1483	SOURCE (2,11)  Pad: 19  Switch: 2
+Node:	1507	  OPIN (2,11)  Pad: 19  Switch: 0
+Node:	10085	 CHANX (1,10) to (2,10)  Track: 65  Switch: 1
+Node:	1444	  IPIN (2,10)  Pin: 12  Switch: 2
+Node:	1422	  SINK (2,10)  Class: 0  Switch: -1
+
+
+Net 1 (top^rst)
+
+Node:	1474	SOURCE (2,11)  Pad: 10  Switch: 2
+Node:	1498	  OPIN (2,11)  Pad: 10  Switch: 0
+Node:	10061	 CHANX (1,10) to (2,10)  Track: 41  Switch: 1
+Node:	1440	  IPIN (2,10)  Pin: 8  Switch: 2
+Node:	1422	  SINK (2,10)  Class: 0  Switch: -1
+
+
+Net 2 (top^FF_NODE~3)
+
+Node:	1430	SOURCE (2,10)  Class: 8  Switch: 2
+Node:	1462	  OPIN (2,10)  Pin: 30  Switch: 0
+Node:	9766	 CHANX (2,9) to (5,9)  Track: 68  Switch: 0
+Node:	11960	 CHANY (3,10)  Track: 80  Switch: 0
+Node:	10103	 CHANX (1,10) to (3,10)  Track: 83  Switch: 1
+Node:	1488	  IPIN (2,11)  Pad: 0  Switch: 2
+Node:	1464	  SINK (2,11)  Pad: 0  Switch: -1
+
+
+Net 3 (top^clock): global net connecting:
+
+Block top^clock (#4) at (3, 11), Pin class 16.
+Block top^FF_NODE~3 (#0) at (2, 10), Pin class 9.

@@ -1,0 +1,1 @@
+../fpgaGen/clean.sh

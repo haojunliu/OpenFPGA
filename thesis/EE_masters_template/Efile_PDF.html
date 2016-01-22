@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+
+	<head>
+		<title></title>
+	</head>
+	<body>
+<H1>Embedding Fonts in PDF's</H1>
+
+This page tells some hints about how to make sure that all fonts are embedded in your PDF file, a feature required by ProQuest to e-file your dissertation at Berkeley. You can follow some of the instructions in the dissertation guide by the Graduate Division, though these are slightly out of date and software specific.
+
+<H2> Checking to MAKE SURE your fonts are embedded</H2>
+Open the file up in Adobe Acrobat. From the menu bar, choose File...Document Info...Fonts. This will show a list of all fonts used by the PDF file. Fonts that are properly embedded should show up as "EMBEDDED SUBSET" or something like that in the "Actual Font" column. You do not want anything saying "Built-In" in the "Encoding" column -- that means the font is not embedded. I never was sure what to make of the "Custom" message in that column, but I think that meant everything was OK. Note that I got slightly different results in Acrobat 5.0 for MacOS X than in Acrobat 6.0 for Windows XP with WindowsXP showing "Embedded Subset" when MacOS X showed "Custom").
+
+<H2>Using LaTeX</H2>
+In either dvips or ps2pdf, you'll need to ask to embed all fonts.
+
+<H2>TeXShop on Mac OS X</H2>
+I use TeXShop which runs best using the pdflatex engine. To get fonts to embed, I edited the file
+<CODE>/sw/share/texmf/dvips/config/updmap</CODE>. Under the section called <CODE>pdftex_modules</CODE>, I added <a href="pdftex_dl14.map">pdftex_dl14.map</a> to the list of map files to include. You can click on the link above to download a copy of this file. I found info online about this in <a href="http://www.tug.org/pipermail/pdftex/2004-February/004766.html">this thread</a>. Note that I received a lot of warnings about duplicately defined fonts because I simply added the pdftex_dl14.map file on to the end of a nearly complete list. These warnings were not a problem.
+<P>
+After running pdflatex enough times to update all the references, I opened the PDF file output in PREVIEW. Then, I saved it from PREVIEW as an Acrobat PDF file. This seems redundant, but I was not able to view the file on a PC without this extra step. I then opened the file in Acrobat 6.0 on a PC with Windows XP and chose the option to "Reduce File Size" (or some variant) under the File menu. This file was now half the size, had all fonts embedded, and was viewable correctly on all machines that I tried it on.
+
+
+	</body>
+</html>

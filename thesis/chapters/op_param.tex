@@ -1,0 +1,79 @@
+\section{LUT and CLB Parameters}
+\label{sec:lut_and_clb_param}
+
+\begin{table}[htp]
+		\begin{center}
+				{\footnotesize
+				{\tabulinesep=1.2mm
+				\begin{tabu}{ | p{1.0in} | p{1.5in} | p{2.5in} |}    \hline
+				Parameters & Valid Value & Description \\ \hline\hline
+				
+				LUT Size & 4, 5, 6 & Number of Inputs to a LUT \\ \hline
+				
+				CLB Size & 4 to 10 & Also called cluster size, Number of LUT inside a LUT Tile \\ \hline
+
+				\end{tabu}}}
+				\caption{LUT and CLB Parameters
+				\label{table:lut_clb_params}}
+		\end{center}
+\end{table}
+
+\vspace{-1cm}
+
+\section{Routing Parameters}
+\label{sec:routing_param}
+
+\begin{table}[htpb]
+		\begin{center}
+				{\footnotesize
+				{\tabulinesep=1.2mm
+				\begin{tabu}{ | p{1.03in} | p{1.52in} | p{2.90in} |}    \hline
+				Parameters & Valid Value & Description \\ \hline\hline
+				
+				IPIN Num & $\ge$ LUT Size \newline $\le$ (LUT Size)$*$(CLB Size) & 
+						Number of inputs from routing tracks to XBAR, in other word, the width of CB.
+						% Need some Reference Here
+						Research has shown a value of $0.5\times$(LUT Size)$\times$(CLB Size)$+3$ provides best design trade-off. \cite{655177} \\ \hline
+																																		
+				IPIN Width & 8 to 16 & Number of routing tracks driving an IPIN, The circuit is a MUX tree. Too small causes routability problem. Too large increases delay. \\ \hline
+				
+				CHANXY Num & 40, 60, 80, 100, \newline 120, 140, 160 & Number of routing tracks driven inside a LUT Tile. Must be divisible by four so four directions have an equal number of tracks. \\ \hline
+				
+				CHANXY Width & 8 to 16 & Number of routing tracks driving a routing track, The circuit is a MUX tree. Too small causes routability problem. Too large increases delay. \\ \hline
+
+				Segmentation & 1 to 8 & Please reference Sec.~\ref{subsec:hlv_routing_arch} for a description. \\ \hline
+				
+				\end{tabu}}}
+				\caption{Routing Parameters
+				\label{table:routing_params}}
+		\end{center}
+\end{table}
+
+\clearpage
+
+\section{IO Parameters}
+\label{sec:io_param}
+
+IO Parameters share the same configuration for \emph{CHANXY Num} and \emph{CHANXY Input Width} in a LUT Tile. \par
+
+\begin{table}[htpb]
+		\begin{center}
+				{\footnotesize
+				{\tabulinesep=1.2mm
+				\begin{tabu}{ | p{0.9in} | p{1.2in} | p{2.8in} |}    \hline
+				Parameters & Valid Value & Description \\ \hline\hline
+				
+				Input Num & 1 to 16 & Number of input connections driven by signals outside of the FPGA. Not meaningful if greater than one fourth of the number of tracks. \\ \hline
+				Output Num & 1 to 16 & Number of output connections driving signals outside of the FPGA. Not meaningful if greater than one fourth of the number of tracks. \\ \hline
+				
+				\end{tabu}}}
+				\caption{IO Parameters
+				\label{table:io_params}}
+		\end{center}
+\end{table}
+
+\section{Whole FPGA Parameters}
+\label{sec:fpga_param}
+
+The X Size and Y Size of the FPGA should be similar to create a square shape in layout for best corner to corner routing performance. Absolute minimum is \emph{Segmentation}$+1$.
+There is no absolute maximum. 25 by 25 is the largest we have ever tested. \par

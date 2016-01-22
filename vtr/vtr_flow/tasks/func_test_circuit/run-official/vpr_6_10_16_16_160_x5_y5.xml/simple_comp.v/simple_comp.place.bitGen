@@ -1,0 +1,203 @@
+Netlist file: simple_comp.net   Architecture file: vpr_6_10_16_16_160_x5_y5.xml
+Array size: 5 x 5 logic blocks
+	
+#block type		block name			x		y	subblk	block number
+#----------		----------			--		--	------	------------
+top_level       n189			2		3		0		#0
+sub_level       n180			0		0	
+sub_level       top^FF_NODE~14		0		1	
+sub_level       n175			0		2	
+sub_level       n174			0		3	
+sub_level       n179			0		4	
+sub_level       n183_1			0		5	
+sub_level       n186			0		6	
+sub_level       n213			0		7	
+sub_level       n208			0		8	
+sub_level       n189			0		9	
+top_level       n169			2		2		0		#1
+sub_level       n173			0		0	
+sub_level       top^FF_NODE~3		0		1	
+sub_level       top^FF_NODE~15		0		2	
+sub_level       n177			0		3	
+sub_level       top^FF_NODE~12		0		4	
+sub_level       top^FF_NODE~13		0		5	
+sub_level       n172			0		6	
+sub_level       top^FF_NODE~4		0		7	
+sub_level       top^FF_NODE~11		0		8	
+sub_level       n169			0		9	
+top_level       n215			1		2		0		#2
+sub_level       n212			0		0	
+sub_level       n206			0		1	
+sub_level       n209			0		2	
+sub_level       n288			0		3	
+sub_level       n205			0		4	
+sub_level       n201			0		5	
+sub_level       n283			0		6	
+sub_level       n195			0		7	
+sub_level       n200			0		8	
+sub_level       n215			0		9	
+top_level       top^a_in~1		0		1		3		#3
+sub_level       top^a_in~1		0		0	
+top_level       top^b_in~0		0		1		4		#4
+sub_level       top^b_in~0		0		0	
+top_level       top^a_in~2		0		2		5		#5
+sub_level       top^a_in~2		0		0	
+top_level       top^b_in~5		2		0		4		#6
+sub_level       top^b_in~5		0		0	
+top_level       top^c_in~5		1		0		3		#7
+sub_level       top^c_in~5		0		0	
+top_level       top^a_in~5		0		2		4		#8
+sub_level       top^a_in~5		0		0	
+top_level       top^c_in~2		1		0		2		#9
+sub_level       top^c_in~2		0		0	
+top_level       top^a_in~0		2		0		2		#10
+sub_level       top^a_in~0		0		0	
+top_level       top^c_in~0		1		0		0		#11
+sub_level       top^c_in~0		0		0	
+top_level       top^b_in~2		0		1		6		#12
+sub_level       top^b_in~2		0		0	
+top_level       top^c_in~1		1		0		1		#13
+sub_level       top^c_in~1		0		0	
+top_level       top^b_in~1		0		1		1		#14
+sub_level       top^b_in~1		0		0	
+top_level       top^FF_NODE~27		1		4		0		#15
+sub_level       n198			0		0	
+sub_level       n263			0		1	
+sub_level       n138			0		2	
+sub_level       top^FF_NODE~8		0		3	
+sub_level       n143			0		4	
+sub_level       n148			0		5	
+sub_level       top^FF_NODE~27		0		6	
+sub_level       n188			0		7	
+sub_level       n167			0		8	
+sub_level       top^FF_NODE~7		0		9	
+top_level       top^a_in~3		2		0		0		#16
+sub_level       top^a_in~3		0		0	
+top_level       top^c_in~3		3		0		5		#17
+sub_level       top^c_in~3		0		0	
+top_level       top^b_in~4		0		2		0		#18
+sub_level       top^b_in~4		0		0	
+top_level       top^b_in~3		0		3		6		#19
+sub_level       top^b_in~3		0		0	
+top_level       top^a_in~4		0		2		1		#20
+sub_level       top^a_in~4		0		0	
+top_level       top^c_in~4		3		0		2		#21
+sub_level       top^c_in~4		0		0	
+top_level       top^FF_NODE~25		1		3		0		#22
+sub_level       n178			0		0	
+sub_level       n198_1			0		1	
+sub_level       n183			0		2	
+sub_level       top^FF_NODE~6		0		3	
+sub_level       top^FF_NODE~18		0		4	
+sub_level       n203_1			0		5	
+sub_level       top^FF_NODE~25		0		6	
+sub_level       n163			0		7	
+sub_level       n248			0		8	
+sub_level       n253			0		9	
+top_level       top^b_in~7		0		3		1		#23
+sub_level       top^b_in~7		0		0	
+top_level       top^b_in~6		2		0		5		#24
+sub_level       top^b_in~6		0		0	
+top_level       top^a_in~6		0		3		4		#25
+sub_level       top^a_in~6		0		0	
+top_level       top^c_in~7		3		0		6		#26
+sub_level       top^c_in~7		0		0	
+top_level       top^c_in~6		3		0		1		#27
+sub_level       top^c_in~6		0		0	
+top_level       top^a_in~7		0		2		2		#28
+sub_level       top^a_in~7		0		0	
+top_level       top^b_in~9		0		3		7		#29
+sub_level       top^b_in~9		0		0	
+top_level       top^b_in~8		0		1		2		#30
+sub_level       top^b_in~8		0		0	
+top_level       top^c_in~9		1		6		6		#31
+sub_level       top^c_in~9		0		0	
+top_level       top^c_in~8		1		6		7		#32
+sub_level       top^c_in~8		0		0	
+top_level       top^a_in~9		0		3		2		#33
+sub_level       top^a_in~9		0		0	
+top_level       top^a_in~8		0		2		7		#34
+sub_level       top^a_in~8		0		0	
+top_level       top^FF_NODE~34		2		1		0		#35
+sub_level       n193_1			0		0	
+sub_level       (null)		0		1	
+sub_level       (null)		0		2	
+sub_level       n153			0		3	
+sub_level       (null)		0		4	
+sub_level       (null)		0		5	
+sub_level       top^FF_NODE~34		0		6	
+sub_level       (null)		0		7	
+sub_level       (null)		0		8	
+sub_level       n158			0		9	
+top_level       top^a_in~10		0		4		2		#36
+sub_level       top^a_in~10		0		0	
+top_level       top^b_in~11		0		1		5		#37
+sub_level       top^b_in~11		0		0	
+top_level       top^b_in~10		0		4		3		#38
+sub_level       top^b_in~10		0		0	
+top_level       top^a_in~11		0		1		7		#39
+sub_level       top^a_in~11		0		0	
+top_level       top^c_in~10		1		6		2		#40
+sub_level       top^c_in~10		0		0	
+top_level       top^c_in~11		1		6		1		#41
+sub_level       top^c_in~11		0		0	
+top_level       top^b_in~13		0		5		5		#42
+sub_level       top^b_in~13		0		0	
+top_level       top^a_in~13		0		5		4		#43
+sub_level       top^a_in~13		0		0	
+top_level       top^b_in~12		0		5		3		#44
+sub_level       top^b_in~12		0		0	
+top_level       top^a_in~12		0		5		6		#45
+sub_level       top^a_in~12		0		0	
+top_level       top^c_in~13		1		6		3		#46
+sub_level       top^c_in~13		0		0	
+top_level       top^c_in~12		1		6		5		#47
+sub_level       top^c_in~12		0		0	
+top_level       top^rst			0		4		6		#48
+sub_level       top^rst			0		0	
+top_level       top^b_in~14		0		1		0		#49
+sub_level       top^b_in~14		0		0	
+top_level       top^c_in~14		2		6		6		#50
+sub_level       top^c_in~14		0		0	
+top_level       top^a_in~14		0		2		6		#51
+sub_level       top^a_in~14		0		0	
+top_level       top^a_in~15		1		0		7		#52
+sub_level       top^a_in~15		0		0	
+top_level       top^c_in~15		6		3		1		#53
+sub_level       top^c_in~15		0		0	
+top_level       top^b_in~15		0		2		3		#54
+sub_level       top^b_in~15		0		0	
+top_level       out:top^d_out~12		0		4		5		#55
+sub_level       out:top^d_out~12		0		0	
+top_level       out:top^d_out~11		6		3		0		#56
+sub_level       out:top^d_out~11		0		0	
+top_level       out:top^d_out~10		0		5		1		#57
+sub_level       out:top^d_out~10		0		0	
+top_level       out:top^d_out~9		0		3		0		#58
+sub_level       out:top^d_out~9		0		0	
+top_level       out:top^d_out~8		0		3		3		#59
+sub_level       out:top^d_out~8		0		0	
+top_level       out:top^d_out~7		2		0		6		#60
+sub_level       out:top^d_out~7		0		0	
+top_level       out:top^d_out~6		2		0		7		#61
+sub_level       out:top^d_out~6		0		0	
+top_level       out:top^d_out~5		0		3		5		#62
+sub_level       out:top^d_out~5		0		0	
+top_level       out:top^d_out~4		2		0		1		#63
+sub_level       out:top^d_out~4		0		0	
+top_level       out:top^d_out~3		2		0		3		#64
+sub_level       out:top^d_out~3		0		0	
+top_level       out:top^d_out~2		0		4		7		#65
+sub_level       out:top^d_out~2		0		0	
+top_level       out:top^d_out~1		0		4		0		#66
+sub_level       out:top^d_out~1		0		0	
+top_level       out:top^d_out~0		0		4		4		#67
+sub_level       out:top^d_out~0		0		0	
+top_level       out:top^d_out~15		2		6		7		#68
+sub_level       out:top^d_out~15		0		0	
+top_level       out:top^d_out~14		2		6		5		#69
+sub_level       out:top^d_out~14		0		0	
+top_level       out:top^d_out~13		0		4		1		#70
+sub_level       out:top^d_out~13		0		0	
+top_level       top^clock		6		4		4		#71
+sub_level       top^clock		0		0	

@@ -1,0 +1,657 @@
+Array size: 5 x 5 logic blocks.
+
+Routing:
+
+Net 0 (top^rst)
+
+Node:	115	SOURCE (0,3)  Pad: 19  Switch: 2
+Node:	139	  OPIN (0,3)  Pad: 19  Switch: 0
+Node:	4407	 CHANY (0,1) to (0,3)  Track: 127  Switch: 0
+Node:	2778	 CHANX (1,1) to (4,1)  Track: 98  Switch: 0
+Node:	2984	 CHANX (5,1)  Track: 98  Switch: 1
+Node:	1804	  IPIN (5,1)  Pin: 0  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1
+Node:	2778	 CHANX (1,1) to (4,1)  Track: 98  Switch: 0
+Node:	5736	 CHANY (4,2) to (4,5)  Track: 66  Switch: 1
+Node:	2039	  IPIN (5,5)  Pin: 11  Switch: 2
+Node:	2016	  SINK (5,5)  Class: 0  Switch: -1
+Node:	4407	 CHANY (0,1) to (0,3)  Track: 127  Switch: 1
+Node:	311	  IPIN (1,1)  Pin: 11  Switch: 2
+Node:	288	  SINK (1,1)  Class: 0  Switch: -1
+Node:	139	  OPIN (0,3)  Pad: 19  Switch: 0
+Node:	4508	 CHANY (0,3) to (0,5)  Track: 116  Switch: 1
+Node:	551	  IPIN (1,5)  Pin: 27  Switch: 2
+Node:	512	  SINK (1,5)  Class: 0  Switch: -1
+
+
+Net 1 (top^d_in~12)
+
+Node:	2124	SOURCE (6,1)  Pad: 4  Switch: 2
+Node:	2148	  OPIN (6,1)  Pad: 4  Switch: 0
+Node:	5958	 CHANY (5,1) to (5,2)  Track: 78  Switch: 1
+Node:	1825	  IPIN (5,1)  Pin: 21  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1
+
+
+Net 2 (top^d_in~28)
+
+Node:	1384	SOURCE (4,0)  Pad: 16  Switch: 2
+Node:	1408	  OPIN (4,0)  Pad: 16  Switch: 0
+Node:	2614	 CHANX (4,0) to (5,0)  Track: 62  Switch: 1
+Node:	1810	  IPIN (5,1)  Pin: 6  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1
+
+
+Net 3 (top^d_in~29)
+
+Node:	1763	SOURCE (5,0)  Pad: 19  Switch: 2
+Node:	1787	  OPIN (5,0)  Pad: 19  Switch: 0
+Node:	2627	 CHANX (4,0) to (5,0)  Track: 111  Switch: 1
+Node:	1822	  IPIN (5,1)  Pin: 18  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1
+
+
+Net 4 (top^d_in~31)
+
+Node:	1745	SOURCE (5,0)  Pad: 1  Switch: 2
+Node:	1769	  OPIN (5,0)  Pad: 1  Switch: 0
+Node:	2603	 CHANX (4,0) to (5,0)  Track: 15  Switch: 1
+Node:	1830	  IPIN (5,1)  Pin: 26  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1
+
+
+Net 5 (top^d_in~23)
+
+Node:	1760	SOURCE (5,0)  Pad: 16  Switch: 2
+Node:	1784	  OPIN (5,0)  Pad: 16  Switch: 0
+Node:	2583	 CHANX (3,0) to (5,0)  Track: 93  Switch: 0
+Node:	5588	 CHANY (4,1) to (4,2)  Track: 28  Switch: 1
+Node:	1819	  IPIN (5,1)  Pin: 15  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1
+
+
+Net 6 (top^d_in~25)
+
+Node:	1748	SOURCE (5,0)  Pad: 4  Switch: 2
+Node:	1772	  OPIN (5,0)  Pad: 4  Switch: 0
+Node:	2670	 CHANX (5,0)  Track: 120  Switch: 1
+Node:	1806	  IPIN (5,1)  Pin: 2  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1
+
+
+Net 7 (top^d_in~24)
+
+Node:	1754	SOURCE (5,0)  Pad: 10  Switch: 2
+Node:	1778	  OPIN (5,0)  Pad: 10  Switch: 0
+Node:	2573	 CHANX (3,0) to (5,0)  Track: 53  Switch: 1
+Node:	1826	  IPIN (5,1)  Pin: 22  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1
+
+
+Net 8 (top^d_in~26)
+
+Node:	1757	SOURCE (5,0)  Pad: 13  Switch: 2
+Node:	1781	  OPIN (5,0)  Pad: 13  Switch: 0
+Node:	2619	 CHANX (4,0) to (5,0)  Track: 79  Switch: 1
+Node:	1834	  IPIN (5,1)  Pin: 30  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1
+
+
+Net 9 (top^d_in~27)
+
+Node:	1751	SOURCE (5,0)  Pad: 7  Switch: 2
+Node:	1775	  OPIN (5,0)  Pad: 7  Switch: 0
+Node:	2672	 CHANX (5,0)  Track: 128  Switch: 1
+Node:	1818	  IPIN (5,1)  Pin: 14  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1
+
+
+Net 10 (top^d_in~30)
+
+Node:	1766	SOURCE (5,0)  Pad: 22  Switch: 2
+Node:	1790	  OPIN (5,0)  Pad: 22  Switch: 0
+Node:	2631	 CHANX (4,0) to (5,0)  Track: 127  Switch: 1
+Node:	1814	  IPIN (5,1)  Pin: 10  Switch: 2
+Node:	1792	  SINK (5,1)  Class: 0  Switch: -1
+
+
+Net 11 (top^FF_NODE~19)
+
+Node:	1793	SOURCE (5,1)  Class: 1  Switch: 2
+Node:	1837	  OPIN (5,1)  Pin: 33  Switch: 0
+Node:	5917	 CHANY (5,1)  Track: 37  Switch: 1
+Node:	2165	  IPIN (6,1)  Pad: 21  Switch: 2
+Node:	2141	  SINK (6,1)  Pad: 21  Switch: -1
+
+
+Net 12 (top^FF_NODE~20)
+
+Node:	1794	SOURCE (5,1)  Class: 2  Switch: 2
+Node:	1838	  OPIN (5,1)  Pin: 34  Switch: 0
+Node:	2648	 CHANX (5,0)  Track: 32  Switch: 0
+Node:	6008	 CHANY (5,1) to (5,3)  Track: 128  Switch: 1
+Node:	2156	  IPIN (6,1)  Pad: 12  Switch: 2
+Node:	2132	  SINK (6,1)  Pad: 12  Switch: -1
+
+
+Net 13 (top^FF_NODE~21)
+
+Node:	1795	SOURCE (5,1)  Class: 3  Switch: 2
+Node:	1839	  OPIN (5,1)  Pin: 35  Switch: 0
+Node:	5612	 CHANY (4,1) to (4,2)  Track: 52  Switch: 0
+Node:	3304	 CHANX (5,2)  Track: 100  Switch: 0
+Node:	5967	 CHANY (5,1) to (5,2)  Track: 87  Switch: 1
+Node:	2144	  IPIN (6,1)  Pad: 0  Switch: 2
+Node:	2120	  SINK (6,1)  Pad: 0  Switch: -1
+
+
+Net 14 (top^FF_NODE~22)
+
+Node:	1796	SOURCE (5,1)  Class: 4  Switch: 2
+Node:	1840	  OPIN (5,1)  Pin: 36  Switch: 0
+Node:	2921	 CHANX (4,1) to (5,1)  Track: 1  Switch: 0
+Node:	5385	 CHANY (3,1)  Track: 145  Switch: 0
+Node:	2624	 CHANX (4,0) to (5,0)  Track: 102  Switch: 1
+Node:	1392	  IPIN (4,0)  Pad: 0  Switch: 2
+Node:	1368	  SINK (4,0)  Pad: 0  Switch: -1
+
+
+Net 15 (top^FF_NODE~23)
+
+Node:	1797	SOURCE (5,1)  Class: 5  Switch: 2
+Node:	1841	  OPIN (5,1)  Pin: 37  Switch: 0
+Node:	5902	 CHANY (5,1) to (5,2)  Track: 22  Switch: 1
+Node:	2162	  IPIN (6,1)  Pad: 18  Switch: 2
+Node:	2138	  SINK (6,1)  Pad: 18  Switch: -1
+
+
+Net 16 (top^FF_NODE~24)
+
+Node:	1798	SOURCE (5,1)  Class: 6  Switch: 2
+Node:	1842	  OPIN (5,1)  Pin: 38  Switch: 0
+Node:	2664	 CHANX (5,0)  Track: 96  Switch: 0
+Node:	5944	 CHANY (5,1) to (5,3)  Track: 64  Switch: 1
+Node:	2150	  IPIN (6,1)  Pad: 6  Switch: 2
+Node:	2126	  SINK (6,1)  Pad: 6  Switch: -1
+
+
+Net 17 (top^FF_NODE~28)
+
+Node:	1799	SOURCE (5,1)  Class: 7  Switch: 2
+Node:	1843	  OPIN (5,1)  Pin: 39  Switch: 0
+Node:	5638	 CHANY (4,1) to (4,3)  Track: 78  Switch: 0
+Node:	3298	 CHANX (5,2)  Track: 76  Switch: 0
+Node:	6031	 CHANY (5,1) to (5,2)  Track: 151  Switch: 1
+Node:	2198	  IPIN (6,2)  Pad: 6  Switch: 2
+Node:	2174	  SINK (6,2)  Pad: 6  Switch: -1
+
+
+Net 18 (top^FF_NODE~27)
+
+Node:	1800	SOURCE (5,1)  Class: 8  Switch: 2
+Node:	1844	  OPIN (5,1)  Pin: 40  Switch: 0
+Node:	2927	 CHANX (4,1) to (5,1)  Track: 25  Switch: 0
+Node:	5738	 CHANY (4,2) to (4,5)  Track: 74  Switch: 0
+Node:	3934	 CHANX (5,4)  Track: 56  Switch: 0
+Node:	5947	 CHANY (5,1) to (5,4)  Track: 67  Switch: 1
+Node:	2153	  IPIN (6,1)  Pad: 9  Switch: 2
+Node:	2129	  SINK (6,1)  Pad: 9  Switch: -1
+
+
+Net 19 (top^FF_NODE~25)
+
+Node:	1801	SOURCE (5,1)  Class: 9  Switch: 2
+Node:	1845	  OPIN (5,1)  Pin: 41  Switch: 0
+Node:	5912	 CHANY (5,1) to (5,3)  Track: 32  Switch: 1
+Node:	2159	  IPIN (6,1)  Pad: 15  Switch: 2
+Node:	2135	  SINK (6,1)  Pad: 15  Switch: -1
+
+
+Net 20 (top^FF_NODE~7)
+
+Node:	1802	SOURCE (5,1)  Class: 10  Switch: 2
+Node:	1846	  OPIN (5,1)  Pin: 42  Switch: 0
+Node:	2652	 CHANX (5,0)  Track: 48  Switch: 0
+Node:	5992	 CHANY (5,1) to (5,3)  Track: 112  Switch: 1
+Node:	2210	  IPIN (6,2)  Pad: 18  Switch: 2
+Node:	2186	  SINK (6,2)  Pad: 18  Switch: -1
+
+
+Net 21 (top^clock): global net connecting:
+
+Block top^clock (#69) at (0, 1), Pin class 7.
+Block top^FF_NODE~7 (#1) at (5, 1), Pin class 11.
+Block top^FF_NODE~9 (#2) at (5, 5), Pin class 11.
+Block top^FF_NODE~33 (#3) at (1, 5), Pin class 11.
+Block top^FF_NODE~4 (#4) at (1, 1), Pin class 11.
+
+
+Net 22 (top^d_in~14)
+
+Node:	2091	SOURCE (5,6)  Pad: 19  Switch: 2
+Node:	2115	  OPIN (5,6)  Pad: 19  Switch: 0
+Node:	4153	 CHANX (2,5) to (5,5)  Track: 133  Switch: 1
+Node:	2052	  IPIN (5,5)  Pin: 24  Switch: 2
+Node:	2016	  SINK (5,5)  Class: 0  Switch: -1
+
+
+Net 23 (top^d_in~19)
+
+Node:	2325	SOURCE (6,5)  Pad: 13  Switch: 2
+Node:	2349	  OPIN (6,5)  Pad: 13  Switch: 0
+Node:	6111	 CHANY (5,3) to (5,5)  Track: 127  Switch: 1
+Node:	2029	  IPIN (5,5)  Pin: 1  Switch: 2
+Node:	2016	  SINK (5,5)  Class: 0  Switch: -1
+
+
+Net 24 (top^d_in~22)
+
+Node:	2082	SOURCE (5,6)  Pad: 10  Switch: 2
+Node:	2106	  OPIN (5,6)  Pad: 10  Switch: 0
+Node:	4141	 CHANX (2,5) to (5,5)  Track: 85  Switch: 1
+Node:	2040	  IPIN (5,5)  Pin: 12  Switch: 2
+Node:	2016	  SINK (5,5)  Class: 0  Switch: -1
+
+
+Net 25 (top^d_in~20)
+
+Node:	2079	SOURCE (5,6)  Pad: 7  Switch: 2
+Node:	2103	  OPIN (5,6)  Pad: 7  Switch: 0
+Node:	4139	 CHANX (2,5) to (5,5)  Track: 77  Switch: 1
+Node:	2060	  IPIN (5,5)  Pin: 32  Switch: 2
+Node:	2016	  SINK (5,5)  Class: 0  Switch: -1
+
+
+Net 26 (top^d_in~13)
+
+Node:	2088	SOURCE (5,6)  Pad: 16  Switch: 2
+Node:	2112	  OPIN (5,6)  Pad: 16  Switch: 0
+Node:	4246	 CHANX (5,5)  Track: 26  Switch: 1
+Node:	2044	  IPIN (5,5)  Pin: 16  Switch: 2
+Node:	2016	  SINK (5,5)  Class: 0  Switch: -1
+
+
+Net 27 (top^d_in~16)
+
+Node:	1709	SOURCE (4,6)  Pad: 13  Switch: 2
+Node:	1733	  OPIN (4,6)  Pad: 13  Switch: 0
+Node:	4230	 CHANX (4,5) to (5,5)  Track: 120  Switch: 1
+Node:	2032	  IPIN (5,5)  Pin: 4  Switch: 2
+Node:	2016	  SINK (5,5)  Class: 0  Switch: -1
+
+
+Net 28 (top^d_in~15)
+
+Node:	2085	SOURCE (5,6)  Pad: 13  Switch: 2
+Node:	2109	  OPIN (5,6)  Pad: 13  Switch: 0
+Node:	4187	 CHANX (3,5) to (5,5)  Track: 111  Switch: 1
+Node:	2036	  IPIN (5,5)  Pin: 8  Switch: 2
+Node:	2016	  SINK (5,5)  Class: 0  Switch: -1
+
+
+Net 29 (top^d_in~17)
+
+Node:	2094	SOURCE (5,6)  Pad: 22  Switch: 2
+Node:	2118	  OPIN (5,6)  Pad: 22  Switch: 0
+Node:	4199	 CHANX (3,5) to (5,5)  Track: 159  Switch: 1
+Node:	2048	  IPIN (5,5)  Pin: 20  Switch: 2
+Node:	2016	  SINK (5,5)  Class: 0  Switch: -1
+
+
+Net 30 (top^d_in~18)
+
+Node:	2073	SOURCE (5,6)  Pad: 1  Switch: 2
+Node:	2097	  OPIN (5,6)  Pad: 1  Switch: 0
+Node:	4171	 CHANX (3,5) to (5,5)  Track: 47  Switch: 1
+Node:	2028	  IPIN (5,5)  Pin: 0  Switch: 2
+Node:	2016	  SINK (5,5)  Class: 0  Switch: -1
+
+
+Net 31 (top^d_in~21)
+
+Node:	2076	SOURCE (5,6)  Pad: 4  Switch: 2
+Node:	2100	  OPIN (5,6)  Pad: 4  Switch: 0
+Node:	4175	 CHANX (3,5) to (5,5)  Track: 63  Switch: 1
+Node:	2056	  IPIN (5,5)  Pin: 28  Switch: 2
+Node:	2016	  SINK (5,5)  Class: 0  Switch: -1
+
+
+Net 32 (top^FF_NODE~8)
+
+Node:	2017	SOURCE (5,5)  Class: 1  Switch: 2
+Node:	2061	  OPIN (5,5)  Pin: 33  Switch: 0
+Node:	6174	 CHANY (5,5)  Track: 58  Switch: 1
+Node:	2336	  IPIN (6,5)  Pad: 0  Switch: 2
+Node:	2312	  SINK (6,5)  Pad: 0  Switch: -1
+
+
+Net 33 (top^FF_NODE~10)
+
+Node:	2018	SOURCE (5,5)  Class: 2  Switch: 2
+Node:	2062	  OPIN (5,5)  Pin: 34  Switch: 0
+Node:	3891	 CHANX (4,4) to (5,4)  Track: 47  Switch: 0
+Node:	5874	 CHANY (4,5)  Track: 136  Switch: 0
+Node:	4027	 CHANX (1,5) to (4,5)  Track: 67  Switch: 1
+Node:	1726	  IPIN (4,6)  Pad: 6  Switch: 2
+Node:	1702	  SINK (4,6)  Pad: 6  Switch: -1
+
+
+Net 34 (top^FF_NODE~11)
+
+Node:	2019	SOURCE (5,5)  Class: 3  Switch: 2
+Node:	2063	  OPIN (5,5)  Pin: 35  Switch: 0
+Node:	5775	 CHANY (4,3) to (4,5)  Track: 61  Switch: 0
+Node:	3924	 CHANX (5,4)  Track: 16  Switch: 0
+Node:	6176	 CHANY (5,5)  Track: 66  Switch: 1
+Node:	2345	  IPIN (6,5)  Pad: 9  Switch: 2
+Node:	2321	  SINK (6,5)  Pad: 9  Switch: -1
+
+
+Net 35 (top^FF_NODE~12)
+
+Node:	2020	SOURCE (5,5)  Class: 4  Switch: 2
+Node:	2064	  OPIN (5,5)  Pin: 36  Switch: 0
+Node:	4121	 CHANX (2,5) to (5,5)  Track: 5  Switch: 0
+Node:	5203	 CHANY (2,5)  Track: 13  Switch: 0
+Node:	3844	 CHANX (3,4) to (5,4)  Track: 20  Switch: 0
+Node:	6180	 CHANY (5,5)  Track: 82  Switch: 1
+Node:	2339	  IPIN (6,5)  Pad: 3  Switch: 2
+Node:	2315	  SINK (6,5)  Pad: 3  Switch: -1
+
+
+Net 36 (top^FF_NODE~13)
+
+Node:	2021	SOURCE (5,5)  Class: 5  Switch: 2
+Node:	2065	  OPIN (5,5)  Pin: 37  Switch: 0
+Node:	6127	 CHANY (5,4) to (5,5)  Track: 25  Switch: 1
+Node:	2342	  IPIN (6,5)  Pad: 6  Switch: 2
+Node:	2318	  SINK (6,5)  Pad: 6  Switch: -1
+
+
+Net 37 (top^FF_NODE~14)
+
+Node:	2022	SOURCE (5,5)  Class: 6  Switch: 2
+Node:	2066	  OPIN (5,5)  Pin: 38  Switch: 0
+Node:	3933	 CHANX (5,4)  Track: 49  Switch: 0
+Node:	5850	 CHANY (4,5)  Track: 40  Switch: 0
+Node:	3963	 CHANX (1,5) to (4,5)  Track: 3  Switch: 1
+Node:	1723	  IPIN (4,6)  Pad: 3  Switch: 2
+Node:	1699	  SINK (4,6)  Pad: 3  Switch: -1
+
+
+Net 38 (top^FF_NODE~16)
+
+Node:	2023	SOURCE (5,5)  Class: 7  Switch: 2
+Node:	2067	  OPIN (5,5)  Pin: 39  Switch: 0
+Node:	5878	 CHANY (4,5)  Track: 152  Switch: 0
+Node:	4272	 CHANX (5,5)  Track: 130  Switch: 0
+Node:	6153	 CHANY (5,4) to (5,5)  Track: 129  Switch: 1
+Node:	2297	  IPIN (6,4)  Pad: 9  Switch: 2
+Node:	2273	  SINK (6,4)  Pad: 9  Switch: -1
+
+
+Net 39 (top^FF_NODE~17)
+
+Node:	2024	SOURCE (5,5)  Class: 8  Switch: 2
+Node:	2068	  OPIN (5,5)  Pin: 40  Switch: 0
+Node:	4268	 CHANX (5,5)  Track: 114  Switch: 0
+Node:	6149	 CHANY (5,4) to (5,5)  Track: 113  Switch: 1
+Node:	2351	  IPIN (6,5)  Pad: 15  Switch: 2
+Node:	2327	  SINK (6,5)  Pad: 15  Switch: -1
+
+
+Net 40 (top^FF_NODE~18)
+
+Node:	2025	SOURCE (5,5)  Class: 9  Switch: 2
+Node:	2069	  OPIN (5,5)  Pin: 41  Switch: 0
+Node:	6198	 CHANY (5,5)  Track: 154  Switch: 1
+Node:	2354	  IPIN (6,5)  Pad: 18  Switch: 2
+Node:	2330	  SINK (6,5)  Pad: 18  Switch: -1
+
+
+Net 41 (top^FF_NODE~9)
+
+Node:	2026	SOURCE (5,5)  Class: 10  Switch: 2
+Node:	2070	  OPIN (5,5)  Pin: 42  Switch: 0
+Node:	3819	 CHANX (2,4) to (5,4)  Track: 75  Switch: 0
+Node:	5617	 CHANY (4,1) to (4,4)  Track: 57  Switch: 0
+Node:	3602	 CHANX (5,3)  Track: 14  Switch: 0
+Node:	6134	 CHANY (5,4) to (5,5)  Track: 56  Switch: 1
+Node:	2357	  IPIN (6,5)  Pad: 21  Switch: 2
+Node:	2333	  SINK (6,5)  Pad: 21  Switch: -1
+
+
+Net 42 (top^d_in~8)
+
+Node:	569	SOURCE (1,6)  Pad: 1  Switch: 2
+Node:	593	  OPIN (1,6)  Pad: 1  Switch: 0
+Node:	4002	 CHANX (1,5) to (4,5)  Track: 42  Switch: 1
+Node:	532	  IPIN (1,5)  Pin: 8  Switch: 2
+Node:	512	  SINK (1,5)  Class: 0  Switch: -1
+
+
+Net 43 (top^d_in~7)
+
+Node:	575	SOURCE (1,6)  Pad: 7  Switch: 2
+Node:	599	  OPIN (1,6)  Pad: 7  Switch: 0
+Node:	4117	 CHANX (1,5)  Track: 157  Switch: 1
+Node:	556	  IPIN (1,5)  Pin: 32  Switch: 2
+Node:	512	  SINK (1,5)  Class: 0  Switch: -1
+
+
+Net 44 (top^d_in~11)
+
+Node:	205	SOURCE (0,5)  Pad: 13  Switch: 2
+Node:	229	  OPIN (0,5)  Pad: 13  Switch: 0
+Node:	4539	 CHANY (0,4) to (0,5)  Track: 79  Switch: 1
+Node:	555	  IPIN (1,5)  Pin: 31  Switch: 2
+Node:	512	  SINK (1,5)  Class: 0  Switch: -1
+
+
+Net 45 (top^d_in~9)
+
+Node:	590	SOURCE (1,6)  Pad: 22  Switch: 2
+Node:	614	  OPIN (1,6)  Pad: 22  Switch: 0
+Node:	4118	 CHANX (1,5) to (2,5)  Track: 158  Switch: 1
+Node:	544	  IPIN (1,5)  Pin: 20  Switch: 2
+Node:	512	  SINK (1,5)  Class: 0  Switch: -1
+
+
+Net 46 (top^d_in~2)
+
+Node:	196	SOURCE (0,5)  Pad: 4  Switch: 2
+Node:	220	  OPIN (0,5)  Pad: 4  Switch: 0
+Node:	4527	 CHANY (0,4) to (0,5)  Track: 31  Switch: 1
+Node:	543	  IPIN (1,5)  Pin: 19  Switch: 2
+Node:	512	  SINK (1,5)  Class: 0  Switch: -1
+
+
+Net 47 (top^d_in~4)
+
+Node:	572	SOURCE (1,6)  Pad: 4  Switch: 2
+Node:	596	  OPIN (1,6)  Pad: 4  Switch: 0
+Node:	4053	 CHANX (1,5)  Track: 93  Switch: 1
+Node:	548	  IPIN (1,5)  Pin: 24  Switch: 2
+Node:	512	  SINK (1,5)  Class: 0  Switch: -1
+
+
+Net 48 (top^d_in~3)
+
+Node:	578	SOURCE (1,6)  Pad: 10  Switch: 2
+Node:	602	  OPIN (1,6)  Pad: 10  Switch: 0
+Node:	4021	 CHANX (1,5)  Track: 61  Switch: 1
+Node:	528	  IPIN (1,5)  Pin: 4  Switch: 2
+Node:	512	  SINK (1,5)  Class: 0  Switch: -1
+
+
+Net 49 (top^d_in~5)
+
+Node:	587	SOURCE (1,6)  Pad: 19  Switch: 2
+Node:	611	  OPIN (1,6)  Pad: 19  Switch: 0
+Node:	4102	 CHANX (1,5) to (2,5)  Track: 142  Switch: 1
+Node:	552	  IPIN (1,5)  Pin: 28  Switch: 2
+Node:	512	  SINK (1,5)  Class: 0  Switch: -1
+
+
+Net 50 (top^d_in~6)
+
+Node:	581	SOURCE (1,6)  Pad: 13  Switch: 2
+Node:	605	  OPIN (1,6)  Pad: 13  Switch: 0
+Node:	4085	 CHANX (1,5)  Track: 125  Switch: 1
+Node:	536	  IPIN (1,5)  Pin: 12  Switch: 2
+Node:	512	  SINK (1,5)  Class: 0  Switch: -1
+
+
+Net 51 (top^d_in~10)
+
+Node:	584	SOURCE (1,6)  Pad: 16  Switch: 2
+Node:	608	  OPIN (1,6)  Pad: 16  Switch: 0
+Node:	4086	 CHANX (1,5) to (2,5)  Track: 126  Switch: 1
+Node:	524	  IPIN (1,5)  Pin: 0  Switch: 2
+Node:	512	  SINK (1,5)  Class: 0  Switch: -1
+
+
+Net 52 (top^FF_NODE~15)
+
+Node:	513	SOURCE (1,5)  Class: 1  Switch: 2
+Node:	557	  OPIN (1,5)  Pin: 33  Switch: 0
+Node:	4801	 CHANY (1,3) to (1,5)  Track: 7  Switch: 0
+Node:	3659	 CHANX (1,4)  Track: 19  Switch: 0
+Node:	4353	 CHANY (0,1) to (0,4)  Track: 73  Switch: 1
+Node:	189	  IPIN (0,4)  Pad: 21  Switch: 2
+Node:	165	  SINK (0,4)  Pad: 21  Switch: -1
+
+
+Net 53 (top^FF_NODE~26)
+
+Node:	514	SOURCE (1,5)  Class: 2  Switch: 2
+Node:	558	  OPIN (1,5)  Pin: 34  Switch: 0
+Node:	3686	 CHANX (1,4) to (3,4)  Track: 46  Switch: 0
+Node:	4739	 CHANY (1,1) to (1,4)  Track: 139  Switch: 0
+Node:	3409	 CHANX (1,3)  Track: 89  Switch: 0
+Node:	4528	 CHANY (0,4) to (0,5)  Track: 38  Switch: 1
+Node:	237	  IPIN (0,5)  Pad: 21  Switch: 2
+Node:	213	  SINK (0,5)  Pad: 21  Switch: -1
+
+
+Net 54 (top^FF_NODE~29)
+
+Node:	515	SOURCE (1,5)  Class: 3  Switch: 2
+Node:	559	  OPIN (1,5)  Pin: 35  Switch: 0
+Node:	4568	 CHANY (0,5)  Track: 32  Switch: 1
+Node:	231	  IPIN (0,5)  Pad: 15  Switch: 2
+Node:	207	  SINK (0,5)  Pad: 15  Switch: -1
+
+
+Net 55 (top^FF_NODE~30)
+
+Node:	516	SOURCE (1,5)  Class: 4  Switch: 2
+Node:	560	  OPIN (1,5)  Pin: 36  Switch: 0
+Node:	4013	 CHANX (1,5)  Track: 53  Switch: 0
+Node:	4587	 CHANY (0,5)  Track: 105  Switch: 1
+Node:	222	  IPIN (0,5)  Pad: 6  Switch: 2
+Node:	198	  SINK (0,5)  Pad: 6  Switch: -1
+
+
+Net 56 (top^FF_NODE~31)
+
+Node:	517	SOURCE (1,5)  Class: 5  Switch: 2
+Node:	561	  OPIN (1,5)  Pin: 37  Switch: 0
+Node:	4807	 CHANY (1,3) to (1,5)  Track: 31  Switch: 0
+Node:	3731	 CHANX (1,4)  Track: 91  Switch: 0
+Node:	4570	 CHANY (0,5)  Track: 40  Switch: 1
+Node:	216	  IPIN (0,5)  Pad: 0  Switch: 2
+Node:	192	  SINK (0,5)  Pad: 0  Switch: -1
+
+
+Net 57 (top^FF_NODE~32)
+
+Node:	518	SOURCE (1,5)  Class: 6  Switch: 2
+Node:	562	  OPIN (1,5)  Pin: 38  Switch: 0
+Node:	3694	 CHANX (1,4) to (3,4)  Track: 54  Switch: 0
+Node:	5200	 CHANY (2,5)  Track: 4  Switch: 0
+Node:	3983	 CHANX (1,5) to (2,5)  Track: 23  Switch: 1
+Node:	989	  IPIN (2,6)  Pad: 21  Switch: 2
+Node:	965	  SINK (2,6)  Pad: 21  Switch: -1
+
+
+Net 58 (top^FF_NODE~34)
+
+Node:	519	SOURCE (1,5)  Class: 7  Switch: 2
+Node:	563	  OPIN (1,5)  Pin: 39  Switch: 0
+Node:	4557	 CHANY (0,4) to (0,5)  Track: 151  Switch: 1
+Node:	177	  IPIN (0,4)  Pad: 9  Switch: 2
+Node:	153	  SINK (0,4)  Pad: 9  Switch: -1
+
+
+Net 59 (top^FF_NODE~5)
+
+Node:	520	SOURCE (1,5)  Class: 8  Switch: 2
+Node:	564	  OPIN (1,5)  Pin: 40  Switch: 0
+Node:	3984	 CHANX (1,5) to (3,5)  Track: 24  Switch: 0
+Node:	4853	 CHANY (1,4) to (1,5)  Track: 49  Switch: 0
+Node:	3433	 CHANX (1,3)  Track: 113  Switch: 0
+Node:	4552	 CHANY (0,4) to (0,5)  Track: 134  Switch: 1
+Node:	234	  IPIN (0,5)  Pad: 18  Switch: 2
+Node:	210	  SINK (0,5)  Pad: 18  Switch: -1
+
+
+Net 60 (top^FF_NODE~6)
+
+Node:	521	SOURCE (1,5)  Class: 9  Switch: 2
+Node:	565	  OPIN (1,5)  Pin: 41  Switch: 0
+Node:	4811	 CHANY (1,3) to (1,5)  Track: 47  Switch: 0
+Node:	3127	 CHANX (1,2)  Track: 127  Switch: 0
+Node:	4486	 CHANY (0,3) to (0,5)  Track: 28  Switch: 1
+Node:	225	  IPIN (0,5)  Pad: 9  Switch: 2
+Node:	201	  SINK (0,5)  Pad: 9  Switch: -1
+
+
+Net 61 (top^FF_NODE~33)
+
+Node:	522	SOURCE (1,5)  Class: 10  Switch: 2
+Node:	566	  OPIN (1,5)  Pin: 42  Switch: 0
+Node:	3710	 CHANX (1,4) to (3,4)  Track: 70  Switch: 0
+Node:	5544	 CHANY (3,5)  Track: 102  Switch: 0
+Node:	4049	 CHANX (1,5) to (3,5)  Track: 89  Switch: 1
+Node:	983	  IPIN (2,6)  Pad: 15  Switch: 2
+Node:	959	  SINK (2,6)  Pad: 15  Switch: -1
+
+
+Net 62 (top^d_in~0)
+
+Node:	256	SOURCE (1,0)  Pad: 16  Switch: 2
+Node:	280	  OPIN (1,0)  Pad: 16  Switch: 0
+Node:	2419	 CHANX (1,0)  Track: 59  Switch: 1
+Node:	330	  IPIN (1,1)  Pin: 30  Switch: 2
+Node:	288	  SINK (1,1)  Class: 0  Switch: -1
+
+
+Net 63 (top^d_in~1)
+
+Node:	1	SOURCE (0,1)  Pad: 1  Switch: 2
+Node:	25	  OPIN (0,1)  Pad: 1  Switch: 0
+Node:	4339	 CHANY (0,1)  Track: 59  Switch: 1
+Node:	331	  IPIN (1,1)  Pin: 31  Switch: 2
+Node:	288	  SINK (1,1)  Class: 0  Switch: -1
+
+
+Net 64 (top^FF_NODE~3)
+
+Node:	297	SOURCE (1,1)  Class: 9  Switch: 2
+Node:	341	  OPIN (1,1)  Pin: 41  Switch: 0
+Node:	4644	 CHANY (1,1)  Track: 44  Switch: 0
+Node:	2733	 CHANX (1,1)  Track: 53  Switch: 0
+Node:	4331	 CHANY (0,1)  Track: 51  Switch: 1
+Node:	36	  IPIN (0,1)  Pad: 12  Switch: 2
+Node:	12	  SINK (0,1)  Pad: 12  Switch: -1
+
+
+Net 65 (top^FF_NODE~4)
+
+Node:	298	SOURCE (1,1)  Class: 10  Switch: 2
+Node:	342	  OPIN (1,1)  Pin: 42  Switch: 0
+Node:	2371	 CHANX (1,0)  Track: 11  Switch: 0
+Node:	4288	 CHANY (0,1) to (0,4)  Track: 8  Switch: 1
+Node:	33	  IPIN (0,1)  Pad: 9  Switch: 2
+Node:	9	  SINK (0,1)  Pad: 9  Switch: -1

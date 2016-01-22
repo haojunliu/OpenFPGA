@@ -1,0 +1,17 @@
+n66_1			1		1
+top^FF_NODE~16		2		1
+top^d_en		1		0
+top^rst			2		0
+out:top^d_out~11		0		1
+out:top^d_out~10		0		1
+out:top^d_out~3		0		1
+out:top^d_out~9		1		0
+out:top^d_out~8		1		0
+out:top^d_out~2		0		1
+out:top^d_out~7		1		0
+out:top^d_out~6		0		1
+out:top^d_out~1		2		0
+out:top^d_out~5		0		1
+out:top^d_out~4		0		1
+out:top^d_out~0		0		1
+top^clock		3		0

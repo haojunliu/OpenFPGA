@@ -1,0 +1,33 @@
+#
+############################################
+# Configuration file for running experiments
+##############################################
+
+# Path to directory of circuits to use
+circuits_dir=benchmarks/verilog
+
+# Path to directory of architectures to use
+archs_dir=arch/timing
+
+# Add circuits to list to sweep
+circuit_list_add=single_inv.v
+circuit_list_add=single_inv_reg.v
+circuit_list_add=wide_inv.v
+circuit_list_add=wide_inv_reg.v
+circuit_list_add=ff_en.v
+circuit_list_add=simple_comp.v
+circuit_list_add=multi_consumer.v
+circuit_list_add=counter.v
+circuit_list_add=dcounter.v
+#circuit_list_add=counter64.v
+
+# Add architectures to list to sweep
+arch_list_add=vpr_6_10_16_16_160_x5_y5.xml
+arch_list_add=vpr_5_8_12_12_120_x10_y10.xml
+arch_list_add=vpr_4_6_8_8_80_x25_y25.xml
+arch_list_add=vpr_4_4_8_8_40_x5_y5.xml
+arch_list_add=vpr_6_4_10_10_96_x8_y8.xml
+
+# Parse info and how to parse
+parse_file=vpr_standard.txt
+

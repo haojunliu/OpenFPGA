@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="20cm" height="25cm" viewBox="330 14 381 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polygon style="fill: #ff0000" points="356.225,80 514.543,80 498.318,124.578 340,124.578 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="356.225,80 514.543,80 498.318,124.578 340,124.578 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="427.271" y="109.05">
+      <tspan x="427.271" y="109.05">architecture.xml</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ff0000" points="555.117,79.3888 695.435,79.3888 679.21,123.967 538.892,123.967 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="555.117,79.3888 695.435,79.3888 679.21,123.967 538.892,123.967 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="617.163" y="108.439">
+      <tspan x="617.163" y="108.439">user_design.v</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="426.692" y="160.039" width="206.372" height="58.8871"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x="426.692" y="160.039" width="206.372" height="58.8871"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="447.329" y1="160.039" x2="447.329" y2="218.926"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="612.427" y1="160.039" x2="612.427" y2="218.926"/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="529.878" y="196.255">
+      <tspan x="529.878" y="196.255">FPGA Magic Tools</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="419.024,124.192 419.024,138.89 529.878,138.89 529.878,155.845 "/>
+    <polygon style="fill: #000000" points="529.878,158.095 528.378,155.095 529.878,155.845 531.378,155.095 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="529.878,158.095 528.378,155.095 529.878,155.845 531.378,155.095 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="609.051,123.967 609.051,138.893 529.878,138.893 529.878,155.841 "/>
+    <polygon style="fill: #000000" points="529.878,158.091 528.378,155.091 529.878,155.841 531.378,155.091 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="529.878,158.091 528.378,155.091 529.878,155.841 531.378,155.091 "/>
+  </g>
+  <g>
+    <polygon style="fill: #00ff00" points="382.709,259.692 487.836,259.692 471.611,304.27 366.484,304.27 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="382.709,259.692 487.836,259.692 471.611,304.27 366.484,304.27 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="427.16" y="288.742">
+      <tspan x="427.16" y="288.742">fpga.v</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #00ff00" points="537.679,260.39 709.747,260.39 693.522,304.968 521.454,304.968 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="537.679,260.39 709.747,260.39 693.522,304.968 521.454,304.968 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="615.6" y="289.44">
+      <tspan x="615.6" y="289.44">user_design.bs</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="529.878,218.926 529.878,239.692 623.713,239.692 623.713,256.798 "/>
+    <polygon style="fill: #000000" points="623.713,259.048 622.213,256.048 623.713,256.798 625.213,256.048 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="623.713,259.048 622.213,256.048 623.713,256.798 625.213,256.048 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="529.878,218.926 529.878,239.692 435.272,239.692 435.272,256.1 "/>
+    <polygon style="fill: #000000" points="435.272,258.35 433.772,255.35 435.272,256.1 436.772,255.35 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="435.272,258.35 433.772,255.35 435.272,256.1 436.772,255.35 "/>
+  </g>
+  <g>
+    <rect style="fill: #0000ff" x="336.484" y="339.692" width="162.4" height="28.5778"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #ffff00" x="336.484" y="339.692" width="162.4" height="28.5778"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #ffff00" x1="352.724" y1="339.692" x2="352.724" y2="368.27"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #ffff00" x1="482.644" y1="339.692" x2="482.644" y2="368.27"/>
+    <text font-size="18.0622" style="fill: #ffff00;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="417.684" y="360.754">
+      <tspan x="417.684" y="360.754">ASIC Tools</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="418.484" y1="303.692" x2="418.484" y2="336.1"/>
+    <polygon style="fill: #000000" points="418.484,338.35 416.984,335.35 418.484,336.1 419.984,335.35 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="418.484,338.35 416.984,335.35 418.484,336.1 419.984,335.35 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="416.484" y1="367.692" x2="416.484" y2="396.1"/>
+    <polygon style="fill: #000000" points="416.484,398.35 414.984,395.35 416.484,396.1 417.984,395.35 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="416.484,398.35 414.984,395.35 416.484,396.1 417.984,395.35 "/>
+  </g>
+  <g>
+    <polygon style="fill: #00ff00" points="362.709,399.692 485.777,399.692 469.552,444.27 346.484,444.27 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="362.709,399.692 485.777,399.692 469.552,444.27 346.484,444.27 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="416.13" y="428.742">
+      <tspan x="416.13" y="428.742">fpga_p&amp;r.v</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #0000ff" x="538.484" y="401.692" width="135.03" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #ffff00" x="538.484" y="401.692" width="135.03" height="40"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #ffff00" x1="551.987" y1="401.692" x2="551.987" y2="441.692"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #ffff00" x1="660.011" y1="401.692" x2="660.011" y2="441.692"/>
+    <text font-size="18.0622" style="fill: #ffff00;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="605.999" y="428.465">
+      <tspan x="605.999" y="428.465">SIM Tools</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="608.484" y1="305.692" x2="608.484" y2="398.1"/>
+    <polygon style="fill: #000000" points="608.484,400.35 606.984,397.35 608.484,398.1 609.984,397.35 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="608.484,400.35 606.984,397.35 608.484,398.1 609.984,397.35 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="478.484" y1="421.692" x2="534.892" y2="421.692"/>
+    <polygon style="fill: #000000" points="537.142,421.692 534.142,423.192 534.892,421.692 534.142,420.192 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="537.142,421.692 534.142,423.192 534.892,421.692 534.142,420.192 "/>
+  </g>
+  <g>
+    <rect style="fill: #ff0000" x="330.262" y="469.934" width="80.15" height="36.9333"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-037; stroke: #ffffff" x="330.262" y="469.934" width="80.15" height="36.9333"/>
+    <text font-size="13.5467" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="370.337" y="493.484">
+      <tspan x="370.337" y="493.484">user input</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="419.938" y="459.894" width="71" height="53.8667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-037; stroke: #ffffff" x="419.938" y="459.894" width="71" height="53.8667"/>
+    <text font-size="13.5467" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="455.438" y="483.444">
+      <tspan x="455.438" y="483.444">open src</tspan>
+      <tspan x="455.438" y="500.377">tools</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #0000ff" x="597.816" y="459.736" width="95.2" height="53.8667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-037; stroke: #ffffff" x="597.816" y="459.736" width="95.2" height="53.8667"/>
+    <text font-size="13.5467" style="fill: #ffff00;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="645.416" y="483.286">
+      <tspan x="645.416" y="483.286">intermediate</tspan>
+      <tspan x="645.416" y="500.219">outputs</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #00ff00" x="499.996" y="459.944" width="88" height="53.8667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-037; stroke: #ffffff" x="499.996" y="459.944" width="88" height="53.8667"/>
+    <text font-size="13.5467" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="543.996" y="483.494">
+      <tspan x="543.996" y="483.494">commercial</tspan>
+      <tspan x="543.996" y="500.427">tools</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ff0000" points="459.885,15.146 613.553,15.146 597.328,59.7238 443.66,59.7238 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" points="459.885,15.146 613.553,15.146 597.328,59.7238 443.66,59.7238 "/>
+    <text font-size="18.0622" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="528.606" y="44.196">
+      <tspan x="528.606" y="44.196">fpga.scala</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1.2; stroke: #000000" x1="529.834" y1="59.7844" x2="529.766" y2="138.263"/>
+</svg>

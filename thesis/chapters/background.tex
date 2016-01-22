@@ -1,0 +1,52 @@
+\section{Research on Open Source FPGA Tools}
+\label{sec:bkg_tools}
+
+An FPGA has limited use without a toolflow which transforms a user RTL to a bitstream
+just as an instruction set architecture has limited use without a compiler which transforms
+a user program described in high level language to a piece of machine code. 
+The VTR Project~\cite{Rose:2012:VPA:2145694.2145708} provides a toolflow from RTL written in Verilog
+HDL to a placed and routed design. The work integrates ODIN II~\cite{Jamieson:2010:OIO:1827716.1827870},
+ABC~\cite{Brayton:2010:AAI:2144310.2144317} and VPR~\cite{Luu:2011:VFC:2068716.2068718} into a flow.
+They provide Verilog HDL elaboration, logic synthesis and technology mapping, packing, instances placing
+and inter-instances routing respectively. The VTR Project provides us a foundation of the toolflow required.
+All tools are open source and are publicly available. \par
+
+\section{Research on Open Source FPGA Hardware}
+\label{sec:bkg_hdw}
+
+FPGA design and implementation are a time consuming process. It has
+been estimated that the layout of an FPGA tile can take from 50 to 200 
+man years to complete. \cite{Padalia:2003:ATP:611817.611842} Using a standard
+cell flow in this project saves user effort. Some works have been devoted
+ in studying the results of a standard cell flow based approach
+in generating FPGA layouts and have demonstrated promising results. 
+\cite{Neumann:2008:DFE:1403375.1403391}, \cite{Chaudhuri:2008:RRF:1391469.1391500}
+One recent work even demonstrates that with a 45nm process technology, reduction 
+in area and improvement in yield can be achieved at the same time
+using a standard cell flow. \cite{Chen:2011:RFR:1950413.1950484} \par
+
+One project that attempted to generate full FPGA layout with bitstream generation presented
+ by Kuon et al from the University of Toronto \cite{Kuon:2005:DLV:1046192.1046220} is over seven years old
+and only minor extensions are publicly available to this point. However the results from the work are promising. \par
+
+With results from previous work, we believe it is totally feasible
+and cost effective to implement an FPGA in RTL and 
+to use standard ASIC tools doing the layout generation. \par
+
+\section{The Chisel Language}
+\label{sec:bkg_chisel}
+Verilog HDL has been one of the de Facto languages in describing an RTL. However,
+its support in parametrization and speed in the simulation are two big drawbacks of
+the language. \par
+
+In the Archipelago project, we use Chisel, an RTL generation language developed
+at University of California Berkeley, to implement all the components in an FPGA.
+\cite{Bachrach:2012:CCH:2228488.2228584}
+Chisel stands for Constructing Hardware in Scala Embedded Language.
+The language offers concise description of an RTL with versatile support on parametrization
+and offers fast C++ cycle by cycle simulation. 
+The top level connections are generated in Verilog HDL because Chisel cannot generate a circuit
+with combinational paths. An FPGA must have combinational paths to have functionality and routability. It is
+also beyond Chisel capability to perform large scale simulation as the C++ simulator flattens
+a design. The flattened simulator can also be too large to fit in most host computers' caches. This 
+ results very slow simulation speed. \par
