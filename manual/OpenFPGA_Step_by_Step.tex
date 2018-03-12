@@ -90,12 +90,12 @@ the author via email.
 
 \section{Checking Out OpenFPGA}
 \begin{lstlisting}[language=csh]
-    svn checkout file:///users/hjliu/ProjSVN/open-fpga-complete
+    git clone https://github.com/haojunliu/OpenFPGA.git
 \end{lstlisting}
 
 \section{Building VTR}
 \begin{lstlisting}[language=csh]
-    cd open-fpga-complete/vtr
+    cd OpenFPGA/vtr
     make
 \end{lstlisting}
 
@@ -145,6 +145,7 @@ We create a new circuit in this case, a decremental counter with a width of 16. 
 We also need to create testbench and fpga testbench wrappers.
 
 \begin{lstlisting}[language=csh]
+    cd vtr/vtr_flow/benchmarks/verilog/
     mkdir dcounter
     cp counter/counter_tb.v dcounter/dcounter_tb.v
     cp counter/counter.v dcounter/dcounter.v
